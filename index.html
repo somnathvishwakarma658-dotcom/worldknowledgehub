@@ -8,10 +8,10 @@
     <link rel="icon" type="image/png" href="https://worldpoliticstourscience.vercel.app/Gemini_Generated_Image_ftnbdffnbdfftnb.png">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts (Mukta & Poppins) -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -20,11 +20,8 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#0D253F',
-                        secondary: '#008080',
-                        gold: '#C59B27',
-                        saffron: '#f97316', 
-                        darkBg: '#081422',
+                        darkBg: '#050c17',
+                        cardBg: 'rgba(15, 23, 42, 0.75)',
                     },
                     fontFamily: {
                         sans: ['Poppins', 'Mukta', 'sans-serif'],
@@ -36,245 +33,196 @@
     <style>
         body {
             font-family: 'Poppins', 'Mukta', sans-serif;
-            background-color: #0D253F;
+            background: radial-gradient(circle at top, #0d213a 0%, #050c17 100%);
+            color: #f8fafc;
         }
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(13, 37, 63, 0.95) 0%, rgba(8, 20, 34, 0.9) 100%);
+        .glass-header {
+            background: rgba(10, 18, 30, 0.85);
+            backdrop-filter: blur(16px);
         }
-        .glass {
-            background: rgba(255, 255, 255, 0.95);
+        .glass-card {
+            background: linear-gradient(145deg, rgba(30, 41, 59, 0.6), rgba(15, 23, 42, 0.8));
             backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card:hover {
+            border-color: rgba(56, 189, 248, 0.4);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 0 15px rgba(56, 189, 248, 0.2);
         }
     </style>
 </head>
-<body class="text-slate-800 antialiased flex flex-col min-h-screen">
+<body class="antialiased flex flex-col min-h-screen">
 
-    <!-- ================= NAVBAR ================= -->
-    <header class="sticky top-0 z-50 glass shadow-md border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-24">
+    <!-- ================= HEADER / NAVBAR ================= -->
+    <header class="sticky top-0 z-50 glass-header border-b border-slate-800 shadow-xl">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
                 
-                <!-- EMBEDDED SVG BRAND LOGO -->
-                <a href="index.html" class="flex items-center cursor-pointer py-2">
-                    <div class="flex items-center space-x-3">
-                        <svg class="h-16 w-auto drop-shadow-sm" viewBox="0 0 700 380" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="bgRingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#0b2341"/>
-                                    <stop offset="50%" stop-color="#183b68"/>
-                                    <stop offset="100%" stop-color="#081528"/>
-                                </linearGradient>
-                                <linearGradient id="polGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#1e4b8a"/>
-                                    <stop offset="100%" stop-color="#0b2340"/>
-                                </linearGradient>
-                                <linearGradient id="tourGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#8ce1dc"/>
-                                    <stop offset="40%" stop-color="#219c90"/>
-                                    <stop offset="100%" stop-color="#e38c35"/>
-                                </linearGradient>
-                                <linearGradient id="sciGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#182d54"/>
-                                    <stop offset="50%" stop-color="#3b2d70"/>
-                                    <stop offset="100%" stop-color="#0a1226"/>
-                                </linearGradient>
-                                <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#f2d06b"/>
-                                    <stop offset="50%" stop-color="#c59b27"/>
-                                    <stop offset="100%" stop-color="#8a6710"/>
-                                </linearGradient>
-                            </defs>
-
-                            <!-- Outer Compass Ring -->
-                            <circle cx="350" cy="145" r="132" fill="url(#bgRingGrad)" stroke="url(#goldGrad)" stroke-width="3"/>
-                            <circle cx="350" cy="145" r="126" fill="none" stroke="#2a4a75" stroke-width="2"/>
-                            <circle cx="350" cy="145" r="122" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="2 3"/>
-
-                            <!-- Compass Points Arrows -->
-                            <polygon points="350,7 344,18 356,18" fill="url(#goldGrad)"/>
-                            <polygon points="350,283 344,272 356,272" fill="url(#goldGrad)"/>
-                            <polygon points="212,145 223,139 223,151" fill="url(#goldGrad)"/>
-                            <polygon points="488,145 477,139 477,151" fill="url(#goldGrad)"/>
-
-                            <!-- TOP LEFT: POLITICS CIRCLE -->
-                            <g transform="translate(0, 0)">
-                                <circle cx="302" cy="110" r="48" fill="url(#polGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-                                <circle cx="302" cy="110" r="44" fill="none" stroke="#2d60a0" stroke-width="1" stroke-dasharray="3 3"/>
-                                <ellipse cx="302" cy="110" rx="44" ry="18" fill="none" stroke="#326bb2" stroke-width="1"/>
-                                <line x1="302" y1="66" x2="302" y2="154" stroke="#326bb2" stroke-width="1"/>
-                                <rect x="274" y="98" width="6" height="24" rx="1" fill="#e2e8f0"/>
-                                <rect x="324" y="98" width="6" height="24" rx="1" fill="#e2e8f0"/>
-                                <path d="M270 98 L280 98 M320 98 L330 98 M270 122 L280 122 M320 122 L330 122" stroke="#cbd5e1" stroke-width="2"/>
-                                <path d="M294 106 C298 96 308 96 312 102 C316 98 322 102 318 110 C310 114 300 112 294 106 Z" fill="#ffffff"/>
-                                <path d="M300 102 C296 95 288 98 292 104 Z" fill="#e2e8f0"/>
-                            </g>
-
-                            <!-- TOP RIGHT: TOUR CIRCLE -->
-                            <g transform="translate(0, 0)">
-                                <circle cx="398" cy="110" r="48" fill="url(#tourGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-                                <circle cx="382" cy="85" r="10" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.8"/>
-                                <path d="M382 72 L384 83 L395 85 L384 87 L382 98 L380 87 L369 85 L380 83 Z" fill="url(#goldGrad)"/>
-                                <path d="M418 88 L428 82 L426 88 L432 91 L430 93 L425 91 L422 96 L420 96 L421 91 L416 89 Z" fill="#ffffff"/>
-                                <polygon points="380,140 402,108 422,140" fill="#334155"/>
-                                <polygon points="400,108 402,108 407,116 401,114 396,118" fill="#ffffff"/>
-                                <polygon points="408,140 422,118 438,140" fill="#475569"/>
-                                <circle cx="370" cy="122" r="2.5" fill="#0f172a"/>
-                                <path d="M370 125 L372 135 M368 128 L374 128 M372 135 L368 142 M372 135 L375 142" stroke="#0f172a" stroke-width="1.5"/>
-                                <rect x="366" y="125" width="3" height="6" rx="1" fill="#be123c"/>
-                                <path d="M352 144 Q365 138 375 144 T398 140" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="2 2"/>
-                            </g>
-
-                            <!-- BOTTOM: SCIENCE CIRCLE -->
-                            <g transform="translate(0, 0)">
-                                <circle cx="350" cy="195" r="48" fill="url(#sciGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-                                <ellipse cx="325" cy="182" rx="14" ry="5" fill="none" stroke="#38bdf8" stroke-width="1" transform="rotate(-30 325 182)"/>
-                                <ellipse cx="325" cy="182" rx="14" ry="5" fill="none" stroke="#38bdf8" stroke-width="1" transform="rotate(30 325 182)"/>
-                                <circle cx="325" cy="182" r="2.5" fill="#f0abfc"/>
-                                <g transform="translate(350, 195) rotate(-15)">
-                                    <path d="M-6 12 C-6 12 -8 -5 0 -18 C8 -5 6 12 6 12 Z" fill="#ffffff"/>
-                                    <path d="M0 -18 C4 -8 4 0 0 12 Z" fill="#e2e8f0"/>
-                                    <circle cx="0" cy="-4" r="3" fill="#0284c7"/>
-                                    <path d="M-6 5 L-12 14 L-6 12 Z M6 5 L12 14 L6 12 Z" fill="#ef4444"/>
-                                    <path d="M-4 12 Q0 22 4 12 Q0 18 -4 12 Z" fill="url(#goldGrad)"/>
-                                </g>
-                                <path d="M375 175 Q380 185 375 195 T375 215" fill="none" stroke="#a855f7" stroke-width="1.5"/>
-                                <path d="M383 175 Q378 185 383 195 T383 215" fill="none" stroke="#ec4899" stroke-width="1.5"/>
-                                <line x1="376" y1="180" x2="382" y2="180" stroke="#ffffff" stroke-width="1"/>
-                                <line x1="378" y1="190" x2="380" y2="190" stroke="#ffffff" stroke-width="1"/>
-                                <line x1="376" y1="200" x2="382" y2="200" stroke="#ffffff" stroke-width="1"/>
-                            </g>
-
-                            <!-- Center Star -->
-                            <polygon points="350,136 353,142 360,143 355,148 356,155 350,151 344,155 345,148 340,143 347,142" fill="url(#goldGrad)" stroke="#ffffff" stroke-width="0.8"/>
-
-                            <!-- TYPOGRAPHY -->
-                            <text x="350" y="300" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="34" font-weight="900" fill="#0D253F" letter-spacing="3">WORLD POLITICS</text>
-                            <g transform="translate(0, 0)">
-                                <polygon points="190,328 196,333 190,338 184,333" fill="url(#goldGrad)"/>
-                                <line x1="160" y1="333" x2="180" y2="333" stroke="url(#goldGrad)" stroke-width="2"/>
-                                <text x="350" y="340" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="30" font-weight="800" fill="#C59B27" letter-spacing="4">TOUR SCIENCE</text>
-                                <polygon points="510,328 516,333 510,338 504,333" fill="url(#goldGrad)"/>
-                                <line x1="520" y1="333" x2="540" y2="333" stroke="url(#goldGrad)" stroke-width="2"/>
-                            </g>
-                            <text x="350" y="368" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="11" font-weight="700" fill="#475569" letter-spacing="1.5">GLOBAL PERSPECTIVES • GEOGRAPHICAL JOURNEYS • SCIENTIFIC DISCOVERY</text>
-                        </svg>
-                    </div>
+                <!-- NEW MODERN SVG LOGO -->
+                <a href="index.html" class="flex items-center space-x-2 py-1">
+                    <svg class="h-12 sm:h-14 w-auto" viewBox="0 0 650 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logoTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#38bdf8"/>
+                                <stop offset="50%" stop-color="#818cf8"/>
+                                <stop offset="100%" stop-color="#f43f5e"/>
+                            </linearGradient>
+                            <linearGradient id="iconBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#0f172a"/>
+                                <stop offset="100%" stop-color="#1e293b"/>
+                            </linearGradient>
+                        </defs>
+                        <rect x="10" y="15" width="120" height="120" rx="24" fill="url(#iconBg)" stroke="#38bdf8" stroke-width="2.5"/>
+                        <circle cx="70" cy="75" r="38" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="4 4"/>
+                        <path d="M70 42 L70 108 M37 75 L103 75" stroke="#475569" stroke-width="1.5"/>
+                        <ellipse cx="70" cy="75" rx="35" ry="14" fill="none" stroke="#38bdf8" stroke-width="2" transform="rotate(-30 70 75)"/>
+                        <ellipse cx="70" cy="75" rx="35" ry="14" fill="none" stroke="#f43f5e" stroke-width="2" transform="rotate(30 70 75)"/>
+                        <circle cx="70" cy="75" r="7" fill="#fbbf24"/>
+                        <text x="148" y="65" font-family="'Poppins', sans-serif" font-size="28" font-weight="800" fill="#ffffff" letter-spacing="1">WORLD POLITICS</text>
+                        <text x="148" y="102" font-family="'Poppins', sans-serif" font-size="22" font-weight="700" fill="url(#logoTextGrad)" letter-spacing="2">TOUR SCIENCE</text>
+                        <circle cx="148" cy="118" r="3" fill="#38bdf8"/>
+                        <text x="158" y="122" font-family="'Poppins', sans-serif" font-size="10" font-weight="600" fill="#94a3b8" letter-spacing="1.5">GLOBAL PERSPECTIVES & DISCOVERY</text>
+                    </svg>
                 </a>
 
-                <!-- Desktop Navigation Links -->
-                <nav class="hidden md:flex items-center space-x-8">
-                   <a href="index.html" class="font-bold text-slate-700 hover:text-primary transition-colors py-2 border-b-2 border-gold">Home</a>
-                    <a href="politics.html" class="font-bold text-slate-700 hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-gold">Politics</a>
-                    <a href="tours.html" class="font-bold text-slate-700 hover:text-secondary transition-colors py-2 border-b-2 border-transparent hover:border-gold">Tours</a>
-                    <a href="ai-article.html" class="font-bold text-slate-700 hover:text-indigo-600 transition-colors py-2 border-b-2 border-transparent hover:border-gold">Science</a>
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center space-x-6 text-sm font-semibold">
+                    <a href="index.html" class="text-sky-400 border-b-2 border-sky-400 pb-1">Home</a>
+                    <a href="politics.html" class="text-slate-300 hover:text-white transition">Politics</a>
+                    <a href="janki-setu.html" class="text-slate-300 hover:text-white transition">Tours</a>
+                    <a href="ai-article.html" class="text-slate-300 hover:text-white transition">Science</a>
+                    <a href="weapons.html" class="text-slate-300 hover:text-white transition">Weapons</a>
+                    <a href="latest-news.html" class="text-rose-500 hover:text-rose-400 transition font-bold">⚡ News</a>
                 </nav>
 
-                <!-- Mobile Hamburger Button -->
-                <div class="md:hidden flex items-center">
-                    <button id="menuBtn" onclick="toggleMobileMenu()" class="text-slate-700 hover:text-primary focus:outline-none p-2 rounded-lg">
-                        <i class="fa-solid fa-bars text-2xl"></i>
-                    </button>
-                </div>
+                <!-- Mobile Menu Icon Button -->
+                <button onclick="toggleMobileMenu()" class="md:hidden text-slate-300 hover:text-white p-2">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
             </div>
         </div>
 
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
-            <a href="index.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">Home</a>
-            <a href="politics.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">Politics (राजनीति)</a>
-            <a href="tours.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">Tours (पर्यटन)</a>
-            <a href="ai-article.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">Science (विज्ञान)</a>
-<a href="weapons.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">World Weapons (विश्व के घातक हथियार)</a>
-<a href="latest-news.html"
-style="display: block; padding: 10px 0;
-color: #d90429; font-weight: bold;
-text-decoration: none; font-size: 18px;">
-    ⚡ खबरें फटाफट (Latest News)
-</a>
+        <!-- Mobile Quick Icon Nav Bar (Horizontal Icons like Screenshot) -->
+        <div class="md:hidden bg-slate-900/90 border-t border-slate-800 px-2 py-2 flex justify-around items-center text-center text-xs">
+            <a href="index.html" class="text-amber-400 flex flex-col items-center">
+                <i class="fa-solid fa-house text-base"></i>
+                <span class="mt-1 font-semibold">Home</span>
+            </a>
+            <a href="politics.html" class="text-slate-300 hover:text-white flex flex-col items-center">
+                <i class="fa-solid fa-building-columns text-base"></i>
+                <span class="mt-1">Politics</span>
+            </a>
+            <a href="janki-setu.html" class="text-slate-300 hover:text-white flex flex-col items-center">
+                <i class="fa-solid fa-suitcase text-base"></i>
+                <span class="mt-1">Tours</span>
+            </a>
+            <a href="ai-article.html" class="text-slate-300 hover:text-white flex flex-col items-center">
+                <i class="fa-solid fa-atom text-base"></i>
+                <span class="mt-1">Science</span>
+            </a>
+            <a href="weapons.html" class="text-slate-300 hover:text-white flex flex-col items-center">
+                <i class="fa-solid fa-shield-halved text-base"></i>
+                <span class="mt-1">Weapons</span>
+            </a>
+            <a href="latest-news.html" class="text-rose-500 flex flex-col items-center font-bold">
+                <i class="fa-solid fa-bolt text-base"></i>
+                <span class="mt-1">News</span>
+            </a>
+        </div>
 
-</a>
- </div>
- </div>
+        <!-- Hidden Mobile Full Dropdown -->
+        <div id="mobileMenu" class="hidden bg-slate-900 border-b border-slate-800 px-4 py-4 space-y-3">
+            <a href="index.html" class="block font-bold text-sky-400">Home</a>
+            <a href="politics.html" class="block font-medium text-slate-300">Politics (राजनीति)</a>
+            <a href="janki-setu.html" class="block font-medium text-slate-300">Tours (पर्यटन)</a>
+            <a href="ai-article.html" class="block font-medium text-slate-300">Science (विज्ञान)</a>
+            <a href="weapons.html" class="block font-medium text-slate-300">Weapons (घातक हथियार)</a>
+            <a href="latest-news.html" class="block font-bold text-rose-500">⚡ खबरें फटाफट</a>
+        </div>
     </header>
-                 <div>
-<section style="margin-top: 30px; padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-    <h2 style="color: #0b3c5d; font-size: 22px;">ISRO Mission: भारत का अपना 'GPS' और मजबूत करने के लिए NVS-03 सैटेलाइट आज रात होगी लॉन्च</h2>
-    <div style="font-size: 13px; color: #666; margin-bottom: 15px;">
-        तारीख: <strong>30 अक्टूबर 2026</strong> | स्रोत: <strong>DD News & ISRO</strong>
-    </div>
-    
-    <p>भारतीय अंतरिक्ष अनुसंधान संगठन (ISRO) देश की स्वदेशी नेविगेशन प्रणाली (NavIC) को और अधिक सशक्त बनाने के लिए पूरी तरह तैयार है। इसरो द्वारा आज रात भारत के आधुनिक नेविगेशन उपग्रह <strong>NVS-03</strong> को अंतरिक्ष में लॉन्च किया जाएगा。</p>
-    
-    <h3 style="color: #1d2731; font-size: 18px; margin-top: 15px;">मिशन की मुख्य विशेषताएँ:</h3>
-    <ul style="padding-left: 20px; line-height: 1.6;">
-        <li><strong>स्वदेशी परमाणु घड़ी:</strong> इस सैटेलाइट में देश में बनी स्वदेशी परमाणु घड़ी (Atomic Clock) लगाई गई है, जो समय की सटीक जानकारी देगी।</li>
-        <li><strong>नया L1-बैंड सिग्नल:</strong> इसमें नया L1-बैंड सिग्नल शामिल है, जिससे नेविगेशन की सटीकता में और अधिक सुधार होगा।</li>
-        <li><strong>लॉन्च का समय:</strong> यह महत्वपूर्ण मिशन आज रात (30 अक्टूबर 2026) निर्धारित शेड्यूल के अनुसार लॉन्च किया जाना है।</li>
-    </ul>
-</section>
-               </div>
 
-<!-- ========================================== -->
-<!-- कैंसर न्यूज़ प्रोफेशनल सेक्शन - शुरू -->
-<!-- ========================================== -->
-<section style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); padding: 40px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; border-radius: 12px; margin: 20px auto; max-width: 1200px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
-    
-    <!-- मुख्य हेडलाइन बॉक्स -->
-    <div style="text-align: center; margin-bottom: 35px;">
-        <span style="background-color: #fee2e2; color: #dc2626; padding: 6px 16px; border-radius: 20px; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">बड़ी खबर • अपडेट 2026</span>
-        <h1 style="color: #0f172a; font-size: 28px; margin-top: 15px; margin-bottom: 10px; font-weight: 800;">कैंसर की 543 दवाएं हुईं बेहद सस्ती: सुप्रीम कोर्ट और NPPA का ऐतिहासिक फैसला</h1>
-        <p style="color: #475569; font-size: 16px; max-width: 800px; margin: 0 auto; line-height: 1.6;">ट्रेड मार्जिन कैपिंग लागू होने से मरीजों को सालाना ₹2,500 करोड़ की बड़ी राहत मिलेगी। नई कीमतें 9 नवंबर 2026 से प्रभावी हो चुकी हैं।</p>
-    </div>
+    <!-- ================= HERO & BUTTONS SECTION ================= -->
+    <main class="flex-grow flex flex-col items-center justify-center px-4 py-10 text-center">
+        <div class="max-w-3xl mx-auto space-y-6">
+            
+            <!-- Top Tagline -->
+            <div class="text-amber-400 font-extrabold text-xs sm:text-sm tracking-widest uppercase">
+                EXPLORING GLOBAL POLITICS, TRAVEL FRONTIERS, AND SCIENTIFIC DISCOVERIES
+            </div>
 
-    <!-- मुख्य ग्रिड (कार्ड्स और डिटेल्स) -->
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 35px;">
-        
-        <!-- कार्ड 1: सुप्रीम कोर्ट की टिप्पणी -->
-        <div style="background: #ffffff; padding: 25px; border-radius: 10px; border-left: 5px solid #dc2626; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
-            <h3 style="color: #1e293b; margin-top: 0; font-size: 18px; margin-bottom: 12px;">⚖️ सुप्रीम कोर्ट की सख्त टिप्पणी</h3>
-            <p style="color: #64748b; font-size: 14px; line-height: 1.6; margin: 0;">अदालत ने थोक मूल्य (PTS) और खुदरा मूल्य (MRP) के बीच भारी अंतर को <strong>'दिन-दहाड़े डकैती'</strong> करार दिया। कोर्ट ने कहा कि ₹2,700 की दवा को ₹27,000 तक में बेचा जा रहा था, जिस पर अब लगाम कस दी गई है।
-  </p>
+            <!-- Main Hindi Heading -->
+            <h1 class="text-2xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-sky-300 to-teal-200 leading-tight">
+                वैश्विक राजनीति, यात्रा सीमाओं और वैज्ञानिक खोजों की खोज
+            </h1>
+
+            <p class="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed">
+                Delivering curated perspectives, exceptional tour guides, and cutting-edge science. Uncover the intricate web of global events, plan unforgettable journeys, and embrace the future of technology.
+            </p>
+
+            <!-- ================= 2x2 BUTTONS GRID (Side by Side) ================= -->
+            <div class="grid grid-cols-2 gap-3 sm:gap-4 max-w-xl mx-auto pt-4">
+                
+                <!-- 1. Politics Card -->
+                <a href="politics.html" class="glass-card rounded-2xl p-4 flex flex-col items-center justify-between h-40 relative overflow-hidden transition group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-transparent opacity-60"></div>
+                    <span class="text-lg sm:text-xl font-extrabold text-white z-10">पॉलिटिक्स</span>
+                    <div class="z-10 text-amber-400 text-4xl sm:text-5xl group-hover:scale-110 transition duration-300 my-auto">
+                        <i class="fa-solid fa-landmark"></i>
+                    </div>
+                </a>
+
+                <!-- 2. Tour Card (Link to Rishikesh Janki Setu) -->
+                <a href="janki-setu.html" class="glass-card rounded-2xl p-4 flex flex-col items-center justify-between h-40 relative overflow-hidden transition group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-teal-500/20 to-transparent opacity-60"></div>
+                    <span class="text-lg sm:text-xl font-extrabold text-white z-10">टूर</span>
+                    <div class="z-10 text-teal-400 text-4xl sm:text-5xl group-hover:scale-110 transition duration-300 my-auto">
+                        <i class="fa-solid fa-gopuram"></i>
+                    </div>
+                </a>
+
+                <!-- 3. Science Card -->
+                <a href="ai-article.html" class="glass-card rounded-2xl p-4 flex flex-col items-center justify-between h-40 relative overflow-hidden transition group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-sky-500/20 to-transparent opacity-60"></div>
+                    <span class="text-lg sm:text-xl font-extrabold text-white z-10">साइंस</span>
+                    <div class="z-10 text-sky-400 text-4xl sm:text-5xl group-hover:scale-110 transition duration-300 my-auto">
+                        <i class="fa-solid fa-dna"></i>
+                    </div>
+                </a>
+
+                <!-- 4. Weapons Card -->
+                <a href="weapons.html" class="glass-card rounded-2xl p-4 flex flex-col items-center justify-between h-40 relative overflow-hidden transition group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-rose-500/20 to-transparent opacity-60"></div>
+                    <span class="text-lg sm:text-xl font-extrabold text-white z-10">वेपन्स</span>
+                    <div class="z-10 text-rose-500 text-4xl sm:text-5xl group-hover:scale-110 transition duration-300 my-auto">
+                        <i class="fa-solid fa-jet-fighter"></i>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- Full Width Latest News Button -->
+            <div class="max-w-xl mx-auto pt-2">
+                <a href="latest-news.html" class="w-full bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-500 hover:to-rose-600 text-white font-extrabold py-3.5 px-6 rounded-2xl shadow-lg shadow-rose-900/40 flex items-center justify-center space-x-3 text-lg transition transform hover:-translate-y-0.5 border border-rose-500/40">
+                    <i class="fa-solid fa-bolt text-yellow-300 text-xl animate-bounce"></i>
+                    <span>नवीनतम खबरें फटाफट</span>
+                </a>
+            </div>
 
         </div>
+    </main>
 
-        <!-- कार्ड 2: नया नियम और बचत -->
-        <div style="background: #ffffff; padding: 25px; border-radius: 10px; border-left: 5px solid #2563eb; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
-            <h3 style="color: #1e293b; margin-top: 0; font-size: 18px; margin-bottom: 12px;">💰 30% ट्रेड मार्जिन कैप</h3>
-            <p style="color: #64748b; font-size: 14px; line-height: 1.6; margin: 0;">NPPA ने 137 गैर-अनुसूचित कैंसर दवाओं पर मुनाफा अधिकतम <strong>30%</strong> तक सीमित कर दिया है। इससे 543 ब्रांड्स के दाम सीधे **20% से 90% तक** नीचे आ गए हैं।</p>
-        </div>
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-4 text-center text-slate-500 text-xs">
+        <p>&copy; 2026 World Politics & Tour Science. All rights reserved.</p>
+    </footer>
 
-    </div>
-
-    <!-- कीमतों की तुलना तालिका (Price Comparison Table) -->
-    <div style="background: #ffffff; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); overflow-x: auto;">
-        <h3 style="color: #1e293b; margin-top: 0; font-size: 18px; margin-bottom: 15px; text-align: center;">📊 दवाओं की पुरानी और नई कीमतों का अंतर</h3>
-        <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px;">
-            <thead>
-                <tr style="background-color: #f1f5f9; color: #334155;">
-                    <th style="padding: 12px; border-bottom: 2px solid #cbd5e1;">दवा / इंजेक्शन का प्रकार</th>
-                    <th style="padding: 12px; border-bottom: 2px solid #cbd5e1; color: #dc2626;">पहले की कीमत (MRP)</th>
-                    <th style="padding: 12px; border-bottom: 2px solid #cbd5e1; color: #16a34a;">अब की नई कीमत (MRP)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 12px; color: #334155; font-weight: 600;">सामान्य कैंसर इंजेक्शन</td>
-                    <td style="padding: 12px; color: #dc2626; text-decoration: line-through;">₹27,000 तक</td>
-                    <td style="padding: 12px; color: #16a34a; font-weight: 600;">~₹3,500 से ₹3,850</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 12px; color: #334155; font-weight: 600;">हाई-एंड एंटी-कैंसर ड्रग</td>
-                    <td style="padding: 12px; color: #dc2626; text-decoration: line-through;">₹1,30,000 तक</td>
-                    <td style="padding: 12px; color: #16a34a; font-weight: 600;">~₹15,000 से ₹16,000</td>
-                </tr>
-                <tr>
-                    <td style="padding: 12px; color: #334155; font-weight: 600;">जेनेरिक साल्ट्स (Bevacizumab आदि)</td>
-                    <td style="padding: 12px; color: #dc2626; text-decoration: line-through;">अत्यधिक महंगे</td>
-                    <td style="padding: 12px; color: #16a34a; font-weight: 600;">70% से 93% तक सस्ती</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <!-- निचला नोट -->
-    <div style="text-align: center; margin-top: 25px; color: #64748b; font-siz
+    <!-- Mobile Menu JS -->
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
