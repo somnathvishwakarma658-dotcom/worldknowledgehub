@@ -1,228 +1,58 @@
 <!DOCTYPE html>
-<html lang="hi" class="scroll-smooth">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Politics & Tour Science - राष्ट्र एवं ज्ञान</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://worldpoliticstourscience.vercel.app/Gemini_Generated_Image_ftnbdffnbdfftnb.png">
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        darkBg: '#050c17',
-                        cardBg: 'rgba(15, 23, 42, 0.75)',
-                    },
-                    fontFamily: {
-                        sans: ['Poppins', 'Mukta', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body {
-            font-family: 'Poppins', 'Mukta', sans-serif;
-            background: radial-gradient(circle at top, #0d213a 0%, #050c17 100%);
-            color: #f8fafc;
-        }
-        .glass-header {
-            background: rgba(10, 18, 30, 0.85);
-            backdrop-filter: blur(16px);
-        }
-        .glass-card {
-            background: linear-gradient(145deg, rgba(30, 41, 59, 0.6), rgba(15, 23, 42, 0.8));
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .glass-card:hover {
-            border-color: rgba(56, 189, 248, 0.4);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 0 15px rgba(56, 189, 248, 0.2);
-        }
-    </style>
+    <title>खबरें फटाफट - Latest News</title>
 </head>
-<body class="antialiased flex flex-col min-h-screen">
+<body style="font-family: 'Segoe UI', Arial, sans-serif; background-color: #0d213a; color: #ffffff; margin: 0; padding: 20px;">
 
-    <!-- ================= HEADER / NAVBAR ================= -->
-    <header class="sticky top-0 z-50 glass-header border-b border-slate-800 shadow-xl">
-        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                
-                <!-- NEW MODERN SVG LOGO -->
-                <a href="index.html" class="flex items-center space-x-2 py-1">
-                    <svg class="h-12 sm:h-14 w-auto" viewBox="0 0 650 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient id="logoTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" stop-color="#38bdf8"/>
-                                <stop offset="50%" stop-color="#818cf8"/>
-                                <stop offset="100%" stop-color="#f43f5e"/>
-                            </linearGradient>
-                            <linearGradient id="iconBg" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" stop-color="#0f172a"/>
-                                <stop offset="100%" stop-color="#1e293b"/>
-                            </linearGradient>
-                        </defs>
-                        <rect x="10" y="15" width="120" height="120" rx="24" fill="url(#iconBg)" stroke="#38bdf8" stroke-width="2.5"/>
-                        <circle cx="70" cy="75" r="38" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="4 4"/>
-                        <path d="M70 42 L70 108 M37 75 L103 75" stroke="#475569" stroke-width="1.5"/>
-                        <ellipse cx="70" cy="75" rx="35" ry="14" fill="none" stroke="#38bdf8" stroke-width="2" transform="rotate(-30 70 75)"/>
-                        <ellipse cx="70" cy="75" rx="35" ry="14" fill="none" stroke="#f43f5e" stroke-width="2" transform="rotate(30 70 75)"/>
-                        <circle cx="70" cy="75" r="7" fill="#fbbf24"/>
-                        <text x="148" y="65" font-family="'Poppins', sans-serif" font-size="28" font-weight="800" fill="#ffffff" letter-spacing="1">WORLD POLITICS</text>
-                        <text x="148" y="102" font-family="'Poppins', sans-serif" font-size="22" font-weight="700" fill="url(#logoTextGrad)" letter-spacing="2">TOUR SCIENCE</text>
-                        <circle cx="148" cy="118" r="3" fill="#38bdf8"/>
-                        <text x="158" y="122" font-family="'Poppins', sans-serif" font-size="10" font-weight="600" fill="#94a3b8" letter-spacing="1.5">GLOBAL PERSPECTIVES & DISCOVERY</text>
-                    </svg>
-                </a>
+    <div style="max-width: 800px; margin: auto;">
+        
+        <a href="index.html" style="display: inline-block; margin-bottom: 20px; color: #38bdf8; text-decoration: none; font-weight: bold; font-size: 16px;">← मुख्य पेज (Home) पर वापस जाएं</a>
 
-                <!-- Desktop Nav -->
-                <nav class="hidden md:flex items-center space-x-6 text-sm font-semibold">
-                    <a href="index.html" class="text-sky-400 border-b-2 border-sky-400 pb-1">Home</a>
-                    <a href="politics.html" class="text-slate-300 hover:text-white transition">Politics</a>
-                    <a href="janki-setu.html" class="text-slate-300 hover:text-white transition">Tours</a>
-                    <a href="ai-article.html" class="text-slate-300 hover:text-white transition">Science</a>
-                    <a href="weapons.html" class="text-slate-300 hover:text-white transition">Weapons</a>
-                    <a href="latest-news.html" class="text-rose-500 hover:text-rose-400 transition font-bold">⚡ News</a>
-                </nav>
+        <h1 style="color: #ef4444; border-bottom: 3px solid #ef4444; padding-bottom: 10px; margin-bottom: 25px;">
+            ⚡ खबरें फटाफट (Latest News)
+        </h1>
 
-                <!-- Mobile Menu Icon Button -->
-                <button onclick="toggleMobileMenu()" class="md:hidden text-slate-300 hover:text-white p-2">
-                    <i class="fa-solid fa-bars text-2xl"></i>
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Quick Icon Nav Bar (Horizontal Icons like Screenshot) -->
-        <div class="md:hidden bg-slate-900/90 border-t border-slate-800 px-2 py-2 flex justify-around items-center text-center text-xs">
-            <a href="index.html" class="text-amber-400 flex flex-col items-center">
-                <i class="fa-solid fa-house text-base"></i>
-                <span class="mt-1 font-semibold">Home</span>
-            </a>
-            <a href="politics.html" class="text-slate-300 hover:text-white flex flex-col items-center">
-                <i class="fa-solid fa-building-columns text-base"></i>
-                <span class="mt-1">Politics</span>
-            </a>
-            <a href="janki-setu.html" class="text-slate-300 hover:text-white flex flex-col items-center">
-                <i class="fa-solid fa-suitcase text-base"></i>
-                <span class="mt-1">Tours</span>
-            </a>
-            <a href="ai-article.html" class="text-slate-300 hover:text-white flex flex-col items-center">
-                <i class="fa-solid fa-atom text-base"></i>
-                <span class="mt-1">Science</span>
-            </a>
-            <a href="weapons.html" class="text-slate-300 hover:text-white flex flex-col items-center">
-                <i class="fa-solid fa-shield-halved text-base"></i>
-                <span class="mt-1">Weapons</span>
-            </a>
-            <a href="latest-news.html" class="text-rose-500 flex flex-col items-center font-bold">
-                <i class="fa-solid fa-bolt text-base"></i>
-                <span class="mt-1">News</span>
-            </a>
-        </div>
-
-        <!-- Hidden Mobile Full Dropdown -->
-        <div id="mobileMenu" class="hidden bg-slate-900 border-b border-slate-800 px-4 py-4 space-y-3">
-            <a href="index.html" class="block font-bold text-sky-400">Home</a>
-            <a href="politics.html" class="block font-medium text-slate-300">Politics (राजनीति)</a>
-            <a href="janki-setu.html" class="block font-medium text-slate-300">Tours (पर्यटन)</a>
-            <a href="ai-article.html" class="block font-medium text-slate-300">Science (विज्ञान)</a>
-            <a href="weapons.html" class="block font-medium text-slate-300">Weapons (घातक हथियार)</a>
-            <a href="latest-news.html" class="block font-bold text-rose-500">⚡ खबरें फटाफट</a>
-        </div>
-    </header>
-
-    <!-- ================= HERO & BUTTONS SECTION ================= -->
-    <main class="flex-grow flex flex-col items-center justify-center px-4 py-10 text-center">
-        <div class="max-w-3xl mx-auto space-y-6">
-            
-            <!-- Top Tagline -->
-            <div class="text-amber-400 font-extrabold text-xs sm:text-sm tracking-widest uppercase">
-                EXPLORING GLOBAL POLITICS, TRAVEL FRONTIERS, AND SCIENTIFIC DISCOVERIES
-            </div>
-
-            <!-- Main Hindi Heading -->
-            <h1 class="text-2xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-sky-300 to-teal-200 leading-tight">
-                वैश्विक राजनीति, यात्रा सीमाओं और वैज्ञानिक खोजों की खोज
-            </h1>
-
-            <p class="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed">
-                Delivering curated perspectives, exceptional tour guides, and cutting-edge science. Uncover the intricate web of global events, plan unforgettable journeys, and embrace the future of technology.
+        <!-- पहली खबर -->
+        <div style="background: #1e293b; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); margin-bottom: 20px; border-top: 4px solid #38bdf8;">
+            <span style="background: #38bdf8; color: #0f172a; padding: 4px 10px; border-radius: 4px; font-size: 12px; font-weight: bold;">अर्थव्यवस्था / विश्व बैंक रिपोर्ट</span>
+            <h2 style="color: #ffffff; font-size: 20px; margin-top: 10px;">
+                भारत में गरीबी पर विश्व बैंक की बड़ी रिपोर्ट: 12 वर्षों में 49.6 करोड़ लोग अत्यधिक गरीबी से बाहर
+            </h2>
+            <p style="color: #94a3b8; font-size: 14px;">प्रकाशित तारीख: 31 अक्टूबर 2026</p>
+            <p style="color: #cbd5e1; font-size: 15px; line-height: 1.6;">
+                विश्व बैंक की ताजा रिपोर्ट के अनुसार, भारत ने गरीबी उन्मूलन के क्षेत्र में ऐतिहासिक सफलता हासिल की है। 2011 से 2023 के दौरान देश में अत्यधिक गरीबी की दर 27.1% से घटकर महज 2.6% रह गई है...
             </p>
-
-            <!-- ================= 2x2 BUTTONS GRID (Side by Side) ================= -->
-            <div class="grid grid-cols-2 gap-3 sm:gap-4 max-w-xl mx-auto pt-4">
-                
-                <!-- 1. Politics Card -->
-                <a href="politics.html" class="glass-card rounded-2xl p-4 flex flex-col items-center justify-between h-40 relative overflow-hidden transition group">
-                    <div class="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-transparent opacity-60"></div>
-                    <span class="text-lg sm:text-xl font-extrabold text-white z-10">पॉलिटिक्स</span>
-                    <div class="z-10 text-amber-400 text-4xl sm:text-5xl group-hover:scale-110 transition duration-300 my-auto">
-                        <i class="fa-solid fa-landmark"></i>
-                    </div>
-                </a>
-
-                <!-- 2. Tour Card (Link to Rishikesh Janki Setu) -->
-                <a href="janki-setu.html" class="glass-card rounded-2xl p-4 flex flex-col items-center justify-between h-40 relative overflow-hidden transition group">
-                    <div class="absolute inset-0 bg-gradient-to-br from-teal-500/20 to-transparent opacity-60"></div>
-                    <span class="text-lg sm:text-xl font-extrabold text-white z-10">टूर</span>
-                    <div class="z-10 text-teal-400 text-4xl sm:text-5xl group-hover:scale-110 transition duration-300 my-auto">
-                        <i class="fa-solid fa-gopuram"></i>
-                    </div>
-                </a>
-
-                <!-- 3. Science Card -->
-                <a href="ai-article.html" class="glass-card rounded-2xl p-4 flex flex-col items-center justify-between h-40 relative overflow-hidden transition group">
-                    <div class="absolute inset-0 bg-gradient-to-br from-sky-500/20 to-transparent opacity-60"></div>
-                    <span class="text-lg sm:text-xl font-extrabold text-white z-10">साइंस</span>
-                    <div class="z-10 text-sky-400 text-4xl sm:text-5xl group-hover:scale-110 transition duration-300 my-auto">
-                        <i class="fa-solid fa-dna"></i>
-                    </div>
-                </a>
-
-                <!-- 4. Weapons Card -->
-                <a href="weapons.html" class="glass-card rounded-2xl p-4 flex flex-col items-center justify-between h-40 relative overflow-hidden transition group">
-                    <div class="absolute inset-0 bg-gradient-to-br from-rose-500/20 to-transparent opacity-60"></div>
-                    <span class="text-lg sm:text-xl font-extrabold text-white z-10">वेपन्स</span>
-                    <div class="z-10 text-rose-500 text-4xl sm:text-5xl group-hover:scale-110 transition duration-300 my-auto">
-                        <i class="fa-solid fa-jet-fighter"></i>
-                    </div>
-                </a>
-
-            </div>
-
-            <!-- Full Width Latest News Button -->
-            <div class="max-w-xl mx-auto pt-2">
-                <a href="latest-news.html" class="w-full bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-500 hover:to-rose-600 text-white font-extrabold py-3.5 px-6 rounded-2xl shadow-lg shadow-rose-900/40 flex items-center justify-center space-x-3 text-lg transition transform hover:-translate-y-0.5 border border-rose-500/40">
-                    <i class="fa-solid fa-bolt text-yellow-300 text-xl animate-bounce"></i>
-                    <span>नवीनतम खबरें फटाफट</span>
-                </a>
-            </div>
-
+            <a href="poverty-report.html" style="display: inline-block; background: #38bdf8; color: #0f172a; font-weight: bold; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-size: 14px; margin-top: 5px;">पूरी खबर पढ़ें →</a>
         </div>
-    </main>
 
-    <!-- Footer -->
-    <footer class="bg-slate-950 border-t border-slate-800 py-4 text-center text-slate-500 text-xs">
-        <p>&copy; 2026 World Politics & Tour Science. All rights reserved.</p>
-    </footer>
+        <!-- दूसरी खबर -->
+        <div style="background: #1e293b; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); margin-bottom: 20px; border-top: 4px solid #f97316;">
+            <span style="background: #f97316; color: white; padding: 4px 10px; border-radius: 4px; font-size: 12px; font-weight: bold;">जयंती विशेष</span>
+            <h2 style="color: #ffffff; font-size: 20px; margin-top: 10px;">
+                लौह पुरुष सरदार वल्लभभाई पटेल की 151वीं जयंती: जानिए भारत के एकीकरण की गाथा
+            </h2>
+            <p style="color: #94a3b8; font-size: 14px;">तारीख: 31 अक्टूबर 2026</p>
+            <a href="sardar-patel.html" style="display: inline-block; background: #f97316; color: white; font-weight: bold; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-size: 14px; margin-top: 5px;">पूरी खबर पढ़ें →</a>
+        </div>
 
-    <!-- Mobile Menu JS -->
-    <script>
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        }
-    </script>
+        <!-- तीसरी खबर -->
+        <div style="background: #1e293b; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); margin-bottom: 20px; border-top: 4px solid #ef4444;">
+            <span style="background: #ef4444; color: white; padding: 4px 10px; border-radius: 4px; font-size: 12px; font-weight: bold;">ब्रेकिंग न्यूज़</span>
+            <h2 style="color: #ffffff; font-size: 20px; margin-top: 10px;">
+                उज्जैन: खड़े हनुमान मंदिर पर रात के अंधेरे में फिर गरमाया विवाद, मूर्ति हटाने को लेकर हुई हाई-टेक जांच
+            </h2>
+            <p style="color: #94a3b8; font-size: 14px;">तारीख: 29 अक्टूबर 2026</p>
+            <img src="hannuman.png" alt="Khade Hanuman Ujjain" style="width: 100%; height: auto; border-radius: 8px; margin: 10px 0;">
+            <p style="color: #cbd5e1; font-size: 15px; line-height: 1.6;">
+                सोमवार और मंगलवार की दरमियानी रात करीब 12:30 बजे भोपाल से आई विशेषज्ञों की टीम और प्रशासनिक अमले ने मंदिर पहुंचकर आधुनिक उपकरणों से जांच की...
+            </p>
+            <a href="ujjain-hanuman.html" style="display: inline-block; background: #ef4444; color: white; font-weight: bold; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-size: 14px; margin-top: 5px;">पूरी खबर पढ़ें →</a>
+        </div>
+
+    </div>
+
 </body>
 </html>
