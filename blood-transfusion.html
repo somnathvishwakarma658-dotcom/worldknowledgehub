@@ -161,8 +161,43 @@
         <h2 class="text-2xl font-bold text-white mb-4">🏥 6. मानव शरीर में होने वाली छोटी से बड़ी सभी बीमारियाँ</h2>
         <div class="space-y-4 mb-10">
             
-            <div class="bg-slate-900/40 p-4 rounded-xl border border-slate-700">
-                <h3 class="text-lg font-bold text-red-400">1. संक्रामक और मौसमी बीमारियाँ (Infectious Diseases)</h3>
+            <!-- संक्रामक और मौसमी बीमारियाँ - क्लिक करने योग्य बटन (Toggle Button) -->
+<div class="bg-slate-900/40 p-4 rounded-xl border border-slate-700">
+    <button onclick="toggleInfectiousSection()" class="w-full flex justify-between items-center text-left focus:outline-none">
+        <h3 class="text-lg font-bold text-red-400">1. संक्रामक और मौसमी बीमारियाँ (Infectious Diseases)</h3>
+        <span id="arrow-icon" class="text-red-400 font-bold text-xl transition-transform duration-300">&#9662;</span>
+    </button>
+    
+    <div id="infectious-content" class="hidden mt-3 pt-3 border-t border-slate-700 text-sm text-slate-300 space-y-2">
+        <p><strong>सामान्य:</strong> सर्दी-जुकाम, फ्लू, वायरल बुखार, खांसी[span_3](start_span)[span_3](end_span)।</p>
+        <p><strong>मच्छर व परजीवी जनित:</strong> मलेरिया, डेंगू, चिकनगुनिया, फाइलेरिया[span_4](start_span)[span_4](end_span)。</p>
+        <p><strong>बैक्टीरियल:</strong> टाइफाइड, टीबी (Tuberculosis), हैजा, टेटनस, डिप्थीरिया[span_5](start_span)[span_5](end_span)。</p>
+        <p><strong>वायरल:</strong> चिकन पॉक्स, खसरा, रेबीज, पोलियो, हेपेटाइटिस (A, B, C), एचआईवी/एड्स, कोविड-19[span_6](start_span)[span_6](end_span)。</p>
+        <p><strong>फंगल:</strong> दाद (Ringworm), खुजली, एथलीट फुट[span_7](start_span)[span_7](end_span)。</p>
+        
+        <div class="mt-3 p-3 bg-slate-900/60 rounded-lg border border-slate-800">
+            <p class="font-semibold text-white mb-1">कारण एवं उपचार:</p>
+            <p><strong>कैसे होती हैं:</strong> सर्दी-जुकाम हवा/संपर्क से, मलेरिया-डेंगू मच्छरों से, टाइफाइड-हैजा दूषित पानी से और टीबी हवा के जरिए फैलती है[span_8](start_span)[span_8](end_span)。</p>
+            <p class="mt-1"><strong>उपचार:</strong> पैरासिटामोल, आराम, एंटीबायोटिक्स (टाइफाइड/टीबी के लिए), मच्छर नियंत्रण और टीकाकरण।</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleInfectiousSection() {
+        const content = document.getElementById('infectious-content');
+        const arrow = document.getElementById('arrow-icon');
+        
+        if (content.classList.contains('hidden')) {
+            content.classList.remove('hidden');
+            arrow.style.transform = 'rotate(180deg)';
+        } else {
+            content.classList.add('hidden');
+            arrow.style.transform = 'rotate(0deg)';
+        }
+    }
+</script>
+</h3>
                 <p class="text-sm text-slate-300 mt-2">
                     <strong>सामान्य:</strong> सर्दी-जुकाम, फ्लू, वायरल बुखार, खांसी।<br>
                     <strong>मच्छर व परजीवी जनित:</strong> मलेरिया, डेंगू, चिकनगुनिया, फाइलेरिया।<br>
