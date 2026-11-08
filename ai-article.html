@@ -171,118 +171,94 @@
             </div>
         </article>
 
-        <!-- INTERACTIVE HUMAN & ANIMAL FACTS SECTION -->
-        <section class="mb-16 bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-950 p-6 sm:p-10 rounded-3xl border border-indigo-500/50 shadow-2xl">
-            <!-- Main Toggle Header -->
-            <button onclick="toggleFactsAccordion()" class="w-full flex justify-between items-center text-left focus:outline-none group">
-                <div class="flex items-center space-x-4">
-                    <div class="bg-indigo-600/30 p-3 rounded-2xl border border-indigo-500/30 text-indigo-400 text-2xl group-hover:bg-indigo-600 group-hover:text-white transition">
-                        <i class="fa-solid fa-brain"></i>
+        <!-- SEPARATE FOLDERS / CARDS SECTION FOR HUMAN & ANIMAL FACTS -->
+        <section class="mb-16">
+            <div class="text-center mb-10">
+                <span class="text-indigo-400 font-bold text-xs tracking-widest uppercase bg-indigo-950/80 px-4 py-1.5 rounded-full border border-indigo-500/30">जीव विज्ञान एवं शरीर रचना</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">मानव शरीर एवं जीव-जंतुओं के अलग-अलग फोल्डर</h2>
+                <p class="text-slate-400 mt-2">नीचे दिए गए अलग-अलग फोल्डर/बटन पर क्लिक करके उनकी विस्तृत जानकारियाँ देखें:</p>
+            </div>
+
+            <!-- Two Separate Folders Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- 📁 फोल्डर 1: मानव शरीर (क्लिक करने पर Blood Transfusion खुलेगा) -->
+                <a href="blood-transfusion.html" class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 p-8 rounded-3xl border-2 border-indigo-500/50 shadow-2xl hover:border-indigo-400 hover:scale-[1.02] transition duration-300 group block">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="bg-indigo-600 p-4 rounded-2xl text-white text-3xl shadow-lg group-hover:rotate-6 transition">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <div>
+                            <span class="text-indigo-400 font-bold text-xs tracking-wider uppercase">फोल्डर - 01</span>
+                            <h3 class="text-2xl font-extrabold text-white group-hover:text-indigo-300 transition">मानव शरीर एवं रक्त संचार</h3>
+                        </div>
                     </div>
-                    <div>
-                        <span class="text-indigo-400 font-bold text-xs tracking-widest uppercase">जीव विज्ञान एवं शरीर रचना</span>
-                        <h2 class="text-2xl sm:text-3xl font-extrabold text-white group-hover:text-indigo-300 transition">
-                            मानव एवं जीव-जंतु शरीर के अद्भुत तथ्य
-                        </h2>
+                    <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-6">
+                        मानव शरीर की संरचना, 8 प्रमुख ब्लड ग्रुप्स, ब्लड ट्रांसफ्यूजन प्रक्रिया, जीन और सभी प्रमुख बीमारियों के विस्तृत कारणों व उपचार को जानने के लिए यहाँ क्लिक करें।
+                    </p>
+                    <div class="inline-flex items-center gap-2 text-indigo-400 font-bold text-sm group-hover:text-indigo-300">
+                        <span>पेज खोलें (Open Folder)</span>
+                        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </a>
+
+                <!-- 📁 फोल्डर 2: जीव-जंतुओं के अद्भुत तथ्य (Interactive Folder) -->
+                <div class="bg-gradient-to-br from-slate-900 via-emerald-950 to-slate-900 p-8 rounded-3xl border-2 border-emerald-500/50 shadow-2xl">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="bg-emerald-600 p-4 rounded-2xl text-white text-3xl shadow-lg">
+                            <i class="fa-solid fa-paw"></i>
+                        </div>
+                        <div>
+                            <span class="text-emerald-400 font-bold text-xs tracking-wider uppercase">फोल्डर - 02</span>
+                            <h3 class="text-2xl font-extrabold text-white">जीव-जंतुओं के अद्भुत तथ्य</h3>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-6">
+                        दुनियाभर के अनोखे जीव-जंतुओं, उनकी अजीब आदतों और विज्ञान से जुड़े रोचक रहस्यों के बारे में नीचे दिए गए बटन से विस्तार से पढ़ें।
+                    </p>
+                    <button onclick="toggleAnimalFolder()" id="animal-folder-btn" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <span>जीव-जंतुओं के तथ्य देखें</span>
+                    </button>
+
+                    <!-- Animal Facts Hidden Folder Content -->
+                    <div id="animal-folder-content" class="hidden mt-6 pt-6 border-t border-slate-700 space-y-3 text-slate-300 text-sm">
+                        <div class="bg-slate-900/90 p-4 rounded-xl border border-emerald-500/30">
+                            <strong>🐋 ब्लू व्हेल:</strong> इसका दिल एक कार के आकार का होता है और इसकी धड़कन 2 मील दूर से सुनी जा सकती है।
+                        </div>
+                        <div class="bg-slate-900/90 p-4 rounded-xl border border-emerald-500/30">
+                            <strong>🐙 ऑक्टोपस:</strong> इस जीव के पास 3 दिल, 9 दिमाग होते हैं और इसका खून नीले रंग का होता है।
+                        </div>
+                        <div class="bg-slate-900/90 p-4 rounded-xl border border-emerald-500/30">
+                            <strong>🐜 चींटियाँ:</strong> चींटियाँ कभी नहीं सोती हैं और उनके शरीर में फेफड़े नहीं होते हैं।
+                        </div>
                     </div>
                 </div>
-                <span id="main-facts-arrow" class="text-indigo-400 text-2xl font-bold transition-transform duration-300 ml-2">
-                    <i class="fa-solid fa-chevron-down"></i>
-                </span>
-            </button>
 
-            <!-- Collapsible Body Container -->
-            <div id="facts-collapsible" class="hidden mt-8 pt-6 border-t border-slate-700">
-                <p class="text-slate-300 text-sm md:text-base mb-6">
-                    नीचे दिए गए बटन पर क्लिक करके जानें मानव शरीर और जीव-जंतुओं से जुड़े अनोखे वैज्ञानिक तथ्य:
-                </p>
-
-                <!-- Action Buttons Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                    <button               <a href="blood-transfusion.html" class="flex items-center justify-between gap-3 bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 px-6 rounded-2xl shadow-lg border border-indigo-400 transition transform hover:-translate-y-0.5 group">
-    <div class="flex items-center gap-3">
-        <i class="fa-solid fa-user-doctor text-xl"></i>
-        <span>🧠 मानव शरीर एवं ब्लड ट्रांसफ्यूजन</span>
-    </div>
-    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
-</a>
-
-                    </button>
-                    
-                    <button onclick="showFactCategory('animal')" id="btn-animal-facts" class="flex items-center justify-center gap-3 bg-slate-800 hover:bg-slate-700 text-emerald-400 font-bold py-4 px-6 rounded-2xl shadow-lg border border-emerald-500/40 transition transform hover:-translate-y-0.5">
-                        <i class="fa-solid fa-paw text-xl"></i>
-                        <span>🐾 जीव-जंतुओं के तथ्य</span>
-                    </button>
-                </div>
-
-                <!-- Content Area: Human Facts -->
-                <div id="human-facts-content" class="bg-slate-900/90 p-6 rounded-2xl border border-indigo-500/30 space-y-4">
-                    <h3 class="text-xl font-bold text-indigo-300 border-b border-slate-700 pb-2 flex items-center gap-2">
-                        <i class="fa-solid fa-heart-pulse text-red-500"></i> मानव शरीर से जुड़े अद्भुत रहस्य:
-                    </h3>
-                    <ul class="list-disc list-inside text-slate-300 text-sm md:text-base space-y-2">
-                        <li><strong>डीएनए की लंबाई:</strong> मनुष्य के शरीर में मौजूद कुल DNA की लंबाई इतनी होती है कि उससे सूरज से प्लूटो और वापस पृथ्वी तक की दूरी तय की जा सकती है।</li>
-                        <li><strong>हृदय की क्षमता:</strong> इंसान का दिल एक दिन में लगभग 1,00,000 बार धड़कता है और पूरे जीवनकाल में लाखों गैलन रक्त पंप करता है।</li>
-                        <li><strong>हड्डियों की ताकत:</strong> इंसानी जांघ की हड्डी (Femur) कंक्रीट से भी अधिक मजबूत होती है।</li>
-                        <li><strong>त्वचा का नवीनीकरण:</strong> मानव शरीर हर घंटे में लगभग 6,00,000 त्वचा के कण छोड़ता है।</li>
-                    </ul>
-                </div>
-
-                <!-- Content Area: Animal Facts -->
-                <div id="animal-facts-content" class="hidden bg-slate-900/90 p-6 rounded-2xl border border-emerald-500/30 space-y-4">
-                    <h3 class="text-xl font-bold text-emerald-300 border-b border-slate-700 pb-2 flex items-center gap-2">
-                        <i class="fa-solid fa-hippo text-emerald-400"></i> जीव-जंतुओं की दुनिया के अनोखे तथ्य:
-                    </h3>
-                    <ul class="list-disc list-inside text-slate-300 text-sm md:text-base space-y-2">
-                        <li><strong>ब्लू व्हेल:</strong> ब्लू व्हेल का दिल एक कार के आकार का होता है और इसकी धड़कन 2 मील दूर से सुनी जा सकती है।</li>
-                        <li><strong>अक्टूबरपस:</strong> ऑक्टोपस के पास 3 दिल और 9 दिमाग होते हैं, और उनका खून नीले रंग का होता है।</li>
-                        <li><strong>चींटियाँ:</strong> चींटियाँ कभी नहीं सोती हैं और उनके पास फेफड़े नहीं होते।</li>
-                        <li><strong>चमगादड़:</strong> चमगादड़ इकलौता ऐसा स्तनधारी जीव (Mammal) है जो उड़ सकता है।</li>
-                    </ul>
-                </div>
             </div>
         </section>
 
     </main>
 
-    <!-- JavaScript for Interactive Toggle -->
+    <!-- JavaScript for Mobile Menu and Folder Toggle -->
     <script>
         function toggleMobileMenu() {
             const menu = document.getElementById('mobileMenu');
             menu.classList.toggle('hidden');
         }
 
-        function toggleFactsAccordion() {
-            const content = document.getElementById('facts-collapsible');
-            const arrow = document.getElementById('main-facts-arrow');
+        function toggleAnimalFolder() {
+            const content = document.getElementById('animal-folder-content');
+            const btn = document.getElementById('animal-folder-btn');
             
             if (content.classList.contains('hidden')) {
                 content.classList.remove('hidden');
-                arrow.style.transform = 'rotate(180deg)';
+                btn.innerHTML = '<i class="fa-solid fa-folder-closed"></i> <span>त तथ्य छुपाएं</span>';
+                btn.className = "w-full bg-slate-800 hover:bg-slate-700 text-emerald-400 font-bold py-3 px-6 rounded-xl shadow-lg transition flex items-center justify-center gap-2 border border-emerald-500/40";
             } else {
                 content.classList.add('hidden');
-                arrow.style.transform = 'rotate(0deg)';
-            }
-        }
-
-        function showFactCategory(category) {
-            const humanContent = document.getElementById('human-facts-content');
-            const animalContent = document.getElementById('animal-facts-content');
-            const humanBtn = document.getElementById('btn-human-facts');
-            const animalBtn = document.getElementById('btn-animal-facts');
-
-            if (category === 'human') {
-                humanContent.classList.remove('hidden');
-                animalContent.classList.add('hidden');
-                
-                humanBtn.className = "flex items-center justify-center gap-3 bg-indigo-600 text-white font-bold py-4 px-6 rounded-2xl shadow-lg border border-indigo-400 transition transform hover:-translate-y-0.5";
-                animalBtn.className = "flex items-center justify-center gap-3 bg-slate-800 text-emerald-400 font-bold py-4 px-6 rounded-2xl shadow-lg border border-emerald-500/40 transition transform hover:-translate-y-0.5";
-            } else {
-                animalContent.classList.remove('hidden');
-                humanContent.classList.add('hidden');
-                
-                animalBtn.className = "flex items-center justify-center gap-3 bg-emerald-600 text-white font-bold py-4 px-6 rounded-2xl shadow-lg border border-emerald-400 transition transform hover:-translate-y-0.5";
-                humanBtn.className = "flex items-center justify-center gap-3 bg-slate-800 text-indigo-400 font-bold py-4 px-6 rounded-2xl shadow-lg border border-indigo-500/40 transition transform hover:-translate-y-0.5";
+                btn.innerHTML = '<i class="fa-solid fa-folder-open"></i> <span>जीव-जंतुओं के तथ्य देखें</span>';
+                btn.className = "w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition flex items-center justify-center gap-2";
             }
         }
     </script>
