@@ -199,9 +199,14 @@
 
                 <!-- Action Buttons Grid -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                    <button onclick="showFactCategory('human')" id="btn-human-facts" class="flex items-center justify-center gap-3 bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 px-6 rounded-2xl shadow-lg border border-indigo-400 transition transform hover:-translate-y-0.5">
-                        <i class="fa-solid fa-user-doctor text-xl"></i>
-                        <span>🧠 मानव शरीर के तथ्य</span>
+                    <button               <a href="blood-transfusion.html" class="flex items-center justify-between gap-3 bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 px-6 rounded-2xl shadow-lg border border-indigo-400 transition transform hover:-translate-y-0.5 group">
+    <div class="flex items-center gap-3">
+        <i class="fa-solid fa-user-doctor text-xl"></i>
+        <span>🧠 मानव शरीर एवं ब्लड ट्रांसफ्यूजन</span>
+    </div>
+    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+</a>
+
                     </button>
                     
                     <button onclick="showFactCategory('animal')" id="btn-animal-facts" class="flex items-center justify-center gap-3 bg-slate-800 hover:bg-slate-700 text-emerald-400 font-bold py-4 px-6 rounded-2xl shadow-lg border border-emerald-500/40 transition transform hover:-translate-y-0.5">
