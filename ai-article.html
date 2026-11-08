@@ -220,47 +220,4 @@
                         <i class="fa-solid fa-folder-open"></i>
                         <span>जीव-जंतुओं के तथ्य देखें</span>
                     </button>
-
-                    <!-- Animal Facts Hidden Folder Content -->
-                    <div id="animal-folder-content" class="hidden mt-6 pt-6 border-t border-slate-700 space-y-3 text-slate-300 text-sm">
-                        <div class="bg-slate-900/90 p-4 rounded-xl border border-emerald-500/30">
-                            <strong>🐋 ब्लू व्हेल:</strong> इसका दिल एक कार के आकार का होता है और इसकी धड़कन 2 मील दूर से सुनी जा सकती है।
-                        </div>
-                        <div class="bg-slate-900/90 p-4 rounded-xl border border-emerald-500/30">
-                            <strong>🐙 ऑक्टोपस:</strong> इस जीव के पास 3 दिल, 9 दिमाग होते हैं और इसका खून नीले रंग का होता है।
-                        </div>
-                        <div class="bg-slate-900/90 p-4 rounded-xl border border-emerald-500/30">
-                            <strong>🐜 चींटियाँ:</strong> चींटियाँ कभी नहीं सोती हैं और उनके शरीर में फेफड़े नहीं होते हैं।
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <!-- JavaScript for Mobile Menu and Folder Toggle -->
-    <script>
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        }
-
-        function toggleAnimalFolder() {
-            const content = document.getElementById('animal-folder-content');
-            const btn = document.getElementById('animal-folder-btn');
-            
-            if (content.classList.contains('hidden')) {
-                content.classList.remove('hidden');
-                btn.innerHTML = '<i class="fa-solid fa-folder-closed"></i> <span>त तथ्य छुपाएं</span>';
-                btn.className = "w-full bg-slate-800 hover:bg-slate-700 text-emerald-400 font-bold py-3 px-6 rounded-xl shadow-lg transition flex items-center justify-center gap-2 border border-emerald-500/40";
-            } else {
-                content.classList.add('hidden');
-                btn.innerHTML = '<i class="fa-solid fa-folder-open"></i> <span>जीव-जंतुओं के तथ्य देखें</span>';
-                btn.className = "w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition flex items-center justify-center gap-2";
-            }
-        }
-    </script>
-</body>
-</html>
+>
