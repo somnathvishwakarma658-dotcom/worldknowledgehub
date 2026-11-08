@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>सांपों की रहस्यमयी दुनिया और उनके खतरनाक जहर - World Politics & Tour Science</title>
+    <title>सांपों की रहस्यमयी दुनिया (Snakes & Mysteries) - World Politics & Tour Science</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://worldpoliticstourscience.vercel.app/Gemini_Generated_Image_ftnbdffnbdfftnb.png">
     <!-- Tailwind CSS CDN -->
@@ -38,7 +38,7 @@
             background-color: #081422;
         }
         .glass {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(13, 37, 63, 0.95);
             backdrop-filter: blur(12px);
         }
     </style>
@@ -46,7 +46,7 @@
 <body class="text-slate-100 antialiased flex flex-col min-h-screen bg-slate-900">
 
     <!-- ================= NAVBAR ================= -->
-    <header class="sticky top-0 z-50 glass shadow-md border-b border-slate-200">
+    <header class="sticky top-0 z-50 glass shadow-md border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20 sm:h-24">
                 
@@ -67,7 +67,7 @@
                                 </linearGradient>
                             </defs>
                             <circle cx="350" cy="145" r="132" fill="url(#bgRingGrad)" stroke="url(#goldGrad)" stroke-width="3"/>
-                            <text x="350" y="300" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="34" font-weight="900" fill="#0D253F" letter-spacing="3">WORLD POLITICS</text>
+                            <text x="350" y="300" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="34" font-weight="900" fill="#ffffff" letter-spacing="3">WORLD POLITICS</text>
                             <text x="350" y="340" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="30" font-weight="800" fill="#C59B27" letter-spacing="4">TOUR SCIENCE</text>
                         </svg>
                     </div>
@@ -75,15 +75,15 @@
 
                 <!-- Desktop Menu -->
                 <nav class="hidden md:flex items-center space-x-6">
-                    <a href="index.html" class="font-bold text-slate-700 hover:text-primary transition-colors py-2">Home</a>
-                    <a href="snakes-mysteries.html" class="font-bold text-emerald-600 border-b-2 border-emerald-500 py-2">🐍 सांपों के रहस्य</a>
-                    <a href="history.html" class="font-bold text-slate-700 hover:text-amber-600 transition-colors py-2">🏛️ इतिहास</a>
-                    <a href="latest-news.html" class="font-bold text-red-600 hover:text-red-700 transition-colors py-2">⚡ खबरें फटाफट</a>
+                    <a href="index.html" class="font-bold text-slate-300 hover:text-emerald-400 transition-colors py-2">Home</a>
+                    <a href="snakes-mysteries.html" class="font-bold text-emerald-400 border-b-2 border-emerald-500 py-2">🐍 सांपों के रहस्य</a>
+                    <a href="history.html" class="font-bold text-slate-300 hover:text-amber-400 transition-colors py-2">🏛️ इतिहास</a>
+                    <a href="latest-news.html" class="font-bold text-red-500 hover:text-red-400 transition-colors py-2">⚡ खबरें फटाफट</a>
                 </nav>
 
                 <!-- Mobile Hamburger Button -->
                 <div class="md:hidden flex items-center">
-                    <button id="menuBtn" onclick="toggleMobileMenu()" class="text-slate-700 hover:text-primary focus:outline-none p-2">
+                    <button id="menuBtn" onclick="toggleMobileMenu()" class="text-slate-300 hover:text-emerald-400 focus:outline-none p-2">
                         <i class="fa-solid fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -91,16 +91,16 @@
         </div>
 
         <!-- Mobile Menu Dropdown -->
-        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-2">
-            <a href="index.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">Home</a>
-            <a href="snakes-mysteries.html" class="block font-bold text-emerald-600 hover:bg-slate-50 px-3 py-2 rounded-md">🐍 सांपों की रहस्यमयी दुनिया</a>
-            <a href="history.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">🏛️ इतिहास और रहस्य</a>
-            <a href="latest-news.html" class="block font-bold text-red-600 hover:bg-slate-50 px-3 py-2 rounded-md">⚡ खबरें फटाफट</a>
+        <div id="mobileMenu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-2">
+            <a href="index.html" class="block font-bold text-slate-300 hover:bg-slate-800 px-3 py-2 rounded-md">Home</a>
+            <a href="snakes-mysteries.html" class="block font-bold text-emerald-400 hover:bg-slate-800 px-3 py-2 rounded-md">🐍 सांपों की रहस्यमयी दुनिया</a>
+            <a href="history.html" class="block font-bold text-slate-300 hover:bg-slate-800 px-3 py-2 rounded-md">🏛️ इतिहास और रहस्य</a>
+            <a href="latest-news.html" class="block font-bold text-red-500 hover:bg-slate-800 px-3 py-2 rounded-md">⚡ खबरें फटाफट</a>
         </div>
     </header>
 
     <!-- ================= ARTICLE CONTENT ================= -->
-    <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 py-10 w-full">
+    <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 py-10 w-full">
         
         <!-- Back Button -->
         <div class="mb-6">
@@ -109,93 +109,158 @@
             </a>
         </div>
 
-        <!-- Article Header -->
-        <article class="bg-slate-800/80 border border-slate-700 rounded-3xl p-6 sm:p-10 shadow-2xl">
-            <div class="mb-6 text-center sm:text-left">
-                <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider inline-block mb-3">
-                    🐍 वन्यजीव एवं खतरनाक जीव
-                </span>
-                <h1 class="text-2xl sm:text-4xl font-extrabold text-white leading-tight font-['Mukta'] mb-4">
-                    सांपों की रहस्यमयी दुनिया: दुनिया के सबसे जहरीले सांप और उनके हैरान करने वाले सच
-                </h1>
-                <div class="flex items-center text-xs sm:text-sm text-slate-400 space-x-4 border-b border-slate-700 pb-4">
-                    <span><i class="fa-regular fa-user text-emerald-400 mr-1"></i> सोम विश्वकर्मा</span>
-                    <span><i class="fa-regular fa-clock text-emerald-400 mr-1"></i> 5 मिनट पढ़ने का समय</span>
+        <!-- Title Section -->
+        <div class="text-center mb-10">
+            <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider inline-block mb-3">
+                🐍 रहस्यमयी जीव एवं विज्ञान
+            </span>
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-white leading-tight font-['Mukta'] mb-4">
+                सांपों की रहस्यमयी दुनिया (Snakes & Mysteries)
+            </h1>
+            <p class="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto">
+                दुनिया में सांपों की 4,200 से अधिक प्रजातियाँ पाई जाती हैं। जानिए इनकी 5 प्रमुख श्रेणियाँ, शिकार करने का तरीका, दिनचर्या और इनके हैरान कर देने वाले सच।
+            </p>
+        </div>
+
+        <!-- ================= 5 CATEGORIES OF SNAKES ================= -->
+        <div class="space-y-8">
+
+            <!-- Category 1: Terrestrial & Burrowing -->
+            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl overflow-hidden shadow-xl grid grid-cols-1 md:grid-cols-12 items-center">
+                <div class="md:col-span-5 h-64 md:h-full">
+                    <img src="https://images.unsplash.com/photo-1531386151447-fd76ad50012f?auto=format&fit=crop&w=800&q=80" alt="Cobra in Burrow" class="w-full h-full object-cover">
+                </div>
+                <div class="md:col-span-7 p-6 sm:p-8 space-y-3">
+                    <div class="flex items-center space-x-2 text-emerald-400 font-bold text-lg">
+                        <i class="fa-solid fa-mountain"></i>
+                        <h2>1. जमीन पर और बिलों में रहने वाले सांप</h2>
+                    </div>
+                    <p class="text-sm text-amber-400 font-semibold">प्रमुख प्रजातियाँ: Cobra, Indian Rat Snake (धामन), Russell's Viper</p>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        <strong>शिकार करने का तरीका:</strong> ये सांप अपनी जीभ से हवा में गंध सूंघकर और ज़मीन में होने वाले सूक्ष्म कंपन (Vibrations) को महसूस करके शिकार (चूहे, मेंढक) का पीछा करते हैं। जहरीले सांप डंक मारते हैं और बिना जहर वाले शिकार को निगल जाते हैं।
+                    </p>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        <strong>दिनचर्या:</strong> दिन के समय अत्यधिक गर्मी से बचने के लिए ये पुरानी दीवारों की दरारों, पत्थरों के नीचे या चूहों के बिलों में छिपे रहते हैं। सूरज ढलने पर ये भोजन की तलाश में बाहर निकलते हैं।
+                    </p>
                 </div>
             </div>
 
-            <!-- Intro Paragraph -->
-            <div class="space-y-6 text-slate-200 text-sm sm:text-base leading-relaxed">
-                ق
-                <p>
-                    धरती पर जीवों की करोड़ों प्रजातियां पाई जाती हैं, लेकिन जिस जीव का नाम सुनते ही इंसान के रोंगटे खड़े हो जाते हैं, वह है—<strong>सांप (Snake)</strong>। बिना पैरों के रेंगने वाला यह जीव जितना डरावना है, उतना ही ज्यादा रहस्यमयी भी है। प्रकृति ने इन्हें कई ऐसी अनोखी शक्तियां दी हैं जो वैज्ञानिकों को भी हैरान करती हैं। आइए जानते हैं सांपों की इस रहस्यमयी दुनिया के कुछ अनसुने और चौंकाने वाले राज।
-                </p>
-
-                <!-- Section 1 -->
-                <div class="pt-4">
-                    <h2 class="text-xl sm:text-2xl font-bold text-emerald-400 mb-3 flex items-center">
-                        <i class="fa-solid fa-skull-crossbones mr-2 text-emerald-400"></i> 1. दुनिया का सबसे जहरीला सांप: इनलैंड ताइपेन (Inland Taipan)
-                    </h2>
-                    <p class="mb-3">
-                        आम तौर पर लोग किंग कोबरा को सबसे खतरनाक मानते हैं, लेकिन जहर के मामले में ऑस्ट्रेलिया में पाया जाने वाला <strong>इनलैंड ताइपेन</strong> दुनिया का सबसे जहरीला सांप है।
-                    </p>
-                    <ul class="list-disc pl-5 space-y-2 text-slate-300">
-                        <li>इसके एक बार डंक मारने में इतना जहर निकलता है कि उससे एक साथ 100 इंसान या 2,50,000 चूहे मारे जा सकते हैं।</li>
-                        <li>हालांकि, यह सांप बहुत शर्मीला होता है और इंसानों से दूर रहता है, इसलिए इसके काटने के मामले बहुत कम सामने आते हैं।</li>
-                    </ul>
+            <!-- Category 2: Arboreal Snakes -->
+            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl overflow-hidden shadow-xl grid grid-cols-1 md:grid-cols-12 items-center">
+                <div class="md:col-span-5 h-64 md:h-full md:order-2">
+                    <img src="https://images.unsplash.com/photo-1570710891163-6d3b5c47248b?auto=format&fit=crop&w=800&q=80" alt="Green Tree Viper" class="w-full h-full object-cover">
                 </div>
-
-                <!-- Section 2 -->
-                <div class="pt-4">
-                    <h2 class="text-xl sm:text-2xl font-bold text-emerald-400 mb-3 flex items-center">
-                        <i class="fa-solid fa-eye-slash mr-2 text-emerald-400"></i> 2. सांप बिना पलकों के क्यों सोते हैं?
-                    </h2>
-                    <p>
-                        क्या आपने कभी गौर किया है कि सांप कभी अपनी आँखें बंद नहीं करते, यहाँ तक कि सोते वक्त भी उनकी आँखें खुली रहती हैं? इसके पीछे का कारण यह है कि सांपों की आँखों पर पलकें (Eyelids) नहीं होतीं। उनकी आँखें एक पारदर्शी झिल्ली (Brille) से ढकी होती हैं, जो उनकी आँखों की नमी और सुरक्षा करती है।
+                <div class="md:col-span-7 p-6 sm:p-8 space-y-3 md:order-1">
+                    <div class="flex items-center space-x-2 text-emerald-400 font-bold text-lg">
+                        <i class="fa-solid fa-tree"></i>
+                        <h2>2. पेड़ों पर रहने वाले सांप (Arboreal)</h2>
+                    </div>
+                    <p class="text-sm text-amber-400 font-semibold">प्रमुख प्रजातियाँ: Green Tree Viper, Whip Snake (हरहरा), Brown Tree Snake</p>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        <strong>शिकार करने का तरीका:</strong> इनका शरीर बहुत हल्का और पत्तों जैसा हरा होता है। ये पेड़ों की डालियों के बीच स्थिर बैठकर छुप जाते हैं। जैसे ही कोई पक्षी या छिपकली पास आती है, ये बिजली की तेजी से उस पर झपट्टा मारते हैं।
+                    </p>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        <strong>दिनचर्या:</strong> दिनभर ये धूप सेंकने और आराम करने के लिए पेड़ों की ऊँची डालियों पर कुंडली बनाकर पड़े रहते हैं। ये सुबह-शाम शिकार के लिए सबसे अधिक सक्रिय होते हैं।
                     </p>
                 </div>
-
-                <!-- Section 3 -->
-                <div class="pt-4">
-                    <h2 class="text-xl sm:text-2xl font-bold text-emerald-400 mb-3 flex items-center">
-                        <i class="fa-solid fa-ear-deaf mr-2 text-emerald-400"></i> 3. सांप बहरे होते हैं, फिर भी सपेरे की बीन पर क्यों नाचते हैं?
-                    </h2>
-                    <p class="mb-3">
-                        यह बहुत बड़ा भ्रम है कि सांप सपेरे की बीन की आवाज़ सुनकर नाचते हैं। असलियत यह है कि **सांप बहरे होते हैं** और वे हवा में मौजूद आवाज़ की तरंगों को नहीं सुन सकते। 
-                    </p>
-                    <p>
-                        तो फिर वे क्यों हिलते हैं? सांप सपेरे द्वारा हिलाई जा रही **बीन (Instrument) की गति (Movement) और कंपन (Vibration)** को देखकर उसकी तरफ आकर्षित होते हैं और खुद को बचाने या स्थिति भांपने के लिए हिलते हैं।
-                    </p>
-                </div>
-
-                <!-- Section 4 -->
-                <div class="pt-4">
-                    <h2 class="text-xl sm:text-2xl font-bold text-emerald-400 mb-3 flex items-center">
-                        <i class="fa-solid fa-bolt mr-2 text-emerald-400"></i> 4. सांप अपनी जीभ से क्यों सूंघते हैं?
-                    </h2>
-                    <p>
-                        सांपों की नाक सांस लेने के लिए होती है, लेकिन शिकार या दुश्मन की गंध का पता लगाने के लिए वे अपनी **द्वि-शाखित जीभ (Forked Tongue)** का इस्तेमाल करते हैं। वे हवा में मौजूद गंध के कणों को जीभ पर पकड़ते हैं और फिर मुंह के अंदर बने 'जैकोबसन ऑर्गन' (Jacobson's Organ) से दिमाग को सिग्नल भेजकर तुरंत भांप लेते हैं कि आसपास क्या है।
-                    </p>
-                </div>
-
-                <!-- Conclusion -->
-                <div class="pt-6 border-t border-slate-700">
-                    <h3 class="text-lg sm:text-xl font-bold text-white mb-2">निष्कर्ष</h3>
-                    <p>
-                        सांप भले ही खतरनाक जीव माने जाते हों, लेकिन पर्यावरण और पारिस्थितिकी तंत्र (Ecosystem) का संतुलन बनाए रखने में इनका बहुत बड़ा योगदान होता है। चूहों की संख्या को कंट्रोल करने में ये किसानों के प्राकृतिक मित्र भी कहे जाते हैं।
-                    </p>
-                </div>
-
             </div>
-        </article>
+
+            <!-- Category 3: Aquatic & Sea Snakes -->
+            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl overflow-hidden shadow-xl grid grid-cols-1 md:grid-cols-12 items-center">
+                <div class="md:col-span-5 h-64 md:h-full">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80" alt="Sea Snake" class="w-full h-full object-cover">
+                </div>
+                <div class="md:col-span-7 p-6 sm:p-8 space-y-3">
+                    <div class="flex items-center space-x-2 text-emerald-400 font-bold text-lg">
+                        <i class="fa-solid fa-water"></i>
+                        <h2>3. पानी और समुद्री सांप (Sea Snakes)</h2>
+                    </div>
+                    <p class="text-sm text-amber-400 font-semibold">प्रमुख प्रजातियाँ: Yellow-bellied Sea Snake, Banded Sea Krait</p>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        <strong>शिकार करने का तरीका:</strong> इनकी पूँछ चप्पू (Paddle) की तरह चपटी होती है जिससे ये पानी में तेजी से तैरते हैं। ये पानी के अंदर छोटी मछलियों को अपने अत्यंत न्यूरोटॉक्सिक जहर से लकवाग्रस्त (Paralyze) करके तुरंत खा जाते हैं।
+                    </p>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        <strong>दिनचर्या:</strong> इनका पूरा जीवन समुद्र के अंदर बीतता है। ये केवल सांस लेने के लिए कुछ सेकंड के लिए सतह पर आते हैं। दिन में ये उथले पानी या मूंगे की चट्टानों (Coral Reefs) के पास तैरना पसंद करते हैं।
+                    </p>
+                </div>
+            </div>
+
+            <!-- Category 4: Venomous Snakes -->
+            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl overflow-hidden shadow-xl grid grid-cols-1 md:grid-cols-12 items-center">
+                <div class="md:col-span-5 h-64 md:h-full md:order-2">
+                    <img src="https://images.unsplash.com/photo-1531386151447-fd76ad50012f?auto=format&fit=crop&w=800&q=80" alt="King Cobra" class="w-full h-full object-cover">
+                </div>
+                <div class="md:col-span-7 p-6 sm:p-8 space-y-3 md:order-1">
+                    <div class="flex items-center space-x-2 text-emerald-400 font-bold text-lg">
+                        <i class="fa-solid fa-skull-crossbones"></i>
+                        <h2>4. अत्यधिक जहरीले सांप (Venomous)</h2>
+                    </div>
+                    <p class="text-sm text-amber-400 font-semibold">प्रमुख प्रजातियाँ: King Cobra, Inland Taipan, Black Mamba, Krait</p>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        <strong>शिकार करने का तरीका:</strong> इनके ऊपरी जबड़े में नुकीले खोखले दांत (Fangs) होते हैं जो जहर की ग्रंथियों से जुड़े रहते हैं। डंक मारते ही जहर शिकार के न्यूरोसिस्टम या खून को जमा देता है, जिससे शिकार तुरंत शांत हो जाता है।
+                    </p>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        <strong>दिनचर्या:</strong> ये बहुत ही शांत और अपनी ऊर्जा बचाने वाले जीव हैं। बिना वजह हमला नहीं करते। एक बार बड़ा शिकार करने के बाद ये कई हफ़्तों तक बिलों या घने जंगलों में आराम फरमाते हैं।
+                    </p>
+                </div>
+            </div>
+
+            <!-- Category 5: Non-Venomous Constrictors -->
+            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl overflow-hidden shadow-xl grid grid-cols-1 md:grid-cols-12 items-center">
+                <div class="md:col-span-5 h-64 md:h-full">
+                    <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=800&q=80" alt="Python Snake" class="w-full h-full object-cover">
+                </div>
+                <div class="md:col-span-7 p-6 sm:p-8 space-y-3">
+                    <div class="flex items-center space-x-2 text-emerald-400 font-bold text-lg">
+                        <i class="fa-solid fa-shield"></i>
+                        <h2>5. बिना जहर वाले शिकारी सांप (Constrictors)</h2>
+                    </div>
+                    <p class="text-sm text-amber-400 font-semibold">प्रमुख प्रजातियाँ: Reticulated Python (अजगर), Green Anaconda, Sand Boa</p>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        <strong>शिकार करने का तरीका:</strong> इनके शरीर में जहर नहीं बल्कि मांसपेशियों की असीम ताकत होती है। ये अपने शिकार (हिरण, बकरी, बड़े चूहे) के चारों ओर अपनी कुंडली लपेटकर कसते जाते हैं, जिससे शिकार का दम घुट जाता है और फिर उसे पूरा निगल जाते हैं।
+                    </p>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        <strong>दिनचर्या:</strong> ये दिन का ज़्यादातर समय पानी के पास या घनी झाड़ियों में छिपकर सुस्त पड़े रहते हैं। शिकार पचाने की प्रक्रिया में हफ़्तों का समय लगता है, इसलिए ये बहुत कम हरकत करते हैं।
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ================= AMAZING FACTS SECTION ================= -->
+        <div class="mt-14 bg-slate-800/50 border border-slate-700/60 rounded-3xl p-6 sm:p-10">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-amber-400 text-center mb-8 font-['Mukta']">
+                ✨ सांपों के अद्भुत और हैरान कर देने वाले सच!
+            </h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="bg-slate-900/80 p-5 rounded-xl border border-slate-700">
+                    <h3 class="text-emerald-400 font-bold text-base mb-2"><i class="fa-solid fa-wind mr-2"></i> उड़ने वाला सांप (Chrysopelea)</h3>
+                    <p class="text-slate-300 text-sm">यह सांप ऊंचे पेड़ों से हवा में छलांग लगाकर अपने शरीर को चपटा कर लेता है और पैराशूट की तरह एक पेड़ से दूसरे पेड़ पर ग्लाइड करता है!</p>
+                </div>
+                <div class="bg-slate-900/80 p-5 rounded-xl border border-slate-700">
+                    <h3 class="text-emerald-400 font-bold text-base mb-2"><i class="fa-solid fa-ghost mr-2"></i> मरने का नाटक (Hognose Snake)</h3>
+                    <p class="text-slate-300 text-sm">खतरा देखते ही यह सांप पीठ के बल उल्टा लेट जाता है, जीभ बाहर निकाल लेता है और ऐसी सड़ी बदबू छोड़ता है जिससे लगे कि यह मर चुका है!</p>
+                </div>
+                <div class="bg-slate-900/80 p-5 rounded-xl border border-slate-700">
+                    <h3 class="text-emerald-400 font-bold text-base mb-2"><i class="fa-solid fa-eye-slash mr-2"></i> खुली आँखों से सोना</h3>
+                    <p class="text-slate-300 text-sm">सांपों के पास पलकें (Eyelids) नहीं होतीं। उनकी आँखों पर एक पारदर्शी झिल्ली होती है, इसलिए वे सोते समय भी आँखें खुली रखते हैं!</p>
+                </div>
+                <div class="bg-slate-900/80 p-5 rounded-xl border border-slate-700">
+                    <h3 class="text-emerald-400 font-bold text-base mb-2"><i class="fa-solid fa-volume-xmark mr-2"></i> बहरे होने का सच</h3>
+                    <p class="text-slate-300 text-sm">सांप बहरे होते हैं। सपेरे की बीन की आवाज़ वे नहीं सुन पाते, बल्कि बीन की हलचल और सपेरे के शारीरिक मूवमेंट को देखकर उसकी तरफ मुड़ते हैं!</p>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 border-t border-slate-800 py-6 text-center text-slate-400 text-sm">
+    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center text-slate-400 text-sm">
         <p>&copy; 2026 World Politics & Tour Science. Created by <strong>Som Vishwakarma</strong>. All rights reserved.</p>
     </footer>
 
-    <!-- JS for Mobile Toggle Menu -->
+    <!-- JS for Mobile Menu Toggle -->
     <script>
         function toggleMobileMenu() {
             const menu = document.getElementById('mobileMenu');
