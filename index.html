@@ -42,39 +42,35 @@
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(12px);
         }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .animate-marquee {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 25s linear infinite;
+        }
     </style>
 </head>
-<body class="text-slate-800 antialiased flex flex-col min-h-screen">
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>मेरी वेबसाइट</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-slate-900 text-slate-100">
+<body class="text-slate-100 antialiased flex flex-col min-h-screen bg-slate-900">
 
-    <!-- 👉 इस जगह पर अपना दिवाली और छठ पूजा वाला कोड पेस्ट कर दें -->
-    <div class="max-w-4xl mx-auto my-8 p-1 rounded-3xl bg-gradient-to-r from-amber-500 via-rose-500 via-purple-500 to-indigo-500 shadow-[0_0_30px_rgba(245,158,11,0.3)]">
-        <div class="bg-slate-900 rounded-[22px] p-6 md:p-10 text-center relative overflow-hidden">
-            <div class="text-3xl md:text-5xl mb-3 tracking-widest animate-pulse">🪔 ✨ 🌅 ✨ 🪔</div>
-            <h2 class="text-3xl md:text-5xl font-black bg-gradient-to-r from-amber-300 via-orange-400 to-yellow-200 bg-clip-text text-transparent drop-shadow-lg mb-2">
-                शुभ दीपावली एवं महापर्व छठ की हार्दिक शुभकामनाएँ!
-            </h2>
-            <p class="text-lg md:text-xl font-bold text-rose-400 mb-6 tracking-wide">
-                ✨ रोशनी, खुशियों और आस्था के इस महासंगम में आपका स्वागत है ✨
-            </p>
-            <!-- बाकी कार्ड वाला हिस्सा -->
+    <!-- ================= FESTIVAL BANNER ================= -->
+    <div class="max-w-4xl mx-auto my-6 px-4 w-full">
+        <div class="p-1 rounded-3xl bg-gradient-to-r from-amber-500 via-rose-500 via-purple-500 to-indigo-500 shadow-[0_0_30px_rgba(245,158,11,0.3)]">
+            <div class="bg-slate-900 rounded-[22px] p-6 md:p-8 text-center relative overflow-hidden">
+                <div class="text-2xl md:text-4xl mb-2 tracking-widest animate-pulse">🪔 ✨ 🌅 ✨ 🪔</div>
+                <h2 class="text-2xl md:text-4xl font-black bg-gradient-to-r from-amber-300 via-orange-400 to-yellow-200 bg-clip-text text-transparent drop-shadow-lg mb-2">
+                    शुभ दीपावली एवं महापर्व छठ की हार्दिक शुभकामनाएँ!
+                </h2>
+                <p class="text-sm md:text-lg font-bold text-rose-400 tracking-wide">
+                    ✨ रोशनी, खुशियों और आस्था के इस महासंगम में आपका स्वागत है ✨
+                </p>
+            </div>
         </div>
     </div>
 
-    <!-- आपकी बाकी वेबसाइट का कंटेंट यहाँ रहेगा -->
-
-</body>
-</html>
-
-   <!-- ================= NAVBAR ================= -->
+    <!-- ================= NAVBAR ================= -->
     <header class="sticky top-0 z-50 glass shadow-md border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-24">
@@ -88,20 +84,6 @@
                                     <stop offset="0%" stop-color="#0b2341"/>
                                     <stop offset="50%" stop-color="#183b68"/>
                                     <stop offset="100%" stop-color="#081528"/>
-                                </linearGradient>
-                                <linearGradient id="polGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#1e4b8a"/>
-                                    <stop offset="100%" stop-color="#0b2340"/>
-                                </linearGradient>
-                                <linearGradient id="tourGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#8ce1dc"/>
-                                    <stop offset="40%" stop-color="#219c90"/>
-                                    <stop offset="100%" stop-color="#e38c35"/>
-                                </linearGradient>
-                                <linearGradient id="sciGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#182d54"/>
-                                    <stop offset="50%" stop-color="#3b2d70"/>
-                                    <stop offset="100%" stop-color="#0a1226"/>
                                 </linearGradient>
                                 <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                                     <stop offset="0%" stop-color="#f2d06b"/>
@@ -118,11 +100,12 @@
                 </a>
 
                 <!-- Desktop Menu -->
-                <nav class="hidden md:flex items-center space-x-8">
+                <nav class="hidden md:flex items-center space-x-6 lg:space-x-8">
                     <a href="index.html" class="font-bold text-slate-700 hover:text-primary transition-colors py-2 border-b-2 border-gold">Home</a>
                     <a href="politics.html" class="font-bold text-slate-700 hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-gold">Politics</a>
                     <a href="janki-setu.html" class="font-bold text-slate-700 hover:text-secondary transition-colors py-2 border-b-2 border-transparent hover:border-gold">Tours</a>
                     <a href="ai-article.html" class="font-bold text-slate-700 hover:text-indigo-600 transition-colors py-2 border-b-2 border-transparent hover:border-gold">Science</a>
+                    <a href="history.html" class="font-bold text-amber-700 hover:text-amber-800 transition-colors py-2 border-b-2 border-transparent hover:border-amber-600">🏛️ इतिहास</a>
                     <a href="latest-news.html" class="font-bold text-red-600 hover:text-red-700 transition-colors py-2 border-b-2 border-transparent hover:border-red-600">⚡ खबरें फटाफट</a>
                 </nav>
 
@@ -141,15 +124,28 @@
             <a href="politics.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">Politics (राजनीति)</a>
             <a href="janki-setu.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">Tours (पर्यटन)</a>
             <a href="ai-article.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">Science (विज्ञान)</a>
+            <a href="history.html" class="block font-bold text-amber-600 hover:bg-slate-50 px-3 py-2 rounded-md">🏛️ इतिहास और रहस्य</a>
             <a href="weapons.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">World Weapons (विश्व के घातक हथियार)</a>
             <a href="latest-news.html" class="block font-bold text-red-600 hover:bg-slate-50 px-3 py-2 rounded-md text-lg">⚡ खबरें फटाफट (Latest News)</a>
         </div>
     </header>
 
-    <!-- ================= MAIN CONTENT & BUTTONS ================= -->
-    <main class="flex-grow flex flex-col items-center justify-center px-4 py-12 text-center">
-        <div class="max-w-4xl mx-auto space-y-8">
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="flex-grow flex flex-col items-center justify-center px-4 py-8 text-center">
+        <div class="max-w-4xl mx-auto space-y-8 w-full">
             
+            <!-- ⚡ LIVE TICKER BAR ⚡ -->
+            <div class="bg-slate-800/90 border border-sky-500/30 rounded-xl px-4 py-2.5 flex items-center space-x-3 shadow-lg overflow-hidden">
+                <span class="bg-red-600 text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider animate-pulse flex-shrink-0">
+                    ⚡ ताज़ा अपडेट
+                </span>
+                <div class="overflow-hidden whitespace-nowrap w-full text-left">
+                    <p class="text-xs sm:text-sm text-slate-300 inline-block animate-marquee">
+                        🚀 विज्ञान, वैश्विक कूटनीति, प्राचीन इतिहास के अनसुलझे रहस्य और रक्षा जगत की सबसे ताज़ा खबरें पढ़ने के लिए नीचे दिए गए कार्ड्स पर क्लिक करें!
+                    </p>
+                </div>
+            </div>
+
             <!-- Hero Heading -->
             <div class="space-y-4">
                 <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight font-['Mukta']">
@@ -160,20 +156,19 @@
                 </p>
             </div>
 
-            <!-- Buttons Grid (राजनीति और पर्यटन - अगल-बगल) -->
+            <!-- Buttons Grid Row 1 (राजनीति और पर्यटन - अगल-बगल) -->
             <div class="flex flex-row items-center justify-center gap-3 w-full max-w-xl mx-auto">
                 <a href="politics.html" class="w-1/2 bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-3 px-3 sm:py-4 sm:px-6 rounded-xl shadow-lg flex items-center justify-center space-x-2 sm:space-x-3 text-sm sm:text-lg transition transform hover:-translate-y-0.5">
                     <i class="fa-solid fa-newspaper text-base sm:text-xl"></i>
                     <span>राजनीति</span>
                 </a>
-                <!-- पर्यटन बटन पर क्लिक करने पर सीधे ऋषिकेश जानकी सेतु खुलेगा -->
                 <a href="janki-setu.html" class="w-1/2 bg-teal-700 hover:bg-teal-800 text-white font-bold py-3 px-3 sm:py-4 sm:px-6 rounded-xl shadow-lg flex items-center justify-center space-x-2 sm:space-x-3 text-sm sm:text-lg transition transform hover:-translate-y-0.5">
                     <i class="fa-solid fa-compass text-base sm:text-xl"></i>
                     <span>पर्यटन</span>
                 </a>
             </div>
 
-            <!-- Buttons Grid (विज्ञान और हथियार - अगल-बगल) -->
+            <!-- Buttons Grid Row 2 (विज्ञान और हथियार - अगल-बगल) -->
             <div class="flex flex-row items-center justify-center gap-3 w-full max-w-xl mx-auto">
                 <a href="ai-article.html" class="w-1/2 bg-slate-800/80 hover:bg-slate-800 border border-slate-700 text-white font-bold py-3 px-3 sm:py-4 sm:px-6 rounded-xl shadow-lg flex items-center justify-center space-x-2 sm:space-x-3 text-sm sm:text-lg transition transform hover:-translate-y-0.5">
                     <i class="fa-solid fa-atom text-base sm:text-xl text-sky-400"></i>
@@ -185,12 +180,75 @@
                 </a>
             </div>
 
+            <!-- 🏛️ NEW FOLDER BUTTON: इतिहास और प्राचीन रहस्य (पूरा चौड़ा सुंदर बटन) -->
+            <div class="w-full max-w-xl mx-auto">
+                <a href="history.html" class="w-full bg-gradient-to-r from-amber-700 via-amber-600 to-yellow-600 hover:from-amber-600 hover:to-yellow-500 text-slate-900 font-extrabold py-3.5 px-6 rounded-xl shadow-xl flex items-center justify-center space-x-3 text-base sm:text-lg transition transform hover:-translate-y-0.5 border border-amber-400/40">
+                    <i class="fa-solid fa-landmark text-xl"></i>
+                    <span>🏛️ इतिहास और प्राचीन रहस्य (History & Ancient Mysteries)</span>
+                </a>
+            </div>
+
             <!-- Latest News Button (नीचे लाल रंग का बड़ा बटन) -->
-            <div class="w-full max-w-xl mx-auto pt-2">
+            <div class="w-full max-w-xl mx-auto pt-1">
                 <a href="latest-news.html" class="w-full bg-red-600 hover:bg-red-700 text-white font-extrabold py-4 px-6 rounded-xl shadow-xl flex items-center justify-center space-x-3 text-lg sm:text-xl transition transform hover:-translate-y-0.5 animate-pulse">
                     <i class="fa-solid fa-bolt"></i>
                     <span>खबरें फटाफट (Latest News)</span>
                 </a>
+            </div>
+
+            <!-- ================= 🧠 INTERACTIVE Q&A / QUIZ SECTION ================= -->
+            <div class="max-w-2xl mx-auto pt-8 border-t border-slate-800 text-left w-full">
+                <div class="bg-slate-800/70 border border-slate-700 rounded-2xl p-5 sm:p-6 shadow-xl">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fa-solid fa-lightbulb text-amber-400 text-xl"></i>
+                        <h3 class="text-lg sm:text-xl font-bold text-white">आज का ज्ञानवर्धक सवाल (Quiz)</h3>
+                    </div>
+                    
+                    <p class="text-sm sm:text-base text-slate-200 font-medium mb-4">
+                        ❓ <strong>सवाल:</strong> भारत द्वारा अंतरिक्ष में भेजा गया पहला उपग्रह (Satellite) कौन सा था?
+                    </p>
+
+                    <!-- Quiz Options -->
+                    <div class="space-y-2 mb-4">
+                        <button onclick="checkAnswer(this, false)" class="w-full text-left bg-slate-900 hover:bg-slate-700/80 p-3 rounded-xl text-xs sm:text-sm text-slate-300 border border-slate-700 transition flex justify-between items-center">
+                            <span>A) रोहिणी (Rohini)</span>
+                            <span class="quiz-feedback hidden">❌ गलत</span>
+                        </button>
+                        <button onclick="checkAnswer(this, true)" class="w-full text-left bg-slate-900 hover:bg-slate-700/80 p-3 rounded-xl text-xs sm:text-sm text-slate-300 border border-slate-700 transition flex justify-between items-center">
+                            <span>B) आर्यभट्ट (Aryabhata)</span>
+                            <span class="quiz-feedback hidden">✅ सही उत्तर!</span>
+                        </button>
+                        <button onclick="checkAnswer(this, false)" class="w-full text-left bg-slate-900 hover:bg-slate-700/80 p-3 rounded-xl text-xs sm:text-sm text-slate-300 border border-slate-700 transition flex justify-between items-center">
+                            <span>C) भास्कर (Bhaskara)</span>
+                            <span class="quiz-feedback hidden">❌ गलत</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= EXTRA ARTICLES LINK CARDS ================= -->
+            <div class="border-t border-slate-800 pt-8 text-left w-full">
+                <h2 class="text-xl font-bold text-indigo-400 mb-6 text-center">अन्य विशेष लेख एवं रिपोर्ट्स</h2>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <!-- Poverty Report -->
+                    <a href="poverty-report.html" class="bg-slate-800/60 hover:bg-slate-800 p-5 rounded-2xl border border-slate-700 hover:border-indigo-500/40 transition group block">
+                        <h3 class="font-bold text-white group-hover:text-indigo-400 transition mb-2">वैश्विक गरीबी रिपोर्ट</h3>
+                        <p class="text-xs text-slate-400">गरीबी और आर्थिक आंकड़ों पर विस्तृत रिपोर्ट देखें।</p>
+                    </a>
+
+                    <!-- Sardar Patel -->
+                    <a href="sardar-patel.html" class="bg-slate-800/60 hover:bg-slate-800 p-5 rounded-2xl border border-slate-700 hover:border-amber-500/40 transition group block">
+                        <h3 class="font-bold text-white group-hover:text-amber-400 transition mb-2">सरदार वल्लभभाई पटेल</h3>
+                        <p class="text-xs text-slate-400">लौह पुरुष सरदार पटेल के जीवन और योगदान के बारे में पढ़ें।</p>
+                    </a>
+
+                    <!-- Ujjain Hanuman -->
+                    <a href="ujjain-hanuman.html" class="bg-slate-800/60 hover:bg-slate-800 p-5 rounded-2xl border border-slate-700 hover:border-emerald-500/40 transition group block">
+                        <h3 class="font-bold text-white group-hover:text-emerald-400 transition mb-2">उज्जैन हनुमान मंदिर</h3>
+                        <p class="text-xs text-slate-400">उज्जैन के ऐतिहासिक और धार्मिक स्थल की पूरी जानकारी।</p>
+                    </a>
+                </div>
             </div>
 
         </div>
@@ -198,14 +256,26 @@
 
     <!-- Footer -->
     <footer class="bg-slate-900 border-t border-slate-800 py-6 text-center text-slate-400 text-sm">
-        <p>&copy; 2026 World Politics & Tour Science. All rights reserved.</p>
+        <p>&copy; 2026 World Politics & Tour Science. Created by <strong>Som Vishwakarma</strong>. All rights reserved.</p>
     </footer>
 
-    <!-- JS for Mobile Toggle Menu -->
+    <!-- JS Scripts -->
     <script>
         function toggleMobileMenu() {
             const menu = document.getElementById('mobileMenu');
             menu.classList.toggle('hidden');
+        }
+
+        function checkAnswer(button, isCorrect) {
+            const feedback = button.querySelector('.quiz-feedback');
+            feedback.classList.remove('hidden');
+            if (isCorrect) {
+                button.classList.remove('bg-slate-900');
+                button.classList.add('bg-emerald-950', 'border-emerald-500', 'text-emerald-300');
+            } else {
+                button.classList.remove('bg-slate-900');
+                button.classList.add('bg-rose-950', 'border-rose-500', 'text-rose-300');
+            }
         }
     </script>
 </body>
