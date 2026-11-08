@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>आधुनिक तकनीक एवं अंतरिक्ष विज्ञान - World Politics & Tour Science</title>
+    <title>विज्ञान, तकनीक एवं पर्यटन - World Politics & Tour Science</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://worldpoliticstourscience.vercel.app/Gemini_Generated_Image_ftnbdffnbdfftnb.png">
     <!-- Tailwind CSS CDN -->
@@ -55,6 +55,20 @@
                                     <stop offset="50%" stop-color="#183b68"/>
                                     <stop offset="100%" stop-color="#081528"/>
                                 </linearGradient>
+                                <linearGradient id="polGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#1e4b8a"/>
+                                    <stop offset="100%" stop-color="#0b2340"/>
+                                </linearGradient>
+                                <linearGradient id="tourGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#8ce1dc"/>
+                                    <stop offset="40%" stop-color="#219c90"/>
+                                    <stop offset="100%" stop-color="#e38c35"/>
+                                </linearGradient>
+                                <linearGradient id="sciGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#182d54"/>
+                                    <stop offset="50%" stop-color="#3b2d70"/>
+                                    <stop offset="100%" stop-color="#0a1226"/>
+                                </linearGradient>
                                 <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                                     <stop offset="0%" stop-color="#f2d06b"/>
                                     <stop offset="50%" stop-color="#c59b27"/>
@@ -62,6 +76,25 @@
                                 </linearGradient>
                             </defs>
                             <circle cx="350" cy="145" r="132" fill="url(#bgRingGrad)" stroke="url(#goldGrad)" stroke-width="3"/>
+                            <circle cx="350" cy="145" r="126" fill="none" stroke="#2a4a75" stroke-width="2"/>
+                            <circle cx="350" cy="145" r="122" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="2 3"/>
+                            <polygon points="350,7 344,18 356,18" fill="url(#goldGrad)"/>
+                            <polygon points="350,283 344,272 356,272" fill="url(#goldGrad)"/>
+                            <polygon points="212,145 223,139 223,151" fill="url(#goldGrad)"/>
+                            <polygon points="488,145 477,139 477,151" fill="url(#goldGrad)"/>
+                            <g transform="translate(0, 0)">
+                                <circle cx="302" cy="110" r="48" fill="url(#polGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
+                            </g>
+                            <g transform="translate(0, 0)">
+                                <circle cx="398" cy="110" r="48" fill="url(#tourGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
+                            </g>
+                            <g transform="translate(0, 0)">
+                                <circle cx="350" cy="195" r="48" fill="url(#sciGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
+                                <ellipse cx="325" cy="182" rx="14" ry="5" fill="none" stroke="#38bdf8" stroke-width="1" transform="rotate(-30 325 182)"/>
+                                <ellipse cx="325" cy="182" rx="14" ry="5" fill="none" stroke="#38bdf8" stroke-width="1" transform="rotate(30 325 182)"/>
+                                <circle cx="325" cy="182" r="2.5" fill="#f0abfc"/>
+                            </g>
+                            <polygon points="350,136 353,142 360,143 355,148 356,155 350,151 344,155 345,148 340,143 347,142" fill="url(#goldGrad)" stroke="#ffffff" stroke-width="0.8"/>
                             <text x="350" y="300" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="34" font-weight="900" fill="#0D253F" letter-spacing="3">WORLD POLITICS</text>
                             <text x="350" y="340" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="30" font-weight="800" fill="#C59B27" letter-spacing="4">TOUR SCIENCE</text>
                         </svg>
@@ -72,7 +105,10 @@
                 <nav class="hidden md:flex items-center space-x-6 lg:space-x-8">
                     <a href="index.html" class="font-bold text-slate-700 hover:text-primary transition-colors py-2">Home</a>
                     <a href="weapons.html" class="font-bold text-slate-700 hover:text-red-600 transition-colors py-2">Weapons</a>
-                    <a href="ai-article.html" class="font-bold text-slate-700 hover:text-science transition-colors py-2">Science & Facts</a>
+                    <a href="body-facts.html" class="font-bold text-slate-700 hover:text-indigo-600 transition-colors py-2">Body Facts</a>
+                    <a href="politics.html" class="font-bold text-slate-700 hover:text-primary transition-colors py-2">Politics</a>
+                    <a href="tours.html" class="font-bold text-slate-700 hover:text-secondary transition-colors py-2">Tours</a>
+                    <a href="ai-article.html" class="font-bold text-science transition-colors py-2 border-b-2 border-science">Science & Facts</a>
                 </nav>
 
                 <!-- Mobile Hamburger Button -->
@@ -88,91 +124,116 @@
         <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-2 shadow-lg">
             <a href="index.html" class="block font-bold text-slate-700 hover:bg-slate-100 px-3 py-2 rounded-md">Home</a>
             <a href="weapons.html" class="block font-bold text-red-600 hover:bg-slate-100 px-3 py-2 rounded-md">Weapons (घातक हथियार)</a>
+            <a href="body-facts.html" class="block font-bold text-indigo-600 hover:bg-slate-100 px-3 py-2 rounded-md">Body Facts (मानव शरीर)</a>
+            <a href="politics.html" class="block font-bold text-slate-700 hover:bg-slate-100 px-3 py-2 rounded-md">Politics (राजनीति)</a>
+            <a href="tours.html" class="block font-bold text-slate-700 hover:bg-slate-100 px-3 py-2 rounded-md">Tours (पर्यटन)</a>
             <a href="ai-article.html" class="block font-bold text-science hover:bg-slate-100 px-3 py-2 rounded-md">Science (विज्ञान)</a>
         </div>
     </header>
 
     <!-- ================= MAIN CONTENT ================= -->
-    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 w-full flex-grow">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 w-full flex-grow">
         
         <!-- Return Link -->
-        <a href="ai-article.html" class="inline-flex items-center mb-6 sm:mb-8 text-gold font-bold hover:underline text-sm sm:text-base">
-            <i class="fa-solid fa-arrow-left mr-2"></i> वापस विज्ञान पेज पर जाएँ
+        <a href="index.html" class="inline-flex items-center mb-6 sm:mb-8 text-gold font-bold hover:underline text-sm sm:text-base">
+            <i class="fa-solid fa-arrow-left mr-2"></i> वापस होम पेज पर जाएँ
         </a>
 
-        <!-- Page Header -->
-        <div class="text-center mb-10 pb-6 border-b border-slate-800">
-            <span class="bg-sky-950 text-sky-400 border border-sky-500/30 px-4 py-1.5 rounded-full font-bold text-xs uppercase tracking-widest">अंतरिक्ष एवं नई खोजें</span>
-            <h1 class="text-3xl sm:text-4xl font-extrabold text-sky-400 mt-4 mb-3">
-                आधुनिक तकनीक एवं अंतरिक्ष अनुसंधान
-            </h1>
-            <p class="text-slate-400 text-sm sm:text-base">
-                ब्रह्मांड के अनछुए रहस्यों, अंतरिक्ष मिशनों और नई तकनीकी खोजों की विस्तृत जानकारी।
-            </p>
-        </div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-indigo-400 mb-8 sm:mb-12 pb-4 border-b border-slate-700">
+            विज्ञान, तकनीक एवं रोचक तथ्य
+        </h1>
 
-        <div class="space-y-6">
-            <!-- Tech Card 1: Supercomputer -->
-            <div class="bg-slate-900 p-6 sm:p-8 rounded-3xl border border-sky-500/30 shadow-xl">
-                <div class="flex items-center space-x-3 mb-4">
-                    <div class="bg-sky-600/30 text-sky-400 p-3 rounded-2xl border border-sky-500/30">
-                        <i class="fa-solid fa-microchip text-xl"></i>
-                    </div>
-                    <div>
-                        <span class="text-sky-400 text-xs font-bold uppercase tracking-wider">सुपरकम्प्यूटिंग</span>
-                        <h2 class="text-xl sm:text-2xl font-bold text-white">परम-रुद्र: भारत का शक्तिशाली स्वदेशी सुपरकम्प्यूटर</h2>
-                    </div>
-                </div>
-                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-                    भारत ने C-DAC के माध्यम से क्वांटम-एन्हांस्ड तकनीक पर आधारित 'परम-रुद्र' सुपरकम्प्यूटर राष्ट्र को समर्पित किया है। यह अंतरिक्ष विज्ञान और मौसम की सटीक भविष्यवाणी जैसी जटिल गणनाओं को पल भर में हल करने में सक्षम है।
-                </p>
+        <!-- Article 1: Param-Rudra (Without Image) -->
+        <article class="bg-slate-900 p-6 sm:p-8 rounded-3xl shadow-xl mb-8 sm:mb-12 border border-slate-700">
+            <div>
+                <span class="bg-indigo-600 text-xs px-4 py-1.5 rounded-full font-bold uppercase mb-4 inline-block text-white">सुपरकम्प्यूटिंग</span>
+                <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-indigo-100">परम-रुद्र: भारत का शक्तिशाली, स्वदेशी सुपरकम्प्यूटर राष्ट्र को समर्पित</h2>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">भारत ने स्वदेशी सुपरकम्प्यूटिंग में एक ऐतिहासिक उपलब्धि हासिल की है। प्रधानमंत्री ने C-DAC द्वारा विकसित, क्वांटम-एन्हांस्ड क्षमता वाले 'परम-रुद्र' सुपरकम्प्यूटर को राष्ट्र को समर्पित किया।</p>
+            </div>
+        </article>
+
+        <!-- Article 2: AI Antibiotic (Without Image) -->
+        <article class="bg-slate-900 p-6 sm:p-8 rounded-3xl shadow-xl mb-12 sm:mb-16 border border-slate-700">
+            <div>
+                <span class="bg-purple-600 text-xs px-4 py-1.5 rounded-full font-bold uppercase mb-4 inline-block text-white">चिकित्सा और AI</span>
+                <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-purple-100">आर्टिफिशियल इंटेलिजेंस (AI) द्वारा खोजी गई, 60 वर्षों में पहली एंटीबायोटिक श्रेणी</h2>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">चिकित्सा जगत में क्रांति लाते हुए, MIT और हार्वर्ड के शोधकर्ताओं ने AI का उपयोग करके दवा-प्रतिरोधी बैक्टीरिया को नष्ट करने वाली नई एंटीबायोटिक श्रेणी की खोज की है।</p>
+            </div>
+        </article>
+
+        <!-- SEPARATE FOLDERS SECTION -->
+        <section class="mb-12 sm:mb-16">
+            <div class="text-center mb-8 sm:mb-10">
+                <span class="text-indigo-400 font-bold text-xs tracking-widest uppercase bg-indigo-950/80 px-4 py-1.5 rounded-full border border-indigo-500/30">विभाग एवं श्रेणियाँ</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-3">मानव शरीर, जीव-जंतु एवं तकनीक के फोल्डर</h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-2">नीचे दिए गए अलग-अलग फोल्डर पर क्लिक करके विस्तृत जानकारियाँ देखें:</p>
             </div>
 
-            <!-- 🚀 Clickable Card 1: Space Mission -->
-            <a href="space-mission.html" class="bg-slate-900 p-6 sm:p-8 rounded-3xl border border-indigo-500/40 shadow-xl hover:border-indigo-400 hover:scale-[1.01] transition duration-300 group block">
-                <div class="flex items-center space-x-3 mb-4">
-                    <div class="bg-indigo-600/30 text-indigo-400 p-3 rounded-2xl border border-indigo-500/30 group-hover:rotate-6 transition">
-                        <i class="fa-solid fa-rocket text-xl"></i>
+            <!-- Folders Grid (Responsive) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                
+                <!-- 📁 फोल्डर 1: मानव शरीर -->
+                <a href="blood-transfusion.html" class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 p-6 sm:p-8 rounded-3xl border-2 border-indigo-500/50 shadow-2xl hover:border-indigo-400 hover:scale-[1.01] transition duration-300 group block">
+                    <div class="flex items-center space-x-4 mb-4 sm:mb-6">
+                        <div class="bg-indigo-600 p-3 sm:p-4 rounded-2xl text-white text-2xl sm:text-3xl shadow-lg group-hover:rotate-6 transition">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <div>
+                            <span class="text-indigo-400 font-bold text-xs tracking-wider uppercase">फोल्डर - 01</span>
+                            <h3 class="text-xl sm:text-2xl font-extrabold text-white group-hover:text-indigo-300 transition">मानव शरीर एवं रक्त संचार</h3>
+                        </div>
                     </div>
-                    <div>
-                        <span class="text-indigo-400 text-xs font-bold uppercase tracking-wider">अंतरिक्ष मिशन (Space Tech)</span>
-                        <h2 class="text-xl sm:text-2xl font-bold text-white group-hover:text-indigo-300 transition">ब्रह्मांड की नई खोजें और अंतरिक्ष यात्रा</h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+                        मानव शरीर की संरचना, ब्लड ग्रुप्स, ब्लड ट्रांसफ्यूजन प्रक्रिया और स्वास्थ्य से जुड़े महत्वपूर्ण तथ्यों के लिए क्लिक करें।
+                    </p>
+                    <div class="inline-flex items-center gap-2 text-indigo-400 font-bold text-sm group-hover:text-indigo-300">
+                        <span>पेज खोलें</span>
+                        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                     </div>
-                </div>
-                <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
-                    वैज्ञानिक लगातार अंतरिक्ष में जीवन की संभावनाओं, ब्लैक होल के रहस्यों और नए ग्रहों की खोज कर रहे हैं। जेम्स वेब टेलीस्कोप और चंद्रयान जैसे अभियानों के बारे में विस्तार से पढ़ने के लिए क्लिक करें।
-                </p>
-                <div class="inline-flex items-center gap-2 text-indigo-400 font-bold text-sm group-hover:text-indigo-300">
-                    <span>नया पेज खोलें</span>
-                    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
-                </div>
-            </a>
+                </a>
 
-            <!-- 🤖 Clickable Card 2: Artificial Intelligence -->
-            <a href="ai-tech.html" class="bg-slate-900 p-6 sm:p-8 rounded-3xl border border-purple-500/40 shadow-xl hover:border-purple-400 hover:scale-[1.01] transition duration-300 group block">
-                <div class="flex items-center space-x-3 mb-4">
-                    <div class="bg-purple-600/30 text-purple-400 p-3 rounded-2xl border border-purple-500/30 group-hover:rotate-6 transition">
-                        <i class="fa-solid fa-brain text-xl"></i>
+                <!-- 📁 फोल्डर 2: जीव-जंतुओं के अद्भुत तथ्य -->
+                <a href="animal-facts.html" class="bg-gradient-to-br from-slate-900 via-emerald-950 to-slate-900 p-6 sm:p-8 rounded-3xl border-2 border-emerald-500/50 shadow-2xl hover:border-emerald-400 hover:scale-[1.01] transition duration-300 group block">
+                    <div class="flex items-center space-x-4 mb-4 sm:mb-6">
+                        <div class="bg-emerald-600 p-3 sm:p-4 rounded-2xl text-white text-2xl sm:text-3xl shadow-lg group-hover:rotate-6 transition">
+                            <i class="fa-solid fa-paw"></i>
+                        </div>
+                        <div>
+                            <span class="text-emerald-400 font-bold text-xs tracking-wider uppercase">फोल्डर - 02</span>
+                            <h3 class="text-xl sm:text-2xl font-extrabold text-white group-hover:text-emerald-300 transition">जीव-जंतुओं के अद्भुत तथ्य</h3>
+                        </div>
                     </div>
-                    <div>
-                        <span class="text-purple-400 text-xs font-bold uppercase tracking-wider">आर्टिफिशियल इंटेलिजेंस</span>
-                        <h2 class="text-xl sm:text-2xl font-bold text-white group-hover:text-purple-300 transition">AI और भविष्य की तकनीक</h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+                        दुनियाभर के अनोखे जीव-जंतुओं, उनकी अजीब आदतों और प्रकृति के रहस्यों के बारे में विस्तार से पढ़ने के लिए क्लिक करें।
+                    </p>
+                    <div class="inline-flex items-center gap-2 text-emerald-400 font-bold text-sm group-hover:text-emerald-300">
+                        <span>नया पेज खोलें</span>
+                        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                     </div>
-                </div>
-                <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
-                    कृत्रिम बुद्धिमत्ता (AI) आज चिकित्सा, अंतरिक्ष अनुसंधान और दैनिक जीवन का एक अहम हिस्सा बन चुकी है। इस क्रांतिकारी तकनीक के बारे में विस्तार से पढ़ने के लिए क्लिक करें।
-                </p>
-                <div class="inline-flex items-center gap-2 text-purple-400 font-bold text-sm group-hover:text-purple-300">
-                    <span>नया पेज खोलें</span>
-                    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
-                </div>
-            </a>
-        </div>
+                </a>
 
-        <!-- Creator Footer -->
-        <div class="text-center text-slate-500 text-xs mt-12 pt-6 border-t border-slate-800">
-            Created by <strong>Som Vishwakarma</strong>
-        </div>
+                <!-- 📁 फोल्डर 3: तकनीक (Technology) -->
+                <a href="technology.html" class="bg-gradient-to-br from-slate-900 via-sky-950 to-slate-900 p-6 sm:p-8 rounded-3xl border-2 border-sky-500/50 shadow-2xl hover:border-sky-400 hover:scale-[1.01] transition duration-300 group block md:col-span-1">
+                    <div class="flex items-center space-x-4 mb-4 sm:mb-6">
+                        <div class="bg-sky-600 p-3 sm:p-4 rounded-2xl text-white text-2xl sm:text-3xl shadow-lg group-hover:rotate-6 transition">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <div>
+                            <span class="text-sky-400 font-bold text-xs tracking-wider uppercase">फोल्डर - 03</span>
+                            <h3 class="text-xl sm:text-2xl font-extrabold text-white group-hover:text-sky-300 transition">आधुनिक तकनीक (Technology)</h3>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+                        सुपरकंप्यूटर, आर्टिफिशियल इंटेलिजेंस, अंतरिक्ष अनुसंधान और भविष्य की नई तकनीकों के बारे में पूरी जानकारी के लिए क्लिक करें।
+                    </p>
+                    <div class="inline-flex items-center gap-2 text-sky-400 font-bold text-sm group-hover:text-sky-300">
+                        <span>नया पेज खोलें</span>
+                        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </a>
+
+            </div>
+        </section>
 
     </main>
 
