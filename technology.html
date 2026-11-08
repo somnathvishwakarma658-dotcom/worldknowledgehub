@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>आधुनिक तकनीक एवं रक्षा विज्ञान - World Politics & Tour Science</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://worldpoliticstourscience.vercel.app/Gemini_Generated_Image_ftnbdffnbdfftnb.png">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Mukta & Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-fontawesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D253F',
+                        secondary: '#008080',
+                        gold: '#C59B27',
+                        science: '#4F46E5',
+                        darkBg: '#081422',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'Mukta', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Poppins', 'Mukta', sans-serif; background-color: #081422; }
+        .glass { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); }
+    </style>
+</head>
+<body class="text-white antialiased flex flex-col min-h-screen">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="sticky top-0 z-50 glass shadow-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20 sm:h-24">
+                
+                <!-- BRAND LOGO -->
+                <a href="index.html" class="flex items-center cursor-pointer py-2">
+                    <div class="flex items-center space-x-3">
+                        <svg class="h-12 sm:h-16 w-auto drop-shadow-sm" viewBox="0 0 700 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="bgRingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#0b2341"/>
+                                    <stop offset="50%" stop-color="#183b68"/>
+                                    <stop offset="100%" stop-color="#081528"/>
+                                </linearGradient>
+                                <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#f2d06b"/>
+                                    <stop offset="50%" stop-color="#c59b27"/>
+                                    <stop offset="100%" stop-color="#8a6710"/>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="350" cy="145" r="132" fill="url(#bgRingGrad)" stroke="url(#goldGrad)" stroke-width="3"/>
+                            <text x="350" y="300" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="34" font-weight="900" fill="#0D253F" letter-spacing="3">WORLD POLITICS</text>
+                            <text x="350" y="340" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="30" font-weight="800" fill="#C59B27" letter-spacing="4">TOUR SCIENCE</text>
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-6 lg:space-x-8">
+                    <a href="index.html" class="font-bold text-slate-700 hover:text-primary transition-colors py-2">Home</a>
+                    <a href="weapons.html" class="font-bold text-slate-700 hover:text-red-600 transition-colors py-2">Weapons</a>
+                    <a href="ai-article.html" class="font-bold text-slate-700 hover:text-science transition-colors py-2">Science & Facts</a>
+                </nav>
+
+                <!-- Mobile Hamburger Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menuBtn" onclick="toggleMobileMenu()" class="text-slate-700 hover:text-primary focus:outline-none p-2 rounded-lg">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-2 shadow-lg">
+            <a href="index.html" class="block font-bold text-slate-700 hover:bg-slate-100 px-3 py-2 rounded-md">Home</a>
+            <a href="weapons.html" class="block font-bold text-red-600 hover:bg-slate-100 px-3 py-2 rounded-md">Weapons (घातक हथियार)</a>
+            <a href="ai-article.html" class="block font-bold text-science hover:bg-slate-100 px-3 py-2 rounded-md">Science (विज्ञान)</a>
+        </div>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 w-full flex-grow">
+        
+        <!-- Return Link -->
+        <a href="ai-article.html" class="inline-flex items-center mb-6 sm:mb-8 text-gold font-bold hover:underline text-sm sm:text-base">
+            <i class="fa-solid fa-arrow-left mr-2"></i> वापस विज्ञान पेज पर जाएँ
+        </a>
+
+        <!-- Page Header -->
+        <div class="text-center mb-10 pb-6 border-b border-slate-800">
+            <span class="bg-sky-950 text-sky-400 border border-sky-500/30 px-4 py-1.5 rounded-full font-bold text-xs uppercase tracking-widest">एडवांस्ड टेक्नोलॉजी</span>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-sky-400 mt-4 mb-3">
+                आधुनिक तकनीक, सुपरकम्प्यूटिंग एवं रक्षा प्रणालियाँ
+            </h1>
+            <p class="text-slate-400 text-sm sm:text-base">
+                विज्ञान और तकनीक के इस युग में देश की रक्षा और सुपरकम्प्यूटिंग में हो रहे क्रांतिकारी बदलाव।
+            </p>
+        </div>
+
+        <div class="space-y-6">
+            <!-- Tech Card 1: Supercomputer -->
+            <div class="bg-slate-900 p-6 sm:p-8 rounded-3xl border border-sky-500/30 shadow-xl">
+                <div class="flex items-center space-x-3 mb-4">
+                    <div class="bg-sky-600/30 text-sky-400 p-3 rounded-2xl border border-sky-500/30">
+                        <i class="fa-solid fa-microchip text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-sky-400 text-xs font-bold uppercase tracking-wider">सुपरकम्प्यूटिंग</span>
+                        <h2 class="text-xl sm:text-2xl font-bold text-white">परम-रुद्र: भारत का शक्तिशाली स्वदेशी सुपरकम्प्यूटर</h2>
+                    </div>
+                </div>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
+                    भारत ने C-DAC के माध्यम से क्वांटम-एन्हांस्ड तकनीक पर आधारित 'परम-रुद्र' सुपरकम्प्यूटर राष्ट्र को समर्पित किया है। यह वैज्ञानिक अनुसंधान और रक्षा क्षेत्र की जटिल गणनाओं को बेहद तेजी से हल करने में सक्षम है।
+                </p>
+            </div>
+
+            <!-- Tech Card 2: Defense Technology & Weapons Link -->
+            <div class="bg-gradient-to-br from-slate-900 via-red-950 to-slate-900 p-6 sm:p-8 rounded-3xl border border-red-500/40 shadow-xl">
+                <div class="flex items-center space-x-3 mb-4">
+                    <div class="bg-red-600/30 text-red-400 p-3 rounded-2xl border border-red-500/30">
+                        <i class="fa-solid fa-shield-halved text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-red-400 text-xs font-bold uppercase tracking-wider">रक्षा तकनीक (Defense Tech)</span>
+                        <h2 class="text-xl sm:text-2xl font-bold text-white">सैन्य तकनीक और आधुनिक घातक हथियार</h2>
+                    </div>
+                </div>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+                    रक्षा तकनीक भी आधुनिक तकनीक का ही एक अहम हिस्सा है। दुनिया के सबसे विनाशकारी हथियार, अंतरमहाद्वीपीय बैलिस्टिक मिसाइलें (ICBM) और स्टील्थ तकनीक के बारे में विस्तार से जानने के लिए हमारे डेडिकेटेड पेज पर विजिट करें।
+                </p>
+                <a href="weapons.html" class="inline-flex items-center gap-2 bg-red-600 hover:bg-red-500 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-[1.02]">
+                    <span>सभी घातक हथियार देखें (Weapons Page)</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Creator Footer -->
+        <div class="text-center text-slate-500 text-xs mt-12 pt-6 border-t border-slate-800">
+            Created by <strong>Som Vishwakarma</strong>
+        </div>
+
+    </main>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
