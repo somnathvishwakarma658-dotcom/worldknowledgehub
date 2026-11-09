@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>दुनिया के टॉप 10 देशों की लाइव जनसंख्या घड़ी</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #0d213a;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            color: #38bdf8;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 24px;
+            border-bottom: 2px solid #38bdf8;
+            padding-bottom: 10px;
+        }
+        .country-card {
+            background: #1e293b;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            border-left: 5px solid #38bdf8;
+        }
+        .country-info {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .population-count {
+            font-size: 20px;
+            font-weight: bold;
+            color: #4ade80;
+            letter-spacing: 0.5px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="back-link">← मुख्य पेज पर वापस जाएं</a>
+        <h1>🌐 दुनिया के टॉप 10 सबसे अधिक आबादी वाले देश (लाइव क्लॉक)</h1>
+
+        <div id="countries-list">
+            <!-- जावास्क्रिप्ट यहाँ अपने आप देश और लाइव आंकड़े भर देगा -->
+        </div>
+    </div>
+
+    <script>
+        // टॉप 10 देशों का डेटा (आधार जनसंख्या और प्रति सेकंड वृद्धि दर)
+        const countries = [
+            { name: "🇮🇳 भारत (India)", basePop: 1429700205, rate: 0.52 },
+            { name: "🇨🇳 चीन (China)", basePop: 1405918803, rate: -0.05 },
+            { name: "🇺🇸 संयुक्त राज्य अमेरिका (USA)", basePop: 342620143, rate: 0.22 },
+            { name: "🇮🇩 इंडोनेशिया (Indonesia)", basePop: 287996059, rate: 0.18 },
+            { name: "🇵🇰 पाकिस्तान (Pakistan)", basePop: 261714024, rate: 0.65 },
+            { name: "🇳🇬 नाइजीरिया (Nigeria)", basePop: 250228859, rate: 0.85 },
+            { name: "🇧🇷 ब्राजील (Brazil)", basePop: 222624000, rate: 0.10 },
+            { name: "🇧🇩 बांग्लादेश (Bangladesh)", basePop: 175927589, rate: 0.30 },
+            { name: "🇷🇺 रूस (Russia)", basePop: 139450252, rate: -0.08 },
+            { name: "🇲🇽 मैक्सिको (Mexico)", basePop: 132807523, rate: 0.15 }
+        ];
+
+        function renderPopulation() {
+            const listContainer = document.getElementById("countries-list");
+            listContainer.innerHTML = "";
+
+            let now = new Date();
+            let startOfYear = new Date(now.getFullYear(), 0, 1);
+            let secondsElapsed = (now - startOfYear) / 1000;
+
+            countries.forEach((country, index) => {
+                // सेकंड के हिसाब से जनसंख्या की गणना
+                let currentPop = Math.floor(country.basePop + (secondsElapsed * country.rate));
+                
+                let card = document.createElement("div");
+                card.className = "country-card";
+                card.innerHTML = `
+                    <div class="country-info">${index + 1}. ${country.name}</div>
+                    <div class="population-count">${currentPop.toLocaleString('en-IN')}</div>
+                `;
+                listContainer.appendChild(card);
+            });
+        }
+
+        // हर 1 सेकंड में पेज को ऑटोमैटिक अपडेट करें ताकि लाइव क्लॉक चलती रहे
+        setInterval(renderPopulation, 1000);
+        renderPopulation();
+    </script>
+
+</body>
+</html>
