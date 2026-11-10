@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>पर्यटन एवं टूर साइंस - World Politics & Tour Science</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-slate-900 text-slate-100 min-h-screen font-sans">
+<body class="bg-slate-900 text-slate-100 min-h-screen font-['Mukta']">
 
     <!-- Header Navigation -->
     <header class="bg-slate-800 border-b border-slate-700 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold text-emerald-400">🌐 World Politics & Tour Science</h1>
+            <h1 class="text-xl font-bold text-emerald-400 flex items-center gap-2">
+                🌐 World Politics & Tour Science
+            </h1>
             <a href="index.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded-lg text-sm transition">
                 🏠 होमपेज पर लौटें
             </a>
@@ -30,18 +34,18 @@
         </div>
 
         <!-- Tour Cards Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             
-            <!-- Rishikesh Card -->
+            <!-- 1. Rishikesh Card -->
             <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-xl border border-slate-700 flex flex-col justify-between">
-                <img src="som.png" alt="Rishikesh Janki Jhula" class="w-full h-56 object-cover">
-                <div class="p-6 flex-1 flex flex-col justify-between">
+                <img src="som.png" alt="Rishikesh Janki Jhula" class="w-full h-48 object-cover">
+                <div class="p-5 flex-1 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center gap-2 mb-3">
                             <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-xs font-semibold px-2.5 py-0.5 rounded">उत्तराखंड</span>
                             <span class="bg-blue-950 text-blue-400 border border-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">जानकी झूला</span>
                         </div>
-                        <h2 class="text-2xl font-bold text-white mb-2">ऋषिकेश: गंगा तट और जानकी झूला का अनोखा सफ़र</h2>
+                        <h2 class="text-xl font-bold text-white mb-2">ऋषिकेश: गंगा तट और जानकी झूला का अनोखा सफ़र</h2>
                         <p class="text-slate-300 text-sm mb-4 line-clamp-3">
                             विश्व योग राजधानी ऋषिकेश और गंगा नदी पर स्थित प्रसिद्ध जानकी झूला के प्राकृतिक, सांस्कृतिक व वैज्ञानिक महत्व को गहराई से जानें।
                         </p>
@@ -52,19 +56,52 @@
                 </div>
             </div>
 
-            <!-- Placeholder for Future Articles -->
-            <div class="bg-slate-800/50 rounded-2xl p-8 border border-dashed border-slate-700 flex flex-col items-center justify-center text-center">
-                <span class="text-4xl mb-3">🚀</span>
-                <h3 class="text-xl font-bold text-slate-400 mb-1">नया यात्रा लेख जल्द आ रहा है</h3>
-                <p class="text-slate-500 text-sm">हम जल्द ही नए और अद्भुत पर्यटन स्थलों की जानकारी यहाँ अपडेट करेंगे।</p>
+            <!-- 2. Jatayu Earth Center Card -->
+            <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-xl border border-slate-700 flex flex-col justify-between">
+                <div class="bg-slate-900 h-48 flex items-center justify-center text-5xl">🦅🌴</div>
+                <div class="p-5 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="bg-rose-950 text-rose-400 border border-rose-800 text-xs font-semibold px-2.5 py-0.5 rounded">केरल पर्यटन</span>
+                            <span class="bg-amber-950 text-amber-400 border border-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded">विश्व रिकॉर्ड</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-white mb-2">केरल: जटायु अर्थ सेंटर की अनूठी कथा व विज्ञान</h2>
+                        <p class="text-slate-300 text-sm mb-4 line-clamp-3">
+                            समुद्र तल से 1,000 फीट ऊपर बनी दुनिया की सबसे बड़ी पक्षी मूर्तिकला और महिलाओं की सुरक्षा को समर्पित भव्य स्मारक।
+                        </p>
+                    </div>
+                    <a href="#jatayu-article" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-center py-2.5 px-4 rounded-xl transition">
+                        पूरा लेख पढ़ें ➔
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3. Egg vs Chicken Science Card -->
+            <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-xl border border-slate-700 flex flex-col justify-between">
+                <div class="bg-slate-900 h-48 flex items-center justify-center text-5xl">🥚🐔</div>
+                <div class="p-5 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="bg-purple-950 text-purple-400 border border-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">जीव विज्ञान</span>
+                            <span class="bg-yellow-950 text-yellow-400 border border-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">विकासवाद</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-white mb-2">रहस्य: आखिर पहले अंडा आया या मुर्गी?</h2>
+                        <p class="text-slate-300 text-sm mb-4 line-clamp-3">
+                            डार्विन के विकासवाद सिद्धांत और डीएनए म्यूटेशन के आधार पर इस उलझन भरे सवाल का वैज्ञानिक उत्तर।
+                        </p>
+                    </div>
+                    <a href="#egg-chicken-article" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-center py-2.5 px-4 rounded-xl transition">
+                        पूरा लेख पढ़ें ➔
+                    </a>
+                </div>
             </div>
 
         </div>
 
-        <!-- Full Articles Section (इसी पेज पर पूरा लेख नीचे दिखेगा) -->
+        <!-- Full Articles Section -->
         <div class="space-y-12">
             
-            <!-- Rishikesh Article Detail -->
+            <!-- Article 1: Rishikesh Detail -->
             <article id="rishikesh-article" class="bg-slate-800 rounded-2xl p-6 md:p-8 border border-slate-700 shadow-2xl scroll-mt-24">
                 <div class="flex items-center gap-2 mb-4">
                     <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-xs font-semibold px-3 py-1 rounded-full">टूर ब्लॉग</span>
@@ -109,6 +146,59 @@
                     <p>
                         यदि आप भागदौड़ भरी जिंदगी से दूर कुछ पल शांति के बीताना चाहते हैं या प्रकृति और रोमांच का एक साथ आनंद लेना चाहते हैं, तो ऋषिकेश की यात्रा आपके लिए सबसे बेहतरीन विकल्प है।
                     </p>
+                </div>
+            </article>
+
+            <!-- Article 2: Jatayu Earth Center Detail -->
+            <article id="jatayu-article" class="bg-slate-800 rounded-2xl p-6 md:p-8 border border-slate-700 shadow-2xl scroll-mt-24">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="bg-rose-950 text-rose-400 border border-rose-800 text-xs font-semibold px-3 py-1 rounded-full">पर्यटन एवं संस्कृति</span>
+                    <span class="text-slate-400 text-xs">स्थान: कोल्लम, केरल</span>
+                </div>
+                
+                <h2 class="text-3xl font-extrabold text-amber-400 mb-6 border-b border-slate-700 pb-4">
+                    केरल का 'जटायु अर्थ सेंटर': भव्यता और संस्कृति का प्रतीक
+                </h2>
+
+                <div class="space-y-6 text-slate-200 leading-relaxed">
+                    <p>
+                        केरल के कोल्लम जिले में समुद्र तल से 1,000 फीट की ऊँचाई पर स्थित <strong class="text-white">जटायु अर्थ सेंटर (Jatayu Earth's Center)</strong> दुनिया भर के पर्यटकों के लिए आकर्षण का केंद्र बन चुका है। 65 एकड़ में फैला यह पार्क कला, इंजीनियरिंग और पौराणिक इतिहास का एक अद्भुत संगम है।
+                    </p>
+
+                    <h3 class="text-xl font-bold text-amber-300 pt-2">1. दुनिया की सबसे बड़ी पक्षी मूर्ति (Guinness World Record)</h3>
+                    <p>
+                        यहाँ स्थित जटायु की मूर्ति <strong>200 फीट लंबी, 150 फीट चौड़ी और 70 फीट ऊंची</strong> है। इसे प्रसिद्ध मूर्तिकार और फिल्म निर्देशक राजीव अंचल ने 10 साल की कड़ी मेहनत से तैयार किया था। यह दुनिया में किसी पक्षी की बनाई गई सबसे बड़ी कंक्रीट मूर्ति है।
+                    </p>
+
+                    <h3 class="text-xl font-bold text-amber-300 pt-2">2. नारी सम्मान और सुरक्षा का संदेश</h3>
+                    <p>
+                        पौराणिक मान्यताओं के अनुसार, जटायु जी ने लंकापति रावण से माता सीता की रक्षा करते हुए अपने पंख कटवा लिए थे और इसी चट्टान (जटायुपारा) पर गिरे थे। इसलिए यह स्मारक विशेष रूप से **'महिलाओं की सुरक्षा और सम्मान' (Honor and Safety of Women)** को समर्पित किया गया है।
+                    </p>
+                </div>
+            </article>
+
+            <!-- Article 3: Egg vs Chicken Detail -->
+            <article id="egg-chicken-article" class="bg-slate-800 rounded-2xl p-6 md:p-8 border border-slate-700 shadow-2xl scroll-mt-24">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="bg-purple-950 text-purple-400 border border-purple-800 text-xs font-semibold px-3 py-1 rounded-full">जीव-विकास विज्ञान</span>
+                    <span class="text-slate-400 text-xs">विषय: Evolution Science</span>
+                </div>
+                
+                <h2 class="text-3xl font-extrabold text-sky-400 mb-6 border-b border-slate-700 pb-4">
+                    रोचक वैज्ञानिक सवाल: पहले अंडा आया या मुर्गी?
+                </h2>
+
+                <div class="space-y-6 text-slate-200 leading-relaxed">
+                    <p>
+                        जीव-विज्ञान और डार्विन के विकासवाद (Evolutionary Science) के अनुसार, इस उलझन भरे सवाल का स्पष्ट वैज्ञानिक जवाब है कि <strong>"मुर्गी से पहले अंडा आया था।"</strong>
+                    </p>
+
+                    <div class="bg-slate-900/80 p-5 rounded-xl border-l-4 border-sky-400">
+                        <h4 class="font-bold text-sky-300 mb-2">🧬 आनुवंशिक उत्परिवर्तन (Genetic Mutation):</h4>
+                        <p class="text-slate-300 text-sm">
+                            आधुनिक मुर्गी के पूर्वजों ('प्रोटो-चिकेन') के डीएनए में प्राकृतिक म्यूटेशन हुआ, जिसके बाद जो पहला अंडा बना, उसी से पहली आधुनिक मुर्गी पैदा हुई। इसके अलावा, सख्त छिलके वाले अंडे पृथ्वी पर करीब 34 करोड़ साल पहले (डायनासोर के समय) से मौजूद हैं, जबकि आधुनिक मुर्गी का इतिहास महज कुछ हजार साल पुराना है।
+                        </p>
+                    </div>
                 </div>
             </article>
 
