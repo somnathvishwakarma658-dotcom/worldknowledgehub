@@ -1,124 +1,319 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="hi" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>पर्यटन एवं टूर साइंस - World Politics & Tour Science</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-slate-900 text-slate-100 min-h-screen font-sans">
+    
+    <!-- Google Search Console Verification Tag -->
+    <meta name="google-site-verification" content="r7PadJGvr_GH-tfAHhP6RMmF1eJe9qgeTVU3emG0BZo" />
 
-    <!-- Header Navigation -->
-    <header class="bg-slate-800 border-b border-slate-700 sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold text-emerald-400">🌐 World Politics & Tour Science</h1>
-            <a href="index.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded-lg text-sm transition">
-                🏠 होमपेज पर लौटें
-            </a>
+    <title>World Politics & Tour Science - राष्ट्र एवं ज्ञान</title>
+    
+    <!-- Google SEO & Search Optimization Tags -->
+    <meta name="title" content="World Politics & Tour Science - राष्ट्र एवं ज्ञान">
+    <meta name="description" content="World Politics & Tour Science पर पढ़ें देश-विदेश की राजनीति, पर्यटन स्थल, अंतरिक्ष, तकनीक, इतिहास के रहस्य और ताज़ा खबरें फटाफट।">
+    <meta name="keywords" content="World Politics & Tour Science, World Politics Tour Science, worldpoliticstourscience, Som Vishwakarma, राजनीति, पर्यटन, विज्ञान, खबरें फटाफट">
+    <meta name="author" content="Som Vishwakarma">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://worldpoliticstourscience.vercel.app/Gemini_Generated_Image_ftnbdffnbdfftnb.png">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D253F',
+                        secondary: '#008080',
+                        gold: '#C59B27',
+                        saffron: '#f97316', 
+                        darkBg: '#081422',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'Mukta', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', 'Mukta', sans-serif;
+            background-color: #0D253F;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .animate-marquee {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 25s linear infinite;
+        }
+    </style>
+</head>
+<body class="text-slate-100 antialiased flex flex-col min-h-screen bg-slate-900">
+
+    <!-- ================= FESTIVAL BANNER ================= -->
+    <div class="max-w-4xl mx-auto my-4 px-4 w-full">
+        <div class="p-1 rounded-2xl bg-gradient-to-r from-amber-500 via-rose-500 via-purple-500 to-indigo-500 shadow-md">
+            <div class="bg-slate-900 rounded-[14px] p-4 md:p-6 text-center relative overflow-hidden">
+                <div class="text-xl md:text-3xl mb-1 tracking-widest animate-pulse">🪔 ✨ 🌅 ✨ 🪔</div>
+                <h2 class="text-xl md:text-3xl font-black bg-gradient-to-r from-amber-300 via-orange-400 to-yellow-200 bg-clip-text text-transparent mb-1">
+                    शुभ दीपावली एवं महापर्व छठ की हार्दिक शुभकामनाएँ!
+                </h2>
+                <p class="text-xs md:text-base font-bold text-rose-400 tracking-wide">
+                    ✨ रोशनी, खुशियों और आस्था के इस महासंगम में आपका स्वागत है ✨
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= NAVBAR (PROFESSIONAL & COMPACT) ================= -->
+    <header class="sticky top-0 z-50 glass shadow-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 sm:h-20">
+                
+                <!-- BRAND LOGO -->
+                <a href="index.html" class="flex items-center cursor-pointer py-1">
+                    <div class="flex items-center space-x-2">
+                        <svg class="h-10 sm:h-12 w-auto drop-shadow-sm" viewBox="0 0 700 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="bgRingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#0b2341"/>
+                                    <stop offset="50%" stop-color="#183b68"/>
+                                    <stop offset="100%" stop-color="#081528"/>
+                                </linearGradient>
+                                <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#f2d06b"/>
+                                    <stop offset="50%" stop-color="#c59b27"/>
+                                    <stop offset="100%" stop-color="#8a6710"/>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="350" cy="145" r="132" fill="url(#bgRingGrad)" stroke="url(#goldGrad)" stroke-width="3"/>
+                            <circle cx="350" cy="145" r="126" fill="none" stroke="#2a4a75" stroke-width="2"/>
+                            <text x="350" y="300" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="34" font-weight="900" fill="#0D253F" letter-spacing="3">WORLD POLITICS</text>
+                            <text x="350" y="340" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="30" font-weight="800" fill="#C59B27" letter-spacing="4">TOUR SCIENCE</text>
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center space-x-6 lg:space-x-8">
+                    <a href="index.html" class="font-bold text-slate-700 hover:text-primary transition-colors py-2 border-b-2 border-gold">Home</a>
+                    <a href="politics.html" class="font-bold text-slate-700 hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-gold">Politics</a>
+                    <a href="janki-setu.html" class="font-bold text-slate-700 hover:text-secondary transition-colors py-2 border-b-2 border-transparent hover:border-gold">Tours</a>
+                    <a href="ai-article.html" class="font-bold text-slate-700 hover:text-indigo-600 transition-colors py-2 border-b-2 border-transparent hover:border-gold">Science</a>
+                    <a href="history.html" class="font-bold text-amber-700 hover:text-amber-800 transition-colors py-2 border-b-2 border-transparent hover:border-amber-600">🏛️ इतिहास</a>
+                    <a href="latest-news.html" class="font-bold text-red-600 hover:text-red-700 transition-colors py-2 border-b-2 border-transparent hover:border-red-600">⚡ खबरें फटाफट</a>
+                </nav>
+
+                <!-- Mobile Hamburger Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menuBtn" onclick="toggleMobileMenu()" class="text-slate-700 hover:text-primary focus:outline-none p-1.5 rounded-lg">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-2">
+            <a href="index.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">Home</a>
+            <a href="politics.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">Politics (राजनीति)</a>
+            <a href="janki-setu.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">Tours (पर्यटन)</a>
+            <a href="ai-article.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">Science (विज्ञान)</a>
+            <a href="history.html" class="block font-bold text-amber-600 hover:bg-slate-50 px-3 py-2 rounded-md">🏛️ इतिहास और रहस्य</a>
+            <a href="weapons.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">World Weapons (विश्व के घातक हथियार)</a>
+            <a href="latest-news.html" class="block font-bold text-red-600 hover:bg-slate-50 px-3 py-2 rounded-md text-base">⚡ खबरें फटाफट (Latest News)</a>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="max-w-6xl mx-auto px-4 py-8">
-        
-        <!-- Page Title Header -->
-        <div class="text-center mb-10">
-            <h1 class="text-3xl md:text-4xl font-extrabold text-emerald-400 mb-3">🧭 पर्यटन और टूर साइंस (Tourism & Tour Science)</h1>
-            <p class="text-slate-300 max-w-2xl mx-auto">
-                देश-विदेश की अद्भुत जगहों, उनके प्राकृतिक विज्ञान और यात्रा से जुड़ी बेहतरीन जानकारियों का एक संपूर्ण संग्रह।
-            </p>
-        </div>
-
-        <!-- Tour Cards Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="flex-grow flex flex-col items-center justify-center px-4 py-6 text-center">
+        <div class="max-w-4xl mx-auto space-y-6 w-full">
             
-            <!-- Rishikesh Card -->
-            <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-xl border border-slate-700 flex flex-col justify-between">
-                <img src="som.png" alt="Rishikesh Janki Jhula" class="w-full h-56 object-cover">
-                <div class="p-6 flex-1 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-xs font-semibold px-2.5 py-0.5 rounded">उत्तराखंड</span>
-                            <span class="bg-blue-950 text-blue-400 border border-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">जानकी झूला</span>
-                        </div>
-                        <h2 class="text-2xl font-bold text-white mb-2">ऋषिकेश: गंगा तट और जानकी झूला का अनोखा सफ़र</h2>
-                        <p class="text-slate-300 text-sm mb-4 line-clamp-3">
-                            विश्व योग राजधानी ऋषिकेश और गंगा नदी पर स्थित प्रसिद्ध जानकी झूला के प्राकृतिक, सांस्कृतिक व वैज्ञानिक महत्व को गहराई से जानें।
-                        </p>
-                    </div>
-                    <a href="#rishikesh-article" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-center py-2.5 px-4 rounded-xl transition">
-                        पूरा लेख पढ़ें ➔
-                    </a>
+            <!-- ⚡ LIVE TICKER BAR ⚡ -->
+            <div class="bg-slate-800/90 border border-sky-500/30 rounded-xl px-4 py-2 flex items-center space-x-3 shadow-lg overflow-hidden">
+                <span class="bg-red-600 text-white text-xs font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider animate-pulse flex-shrink-0">
+                    ⚡ ताज़ा अपडेट
+                </span>
+                <div class="overflow-hidden whitespace-nowrap w-full text-left">
+                    <p class="text-xs sm:text-sm text-slate-300 inline-block animate-marquee">
+                        🚀 विज्ञान, वैश्विक कूटनीति, प्राचीन इतिहास के अनसुलझे रहस्य और रक्षा जगत की सबसे ताज़ा खबरें पढ़ने के लिए नीचे दिए गए कार्ड्स पर क्लिक करें!
+                    </p>
                 </div>
             </div>
 
-            <!-- Placeholder for Future Articles -->
-            <div class="bg-slate-800/50 rounded-2xl p-8 border border-dashed border-slate-700 flex flex-col items-center justify-center text-center">
-                <span class="text-4xl mb-3">🚀</span>
-                <h3 class="text-xl font-bold text-slate-400 mb-1">नया यात्रा लेख जल्द आ रहा है</h3>
-                <p class="text-slate-500 text-sm">हम जल्द ही नए और अद्भुत पर्यटन स्थलों की जानकारी यहाँ अपडेट करेंगे।</p>
+            <!-- Hero Heading -->
+            <div class="space-y-3">
+                <h1 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight font-['Mukta']">
+                    वैश्विक कूटनीति, पर्यटन और विज्ञान के अद्भुत रहस्यों का सफर
+                </h1>
+                <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto">
+                    जानिए देश-विदेश की राजनीति, घूमने की सबसे बेहतरीन जगहें और अंतरिक्ष तथा तकनीक से जुड़ी ताज़ा वैज्ञानिक खोजें।
+                </p>
             </div>
 
-        </div>
-
-        <!-- Full Articles Section (इसी पेज पर पूरा लेख नीचे दिखेगा) -->
-        <div class="space-y-12">
-            
-            <!-- Rishikesh Article Detail -->
-            <article id="rishikesh-article" class="bg-slate-800 rounded-2xl p-6 md:p-8 border border-slate-700 shadow-2xl scroll-mt-24">
-                <div class="flex items-center gap-2 mb-4">
-                    <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-xs font-semibold px-3 py-1 rounded-full">टूर ब्लॉग</span>
-                    <span class="text-slate-400 text-xs">लेखक: सोम विश्वकर्मा</span>
+            <!-- 🌐 DIRECT LIVE POPULATION CLOCK ON HOMEPAGE 🌐 -->
+            <div class="bg-slate-800/90 border-2 border-sky-500/50 rounded-2xl p-5 shadow-2xl text-center">
+                <div class="flex items-center justify-center space-x-2 mb-2">
+                    <i class="fa-solid fa-users text-sky-400 text-xl"></i>
+                    <h2 class="text-lg sm:text-xl font-bold text-sky-400">🇮🇳 भारत की लाइव जनसंख्या घड़ी (Live Population)</h2>
                 </div>
-                
-                <h2 class="text-3xl font-extrabold text-emerald-400 mb-6 border-b border-slate-700 pb-4">
-                    ऋषिकेश: गंगा तट और जानकी झूला का अनोखा सफ़र
-                </h2>
+                <div class="text-2xl sm:text-4xl font-extrabold text-emerald-400 my-2 tracking-wide" id="home-live-pop">
+                    गणना हो रही है...
+                </div>
+                <p class="text-xs sm:text-sm text-slate-400">
+                    सेकंड-दर-सेकंड वृद्धि दर के आधार पर लाइव अनुमानित आँकड़ा। 
+                    <a href="top10-population.html" class="text-sky-400 underline font-bold ml-1 hover:text-sky-300">दुनिया के टॉप 10 देशों की सूची देखें →</a>
+                </p>
+            </div>
 
-                <div class="space-y-6 text-slate-200 leading-relaxed">
-                    <p>
-                        उत्तराखंड की पहाड़ियों की गोद में बसा <strong class="text-white">ऋषिकेश</strong> सिर्फ भारत ही नहीं, बल्कि पूरी दुनिया में अध्यात्म, योग और प्रकृति का केंद्र माना जाता है। इसे दुनिया की <strong class="text-emerald-400">'योग राजधानी' (Yoga Capital of the World)</strong> भी कहा जाता है। यहाँ बहती पवित्र गंगा नदी और पर्वतों की श्रृंखलाएँ हर साल लाखों पर्यटकों और साधकों को अपनी ओर आकर्षित करती हैं।
-                    </p>
+            <!-- Latest News Button -->
+            <div class="w-full max-w-xl mx-auto">
+                <a href="latest-news.html" class="w-full bg-red-600 hover:bg-red-700 text-white font-extrabold py-3 px-5 rounded-xl shadow-xl flex items-center justify-center space-x-3 text-base sm:text-lg transition transform hover:-translate-y-0.5 animate-pulse">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>खबरें फटाफट (Latest News)</span>
+                </a>
+            </div>
 
-                    <h3 class="text-xl font-bold text-emerald-300 pt-2">1. गंगा तट की दिव्यता और प्राकृतिक सौंदर्य</h3>
-                    <p>
-                        ऋषिकेश में गंगा नदी का रूप मैदानी इलाकों से बिल्कुल अलग होता है। यहाँ पानी का बहाव तेज़, रंग एकदम पारदर्शी नीला-हरा और वातावरण बेहद शांत होता है। त्रिवेणी घाट और परमार्थ निकेतन जैसे स्थानों पर होने वाली शाम की <strong class="text-white">गंगा आरती</strong> का अनुभव इंसानी मन को गहरी शांति देता है।
-                    </p>
-                    <p>
-                        वैज्ञानिक दृष्टिकोण से भी हिमालय से निकलने वाली गंगा का जल विशेष माना जाता है, जिसमें ऐसे प्राकृतिक खनिज और बैक्टीरियोफेज (Bacteriophage) होते हैं जो पानी को लंबे समय तक खराब नहीं होने देते।
-                    </p>
+            <!-- Buttons Grid Row 1 (राजनीति और पर्यटन) -->
+            <div class="flex flex-row items-center justify-center gap-3 w-full max-w-xl mx-auto">
+                <a href="politics.html" class="w-1/2 bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-3 px-3 rounded-xl shadow-lg flex items-center justify-center space-x-2 text-sm sm:text-base transition transform hover:-translate-y-0.5">
+                    <i class="fa-solid fa-newspaper text-base"></i>
+                    <span>राजनीति</span>
+                </a>
+                <a href="janki-setu.html" class="w-1/2 bg-teal-700 hover:bg-teal-800 text-white font-bold py-3 px-3 rounded-xl shadow-lg flex items-center justify-center space-x-2 text-sm sm:text-base transition transform hover:-translate-y-0.5">
+                    <i class="fa-solid fa-compass text-base"></i>
+                    <span>पर्यटन</span>
+                </a>
+            </div>
 
-                    <h3 class="text-xl font-bold text-emerald-300 pt-2">2. जानकी झूला: वास्तुकला और रोमांच का अद्भुत संगम</h3>
-                    <div class="bg-slate-900/80 p-5 rounded-xl border-l-4 border-emerald-500 my-4">
-                        <p class="mb-2">
-                            ऋषिकेश और उसके आसपास के इलाकों में बने झूला पुल (जैसे लक्ष्मण झूला और जानकी झूला) यहाँ की मुख्य पहचान हैं। गंगा नदी के ऊपर बने ये सस्पेंशन ब्रिज (Suspension Bridge) इंजीनियरिंग और वास्तुकला का बेहतरीन उदाहरण हैं।
-                        </p>
-                        <p>
-                            जब आप जानकी झूला पर चलते हैं, तो नीचे तेज़ी से बहती गंगा की धारा और चारों तरफ ऊंचे पहाड़ एक रोमांचक अहसास कराते हैं। हवा के झोंकों के साथ पुल का हल्का-फुल्का हिलना पर्यटकों के दिलों में एक अजीब सी सिहरन पैदा कर देता है।
-                        </p>
+            <!-- Buttons Grid Row 2 (विज्ञान और हथियार) -->
+            <div class="flex flex-row items-center justify-center gap-3 w-full max-w-xl mx-auto">
+                <a href="ai-article.html" class="w-1/2 bg-slate-800/80 hover:bg-slate-800 border border-slate-700 text-white font-bold py-3 px-3 rounded-xl shadow-lg flex items-center justify-center space-x-2 text-sm sm:text-base transition transform hover:-translate-y-0.5">
+                    <i class="fa-solid fa-atom text-base text-sky-400"></i>
+                    <span>विज्ञान व तकनीक</span>
+                </a>
+                <a href="weapons.html" class="w-1/2 bg-slate-800/80 hover:bg-slate-800 border border-slate-700 text-white font-bold py-3 px-3 rounded-xl shadow-lg flex items-center justify-center space-x-2 text-sm sm:text-base transition transform hover:-translate-y-0.5">
+                    <i class="fa-solid fa-skull-crossbones text-base text-rose-500"></i>
+                    <span>विश्व के घातक हथियार</span>
+                </a>
+            </div>
+
+            <!-- 🏛️ HISTORY BUTTON -->
+            <div class="w-full max-w-xl mx-auto">
+                <a href="history.html" class="w-full bg-gradient-to-r from-amber-700 via-amber-600 to-yellow-600 hover:from-amber-600 hover:to-yellow-500 text-slate-900 font-extrabold py-3 px-6 rounded-xl shadow-xl flex items-center justify-center space-x-3 text-sm sm:text-base transition transform hover:-translate-y-0.5 border border-amber-400/40">
+                    <i class="fa-solid fa-landmark text-lg"></i>
+                    <span>🏛️ इतिहास और प्राचीन रहस्य (History & Ancient Mysteries)</span>
+                </a>
+               </div>
+<a href="medical-guide.html" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2 px-4 rounded-xl transition shadow-lg">
+    <i class="fa-solid fa-file-medical"></i> मेडिकल रिपोर्ट गाइड 🩺
+</a>
+
+<!-- ================= 🧠 INTERACTIVE Q&A / QUIZ SECTION ================= -->
+            <div class="max-w-2xl mx-auto pt-4 border-t border-slate-800 text-left w-full">
+                <div class="bg-slate-800/70 border border-slate-700 rounded-2xl p-4 sm:p-6 shadow-xl">
+                    <div class="flex items-center space-x-2 mb-3">
+                        <i class="fa-solid fa-lightbulb text-amber-400 text-lg"></i>
+                        <h3 class="text-base sm:text-lg font-bold text-white">आज का ज्ञानवर्धक सवाल (Quiz)</h3>
                     </div>
-
-                    <h3 class="text-xl font-bold text-emerald-300 pt-2">3. ऋषिकेश का वैज्ञानिक और पर्यटन महत्व</h3>
-                    <ul class="list-disc list-inside space-y-2 text-slate-300 pl-2">
-                        <li><strong class="text-white">मानसिक स्वास्थ्य और योग:</strong> यहाँ का शांत वातावरण और ऑक्सीजन से भरपूर पहाड़ इंसानी मस्तिष्क में तनाव (Cortisol level) को कम करते हैं।</li>
-                        <li><strong class="text-white">एडवेंचर टूरिज्म:</strong> रिवर राफ्टिंग, बंजी जंपिंग और कैंपिंग के लिए यह भारत का सबसे पसंदीदा स्थान है।</li>
-                        <li><strong class="text-white">पर्यावरण संतुलन:</strong> हिमालयी पारिस्थितिकी तंत्र (Ecosystem) को समझने के लिए यह क्षेत्र बेहद खास है।</li>
-                    </ul>
-
-                    <h3 class="text-xl font-bold text-emerald-300 pt-2">निष्कर्ष</h3>
-                    <p>
-                        यदि आप भागदौड़ भरी जिंदगी से दूर कुछ पल शांति के बीताना चाहते हैं या प्रकृति और रोमांच का एक साथ आनंद लेना चाहते हैं, तो ऋषिकेश की यात्रा आपके लिए सबसे बेहतरीन विकल्प है।
+                    
+                    <p class="text-xs sm:text-sm text-slate-200 font-medium mb-3">
+                        ❓ <strong>सवाल:</strong> भारत द्वारा अंतरिक्ष में भेजा गया पहला उपग्रह (Satellite) कौन सा था?
                     </p>
+
+                    <!-- Quiz Options -->
+                    <div class="space-y-2 mb-2">
+                        <button onclick="checkAnswer(this, false)" class="w-full text-left bg-slate-900 hover:bg-slate-700/80 p-2.5 rounded-xl text-xs sm:text-sm text-slate-300 border border-slate-700 transition flex justify-between items-center">
+                            <span>A) रोहिणी (Rohini)</span>
+                            <span class="quiz-feedback hidden">❌ गलत</span>
+                        </button>
+                        <button onclick="checkAnswer(this, true)" class="w-full text-left bg-slate-900 hover:bg-slate-700/80 p-2.5 rounded-xl text-xs sm:text-sm text-slate-300 border border-slate-700 transition flex justify-between items-center">
+                            <span>B) आर्यभट्ट (Aryabhata)</span>
+                            <span class="quiz-feedback hidden">✅ सही उत्तर!</span>
+                        </button>
+                        <button onclick="checkAnswer(this, false)" class="w-full text-left bg-slate-900 hover:bg-slate-700/80 p-2.5 rounded-xl text-xs sm:text-sm text-slate-300 border border-slate-700 transition flex justify-between items-center">
+                            <span>C) भास्कर (Bhaskara)</span>
+                            <span class="quiz-feedback hidden">❌ गलत</span>
+                        </button>
+                    </div>
                 </div>
-            </article>
+            </div>
+
+            <!-- Feedback Section / सुझाव बटन -->
+            <div class="text-center my-8 p-6 bg-slate-800/80 rounded-xl shadow-lg border border-slate-700 max-w-xl mx-auto w-full">
+                <h3 class="text-xl font-bold text-white mb-2">💡 हमें अपनी राय दें</h3>
+                <p class="text-slate-300 text-sm mb-4">हमारी वेबसाइट को और बेहतर बनाने के लिए अपने मूल्यवान सुझाव हमारे साथ साझा करें।</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfNfc5YxfLYY5TYdoE3znEdRXCQo95ruw27IYXQ6tcOaCqNeg/viewform" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg shadow transition">
+                    📝 सुझाव फॉर्म खोलें
+                </a>
+            </div>
 
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center text-slate-500 text-xs">
-        <p>&copy; 2026 World Politics & Tour Science. Created by Som Vishwakarma</p>
+    <footer class="bg-slate-900 border-t border-slate-800 py-4 text-center text-slate-400 text-xs">
+        <p>&copy; 2026 World Politics & Tour Science. Created by <strong>Som Vishwakarma</strong>. All rights reserved.</p>
+
+        <div style="margin: 15px 0; text-align: center;">
+            <a href="about.html" style="margin: 0 10px; text-decoration: none; color: #38bdf8;">About Us</a> | 
+            <a href="privacy.html" style="margin: 0 10px; text-decoration: none; color: #38bdf8;">Privacy Policy</a> | 
+            <a href="contact.html" style="margin: 0 10px; text-decoration: none; color: #38bdf8;">Contact Us</a>
+        </div>
     </footer>
 
+    <!-- JS Scripts -->
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        function checkAnswer(button, isCorrect) {
+            const feedback = button.querySelector('.quiz-feedback');
+            feedback.classList.remove('hidden');
+            if (isCorrect) {
+                button.classList.remove('bg-slate-900');
+                button.classList.add('bg-emerald-950', 'border-emerald-500', 'text-emerald-300');
+            } else {
+                button.classList.remove('bg-slate-900');
+                button.classList.add('bg-rose-950', 'border-rose-500', 'text-rose-300');
+            }
+        }
+
+        // Home Page Live Population Counter Script
+        function runHomePopulationClock() {
+            let basePopulation = 1429700205; 
+            let growthRatePerSecond = 0.52; 
+            
+            let now = new Date();
+            let startOfYear = new Date(now.getFullYear(), 0, 1);
+            let secondsElapsed = (now - startOfYear) / 1000;
+            
+            let currentPopulation = Math.floor(basePopulation + (secondsElapsed * growthRatePerSecond));
+            
+            document.getElementById("home-live-pop").innerText = currentPopulation.toLocaleString('en-IN');
+        }
+
+        setInterval(runHomePopulationClock, 1000);
+        runHomePopulationClock();
+    </script>
 </body>
 </html>
