@@ -11,19 +11,19 @@
 <body class="bg-slate-900 text-slate-100 min-h-screen font-['Mukta']">
 
     <!-- Header Navigation -->
-    <header class="bg-slate-800 border-b border-slate-700 sticky top-0 z-50">
+    <header class="bg-slate-800 border-b border-slate-700 sticky top-0 z-50 shadow-md">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
             <h1 class="text-xl font-bold text-emerald-400 flex items-center gap-2">
                 🌐 World Politics & Tour Science
             </h1>
-            <a href="index.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded-lg text-sm transition">
+            <a href="index.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded-lg text-sm transition shadow">
                 🏠 होमपेज पर लौटें
             </a>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="max-w-6xl mx-auto px-4 py-8">
+    <main class="max-w-5xl mx-auto px-4 py-8">
         
         <!-- Page Title Header -->
         <div class="text-center mb-10">
@@ -33,132 +33,101 @@
             </p>
         </div>
 
-        <!-- Tour Cards Grid Navigation -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            
-            <!-- 1. Rishikesh Card -->
-            <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-xl border border-slate-700 flex flex-col justify-between">
-                <img src="som.png" alt="Rishikesh Janki Jhula" class="w-full h-56 object-cover">
-                <div class="p-6 flex-1 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-xs font-semibold px-2.5 py-0.5 rounded">उत्तराखंड</span>
-                            <span class="bg-blue-950 text-blue-400 border border-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">जानकी झूला</span>
-                        </div>
-                        <h2 class="text-2xl font-bold text-white mb-2">ऋषिकेश: गंगा तट और जानकी झूला का अनोखा सफ़र</h2>
-                        <p class="text-slate-300 text-sm mb-4">
-                            विश्व योग राजधानी ऋषिकेश और गंगा नदी पर स्थित प्रसिद्ध जानकी झूला के प्राकृतिक व सांस्कृतिक महत्व की विस्तृत जानकारी।
-                        </p>
-                    </div>
-                    <a href="#rishikesh-article" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-center py-2.5 px-4 rounded-xl transition">
-                        नीचे पूरा लेख पढ़ें 👇
-                    </a>
-                </div>
-            </div>
-
-            <!-- 2. Jatayu Earth Center Card -->
-            <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-xl border border-slate-700 flex flex-col justify-between">
-                <div class="bg-slate-900 h-56 flex items-center justify-center text-6xl">🦅🌴</div>
-                <div class="p-6 flex-1 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="bg-rose-950 text-rose-400 border border-rose-800 text-xs font-semibold px-2.5 py-0.5 rounded">केरल पर्यटन</span>
-                            <span class="bg-amber-950 text-amber-400 border border-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded">विश्व रिकॉर्ड</span>
-                        </div>
-                        <h2 class="text-2xl font-bold text-white mb-2">केरल: जटायु अर्थ सेंटर की अनूठी कथा व विज्ञान</h2>
-                        <p class="text-slate-300 text-sm mb-4">
-                            समुद्र तल से 1,000 फीट ऊपर बनी दुनिया की सबसे बड़ी पक्षी मूर्तिकला और महिलाओं की सुरक्षा को समर्पित भव्य स्मारक।
-                        </p>
-                    </div>
-                    <a href="#jatayu-article" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-center py-2.5 px-4 rounded-xl transition">
-                        नीचे पूरा लेख पढ़ें 👇
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- ================= FULL ARTICLES (LINE BY LINE PARAGRAPHS) ================= -->
+        <!-- ================= ARTICLES WITH ATTACHED IMAGES ================= -->
         <div class="space-y-12">
             
-            <!-- ARTICLE 1: ऋषिकेश पूरा लेख -->
-            <article id="rishikesh-article" class="bg-slate-800 rounded-2xl p-6 md:p-8 border border-slate-700 shadow-2xl scroll-mt-24">
-                <div class="flex items-center gap-2 mb-4">
-                    <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-xs font-semibold px-3 py-1 rounded-full">टूर ब्लॉग</span>
-                    <span class="text-slate-400 text-xs">लेखक: सोम विश्वकर्मा</span>
+            <!-- 1. ऋषिकेश: फोटो + पूरा लेख एक साथ -->
+            <article class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 shadow-2xl">
+                <!-- ऋषिकेश इमेज -->
+                <div class="w-full h-64 md:h-80 overflow-hidden">
+                    <img src="som.png" alt="Rishikesh Janki Jhula" class="w-full h-full object-cover">
                 </div>
                 
-                <h2 class="text-3xl font-extrabold text-emerald-400 mb-6 border-b border-slate-700 pb-4">
-                    ऋषिकेश: गंगा तट और जानकी झूला का अनोखा सफ़र
-                </h2>
-
-                <div class="space-y-6 text-slate-200 leading-relaxed text-base">
-                    <p>
-                        उत्तराखंड की पहाड़ियों की गोद में बसा <strong class="text-white">ऋषिकेश</strong> सिर्फ भारत ही नहीं, बल्कि पूरी दुनिया में अध्यात्म, योग और प्रकृति का केंद्र माना जाता है। इसे दुनिया की <strong class="text-emerald-400">'योग राजधानी' (Yoga Capital of the World)</strong> भी कहा जाता है। यहाँ बहती पवित्र गंगा नदी और पर्वतों की श्रृंखलाएँ हर साल लाखों पर्यटकों और साधकों को अपनी ओर आकर्षित करती हैं।
-                    </p>
-
-                    <h3 class="text-xl font-bold text-emerald-300 pt-2">1. गंगा तट की दिव्यता और प्राकृतिक सौंदर्य</h3>
-                    <p>
-                        ऋषिकेश में गंगा नदी का रूप मैदानी इलाकों से बिल्कुल अलग होता है। यहाँ पानी का बहाव तेज़, रंग एकदम पारदर्शी नीला-हरा और वातावरण बेहद शांत होता है। त्रिवेणी घाट और परमार्थ निकेतन जैसे स्थानों पर होने वाली शाम की <strong class="text-white">गंगा आरती</strong> का अनुभव इंसानी मन को गहरी शांति देता है।
-                    </p>
-                    <p>
-                        वैज्ञानिक दृष्टिकोण से भी हिमालय से निकलने वाली गंगा का जल विशेष माना जाता है, जिसमें ऐसे प्राकृतिक खनिज और बैक्टीरियोफेज (Bacteriophage) होते हैं जो पानी को लंबे समय तक खराब नहीं होने देते।
-                    </p>
-
-                    <h3 class="text-xl font-bold text-emerald-300 pt-2">2. जानकी झूला: वास्तुकला और रोमांच का अद्भुत संगम</h3>
-                    <div class="bg-slate-900/80 p-5 rounded-xl border-l-4 border-emerald-500 my-4">
-                        <p class="mb-2">
-                            ऋषिकेश और उसके आसपास के इलाकों में बने झूला पुल (जैसे लक्ष्मण झूला और जानकी झूला) यहाँ की मुख्य पहचान हैं। गंगा नदी के ऊपर बने ये सस्पेंशन ब्रिज (Suspension Bridge) इंजीनियरिंग और वास्तुकला का बेहतरीन उदाहरण हैं।
-                        </p>
-                        <p>
-                            जब आप जानकी झूला पर चलते हैं, तो नीचे तेज़ी से बहती गंगा की धारा और चारों तरफ ऊंचे पहाड़ एक रोमांचक अहसास कराते हैं। हवा के झोंकों के साथ पुल का हल्का-फुल्का हिलना पर्यटकों के दिलों में एक अजीब सी सिहरन पैदा कर देता है।
-                        </p>
+                <!-- ऋषिकेश पूरा कंटेंट -->
+                <div class="p-6 md:p-8 space-y-6">
+                    <div class="flex items-center gap-2">
+                        <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-xs font-semibold px-3 py-1 rounded-full">उत्तराखंड</span>
+                        <span class="bg-blue-950 text-blue-400 border border-blue-800 text-xs font-semibold px-3 py-1 rounded-full">जानकी झूला</span>
+                        <span class="text-slate-400 text-xs ml-auto">लेखक: सोम विश्वकर्मा</span>
                     </div>
 
-                    <h3 class="text-xl font-bold text-emerald-300 pt-2">3. ऋषिकेश का वैज्ञानिक और पर्यटन महत्व</h3>
-                    <ul class="list-disc list-inside space-y-2 text-slate-300 pl-2">
-                        <li><strong class="text-white">मानसिक स्वास्थ्य और योग:</strong> यहाँ का शांत वातावरण और ऑक्सीजन से भरपूर पहाड़ इंसानी मस्तिष्क में तनाव (Cortisol level) को कम करते हैं।</li>
-                        <li><strong class="text-white">एडवेंचर टूरिज्म:</strong> रिवर राफ्टिंग, बंजी जंपिंग और कैंपिंग के लिए यह भारत का सबसे पसंदीदा स्थान है।</li>
-                        <li><strong class="text-white">पर्यावरण संतुलन:</strong> हिमालयी पारिस्थितिकी तंत्र (Ecosystem) को समझने के लिए यह क्षेत्र बेहद खास है।</li>
-                    </ul>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-emerald-400 border-b border-slate-700 pb-3">
+                        ऋषिकेश: गंगा तट और जानकी झूला का अनोखा सफ़र
+                    </h2>
 
-                    <h3 class="text-xl font-bold text-emerald-300 pt-2">निष्कर्ष</h3>
-                    <p>
-                        यदि आप भागदौड़ भरी जिंदगी से दूर कुछ पल शांति के बीताना चाहते हैं या प्रकृति और रोमांच का एक साथ आनंद लेना चाहते हैं, तो ऋषिकेश की यात्रा आपके लिए सबसे बेहतरीन विकल्प है।
-                    </p>
+                    <div class="space-y-4 text-slate-200 leading-relaxed">
+                        <p>
+                            उत्तराखंड की पहाड़ियों की गोद में बसा <strong class="text-white">ऋषिकेश</strong> सिर्फ भारत ही नहीं, बल्कि पूरी दुनिया में अध्यात्म, योग और प्रकृति का केंद्र माना जाता है। इसे दुनिया की <strong class="text-emerald-400">'योग राजधानी' (Yoga Capital of the World)</strong> भी कहा जाता है[span_0](start_span)[span_0](end_span)। यहाँ बहती पवित्र गंगा नदी और पर्वतों की श्रृंखलाएँ हर साल लाखों पर्यटकों को अपनी ओर आकर्षित करती हैं[span_1](start_span)[span_1](end_span)।
+                        </p>
+
+                        <h3 class="text-xl font-bold text-emerald-300 pt-2">1. गंगा तट की दिव्यता और प्राकृतिक सौंदर्य</h3>
+                        <p>
+                            ऋषिकेश में गंगा नदी का रूप मैदानी इलाकों से बिल्कुल अलग होता है[span_2](start_span)[span_2](end_span)। यहाँ पानी का बहाव तेज़, रंग एकदम पारदर्शी नीला-हरा और वातावरण बेहद शांत होता है[span_3](start_span)[span_3](end_span)। त्रिवेणी घाट की शाम की <strong class="text-white">गंगा आरती</strong> इंसानी मन को गहरी शांति देती है[span_4](start_span)[span_4](end_span)।
+                        </p>
+                        <p>
+                            वैज्ञानिक दृष्टिकोण से भी हिमालय से निकलने वाली गंगा के जल में ऐसे प्राकृतिक खनिज और बैक्टीरियोफेज होते हैं जो पानी को लंबे समय तक खराब नहीं होने देते[span_5](start_span)[span_5](end_span)।
+                        </p>
+
+                        <h3 class="text-xl font-bold text-emerald-300 pt-2">2. जानकी झूला: वास्तुकला और रोमांच का अद्भुत संगम</h3>
+                        <div class="bg-slate-900/80 p-4 md:p-5 rounded-xl border-l-4 border-emerald-500">
+                            <p class="mb-2">
+                                गंगा नदी के ऊपर बने सस्पेंशन ब्रिज (Suspension Bridge) जैसे जानकी झूला इंजीनियरिंग का बेहतरीन उदाहरण हैं[span_6](start_span)[span_6](end_span)। 
+                            </p>
+                            <p>
+                                जब आप जानकी झूला पर चलते हैं, तो नीचे तेज़ी से बहती गंगा की धारा और चारों तरफ ऊंचे पहाड़ एक रोमांचक अहसास कराते हैं[span_7](start_span)[span_7](end_span)। हवा के झोंकों के साथ पुल का हल्का-फुल्का हिलना पर्यटकों के दिलों में एक अजीब सी सिहरन पैदा करता है[span_8](start_span)[span_8](end_span)।
+                            </p>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-emerald-300 pt-2">3. ऋषिकेश का वैज्ञानिक और पर्यटन महत्व</h3>
+                        <ul class="list-disc list-inside space-y-1.5 text-slate-300 pl-2">
+                            <li><strong class="text-white">मानसिक स्वास्थ्य और योग:</strong> यहाँ का शांत वातावरण इंसानी मस्तिष्क में तनाव (Cortisol level) को कम करता है[span_9](start_span)[span_9](end_span)।</li>
+                            <li><strong class="text-white">एडवेंचर टूरिज्म:</strong> रिवर राफ्टिंग, बंजी जंपिंग और कैंपिंग के लिए यह भारत का सबसे पसंदीदा स्थान है[span_10](start_span)[span_10](end_span)।</li>
+                        </ul>
+                    </div>
                 </div>
             </article>
 
-            <!-- ARTICLE 2: केरल जटायु अर्थ सेंटर पूरा लेख -->
-            <article id="jatayu-article" class="bg-slate-800 rounded-2xl p-6 md:p-8 border border-slate-700 shadow-2xl scroll-mt-24">
-                <div class="flex items-center gap-2 mb-4">
-                    <span class="bg-rose-950 text-rose-400 border border-rose-800 text-xs font-semibold px-3 py-1 rounded-full">पर्यटन एवं संस्कृति</span>
-                    <span class="text-slate-400 text-xs">स्थान: कोल्लम, केरल</span>
+            <!-- 2. केरल जटायु अर्थ सेंटर: फोटो + पूरा लेख एक साथ -->
+            <article class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 shadow-2xl">
+                <!-- जटायु इमेज -->
+                <div class="w-full h-64 md:h-80 overflow-hidden">
+                    <img src="jatayu.png" alt="Jatayu Earth Center Kerala" class="w-full h-full object-cover">
                 </div>
                 
-                <h2 class="text-3xl font-extrabold text-amber-400 mb-6 border-b border-slate-700 pb-4">
-                    केरल का 'जटायु अर्थ सेंटर': भव्यता और संस्कृति का प्रतीक
-                </h2>
+                <!-- जटायु पूरा कंटेंट -->
+                <div class="p-6 md:p-8 space-y-6">
+                    <div class="flex items-center gap-2">
+                        <span class="bg-rose-950 text-rose-400 border border-rose-800 text-xs font-semibold px-3 py-1 rounded-full">केरल पर्यटन</span>
+                        <span class="bg-amber-950 text-amber-400 border border-amber-800 text-xs font-semibold px-3 py-1 rounded-full">विश्व रिकॉर्ड</span>
+                        <span class="text-slate-400 text-xs ml-auto">स्थान: कोल्लम, केरल</span>
+                    </div>
 
-                <div class="space-y-6 text-slate-200 leading-relaxed text-base">
-                    <p>
-                        केरल के कोल्लम जिले में समुद्र तल से 1,000 फीट की ऊँचाई पर स्थित <strong class="text-white">जटायु अर्थ सेंटर (Jatayu Earth's Center)</strong> दुनिया भर के पर्यटकों के लिए आकर्षण का केंद्र बन चुका है। 65 एकड़ में फैला यह पार्क कला, इंजीनियरिंग और पौराणिक इतिहास का एक अद्भुत संगम है।
-                    </p>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-amber-400 border-b border-slate-700 pb-3">
+                        केरल का 'जटायु अर्थ सेंटर': भव्यता और संस्कृति का प्रतीक
+                    </h2>
 
-                    <h3 class="text-xl font-bold text-amber-300 pt-2">1. दुनिया की सबसे बड़ी पक्षी मूर्ति (Guinness World Record)</h3>
-                    <p>
-                        यहाँ स्थित जटायु की मूर्ति <strong>200 फीट लंबी, 150 फीट चौड़ी और 70 फीट ऊंची</strong> है। इसे प्रसिद्ध मूर्तिकार और फिल्म निर्देशक राजीव अंचल ने 10 साल की कड़ी मेहनत से तैयार किया था। यह दुनिया में किसी पक्षी की बनाई गई सबसे बड़ी कंक्रीट मूर्ति है।
-                    </p>
+                    <div class="space-y-4 text-slate-200 leading-relaxed">
+                        <p>
+                            केरल के कोल्लम जिले में समुद्र तल से 1,000 फीट की ऊँचाई पर स्थित <strong class="text-white">जटायु अर्थ सेंटर (Jatayu Earth's Center)</strong> दुनिया भर के पर्यटकों के लिए आकर्षण का केंद्र बन चुका है[span_11](start_span)[span_11](end_span)। 65 एकड़ में फैला यह पार्क कला, इंजीनियरिंग और पौराणिक इतिहास का एक अद्भुत संगम है[span_12](start_span)[span_12](end_span)।
+                        </p>
 
-                    <h3 class="text-xl font-bold text-amber-300 pt-2">2. नारी सम्मान और सुरक्षा का संदेश</h3>
-                    <p>
-                        पौराणिक मान्यताओं के अनुसार, जटायु जी ने लंकापति रावण से माता सीता की रक्षा करते हुए अपने पंख कटवा लिए थे और इसी चट्टान (जटायुपारा) पर गिरे थे। इसलिए यह स्मारक विशेष रूप से <strong>'महिलाओं की सुरक्षा और सम्मान' (Honor and Safety of Women)</strong> को समर्पित किया गया है।
-                    </p>
+                        <h3 class="text-xl font-bold text-amber-300 pt-2">1. दुनिया की सबसे बड़ी पक्षी मूर्ति (Guinness World Record)</h3>
+                        <p>
+                            यहाँ स्थित जटायु की मूर्ति <strong>200 फीट लंबी, 150 फीट चौड़ी और 70 फीट ऊंची</strong> है[span_13](start_span)[span_13](end_span)। इसे प्रसिद्ध मूर्तिकार और फिल्म निर्देशक राजीव अंचल ने 10 साल की कड़ी मेहनत से तैयार किया था[span_14](start_span)[span_14](end_span)। यह दुनिया में किसी पक्षी की बनाई गई सबसे बड़ी कंक्रीट मूर्ति है[span_15](start_span)[span_15](end_span)।
+                        </p>
 
-                    <h3 class="text-xl font-bold text-amber-300 pt-2">3. टूरिज्म और एडवेंचर</h3>
-                    <p>
-                        पहाड़ की चोटी तक पहुँचने के लिए यहाँ केबल कार (रोपवे) की सुविधा उपलब्ध है। इसके अलावा एडवेंचर लवर्स के लिए रॉक क्लाइंबिंग, ज़िप लाइनिंग और 6D थिएटर जैसी आधुनिक सुविधाएँ भी मौजूद हैं।
-                    </p>
+                        <h3 class="text-xl font-bold text-amber-300 pt-2">2. नारी सम्मान और सुरक्षा का संदेश</h3>
+                        <div class="bg-slate-900/80 p-4 md:p-5 rounded-xl border-l-4 border-amber-500">
+                            <p>
+                                पौराणिक मान्यताओं के अनुसार, जटायु जी ने लंकापति रावण से माता सीता की रक्षा करते हुए अपने पंख कटवा लिए थे और इसी चट्टान (जटायुपारा) पर गिरे थे[span_16](start_span)[span_16](end_span)। इसलिए यह भव्य स्मारक विशेष रूप से <strong>'महिलाओं की सुरक्षा और सम्मान' (Honor and Safety of Women)</strong> को समर्पित किया गया है[span_17](start_span)[span_17](end_span)।
+                            </p>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-amber-300 pt-2">3. टूरिज्म और एडवेंचर</h3>
+                        <p>
+                            पहाड़ की चोटी तक पहुँचने के लिए यहाँ केबल कार (रोपवे) की सुविधा उपलब्ध है[span_18](start_span)[span_18](end_span)। इसके अलावा एडवेंचर लवर्स के लिए रॉक क्लाइंबिंग, ज़िप लाइनिंग और 6D थिएटर जैसी आधुनिक सुविधाएँ भी मौजूद हैं[span_19](start_span)[span_19](end_span)।
+                        </p>
+                    </div>
                 </div>
             </article>
 
