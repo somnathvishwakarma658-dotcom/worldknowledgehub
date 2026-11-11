@@ -123,7 +123,7 @@
 
                 <!-- Mobile Hamburger Button -->
                 <div class="md:hidden flex items-center">
-                    <button id="menuBtn" onclick="toggleMobileMenu()" class="text-slate-700 hover:text-primary focus:outline-none p-1.5 rounded-lg">
+                    <button id="menuBtn" type="button" onclick="toggleMobileMenu()" class="text-slate-700 hover:text-primary focus:outline-none p-2 rounded-lg cursor-pointer">
                         <i class="fa-solid fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -131,20 +131,20 @@
         </div>
 
         <!-- Mobile Slide-out Menu Overlay -->
-        <div id="mobileMenu" class="hidden fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm transition-opacity duration-300 flex justify-start" onclick="toggleMobileMenu()">
+        <div id="mobileMenu" class="hidden fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm transition-opacity duration-300 flex justify-start">
             <div class="bg-white w-4/5 max-w-xs h-full shadow-2xl p-5 overflow-y-auto flex flex-col justify-between text-slate-900" onclick="event.stopPropagation()">
                 <div>
-                    <!-- Sidebar Header with Logo Title & Close Button -->
+                    <!-- Sidebar Header with Title & Close Button -->
                     <div class="flex justify-between items-center pb-3 border-b border-slate-200 mb-3">
                         <div class="flex items-center space-x-2">
                             <span class="font-extrabold text-xs text-primary">World Politics & Tour Science</span>
                         </div>
-                        <button onclick="toggleMobileMenu()" class="text-slate-500 hover:text-red-600 text-xl font-bold p-1">
+                        <button type="button" onclick="toggleMobileMenu()" class="text-slate-500 hover:text-red-600 text-xl font-bold p-1 cursor-pointer">
                             <i class="fa-solid fa-xmark"></i>
                         </button>
                     </div>
 
-                    <!-- All Navigation & Page Links (सारे होमपेज बटन शामिल हैं) -->
+                    <!-- All Navigation & Page Links -->
                     <div class="space-y-1.5 font-semibold text-xs text-left">
                         <a href="index.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100 transition">
                             <i class="fa-solid fa-house text-sky-600 w-5 text-center"></i>
@@ -187,7 +187,7 @@
 
                 <!-- Subscribe Button at Bottom -->
                 <div class="pt-3 border-t border-slate-200 mt-3">
-                    <button onclick="alert('धन्यवाद! आप सफलतापूर्वक सब्सक्राइब हो चुके हैं।')" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 px-4 rounded-xl shadow-md flex items-center justify-center space-x-2 transition text-xs active:scale-95">
+                    <button type="button" onclick="alert('धन्यवाद! आप सफलतापूर्वक सब्सक्राइब हो चुके हैं।')" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 px-4 rounded-xl shadow-md flex items-center justify-center space-x-2 transition text-xs active:scale-95 cursor-pointer">
                         <i class="fa-solid fa-bell"></i>
                         <span>Subscribe</span>
                     </button>
@@ -307,4 +307,4 @@
 
     <!-- Footer -->
     <footer class="bg-slate-900 border-t border-slate-800 py-4 text-center text-slate-400 text-xs">
-        <p>&copy; 2026 World Politics & Tour Science. Created by <strong>Som Vishwakarma</stron
+        <p>&copy; 2026 World Politics & Tour Science. Created by <strong
