@@ -85,14 +85,15 @@
     <!-- ================= NAVBAR ================= -->
      <!-- ================= NAVBAR (Line 86 से Paste करें) ================= -->
     
-<header class="sticky top-0 z-50 glass shadow-md border-b border-slate-200">
+    <!-- ================= NAVBAR ================= -->
+    <header class="sticky top-0 z-50 glass shadow-md border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16 sm:h-20">
                 
                 <!-- BRAND LOGO -->
                 <a href="index.html" class="flex items-center cursor-pointer py-1">
                     <div class="flex items-center space-x-2">
-                        <svg class="h-10 sm:h-12 w-auto drop-shadow-sm" viewBox="0 0 700 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="h-9 sm:h-11 w-auto drop-shadow-sm" viewBox="0 0 700 380" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <defs>
                                 <linearGradient id="bgRingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                                     <stop offset="0%" stop-color="#0b2341"/>
@@ -126,66 +127,67 @@
                 <!-- Mobile Hamburger Button -->
                 <div class="md:hidden flex items-center">
                     <button id="menuBtn" onclick="toggleMobileMenu()" class="text-slate-700 hover:text-primary focus:outline-none p-1.5 rounded-lg">
-                        <i class="fa-solid fa-bars text-xl"></i>
+                        <i class="fa-solid fa-bars text-2xl"></i>
                     </button>
                 </div>
             </div>
         </div>
 
-        <!-- Mobile Slide-out Menu with Logo & Subscribe Button -->
-        <div id="mobileMenu" class="hidden md:hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex justify-start">
-            <div class="bg-white w-4/5 max-w-sm h-full shadow-2xl p-5 overflow-y-auto flex flex-col justify-between">
+        <!-- Mobile Slide-out Menu Overlay -->
+        <div id="mobileMenu" class="hidden fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm transition-opacity duration-300 flex justify-start" onclick="toggleMobileMenu()">
+            <!-- Sidebar Drawer (Stop propagation to prevent overlay click) -->
+            <div class="bg-white w-4/5 max-w-xs h-full shadow-2xl p-5 overflow-y-auto flex flex-col justify-between" onclick="event.stopPropagation()">
                 <div>
-                    <!-- Header with Title & Close Button -->
+                    <!-- Sidebar Header with Brand & Close Button -->
                     <div class="flex justify-between items-center pb-4 border-b border-slate-200 mb-4">
                         <div class="flex items-center space-x-2">
-                            <span class="font-extrabold text-primary text-base">World Politics & Tour Science</span>
+                            <span class="font-extrabold text-slate-900 text-sm">World Politics & Tour Science</span>
                         </div>
-                        <button onclick="toggleMobileMenu()" class="text-slate-500 hover:text-red-600 text-xl font-bold p-2">
+                        <button onclick="toggleMobileMenu()" class="text-slate-500 hover:text-red-600 text-2xl font-bold p-1">
                             <i class="fa-solid fa-xmark"></i>
                         </button>
                     </div>
 
-                    <!-- Links List -->
-                    <div class="space-y-3 text-slate-800 font-medium text-left">
-                        <a href="index.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100">
-                            <i class="fa-solid fa-house text-primary w-5"></i>
+                    <!-- Menu Links -->
+                    <div class="space-y-2 text-slate-800 font-semibold text-left text-sm">
+                        <a href="index.html" class="flex items-center space-x-3 p-2.5 rounded-xl hover:bg-slate-100 transition">
+                            <i class="fa-solid fa-house text-sky-600 w-5 text-center"></i>
                             <span>Latest Updates / Home</span>
                         </a>
-                        <a href="politics.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100">
-                            <i class="fa-solid fa-newspaper text-amber-600 w-5"></i>
+                        <a href="politics.html" class="flex items-center space-x-3 p-2.5 rounded-xl hover:bg-slate-100 transition">
+                            <i class="fa-solid fa-newspaper text-amber-600 w-5 text-center"></i>
                             <span>National & Politics</span>
                         </a>
-                        <a href="tourism.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100">
-                            <i class="fa-solid fa-compass text-teal-600 w-5"></i>
+                        <a href="tourism.html" class="flex items-center space-x-3 p-2.5 rounded-xl hover:bg-slate-100 transition">
+                            <i class="fa-solid fa-compass text-teal-600 w-5 text-center"></i>
                             <span>International & Tours</span>
                         </a>
-                        <a href="ai-article.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100">
-                            <i class="fa-solid fa-atom text-sky-500 w-5"></i>
+                        <a href="ai-article.html" class="flex items-center space-x-3 p-2.5 rounded-xl hover:bg-slate-100 transition">
+                            <i class="fa-solid fa-atom text-indigo-600 w-5 text-center"></i>
                             <span>Science & Tech</span>
                         </a>
-                        <a href="weapons.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100">
-                            <i class="fa-solid fa-skull-crossbones text-rose-500 w-5"></i>
+                        <a href="weapons.html" class="flex items-center space-x-3 p-2.5 rounded-xl hover:bg-slate-100 transition">
+                            <i class="fa-solid fa-skull-crossbones text-rose-500 w-5 text-center"></i>
                             <span>Sports & Weapons</span>
                         </a>
-                        <a href="human-diseases.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100">
-                            <i class="fa-solid fa-file-medical text-emerald-600 w-5"></i>
+                        <a href="human-diseases.html" class="flex items-center space-x-3 p-2.5 rounded-xl hover:bg-slate-100 transition">
+                            <i class="fa-solid fa-file-medical text-emerald-600 w-5 text-center"></i>
                             <span>Health & Human Diseases</span>
                         </a>
-                        <a href="history.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100">
-                            <i class="fa-solid fa-landmark text-amber-700 w-5"></i>
+                        <a href="history.html" class="flex items-center space-x-3 p-2.5 rounded-xl hover:bg-slate-100 transition">
+                            <i class="fa-solid fa-landmark text-amber-700 w-5 text-center"></i>
                             <span>History & Mysteries</span>
                         </a>
-                        <a href="latest-news.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100">
-                            <i class="fa-solid fa-bolt text-red-600 w-5"></i>
+                        <a href="latest-news.html" class="flex items-center space-x-3 p-2.5 rounded-xl hover:bg-slate-100 transition text-red-600 font-bold">
+                            <i class="fa-solid fa-bolt text-red-600 w-5 text-center"></i>
                             <span>⚡ खबरें फटाफट (Latest News)</span>
                         </a>
                     </div>
                 </div>
 
-                <!-- Subscribe Button at Bottom -->
+                <!-- Subscribe Button -->
                 <div class="pt-4 border-t border-slate-200 mt-4">
-                    <button onclick="alert('धन्यवाद! आप सफलतापूर्वक सब्सक्राइब हो चुके हैं।')" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 px-4 rounded-xl shadow-md flex items-center justify-center space-x-2 transition">
+                    <button onclick="alert('धन्यवाद! आप सफलतापूर्वक सब्सक्राइब हो चुके हैं।')" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded-xl shadow-lg flex items-center justify-center space-x-2 transition transform active:scale-95">
                         <i class="fa-solid fa-bell"></i>
                         <span>Subscribe</span>
                     </button>
