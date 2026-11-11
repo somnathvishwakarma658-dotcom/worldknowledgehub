@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+hdfjhfd<!DOCTYPE html>
 <html lang="hi" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -83,9 +83,6 @@
     </div>
 
     <!-- ================= NAVBAR ================= -->
-     <!-- ================= NAVBAR (Line 86 से Paste करें) ================= -->
-    
-    <!-- ================= NAVBAR ================= -->
     <header class="sticky top-0 z-50 glass shadow-md border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16 sm:h-20">
@@ -133,61 +130,64 @@
             </div>
         </div>
 
-        <!-- Mobile Slide-out Menu Overlay -->
+        <!-- Mobile Slide-out Menu Overlay with All Buttons & Subscribe -->
         <div id="mobileMenu" class="hidden fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm transition-opacity duration-300 flex justify-start" onclick="toggleMobileMenu()">
-            <!-- Sidebar Drawer (Stop propagation to prevent overlay click) -->
-            <div class="bg-white w-4/5 max-w-xs h-full shadow-2xl p-5 overflow-y-auto flex flex-col justify-between" onclick="event.stopPropagation()">
+            <div class="bg-white w-4/5 max-w-xs h-full shadow-2xl p-5 overflow-y-auto flex flex-col justify-between text-slate-900" onclick="event.stopPropagation()">
                 <div>
-                    <!-- Sidebar Header with Brand & Close Button -->
-                    <div class="flex justify-between items-center pb-4 border-b border-slate-200 mb-4">
+                    <!-- Sidebar Header with Logo & Close Button -->
+                    <div class="flex justify-between items-center pb-3 border-b border-slate-200 mb-3">
                         <div class="flex items-center space-x-2">
-                            <span class="font-extrabold text-slate-900 text-sm">World Politics & Tour Science</span>
+                            <span class="font-extrabold text-xs text-primary">World Politics & Tour Science</span>
                         </div>
-                        <button onclick="toggleMobileMenu()" class="text-slate-500 hover:text-red-600 text-2xl font-bold p-1">
+                        <button onclick="toggleMobileMenu()" class="text-slate-500 hover:text-red-600 text-xl font-bold p-1">
                             <i class="fa-solid fa-xmark"></i>
                         </button>
                     </div>
 
-                    <!-- Menu Links -->
-                    <div class="space-y-2 text-slate-800 font-semibold text-left text-sm">
-                        <a href="index.html" class="flex items-center space-x-3 p-2.5 rounded-xl hover:bg-slate-100 transition">
+                    <!-- All Navigation & Page Links -->
+                    <div class="space-y-1.5 font-semibold text-xs text-left">
+                        <a href="index.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100 transition">
                             <i class="fa-solid fa-house text-sky-600 w-5 text-center"></i>
-                            <span>Latest Updates / Home</span>
+                            <span>होमपेज (Home)</span>
                         </a>
-                        <a href="politics.html" class="flex items-center space-x-3 p-2.5 rounded-xl hover:bg-slate-100 transition">
-                            <i class="fa-solid fa-newspaper text-amber-600 w-5 text-center"></i>
-                            <span>National & Politics</span>
-                        </a>
-                        <a href="tourism.html" class="flex items-center space-x-3 p-2.5 rounded-xl hover:bg-slate-100 transition">
-                            <i class="fa-solid fa-compass text-teal-600 w-5 text-center"></i>
-                            <span>International & Tours</span>
-                        </a>
-                        <a href="ai-article.html" class="flex items-center space-x-3 p-2.5 rounded-xl hover:bg-slate-100 transition">
-                            <i class="fa-solid fa-atom text-indigo-600 w-5 text-center"></i>
-                            <span>Science & Tech</span>
-                        </a>
-                        <a href="weapons.html" class="flex items-center space-x-3 p-2.5 rounded-xl hover:bg-slate-100 transition">
-                            <i class="fa-solid fa-skull-crossbones text-rose-500 w-5 text-center"></i>
-                            <span>Sports & Weapons</span>
-                        </a>
-                        <a href="human-diseases.html" class="flex items-center space-x-3 p-2.5 rounded-xl hover:bg-slate-100 transition">
-                            <i class="fa-solid fa-file-medical text-emerald-600 w-5 text-center"></i>
-                            <span>Health & Human Diseases</span>
-                        </a>
-                        <a href="history.html" class="flex items-center space-x-3 p-2.5 rounded-xl hover:bg-slate-100 transition">
-                            <i class="fa-solid fa-landmark text-amber-700 w-5 text-center"></i>
-                            <span>History & Mysteries</span>
-                        </a>
-                        <a href="latest-news.html" class="flex items-center space-x-3 p-2.5 rounded-xl hover:bg-slate-100 transition text-red-600 font-bold">
+                        <a href="latest-news.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-red-50 text-red-600 transition font-bold">
                             <i class="fa-solid fa-bolt text-red-600 w-5 text-center"></i>
                             <span>⚡ खबरें फटाफट (Latest News)</span>
+                        </a>
+                        <a href="politics.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100 transition">
+                            <i class="fa-solid fa-newspaper text-amber-600 w-5 text-center"></i>
+                            <span>राजनीति (Politics)</span>
+                        </a>
+                        <a href="tourism.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100 transition">
+                            <i class="fa-solid fa-compass text-teal-600 w-5 text-center"></i>
+                            <span>पर्यटन (Tours)</span>
+                        </a>
+                        <a href="ai-article.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100 transition">
+                            <i class="fa-solid fa-atom text-indigo-600 w-5 text-center"></i>
+                            <span>विज्ञान व तकनीक (Science)</span>
+                        </a>
+                        <a href="weapons.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100 transition">
+                            <i class="fa-solid fa-skull-crossbones text-rose-500 w-5 text-center"></i>
+                            <span>विश्व के घातक हथियार</span>
+                        </a>
+                        <a href="history.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100 transition">
+                            <i class="fa-solid fa-landmark text-amber-700 w-5 text-center"></i>
+                            <span>🏛️ इतिहास और प्राचीन रहस्य</span>
+                        </a>
+                        <a href="medical-guide.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100 transition">
+                            <i class="fa-solid fa-file-medical text-emerald-600 w-5 text-center"></i>
+                            <span>मेडिकल रिपोर्ट गाइड 🩺</span>
+                        </a>
+                        <a href="human-diseases.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100 transition">
+                            <i class="fa-solid fa-dna text-yellow-600 w-5 text-center"></i>
+                            <span>मानव रोग और चिकित्सा विज्ञान</span>
                         </a>
                     </div>
                 </div>
 
-                <!-- Subscribe Button -->
-                <div class="pt-4 border-t border-slate-200 mt-4">
-                    <button onclick="alert('धन्यवाद! आप सफलतापूर्वक सब्सक्राइब हो चुके हैं।')" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded-xl shadow-lg flex items-center justify-center space-x-2 transition transform active:scale-95">
+                <!-- Subscribe Button at Bottom -->
+                <div class="pt-3 border-t border-slate-200 mt-3">
+                    <button onclick="alert('धन्यवाद! आप सफलतापूर्वक सब्सक्राइब हो चुके हैं।')" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 px-4 rounded-xl shadow-md flex items-center justify-center space-x-2 transition text-xs">
                         <i class="fa-solid fa-bell"></i>
                         <span>Subscribe</span>
                     </button>
@@ -307,41 +307,4 @@
 
     <!-- Footer -->
     <footer class="bg-slate-900 border-t border-slate-800 py-4 text-center text-slate-400 text-xs">
-        <p>&copy; 2026 World Politics & Tour Science. Created by <strong>Som Vishwakarma</strong>. All rights reserved.</p>
-
-        <div style="margin: 15px 0; text-align: center;">
-            <a href="about.html" style="margin: 0 10px; text-decoration: none; color: #38bdf8;">About Us</a> | 
-            <a href="privacy.html" style="margin: 0 10px; text-decoration: none; color: #38bdf8;">Privacy Policy</a> | 
-            <a href="contact.html" style="margin: 0 10px; text-decoration: none; color: #38bdf8;">Contact Us</a>
-        </div>
-    </footer>
-
-    <!-- JS Scripts -->
-    <script>
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        }
-
-        function runHomePopulationClock() {
-            let basePopulation = 1429700205; 
-            let growthRatePerSecond = 0.52; 
-            
-            let now = new Date();
-            let startOfYear = new Date(now.getFullYear(), 0, 1);
-            let secondsElapsed = (now - startOfYear) / 1000;
-            
-            let currentPopulation = Math.floor(basePopulation + (secondsElapsed * growthRatePerSecond));
-            
-            const popElement = document.getElementById("home-live-pop");
-            if(popElement) {
-                popElement.innerText = currentPopulation.toLocaleString('en-IN');
-            }
-        }
-
-        // हर 1 सेकंड में लाइव घड़ी अपडेट करें
-        setInterval(runHomePopulationClock, 1000);
-        runHomePopulationClock();
-    </script>
-</body>
-</html>
+        <p>&copy; 2026 World Politics & Tour Science. Created by <strong>Som Vishwakarma</strong>. All rights reserv
