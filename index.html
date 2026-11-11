@@ -1,4 +1,4 @@
-jffjj<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="hi" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -123,80 +123,22 @@ jffjj<!DOCTYPE html>
 
                 <!-- Mobile Hamburger Button -->
                 <div class="md:hidden flex items-center">
-                    <button id="menuBtn" type="button" onclick="toggleMobileMenu()" class="text-slate-700 hover:text-primary focus:outline-none p-2 rounded-lg cursor-pointer">
-                        <i class="fa-solid fa-bars text-2xl"></i>
+                    <button id="menuBtn" onclick="toggleMobileMenu()" class="text-slate-700 hover:text-primary focus:outline-none p-1.5 rounded-lg">
+                        <i class="fa-solid fa-bars text-xl"></i>
                     </button>
                 </div>
             </div>
         </div>
 
-        <!-- Mobile Slide-out Menu Overlay -->
-        <div id="mobileMenu" class="hidden fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm transition-opacity duration-300 flex justify-start">
-            <div class="bg-white w-4/5 max-w-xs h-full shadow-2xl p-5 overflow-y-auto flex flex-col justify-between text-slate-900" onclick="event.stopPropagation()">
-                <div>
-                    <!-- Sidebar Header with Close Button -->
-                    <div class="flex justify-between items-center pb-3 border-b border-slate-200 mb-3">
-                        <div class="flex items-center space-x-2">
-                            <span class="font-extrabold text-xs text-primary">World Politics & Tour Science</span>
-                        </div>
-                        <button type="button" onclick="toggleMobileMenu()" class="text-slate-500 hover:text-red-600 text-xl font-bold p-1 cursor-pointer">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                    </div>
-
-                    <!-- All Navigation & Page Links (Including Railway Updates) -->
-                    <div class="space-y-1.5 font-semibold text-xs text-left">
-                        <a href="index.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100 transition">
-                            <i class="fa-solid fa-house text-sky-600 w-5 text-center"></i>
-                            <span>होमपेज (Home)</span>
-                        </a>
-                        <a href="latest-news.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-red-50 text-red-600 transition font-bold">
-                            <i class="fa-solid fa-bolt text-red-600 w-5 text-center"></i>
-                            <span>⚡ खबरें फटाफट (Latest News)</span>
-                        </a>
-                        <a href="railway-updates.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100 text-blue-600 transition font-bold">
-                            <i class="fa-solid fa-train text-blue-600 w-5 text-center"></i>
-                            <span>🚆 रेलवे अपडेट (Railway Updates)</span>
-                        </a>
-                        <a href="politics.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100 transition">
-                            <i class="fa-solid fa-newspaper text-amber-600 w-5 text-center"></i>
-                            <span>राजनीति (Politics)</span>
-                        </a>
-                        <a href="tourism.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100 transition">
-                            <i class="fa-solid fa-compass text-teal-600 w-5 text-center"></i>
-                            <span>पर्यटन (Tours)</span>
-                        </a>
-                        <a href="ai-article.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100 transition">
-                            <i class="fa-solid fa-atom text-indigo-600 w-5 text-center"></i>
-                            <span>विज्ञान व तकनीक (Science)</span>
-                        </a>
-                        <a href="weapons.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100 transition">
-                            <i class="fa-solid fa-skull-crossbones text-rose-500 w-5 text-center"></i>
-                            <span>विश्व के घातक हथियार</span>
-                        </a>
-                        <a href="history.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100 transition">
-                            <i class="fa-solid fa-landmark text-amber-700 w-5 text-center"></i>
-                            <span>🏛️ इतिहास और प्राचीन रहस्य</span>
-                        </a>
-                        <a href="medical-guide.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100 transition">
-                            <i class="fa-solid fa-file-medical text-emerald-600 w-5 text-center"></i>
-                            <span>मेडिकल रिपोर्ट गाइड 🩺</span>
-                        </a>
-                        <a href="human-diseases.html" class="flex items-center space-x-3 p-2 rounded-lg hover:bg-slate-100 transition">
-                            <i class="fa-solid fa-dna text-yellow-600 w-5 text-center"></i>
-                            <span>मानव रोग और चिकित्सा विज्ञान</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Subscribe Button at Bottom -->
-                <div class="pt-3 border-t border-slate-200 mt-3">
-                    <button type="button" onclick="alert('धन्यवाद! आप सफलतापूर्वक सब्सक्राइब हो चुके हैं।')" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 px-4 rounded-xl shadow-md flex items-center justify-center space-x-2 transition text-xs active:scale-95 cursor-pointer">
-                        <i class="fa-solid fa-bell"></i>
-                        <span>Subscribe</span>
-                    </button>
-                </div>
-            </div>
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-2">
+            <a href="index.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">Home</a>
+            <a href="politics.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">Politics (राजनीति)</a>
+            <a href="tourism.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">Tours (पर्यटन)</a>
+            <a href="ai-article.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">Science (विज्ञान)</a>
+            <a href="history.html" class="block font-bold text-amber-600 hover:bg-slate-50 px-3 py-2 rounded-md">🏛️ इतिहास और रहस्य</a>
+            <a href="weapons.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">World Weapons (विश्व के घातक हथियार)</a>
+            <a href="latest-news.html" class="block font-bold text-red-600 hover:bg-slate-50 px-3 py-2 rounded-md text-base">⚡ खबरें फटाफट (Latest News)</a>
         </div>
     </header>
 
@@ -249,14 +191,6 @@ jffjj<!DOCTYPE html>
                 </a>
             </div>
 
-            <!-- Railway Updates Button -->
-            <div class="w-full max-w-xl mx-auto">
-                <a href="railway-updates.html" class="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-4 rounded-xl shadow-lg transition flex items-center justify-center space-x-2 text-sm sm:text-base transform hover:-translate-y-0.5">
-                    <i class="fa-solid fa-train text-lg"></i>
-                    <span>भारतीय रेलवे ताज़ा अपडेट 🚆</span>
-                </a>
-            </div>
-
             <!-- Buttons Grid Row 1 (राजनीति और पर्यटन) -->
             <div class="flex flex-row items-center justify-center gap-3 w-full max-w-xl mx-auto">
                 <a href="politics.html" class="w-1/2 bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-3 px-3 rounded-xl shadow-lg flex items-center justify-center space-x-2 text-sm sm:text-base transition transform hover:-translate-y-0.5">
@@ -305,5 +239,10 @@ jffjj<!DOCTYPE html>
                 </a>
             </div>
 
-            <!-- Feedback Section -->
-            <div class="text
+            <!-- QUIZ SECTION -->
+            <div class="max-w-2xl mx-auto pt-4 border-t border-slate-800 text-left w-full">
+                <div class="bg-slate-800/70 border border-slate-700 rounded-2xl p-4 sm:p-6 shadow-xl">
+                    <div class="flex items-center space-x-2 mb-3">
+                        <i class="fa-solid fa-lightbulb text-amber-400 text-lg"></i>
+                        <h3 class="text-base sm:text-
+Quize wala section hata do
