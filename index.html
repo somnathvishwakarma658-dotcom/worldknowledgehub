@@ -239,37 +239,8 @@
                 </a>
             </div>
 
-            <!-- QUIZ SECTION -->
-            <div class="max-w-2xl mx-auto pt-4 border-t border-slate-800 text-left w-full">
-                <div class="bg-slate-800/70 border border-slate-700 rounded-2xl p-4 sm:p-6 shadow-xl">
-                    <div class="flex items-center space-x-2 mb-3">
-                        <i class="fa-solid fa-lightbulb text-amber-400 text-lg"></i>
-                        <h3 class="text-base sm:text-lg font-bold text-white">आज का ज्ञानवर्धक सवाल (Quiz)</h3>
-                    </div>
-                    
-                    <p class="text-xs sm:text-sm text-slate-200 font-medium mb-3">
-                        ❓ <strong>सवाल:</strong> भारत द्वारा अंतरिक्ष में भेजा गया पहला उपग्रह (Satellite) कौन सा था?
-                    </p>
-
-                    <div class="space-y-2 mb-2">
-                        <button onclick="checkAnswer(this, false)" class="w-full text-left bg-slate-900 hover:bg-slate-700/80 p-2.5 rounded-xl text-xs sm:text-sm text-slate-300 border border-slate-700 transition flex justify-between items-center">
-                            <span>A) रोहिणी (Rohini)</span>
-                            <span class="quiz-feedback hidden">❌ गलत</span>
-                        </button>
-                        <button onclick="checkAnswer(this, true)" class="w-full text-left bg-slate-900 hover:bg-slate-700/80 p-2.5 rounded-xl text-xs sm:text-sm text-slate-300 border border-slate-700 transition flex justify-between items-center">
-                            <span>B) आर्यभट्ट (Aryabhata)</span>
-                            <span class="quiz-feedback hidden">✅ सही उत्तर!</span>
-                        </button>
-                        <button onclick="checkAnswer(this, false)" class="w-full text-left bg-slate-900 hover:bg-slate-700/80 p-2.5 rounded-xl text-xs sm:text-sm text-slate-300 border border-slate-700 transition flex justify-between items-center">
-                            <span>C) भास्कर (Bhaskara)</span>
-                            <span class="quiz-feedback hidden">❌ गलत</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
             <!-- Feedback Section -->
-            <div class="text-center my-8 p-6 bg-slate-800/80 rounded-xl shadow-lg border border-slate-700 max-w-xl mx-auto w-full">
+            <div class="text-center my-6 p-6 bg-slate-800/80 rounded-xl shadow-lg border border-slate-700 max-w-xl mx-auto w-full">
                 <h3 class="text-xl font-bold text-white mb-2">💡 हमें अपनी राय दें</h3>
                 <p class="text-slate-300 text-sm mb-4">हमारी वेबसाइट को और बेहतर बनाने के लिए अपने मूल्यवान सुझाव हमारे साथ साझा करें।</p>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfNfc5YxfLYY5TYdoE3znEdRXCQo95ruw27IYXQ6tcOaCqNeg/viewform" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg shadow transition">
@@ -298,21 +269,25 @@
             menu.classList.toggle('hidden');
         }
 
-        function checkAnswer(button, isCorrect) {
-            const feedback = button.querySelector('.quiz-feedback');
-            feedback.classList.remove('hidden');
-            if (isCorrect) {
-                button.classList.remove('bg-slate-900');
-                button.classList.add('bg-emerald-950', 'border-emerald-500', 'text-emerald-300');
-            } else {
-                button.classList.remove('bg-slate-900');
-                button.classList.add('bg-rose-950', 'border-rose-500', 'text-rose-300');
-            }
-        }
-
         function runHomePopulationClock() {
             let basePopulation = 1429700205; 
             let growthRatePerSecond = 0.52; 
             
             let now = new Date();
-            let startOfYear = new Date(now.getFullYear(),
+            let startOfYear = new Date(now.getFullYear(), 0, 1);
+            let secondsElapsed = (now - startOfYear) / 1000;
+            
+            let currentPopulation = Math.floor(basePopulation + (secondsElapsed * growthRatePerSecond));
+            
+            const popElement = document.getElementById("home-live-pop");
+            if(popElement) {
+                popElement.innerText = currentPopulation.toLocaleString('en-IN');
+            }
+        }
+
+        // हर 1 सेकंड में लाइव घड़ी अपडेट करें
+        setInterval(runHomePopulationClock, 1000);
+        runHomePopulationClock();
+    </script>
+</body>
+</html>
