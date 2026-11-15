@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="hi" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Google Search Console Verification Tag -->
-    <meta name="google-site-verification" content="2hVb_jauCfgT_1md53RRee2DXNFhC_xvo0cIgtLCYhU" />
+    <meta name="google-site-verification" content="r7PadJGvr_GH-tfAHhP6RMmF1eJe9qgeTVU3emG0BZo" />
 
     <title>World Knowledge Hub - ज्ञान, विज्ञान और अद्भुत रहस्य</title>
     
@@ -16,8 +16,9 @@
     <meta name="author" content="Som Vishwakarma">
     <meta name="robots" content="index, follow">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://worldknowledgehub.vercel.app/Gemini_Generated_Image_ftnbdffnbdfftnb.png">
+    <!-- Favicon (नया WKH लोगो ब्राउज़र टैब के लिए) -->
+    <link rel="icon" type="image/png" href="wkh-logo.png">
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
@@ -87,27 +88,12 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16 sm:h-20">
                 
-                <!-- BRAND LOGO -->
-                <a href="index.html" class="flex items-center cursor-pointer py-1">
-                    <div class="flex items-center space-x-2">
-                        <svg class="h-10 sm:h-12 w-auto drop-shadow-sm" viewBox="0 0 700 380" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="bgRingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#0b2341"/>
-                                    <stop offset="50%" stop-color="#183b68"/>
-                                    <stop offset="100%" stop-color="#081528"/>
-                                </linearGradient>
-                                <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#f2d06b"/>
-                                    <stop offset="50%" stop-color="#c59b27"/>
-                                    <stop offset="100%" stop-color="#8a6710"/>
-                                </linearGradient>
-                            </defs>
-                            <circle cx="350" cy="145" r="132" fill="url(#bgRingGrad)" stroke="url(#goldGrad)" stroke-width="3"/>
-                            <circle cx="350" cy="145" r="126" fill="none" stroke="#2a4a75" stroke-width="2"/>
-                            <text x="350" y="300" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="32" font-weight="900" fill="#0D253F" letter-spacing="2">WORLD KNOWLEDGE</text>
-                            <text x="350" y="340" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="30" font-weight="800" fill="#C59B27" letter-spacing="4">HUB</text>
-                        </svg>
+                <!-- BRAND LOGO (नया WKH लोगो यहाँ लगाया गया है) -->
+                <a href="index.html" class="flex items-center space-x-3 cursor-pointer py-1 group">
+                    <img src="wkh-logo.png" alt="World Knowledge Hub Logo" class="h-12 w-12 sm:h-14 sm:w-14 rounded-full object-cover shadow-md border-2 border-amber-500 group-hover:scale-105 transition-transform duration-200">
+                    <div class="flex flex-col text-left">
+                        <span class="font-extrabold text-sm sm:text-lg text-[#0D253F] tracking-wide leading-none">WORLD KNOWLEDGE</span>
+                        <span class="font-black text-xs sm:text-sm text-[#C59B27] tracking-widest mt-0.5">HUB</span>
                     </div>
                 </a>
 
@@ -118,6 +104,7 @@
                     <a href="ai-article.html" class="font-bold text-slate-700 hover:text-indigo-600 transition-colors py-2 border-b-2 border-transparent hover:border-gold">Science</a>
                     <a href="history.html" class="font-bold text-amber-700 hover:text-amber-800 transition-colors py-2 border-b-2 border-transparent hover:border-amber-600">🏛️ इतिहास</a>
                 </nav>
+
                 <!-- Mobile Hamburger Button -->
                 <div class="md:hidden flex items-center">
                     <button id="menuBtn" onclick="toggleMobileMenu()" class="text-slate-700 hover:text-primary focus:outline-none p-1.5 rounded-lg">
@@ -149,7 +136,7 @@
                 </span>
                 <div class="overflow-hidden whitespace-nowrap w-full text-left">
                     <p class="text-xs sm:text-sm text-slate-300 inline-block animate-marquee">
-                        🚀 World Knowledge Hub में आपका स्वागत है! विज्ञान, मानव शरीर, जीव-जंतुओं के अद्भुत तथ्य और  प्राचीन इतिहास से जुड़े रोचक लेख पढ़ने के लिए नीचे दिए गए कार्ड्स पर क्लिक करें।
+                        🚀 World Knowledge Hub में आपका स्वागत है! विज्ञान, मानव शरीर, जीव-जंतुओं के अद्भुत तथ्य और प्राचीन इतिहास से जुड़े रोचक लेख पढ़ने के लिए नीचे दिए गए कार्ड्स पर क्लिक करें।
                     </p>
                 </div>
             </div>
@@ -160,7 +147,7 @@
                     मानव शरीर, चिकित्सा विज्ञान और अद्भुत रहस्यों का सफर
                 </h1>
                 <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto">
-🚀 World Knowledge Hub में आपका स्वागत है! विज्ञान, मानव शरीर, जीव-जंतुओं के अद्भुत तथ्य और  प्राचीन इतिहास से जुड़े रोचक लेख पढ़ें।                   
+                    🚀 World Knowledge Hub में आपका स्वागत है! विज्ञान, मानव शरीर, जीव-जंतुओं के अद्भुत तथ्य और प्राचीन इतिहास से जुड़े रोचक लेख पढ़ें।                   
                 </p>
             </div>
 
