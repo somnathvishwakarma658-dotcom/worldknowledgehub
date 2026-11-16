@@ -3,37 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - World Politics & Tour Science</title>
+    <title>Privacy Policy - World Knowledge Hub</title>
+    
+    <!-- Favicon (ब्राउज़र टैब के लिए लोगो) -->
+    <link rel="icon" type="image/png" href="wkh-logo.png">
+    
+    <!-- Google Search Console Canonical Tag -->
+    <link rel="canonical" href="https://worldknowledgehub.vercel.app/privacy.html" />
+
+    <!-- Google SEO Meta Tags -->
+    <meta name="description" content="World Knowledge Hub (WKH) की प्राइवेसी पॉलिसी (Privacy Policy) पढ़ें। आपकी गोपनीयता हमारे लिए अत्यंत महत्वपूर्ण है। - Som Vishwakarma">
+    <meta name="keywords" content="World Knowledge Hub Privacy Policy, WKH Privacy, Som Vishwakarma">
+    <meta name="author" content="Som Vishwakarma">
+    <meta name="robots" content="index, follow">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D253F',
+                        secondary: '#008080',
+                        gold: '#C59B27',
+                        darkBg: '#081422',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'Mukta', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; background-color: #f9f9f9; color: #333; }
-        h1 { color: #2c3e50; }
-        h2 { color: #34495e; margin-top: 20px; }
-        p { margin-bottom: 15px; }
+        body { background-color: #081422; font-family: 'Poppins', 'Mukta', sans-serif; }
+        .glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+        }
     </style>
 </head>
-<body>
+<body class="text-white antialiased flex flex-col min-h-screen bg-slate-900">
 
-    <h1>Privacy Policy</h1>
-    <p><strong>Last updated:</strong> November 2026</p>
+    <!-- Navbar - WKH Logo & Brand Name -->
+    <header class="sticky top-0 z-50 glass shadow-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 sm:h-20">
+                
+                <!-- BRAND LOGO (WKH Logo & Name - क्लिक करने पर होम पेज पर जाएँगे) -->
+                <a href="index.html" class="flex items-center space-x-3 cursor-pointer py-1 group">
+                    <img src="wkh-logo.png" alt="World Knowledge Hub Logo" class="h-12 w-12 sm:h-14 sm:w-14 rounded-full object-cover shadow-md border-2 border-amber-500 group-hover:scale-105 transition-transform duration-200">
+                    <div class="flex flex-col text-left">
+                        <span class="font-extrabold text-sm sm:text-lg text-[#0D253F] tracking-wide leading-none">WORLD KNOWLEDGE</span>
+                        <span class="font-black text-xs sm:text-sm text-[#C59B27] tracking-widest mt-0.5">HUB</span>
+                    </div>
+                </a>
 
-    <p>Welcome to <strong>World Politics & Tour Science</strong> (accessible from your website link). Your privacy is critically important to us.</p>
+                <!-- होम पेज पर लौटने का सीधा बटन -->
+                <div>
+                    <a href="index.html" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs sm:text-sm shadow-md transition flex items-center space-x-2">
+                        <i class="fa-solid fa-house"></i>
+                        <span>होम पेज</span>
+                    </a>
+                </div>
 
-    <h2>1. Information We Collect</h2>
-    <p>When you visit our website, we may collect basic information such as your browser type, device info, and pages visited through standard analytics (like Google Search Console or Google Analytics) to improve your reading experience. We do not collect any sensitive personal data unless you voluntarily provide it through contact forms.</p>
+            </div>
+        </div>
+    </header>
 
-    <h2>2. Cookies and Advertisements</h2>
-    <p>Third-party vendors, including Google, may use cookies to serve ads based on your prior visits to our website or other websites. Google's use of advertising cookies enables it and its partners to serve ads to your users based on their visit to your sites and/or other sites on the Internet.</p>
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-12 flex-grow w-full">
+        <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 md:p-10 shadow-2xl space-y-6 text-left">
+            
+            <h1 class="text-3xl md:text-4xl font-black text-amber-400 border-b border-slate-700 pb-4 text-center font-['Mukta']">
+                Privacy Policy
+            </h1>
 
-    <h2>3. External Links</h2>
-    <p>Our website may contain links to other sites (like travel bookings or references). If you click on a third-party link, you will be directed to that site. We strongly advise you to review the Privacy Policy of every site you visit.</p>
+            <p class="text-slate-400 text-sm"><strong>Last updated:</strong> November 2026</p>
 
-    <h2>4. Changes to This Privacy Policy</h2>
-    <p>We may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes.</p>
+            <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                Welcome to <strong>World Knowledge Hub (WKH)</strong> (accessible from <a href="https://worldknowledgehub.vercel.app/" class="text-sky-400 underline">https://worldknowledgehub.vercel.app/</a>). Your privacy is critically important to us.
+            </p>
 
-    <h2>5. Contact Us</h2>
-    <p>If you have any questions or suggestions about our Privacy Policy, feel free to contact us through our website.</p>
+            <h2 class="text-xl font-bold text-sky-400 mt-6 border-b border-slate-700 pb-2">
+                1. Information We Collect
+            </h2>
+            <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                When you visit our website, we may collect basic information such as your browser type, device info, and pages visited through standard analytics (like Google Search Console or Google Analytics) to improve your reading experience. We do not collect any sensitive personal data unless you voluntarily provide it through contact forms.
+            </p>
 
-    <p><a href="index.html">← Back to Home</a></p>
+            <h2 class="text-xl font-bold text-sky-400 mt-6 border-b border-slate-700 pb-2">
+                2. Cookies and Advertisements
+            </h2>
+            <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                Third-party vendors, including Google, may use cookies to serve ads based on your prior visits to our website or other websites. Google's use of advertising cookies enables it and its partners to serve ads to your users based on their visit to your sites and/or other sites on the Internet.
+            </p>
+
+            <h2 class="text-xl font-bold text-sky-400 mt-6 border-b border-slate-700 pb-2">
+                3. External Links
+            </h2>
+            <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                Our website may contain links to other sites (like travel bookings or references). If you click on a third-party link, you will be directed to that site. We strongly advise you to review the Privacy Policy of every site you visit.
+            </p>
+
+            <h2 class="text-xl font-bold text-sky-400 mt-6 border-b border-slate-700 pb-2">
+                4. Changes to This Privacy Policy
+            </h2>
+            <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                We may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes.
+            </p>
+
+            <h2 class="text-xl font-bold text-sky-400 mt-6 border-b border-slate-700 pb-2">
+                5. Contact Us
+            </h2>
+            <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                If you have any questions or suggestions about our Privacy Policy, feel free to contact us through our website.
+            </p>
+
+            <!-- Back to Home Button -->
+            <div class="pt-6 text-center">
+                <a href="index.html" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold py-3 px-8 rounded-xl transition duration-200 inline-block shadow-lg">
+                    <i class="fa-solid fa-house mr-2"></i> होम पेज पर लौटें
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 text-center py-6 text-slate-400 text-sm mt-8">
+        <p>&copy; 2026 World Knowledge Hub. Created by <strong>Som Vishwakarma</strong>. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
