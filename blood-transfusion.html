@@ -1,361 +1,245 @@
- <!DOCTYPE html>
-<html lang="hi">
+  <!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>रक्त, घटक, जाँचों की संपूर्ण जानकारी  World Knowledge Hub </title>
+    <title>रक्त, घटक, जाँचों और रिपोर्ट्स की संपूर्ण गाइड - World Knowledge Hub</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Search Console Canonical Tag -->
+    <link rel="canonical" href="https://worldknowledgehub.vercel.app/blood-transfusion.html" />
+
+    <style>
+        body { background-color: #081422; font-family: 'Poppins', 'Mukta', sans-serif; }
+    </style>
 </head>
-<body class="bg-slate-900 text-slate-100 min-h-screen p-4 md:p-8 font-sans leading-relaxed">
-    <div class="max-w-5xl mx-auto bg-slate-800 p-6 md:p-10 rounded-2xl shadow-2xl border border-slate-700">
-        
-        <!-- Back Button & Page Header -->
-        <a href="body-facts.html" class="inline-flex items-center text-red-400 font-semibold hover:underline mb-6 transition duration-200">
-            &larr; मुख्य पृष्ठ (body-facts.html) पर वापस जाएं
-        </a>
-        
-        <h1 class="text-3xl md:text-4xl font-extrabold text-red-400 mb-4 border-b border-slate-700 pb-4">
-            🩸 मानव शरीर: रक्त, घटक, जीन, जांचें, ब्लड ग्रुप्स एवं संपूर्ण बीमारियाँ
+<body class="text-white antialiased flex flex-col min-h-screen">
+
+    <!-- Navbar - सीधा होम पेज पर जाने के लिए -->
+    <header class="bg-slate-900 border-b border-slate-800 p-4 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-amber-400 font-bold text-lg hover:text-amber-300 transition">
+                <i class="fa-solid fa-arrow-left mr-2"></i> होम पेज पर वापस जाएँ
+            </a>
+            <span class="text-red-400 font-extrabold text-sm sm:text-base">🩸 रक्त एवं मेडिकल जाँच गाइड</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 py-12 flex-grow">
+        <h1 class="text-3xl md:text-5xl font-black text-red-400 mb-4 text-center">
+            मानव शरीर: रक्त, घटक, जीन और संपूर्ण लैब जाँच गाइड
         </h1>
-        
-        <div class="bg-slate-900/60 p-5 rounded-xl border border-slate-700 mb-8 text-slate-300">
-            <h2 class="text-xl font-bold text-white mb-2">1. रक्त क्या है और यह कैसे बनता है?</h2>
-            <p>
-                <strong>रक्त (Blood)</strong> हमारे शरीर का एक अत्यंत महत्वपूर्ण तरल संयोजी ऊतक (Liquid Connective Tissue) है। एक स्वस्थ वयस्क मनुष्य में लगभग <strong>5 से 6 लीटर</strong> (शरीर के कुल भार का 7% से 8%) खून होता है। इसका मुख्य निर्माण हड्डियों के अंदर मौजूद मज्जा यानी <strong>बोन मैरो (Bone Marrow)</strong> में होता है।
-            </p>
+        <p class="text-slate-400 text-center mb-8 text-sm sm:text-base max-w-3xl mx-auto">
+            रक्त की संरचना, उसके सभी 7 घटकों, डीएनए संबंध, ब्लड ग्रुप्स और सभी प्रमुख लैब टेस्ट्स की विस्तृत व आसान हिंदी जानकारी।
+        </p>
+
+        <!-- महत्वपूर्ण चेतावनी (Disclaimer) -->
+        <div class="bg-amber-500/10 border-l-4 border-amber-400 p-4 rounded-r-xl mb-10 text-amber-200 text-xs sm:text-sm shadow-lg">
+            <p class="font-bold mb-1"><i class="fa-solid fa-triangle-exclamation mr-1"></i> महत्वपूर्ण चेतावनी (Disclaimer):</p>
+            यह जानकारी केवल सामान्य जागरूकता और शैक्षिक उद्देश्य (Educational Purpose) के लिए है। किसी भी बीमारी की सटीक जांच या रिपोर्ट के विश्लेषण के लिए हमेशा योग्य डॉक्टर से परामर्श लें।
         </div>
 
-        <!-- Section 1: 7 Components of Blood -->
-        <h2 class="text-2xl font-bold text-white mb-4 flex items-center gap-2">
-            🧪 2. रक्त के सभी 7 मुख्य घटक और उनके उपयोग
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
-            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-700">
-                <h3 class="text-lg font-semibold text-red-400">1. पैक्ड रेड ब्लड सेल्स (PRBCs)</h3>
-                <p class="text-slate-300 text-sm mt-1"><strong>कार्य:</strong> शरीर में हीमोग्लोबिन और ऑक्सीजन की पूर्ति करना।</p>
-                <p class="text-slate-400 text-sm"><strong>उपयोग:</strong> गंभीर एनीमिया, भारी दुर्घटना या सर्जरी के दौरान।</p>
+        <div class="space-y-8">
+
+            <!-- 1. रक्त क्या है और कैसे बनता है -->
+            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 shadow-2xl">
+                <h2 class="text-2xl font-black text-sky-400 mb-4 flex items-center gap-2 border-b border-slate-700 pb-3">
+                    <i class="fa-solid fa-droplet text-red-500"></i> 1. रक्त क्या है और यह कैसे बनता है?
+                </h2>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    <strong>रक्त (Blood)</strong> हमारे शरीर का एक अत्यंत महत्वपूर्ण तरल संयोजी ऊतक (Liquid Connective Tissue) है। एक स्वस्थ वयस्क मनुष्य में लगभग <strong>5 से 6 लीटर</strong> (शरीर के कुल भार का 7% से 8%) खून होता है। इसका मुख्य निर्माण हड्डियों के अंदर मौजूद मज्जा यानी <strong>बोन मैरो (Bone Marrow)</strong> में होता है।
+                </p>
             </div>
 
-            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-700">
-                <h3 class="text-lg font-semibold text-red-400">2. प्लेटलेट्स (Platelets)</h3>
-                <p class="text-slate-300 text-sm mt-1"><strong>कार्य:</strong> रक्त का थक्का जमाना और ब्लीडिंग रोकना।</p>
-                <p class="text-slate-400 text-sm"><strong>उपयोग:</strong> डेंगू बुखार, कीमोथेरेपी या प्लेटलेट्स कम होने पर।</p>
+            <!-- 2. रक्त के 7 मुख्य घटक -->
+            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 shadow-2xl">
+                <h2 class="text-2xl font-black text-emerald-400 mb-4 flex items-center gap-2 border-b border-slate-700 pb-3">
+                    <i class="fa-solid fa-vial"></i> 2. रक्त के सभी 7 मुख्य घटक और उनके उपयोग
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                    <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+                        <strong class="text-amber-300 block mb-1">1. पैक्ड रेड ब्लड सेल्स (PRBCs)</strong>
+                        <p class="text-slate-300 text-xs mb-1"><strong>कार्य:</strong> शरीर में हीमोग्लोबिन और ऑक्सीजन की पूर्ति करना।</p>
+                        <span class="text-slate-400 text-xs">उपयोग: गंभीर एनीमिया, भारी दुर्घटना या सर्जरी के दौरान।</span>
+                    </div>
+                    <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+                        <strong class="text-amber-300 block mb-1">2. प्लेटलेट्स (Platelets)</strong>
+                        <p class="text-slate-300 text-xs mb-1"><strong>कार्य:</strong> रक्त का थक्का जमाना और ब्लीडिंग रोकना।</p>
+                        <span class="text-slate-400 text-xs">उपयोग: डेंगू बुखार, कीमोथेरेपी या प्लेटलेट्स कम होने पर।</span>
+                    </div>
+                    <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+                        <strong class="text-amber-300 block mb-1">3. फ्रेश फ्रोजन प्लाज्मा (FFP)</strong>
+                        <p class="text-slate-300 text-xs mb-1"><strong>कार्य:</strong> क्लॉटिंग प्रोटीन्स (Clotting Factors) प्रदान करना।</p>
+                        <span class="text-slate-400 text-xs">उपयोग: लिवर की गंभीर बीमारी, बर्न या ब्लीडिंग विकार में।</span>
+                    </div>
+                    <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+                        <strong class="text-amber-300 block mb-1">4. क्रायोप्रिसिपिटेट (Cryoprecipitate)</strong>
+                        <p class="text-slate-300 text-xs mb-1"><strong>कार्य:</strong> फाइब्रिनोजेन और विशेष थक्का जमाने वाले तत्वों की पूर्ति।</p>
+                        <span class="text-slate-400 text-xs">उपयोग: हीमोफीलिया या अत्यधिक रक्तस्राव रोकने के लिए।</span>
+                    </div>
+                    <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+                        <strong class="text-amber-300 block mb-1">5. होल ब्लड (Whole Blood)</strong>
+                        <p class="text-slate-300 text-xs mb-1"><strong>कार्य:</strong> आरबीसी, डब्ल्यूबीसी, प्लेटलेट्स और प्लाज्मा का संयुक्त रूप।</p>
+                        <span class="text-slate-400 text-xs">उपयोग: आपातकालीन गंभीर ट्रॉमा स्थिति में।</span>
+                    </div>
+                    <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+                        <strong class="text-amber-300 block mb-1">6. श्वेत रक्त कोशिकाएं (WBCs)</strong>
+                        <p class="text-slate-300 text-xs mb-1"><strong>कार्य:</strong> संक्रमण और हानिकारक बैक्टीरिया से लड़ना।</p>
+                        <span class="text-slate-400 text-xs">उपयोग: जब दवाएं असर न करें (दुर्लभ गंभीर संक्रमण में)।</span>
+                    </div>
+                    <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700 md:col-span-2">
+                        <strong class="text-amber-300 block mb-1">7. एल्ब्यूमिन एवं इम्युनोग्लोबुलिन (Albumin & Immunoglobulins)</strong>
+                        <p class="text-slate-300 text-xs mb-1"><strong>कार्य:</strong> ब्लड प्रेशर संतुलित रखना और रोग प्रतिरोधक क्षमता बढ़ाना।</p>
+                        <span class="text-slate-400 text-xs">उपयोग: शॉक, प्रोटीन की भारी कमी और इम्युनिटी विकारों में।</span>
+                    </div>
+                </div>
             </div>
 
-            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-700">
-                <h3 class="text-lg font-semibold text-red-400">3. फ्रेश फ्रोजन प्लाज्मा (FFP)</h3>
-                <p class="text-slate-300 text-sm mt-1"><strong>कार्य:</strong> क्लॉटिंग प्रोटीन्स (Clotting Factors) प्रदान करना।</p>
-                <p class="text-slate-400 text-sm"><strong>उपयोग:</strong> लिवर की गंभीर बीमारी, बर्न या ब्लीडिंग विकार में।</p>
-            </div>
-
-            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-700">
-                <h3 class="text-lg font-semibold text-red-400">4. क्रायोप्रिसिपिटेट (Cryoprecipitate)</h3>
-                <p class="text-slate-300 text-sm mt-1"><strong>कार्य:</strong> फाइब्रिनोजेन और विशेष थक्का जमाने वाले तत्वों की पूर्ति।</p>
-                <p class="text-slate-400 text-sm"><strong>उपयोग:</strong> हीमोफीलिया या अत्यधिक रक्तस्राव रोकने के लिए।</p>
-            </div>
-
-            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-700">
-                <h3 class="text-lg font-semibold text-red-400">5. होल ब्लड (Whole Blood)</h3>
-                <p class="text-slate-300 text-sm mt-1"><strong>कार्य:</strong> आरबीसी, डब्ल्यूबीसी, प्लेटलेट्स और प्लाज्मा का संयुक्त रूप।</p>
-                <p class="text-slate-400 text-sm"><strong>उपयोग:</strong> आपातकालीन गंभीर ट्रॉमा स्थिति में।</p>
-            </div>
-
-            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-700">
-                <h3 class="text-lg font-semibold text-red-400">6. श्वेत रक्त कोशिकाएं (WBCs)</h3>
-                <p class="text-slate-300 text-sm mt-1"><strong>कार्य:</strong> संक्रमण और हानिकारक बैक्टीरिया से लड़ना।</p>
-                <p class="text-slate-400 text-sm"><strong>उपयोग:</strong> जब दवाएं असर न करें (दुर्लभ गंभीर संक्रमण में)।</p>
-            </div>
-
-            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-700 md:col-span-2">
-                <h3 class="text-lg font-semibold text-red-400">7. एल्ब्यूमिन एवं इम्युनोग्लोबुलिन (Albumin & Immunoglobulins)</h3>
-                <p class="text-slate-300 text-sm mt-1"><strong>कार्य:</strong> ब्लड प्रेशर संतुलित रखना और रोग प्रतिरोधक क्षमता बढ़ाना।</p>
-                <p class="text-slate-400 text-sm"><strong>उपयोग:</strong> शॉक, प्रोटीन की भारी कमी और इम्युनिटी विकारों में।</p>
-            </div>
-        </div>
-
-        <!-- Section 2: Genes and Blood Relationship -->
-        <h2 class="text-2xl font-bold text-white mb-4">🧬 3. जीन (Gene) और रक्त का वैज्ञानिक संबंध</h2>
-        <div class="bg-slate-900/60 p-5 rounded-xl border border-slate-700 mb-10 text-slate-300 space-y-3">
-            <p>
-                <strong>क्या जीन सिर्फ खून में पाए जाते हैं?</strong> नहीं, जीन हमारे शरीर की लगभग हर उस जीवित कोशिका में पाए जाते हैं जिसमें <strong>केंद्रक (Nucleus)</strong> होता है।
-            </p>
-            <ul class="list-disc list-inside space-y-1 text-slate-300">
-                <li><strong>WBCs (श्वेत रक्त कोशिकाएं):</strong> इनमें केंद्रक होता है, अतः डीएनए और जीन पाए जाते हैं।</li>
-                <li><strong>RBCs (लाल रक्त कोशिकाएं):</strong> परिपक्व आरबीसी में केंद्रक नहीं होता, इसलिए इनमें डीएनए नहीं पाया जाता।</li>
-                <li><strong>जेनेटिक टेस्ट:</strong> खून से डीएनए निकालना आसान होता है, इसलिए जेनेटिक टेस्टिंग के लिए ब्लड सैंपल का इस्तेमाल होता है।</li>
-            </ul>
-        </div>
-
-        <!-- Section 3: All Blood Tests -->
-        <h2 class="text-2xl font-bold text-white mb-4">🔬 4. खून के सैंपल से होने वाली सभी जांचें और उनके परिणाम</h2>
-        <div class="space-y-4 mb-10">
-            <div class="bg-slate-900/40 p-4 rounded-xl border border-slate-700">
-                <h3 class="text-lg font-bold text-red-400">1. सामान्य व रूटीन टेस्ट</h3>
-                <ul class="list-disc list-inside text-sm text-slate-300 mt-2 space-y-1">
-                    <li><strong>CBC (Complete Blood Count):</strong> एनीमिया (खून की कमी), इन्फेक्शन और प्लेटलेट्स की संख्या का पता चलता है।</li>
-                    <li><strong>ESR एवं CRP:</strong> शरीर में किसी भी प्रकार की सूजन या जोड़ों के दर्द (गठिया) का पता चलता है।</li>
+            <!-- 3. जीन और रक्त का वैज्ञानिक संबंध -->
+            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 shadow-2xl">
+                <h2 class="text-2xl font-black text-purple-400 mb-4 flex items-center gap-2 border-b border-slate-700 pb-3">
+                    <i class="fa-solid fa-dna"></i> 3. जीन (Gene) और रक्त का वैज्ञानिक संबंध
+                </h2>
+                <p class="text-slate-300 text-sm mb-3">
+                    <strong>क्या जीन सिर्फ खून में पाए जाते हैं?</strong> नहीं, जीन हमारे शरीर की लगभग हर उस जीवित कोशिका में पाए जाते हैं जिसमें <strong>केंद्रक (Nucleus)</strong> होता है:
+                </p>
+                <ul class="list-disc list-inside text-slate-300 text-xs space-y-2">
+                    <li><strong>WBCs (श्वेत रक्त कोशिकाएं):</strong> इनमें केंद्रक होता है, अतः डीएनए और जीन पाए जाते हैं।</li>
+                    <li><strong>RBCs (लाल रक्त कोशिकाएं):</strong> परिपक्व आरबीसी में केंद्रक नहीं होता, इसलिए इनमें डीएनए नहीं पाया जाता।</li>
+                    <li><strong>जेनेटिक टेस्ट:</strong> खून से डीएनए निकालना आसान होता है, इसलिए जेनेटिक टेस्टिंग के लिए ब्लड सैंपल का इस्तेमाल किया जाता है।</li>
                 </ul>
             </div>
 
-            <div class="bg-slate-900/40 p-4 rounded-xl border border-slate-700">
-                <h3 class="text-lg font-bold text-red-400">2. अंग-विशिष्ट जांचें (Organ Function Tests)</h3>
-                <ul class="list-disc list-inside text-sm text-slate-300 mt-2 space-y-1">
-                    <li><strong>KFT / RFT (किडनी टेस्ट):</strong> यूरिया और क्रिएटिनिन की जांच से किडनी की क्षमता पता चलती है।</li>
-                    <li><strong>LFT (लिवर टेस्ट):</strong> SGOT, SGPT और बिलीरुबिन से लिवर और पीलिया का पता चलता है।</li>
-                    <li><strong>Lipid Profile (कोलेस्ट्रॉल):</strong> गुड/बैड कोलेस्ट्रॉल मापकर दिल के दौरे (Heart Attack) के खतरे का आकलन।</li>
+            <!-- 4. महत्वपूर्ण लैब टेस्ट्स और नॉर्मल रेंज -->
+            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 shadow-2xl">
+                <h2 class="text-2xl font-black text-amber-400 mb-6 flex items-center gap-2 border-b border-slate-700 pb-3">
+                    <i class="fa-solid fa-microscope"></i> 4. महत्वपूर्ण लैब टेस्ट्स और नॉर्मल रेंज
+                </h2>
+                
+                <div class="space-y-6">
+                    <!-- CBC -->
+                    <div class="bg-slate-900/90 p-5 rounded-xl border border-slate-700">
+                        <h3 class="text-lg font-bold text-sky-400 mb-3 border-b border-slate-800 pb-2">1. CBC (कम्प्लीट ब्लड काउंट)</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+                            <div class="bg-slate-800/80 p-3 rounded-lg border border-slate-700">
+                                <strong class="text-amber-300 block mb-1">Hemoglobin (हीमोग्लोबिन)</strong>
+                                <p class="text-slate-300">शरीर में खून और ऑक्सीजन की मात्रा।</p>
+                                <span class="text-emerald-400 font-bold block mt-1">पुरुष: 13.5 - 17.5 g/dL<br>महिला: 12.0 - 15.5 g/dL</span>
+                            </div>
+                            <div class="bg-slate-800/80 p-3 rounded-lg border border-slate-700">
+                                <strong class="text-amber-300 block mb-1">WBC / TLC</strong>
+                                <p class="text-slate-300">रोग प्रतिरोधक क्षमता व इन्फेक्शन सूचक।</p>
+                                <span class="text-emerald-400 font-bold block mt-1">नॉर्मल: 4,000 - 11,000 cells/mcL</span>
+                            </div>
+                            <div class="bg-slate-800/80 p-3 rounded-lg border border-slate-700">
+                                <strong class="text-amber-300 block mb-1">Platelets (प्लेटलेट्स)</strong>
+                                <p class="text-slate-300">रक्त का थक्का जमाने वाले सेल्स।</p>
+                                <span class="text-emerald-400 font-bold block mt-1">नॉर्मल: 1.5 लाख - 4.5 लाख</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LFT -->
+                    <div class="bg-slate-900/90 p-5 rounded-xl border border-slate-700">
+                        <h3 class="text-lg font-bold text-sky-400 mb-3 border-b border-slate-800 pb-2">2. LFT (लिवर फंक्शन टेस्ट)</h3>
+                        <ul class="space-y-2 text-xs text-slate-300">
+                            <li class="bg-slate-800/60 p-2.5 rounded-lg flex flex-col sm:flex-row sm:justify-between">
+                                <span><strong class="text-amber-300">Bilirubin (बिलीरुबिन):</strong> पीलिया (Jaundice) का पता लगाता है।</span>
+                                <span class="text-emerald-400 font-bold mt-1 sm:mt-0">नॉर्मल: &lt; 1.2 mg/dL</span>
+                            </li>
+                            <li class="bg-slate-800/60 p-2.5 rounded-lg flex flex-col sm:flex-row sm:justify-between">
+                                <span><strong class="text-amber-300">SGOT & SGPT:</strong> लिवर की कोशिकाओं में सूजन या डैमेज बताते हैं।</span>
+                                <span class="text-emerald-400 font-bold mt-1 sm:mt-0">नॉर्मल: &lt; 40 U/L</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- KFT -->
+                    <div class="bg-slate-900/90 p-5 rounded-xl border border-slate-700">
+                        <h3 class="text-lg font-bold text-sky-400 mb-3 border-b border-slate-800 pb-2">3. KFT / RFT (किडनी फंक्शन टेस्ट)</h3>
+                        <ul class="space-y-2 text-xs text-slate-300">
+                            <li class="bg-slate-800/60 p-2.5 rounded-lg flex flex-col sm:flex-row sm:justify-between">
+                                <span><strong class="text-amber-300">Creatinine (क्रिएटिनिन):</strong> किडनी की कार्यक्षमता मापने का मुख्य पैमाना।</span>
+                                <span class="text-emerald-400 font-bold mt-1 sm:mt-0">नॉर्मल: 0.7 - 1.3 mg/dL</span>
+                            </li>
+                            <li class="bg-slate-800/60 p-2.5 rounded-lg flex flex-col sm:flex-row sm:justify-between">
+                                <span><strong class="text-amber-300">Uric Acid (यूरिक एसिड):</strong> जोड़ों में दर्द और गॉउट (Gout) का कारण।</span>
+                                <span class="text-emerald-400 font-bold mt-1 sm:mt-0">नॉर्मल: 3.5 - 7.2 mg/dL</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Lipid Profile & Others -->
+                    <div class="bg-slate-900/90 p-5 rounded-xl border border-slate-700">
+                        <h3 class="text-lg font-bold text-sky-400 mb-3 border-b border-slate-800 pb-2">4. लिपिड प्रोफाइल, शुगर एवं अन्य महत्वपूर्ण टेस्ट</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                            <div class="bg-slate-800/80 p-3 rounded-lg border border-slate-700">
+                                <strong class="text-amber-300 block mb-1">Lipid Profile (कोलेस्ट्रॉल)</strong>
+                                <p class="text-slate-300">Total Cholesterol (&lt; 200), HDL (&gt; 40), LDL (&lt; 100 mg/dL)</p>
+                            </div>
+                            <div class="bg-slate-800/80 p-3 rounded-lg border border-slate-700">
+                                <strong class="text-amber-300 block mb-1">Blood Sugar & Thyroid</strong>
+                                <p class="text-slate-300">Fasting (70-99 mg/dL), HbA1c (&lt; 5.7%), TSH (0.4-4.0 mIU/L)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. ब्लड ग्रुप के प्रकार और विशिष्टता -->
+            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 shadow-2xl">
+                <h2 class="text-2xl font-black text-rose-400 mb-4 flex items-center gap-2 border-b border-slate-700 pb-3">
+                    <i class="fa-solid fa-id-card"></i> 5. ब्लड ग्रुप के प्रकार और उनकी विशिष्टता
+                </h2>
+                <p class="text-slate-300 text-sm mb-4">मानव शरीर में कुल <strong>8 मुख्य ब्लड ग्रुप</strong> (ABO सिस्टम तथा Rh फैक्टर के आधार पर) होते हैं:</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6 text-center text-sm">
+                    <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-700 text-red-400 font-bold">A+ / A-</div>
+                    <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-700 text-red-400 font-bold">B+ / B-</div>
+                    <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-700 text-red-400 font-bold">AB+ / AB-</div>
+                    <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-700 text-red-400 font-bold">O+ / O-</div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-slate-300">
+                    <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+                        <strong class="text-amber-300 block mb-1 font-bold text-sm">AB Group (Universal Recipient)</strong>
+                        <p>इनमें 'A' व 'B' दोनों एंटीजन होते हैं पर कोई एंटीबॉडी नहीं होती, इसलिए ये किसी से भी खून ले सकते हैं।</p>
+                    </div>
+                    <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+                        <strong class="text-amber-300 block mb-1 font-bold text-sm">O-Negative (Universal Donor)</strong>
+                        <p>इनकी RBC पर कोई एंटीजन नहीं होता, इसलिए O-Negative खून आपातकाल में किसी भी व्यक्ति को दिया जा सकता है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. ट्रांसफ्यूजन से पहले अनिवार्य प्रक्रियाएं -->
+            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 shadow-2xl">
+                <h2 class="text-2xl font-black text-teal-400 mb-4 flex items-center gap-2 border-b border-slate-700 pb-3">
+                    <i class="fa-solid fa-shield-heart"></i> 6. रक्त ट्रांसफ्यूजन से पहले अनिवार्य प्रक्रियाएं
+                </h2>
+                <ul class="list-disc list-inside text-slate-300 text-xs sm:text-sm space-y-2">
+                    <li><strong>ब्लड ग्रुपिंग:</strong> डोनर और मरीज के रक्त वर्ग का सटीक मिलान करना।</li>
+                    <li><strong>क्रॉस-मैचिंग:</strong> लैब में यह जांचना कि मरीज की कोशिकाएं नए खून को स्वीकार कर रही हैं या नहीं।</li>
+                    <li><strong>संक्रमण स्क्रीनिंग:</strong> HIV, हेपेटाइटिस B & C, मलेरिया और सिफलिस जैसे संक्रमणों से पूर्ण मुक्ति की पुष्टि करना।</li>
                 </ul>
             </div>
 
-            <div class="bg-slate-900/40 p-4 rounded-xl border border-slate-700">
-                <h3 class="text-lg font-bold text-red-400">3. डायबिटीज, थायराइड और हार्मोन्स</h3>
-                <ul class="list-disc list-inside text-sm text-slate-300 mt-2 space-y-1">
-                    <li><strong>Blood Sugar (FBS / PPBS / HbA1c):</strong> डायबिटीज का नियंत्रण और पिछले 3 महीनों का औसतन स्तर।</li>
-                    <li><strong>TFT (Thyroid Profile):</strong> T3, T4 और TSH से थायरॉइड ग्रंथि के कामकाज का पता चलता है।</li>
-                    <li><strong>Hormonal Panel & hCG:</strong> प्रजनन स्वास्थ्य, कोर्टिसोल, टेस्टोस्टेरोन और प्रेगनेंसी टेस्ट।</li>
-                </ul>
-            </div>
-
-            <div class="bg-slate-900/40 p-4 rounded-xl border border-slate-700">
-                <h3 class="text-lg font-bold text-red-400">4. एडवांस, इमरजेंसी व इम्यूनोलॉजी टेस्ट</h3>
-                <ul class="list-disc list-inside text-sm text-slate-300 mt-2 space-y-1">
-                    <li><strong>Cardiac Biomarkers (Troponin):</strong> हार्ट अटैक पड़ा है या नहीं, इसका तुरंत सटीक पता चलता है।</li>
-                    <li><strong>ABG (Arterial Blood Gas):</strong> धमनियों के खून में ऑक्सीजन ($O_2$) और कार्बन डाइऑक्साइड ($CO_2$) का स्तर।</li>
-                    <li><strong>Infectious Screening:</strong> HIV, हेपेटाइटिस B & C, सिफलिस, डेंगू, मलेरिया व टाइफाइड जांच।</li>
-                    <li><strong>Vitamin & Minerals:</strong> विटामिन D, B12 और आयरन (Ferritin) की कमी का पता चलता है।</li>
-                    <li><strong>Autoimmune & Coagulation:</strong> ANA (लुपस), RF (गठिया), PT-INR (थक्का जमने का समय) और टॉक्सिकोलॉजी (जहरीले तत्व)।</li>
-                </ul>
-            </div>
         </div>
 
-        <!-- Section 4: Blood Groups Breakdown -->
-        <h2 class="text-2xl font-bold text-white mb-4">🩸 5. ब्लड ग्रुप के प्रकार और उनकी विशिष्टता</h2>
-        <div class="bg-slate-900/60 p-5 rounded-xl border border-slate-700 mb-10">
-            <p class="text-slate-300 mb-4">
-                मानव शरीर में कुल <strong>8 मुख्य ब्लड ग्रुप</strong> (ABO सिस्टम तथा Rh फैक्टर के आधार पर) होते हैं:
-            </p>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6 text-center">
-                <div class="bg-slate-800 p-3 rounded-lg border border-red-500/30 text-red-400 font-bold">A+ (पॉजिटिव)</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-red-500/30 text-red-400 font-bold">A- (नेगेटिव)</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-red-500/30 text-red-400 font-bold">B+ (पॉजिटिव)</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-red-500/30 text-red-400 font-bold">B- (नेगेटिव)</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-red-500/30 text-red-400 font-bold">AB+ (पॉजिटिव)</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-red-500/30 text-red-400 font-bold">AB- (नेगेटिव)</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-red-500/30 text-red-400 font-bold">O+ (पॉजिटिव)</div>
-                <div class="bg-slate-800 p-3 rounded-lg border border-red-500/30 text-red-400 font-bold">O- (नेगेटिव)</div>
-            </div>
-
-            <h3 class="text-lg font-semibold text-white mb-2">हर ब्लड ग्रुप एक-दूसरे से अलग क्यों है?</h3>
-            <p class="text-slate-300 text-sm leading-relaxed mb-3">
-                लाल रक्त कोशिकाओं की सतह पर पाए जाने वाले <strong>एंटीजन (Antigens)</strong> और प्लाज्मा की <strong>एंटीबॉडीज (Antibodies)</strong> हर ग्रुप को अलग बनाते हैं:
-            </p>
-            <ul class="list-disc list-inside space-y-2 text-sm text-slate-300">
-                <li><strong>Group A:</strong> RBC पर 'A' एंटीजन और प्लाज्मा में 'Anti-B' एंटीबॉडी होती है।</li>
-                <li><strong>Group B:</strong> RBC पर 'B' एंटीजन और प्लाज्मा में 'Anti-A' एंटीबॉडी होती है।</li>
-                <li><strong>Group AB (Universal Recipient):</strong> इनमें 'A' व 'B' दोनों एंटीजन होते हैं पर कोई एंटीबॉडी नहीं होती, इसलिए ये <strong>किसी से भी खून ले सकते हैं</strong>।</li>
-                <li><strong>Group O (Universal Donor):</strong> इनकी RBC पर कोई एंटीजन नहीं होता, इसलिए O-Negative खून <strong>किसी भी व्यक्ति को आपातकाल में दिया जा सकता है</strong>।</li>
-                <li><strong>Rh फैक्टर:</strong> Rh एंटीजन होने पर पॉजिटिव (+) और न होने पर नेगेटिव (-) होता है।</li>
-            </ul>
-        </div>
-
-        <!-- Section 5: Human Diseases Classification -->
-        <h2 class="text-2xl font-bold text-white mb-4">🏥 6. मानव शरीर में होने वाली छोटी से बड़ी सभी बीमारियाँ</h2>
-        <div class="space-y-4 mb-10">
-            
-            <!-- संक्रामक और मौसमी बीमारियाँ - क्लिक करने योग्य बटन (Toggle Button) -->
-<div class="bg-slate-900/40 p-4 rounded-xl border border-slate-700">
-    <button onclick="toggleInfectiousSection()" class="w-full flex justify-between items-center text-left focus:outline-none">
-        <h3 class="text-lg font-bold text-red-400">1. संक्रामक और मौसमी बीमारियाँ (Infectious Diseases)</h3>
-        <span id="arrow-icon" class="text-red-400 font-bold text-xl transition-transform duration-300">&#9662;</span>
-    </button>
-    
-    <div id="infectious-content" class="hidden mt-3 pt-3 border-t border-slate-700 text-sm text-slate-300 space-y-2">
-        <p><strong>सामान्य:</strong> सर्दी-जुकाम, फ्लू, वायरल बुखार, खांसी[span_3](start_span)[span_3](end_span)।</p>
-        <p><strong>मच्छर व परजीवी जनित:</strong> मलेरिया, डेंगू, चिकनगुनिया, फाइलेरिया[span_4](start_span)[span_4](end_span)。</p>
-        <p><strong>बैक्टीरियल:</strong> टाइफाइड, टीबी (Tuberculosis), हैजा, टेटनस, डिप्थीरिया[span_5](start_span)[span_5](end_span)。</p>
-        <p><strong>वायरल:</strong> चिकन पॉक्स, खसरा, रेबीज, पोलियो, हेपेटाइटिस (A, B, C), एचआईवी/एड्स, कोविड-19[span_6](start_span)[span_6](end_span)。</p>
-        <p><strong>फंगल:</strong> दाद (Ringworm), खुजली, एथलीट फुट[span_7](start_span)[span_7](end_span)。</p>
-        
-        <div class="mt-3 p-3 bg-slate-900/60 rounded-lg border border-slate-800">
-            <p class="font-semibold text-white mb-1">कारण एवं उपचार:</p>
-            <p><strong>कैसे होती हैं:</strong> सर्दी-जुकाम हवा/संपर्क से, मलेरिया-डेंगू मच्छरों से, टाइफाइड-हैजा दूषित पानी से और टीबी हवा के जरिए फैलती है[span_8](start_span)[span_8](end_span)。</p>
-            <p class="mt-1"><strong>उपचार:</strong> पैरासिटामोल, आराम, एंटीबायोटिक्स (टाइफाइड/टीबी के लिए), मच्छर नियंत्रण और टीकाकरण।</p>
-        </div>
-    </div>
-</div>
-
-<script>
-    function toggleInfectiousSection() {
-        const content = document.getElementById('infectious-content');
-        const arrow = document.getElementById('arrow-icon');
-        
-        if (content.classList.contains('hidden')) {
-            content.classList.remove('hidden');
-            arrow.style.transform = 'rotate(180deg)';
-        } else {
-            content.classList.add('hidden');
-            arrow.style.transform = 'rotate(0deg)';
-        }
-    }
-</script>
-</h3>
-                <p class="text-sm text-slate-300 mt-2">
-                    <strong>सामान्य:</strong> सर्दी-जुकाम, फ्लू, वायरल बुखार, खांसी।<br>
-                    <strong>मच्छर व परजीवी जनित:</strong> मलेरिया, डेंगू, चिकनगुनिया, फाइलेरिया।<br>
-                    <strong>बैक्टीरियल:</strong> टाइफाइड, टीबी (Tuberculosis), हैजा, टेटनस, डिप्थीरिया।<br>
-                    <strong>वायरल:</strong> चिकन पॉक्स, खसरा, रेबीज, पोलियो, हेपेटाइटिस (A, B, C), एचआईवी/एड्स, कोविड-19।<br>
-                    <strong>फंगल:</strong> दाद (Ringworm), खुजली, एथलीट फुट।
-                </p>
-            </div>
-
-            <div class="bg-slate-900/40 p-4 rounded-xl border border-slate-700">
-                <h3 class="text-lg font-bold text-red-400">2. पाचन तंत्र की बीमारियाँ (Digestive & Gastrointestinal)</h3>
-                <p class="text-sm text-slate-300 mt-2">
-                    एसिडिटी, अपच, कब्ज, बवासीर (Piles), पेट के छाले (Ulcers), अपेंडिसाइटिस, हर्निया, डायरिया, फूड पॉइजनिंग, IBS, अल्सरेटिव कोलाइटिस और पित्त की पथरी (Gallstones)।
-                </p>
-            </div>
-
-            <div class="bg-slate-900/40 p-4 rounded-xl border border-slate-700">
-                <h3 class="text-lg font-bold text-red-400">3. हृदय और रक्त संचार तंत्र (Cardiovascular Diseases)</h3>
-                <p class="text-sm text-slate-300 mt-2">
-                    उच्च/निम्न रक्तचाप (High/Low BP), दिल का दौरा (Heart Attack), एथेरोस्क्लेरोसिस (धमनियों में ब्लॉकेज), ब्रेन स्ट्रोक (Paralysis), दिल की धड़कन का अनियमित होना (Arrhythmia) और हार्ट फेलियर।
-                </p>
-            </div>
-
-            <div class="bg-slate-900/40 p-4 rounded-xl border border-slate-700">
-                <h3 class="text-lg font-bold text-red-400">4. श्वसन तंत्र की बीमारियाँ (Respiratory Diseases)</h3>
-                <p class="text-sm text-slate-300 mt-2">
-                    अस्थमा (दमा), ब्रोंकाइटिस, निमोनिया, COPD (क्रॉनिक ऑब्सट्रक्टिव पल्मोनरी डिजीज), पल्मोनरी फाइब्रोसिस और स्लीप एपनिया।
-                </p>
-            </div>
-
-            <div class="bg-slate-900/40 p-4 rounded-xl border border-slate-700">
-                <h3 class="text-lg font-bold text-red-400">5. अंतःस्रावी और चयापचय रोग (Endocrine & Metabolic)</h3>
-                <p class="text-sm text-slate-300 mt-2">
-                    मधुमेह (Diabetes टाइप 1 और 2), हाइपोथायरायडिज्म, हाइपरथायरायडिज्म, मोटापा (Obesity), कुशिंग सिंड्रोम और एडिसन रोग।
-                </p>
-            </div>
-
-            <div class="bg-slate-900/40 p-4 rounded-xl border border-slate-700">
-                <h3 class="text-lg font-bold text-red-400">6. गुर्दे और मूत्र मार्ग की बीमारियाँ (Renal & Urinary)</h3>
-                <p class="text-sm text-slate-300 mt-2">
-                    किडनी स्टोन (पथरी), क्रॉनिक किडनी डिजीज (CKD), यूटीआई (UTI - यूरिनरी ट्रैक्ट इन्फेक्शन), नेफ्रोटिक सिंड्रोम और ग्लोमेरुलोनेफ्राइटिस।
-                </p>
-            </div>
-
-            <div class="bg-slate-900/40 p-4 rounded-xl border border-slate-700">
-                <h3 class="text-lg font-bold text-red-400">7. हड्डियां, जोड़ और मांसपेशियां (Musculoskeletal Diseases)</h3>
-                <p class="text-sm text-slate-300 mt-2">
-                    गठिया (Arthritis), ऑस्टियोपोरोसिस (हड्डियों का कमजोर होना), गाउट (यूरिक एसिड), साइटिका, स्पॉन्डिलाइटिस और मस्कुलर डिस्ट्रॉफी।
-                </p>
-            </div>
-
-            <div class="bg-slate-900/40 p-4 rounded-xl border border-slate-700">
-                <h3 class="text-lg font-bold text-red-400">8. मस्तिष्क और तंत्रिका तंत्र (Neurological & Mental Disorders)</h3>
-                <p class="text-sm text-slate-300 mt-2">
-                    मिर्गी (Epilepsy), माइग्रेन, अल्जाइमर (यादाश्त कम होना), पार्किंसन (कंपकंपी), डिमेंशिया, डिप्रेशन, एंग्जायटी और सिज़ोफ्रेनिया।
-                </p>
-            </div>
-
-            <div class="bg-slate-900/40 p-4 rounded-xl border border-slate-700">
-                <h3 class="text-lg font-bold text-red-400">9. त्वचा और बाल संबंधी रोग (Skin & Hair Disorders)</h3>
-                <p class="text-sm text-slate-300 mt-2">
-                    सोरायसिस, एक्जिमा, मुंहासे (Acne), विटिलिगो (सफेद दाग) और एलोपेसिया (बाल झड़ना)।
-                </p>
-            </div>
-
-            <div class="bg-slate-900/40 p-4 rounded-xl border border-slate-700">
-                <h3 class="text-lg font-bold text-red-400">10. कैंसर और गंभीर घातक बीमारियाँ (Cancers / Oncology)</h3>
-                <p class="text-sm text-slate-300 mt-2">
-                    ब्लड कैंसर (Leukemia/Lymphoma), स्तन कैंसर, फेफड़ों का कैंसर, मुंह/गले का कैंसर, पेट/आंतों का कैंसर, गर्भाशय कैंसर और ब्रेन ट्यूमर।
-                </p>
-            </div>
-
-            <div class="bg-slate-900/40 p-4 rounded-xl border border-slate-700">
-                <h3 class="text-lg font-bold text-red-400">11. आनुवंशिक और ऑटोइम्यून बीमारियाँ (Genetic & Autoimmune)</h3>
-                <p class="text-sm text-slate-300 mt-2">
-                    हीमोफीलिया, सिकल सेल एनीमिया, थैलेसीमिया, डाउन सिंड्रोम, लूपस (SLE) और सीलिएक डिजीज।
-                </p>
-            </div>
-
-        </div>
-
-        <!-- Section 6: Pre-Transfusion Checklist -->
-        <h2 class="text-xl font-bold text-white mb-3">🩺 7. ट्रांसफ्यूजन से पहले अनिवार्य प्रक्रियाएं</h2>
-        <ul class="list-disc list-inside text-slate-300 space-y-2 mb-8 bg-slate-900/40 p-4 rounded-xl border border-slate-700">
-            <li><strong>ब्लड ग्रुपिंग:</strong> डोनर और मरीज के रक्त वर्ग का सटीक मिलान।</li>
-            <li><strong>क्रॉस-मैचिंग:</strong> लैब में यह जांचना कि मरीज की कोशिकाएं नए खून को स्वीकार कर रही हैं या नहीं।</li>
-            <li><strong>संक्रमण स्क्रीनिंग:</strong> HIV, हेपेटाइटिस B & C, मलेरिया और सिफलिस से मुक्ति की पुष्टि।</li>
-        </ul>
-
-<div class="human-blueprint-complete-section">
-    <h2> <h1 class="text-3xl md:text-4xl font-extrabold text-red-400 mb-4 border-b border-slate-700 pb-4">मानव शरीर का अद्भुत ब्लूप्रिंट: जन्म, लिंग, रंग, विकलांगता और हमारे पूर्वजों का रहस्य</h2>
-    
-    <p>जब एक नए जीवन की शुरुआत होती है, तो यह सवाल सबसे ज्यादा हैरान करता है कि—<strong>मानव शरीर में यह कौन तय करता है कि बच्चे के 2 ही हाथ होंगे, 5 उंगलियां होंगी, पैर 2 होंगे और उसका शरीर कैसा बनेगा?</strong> इसके अलावा, लड़का होगा या लड़की, रंग गोरा होगा या सांवला, और विकलांगता जैसी स्थितियां क्यों पैदा होती हैं? आइए विज्ञान और आनुवंशिकी (Genetics) की नजर से इन सभी रहस्यों को गहराई से समझते हैं।</p>
-
-    <h3 class="text-lg font-bold text-red-400">1.शरीर का ब्लूप्रिंट और अंग निर्माण  (Hox जीन्स और विज्ञान)</h3>
-    <p>शरीर के अंगों का पूरा ढांचा हमारे <strong>DNA और जीन्स</strong> के पास तय होता है। इसके मुख्य वैज्ञानिक चरण निम्नलिखित हैं:</p>
-    <ul>
-        <li><strong>Hox जीन्स (Hox Genes):</strong> ये जीन एक 'मास्टर आर्किटेक्ट' की तरह काम करते हैं। भ्रूण के विकास के शुरुआती हफ्तों में यही तय करते हैं कि शरीर का कौन सा अंग किस जगह और कितनी संख्या में बनेगा (जैसे सिर, दो हाथ और दो पैर)।</li>
-        <li><strong>मॉर्फोजेन्स (Morphogens):</strong> विकासशील भ्रूण में ये विशेष केमिकल्स कोशिकाओं को संदेश देते हैं, जिससे यह सुनिश्चित होता है कि हाथ के पंजे पर पाँच अलग-अलग उंगलियां ही विकसित हों।</li>
-        <li><strong>एपोप्टोसिस (Apoptosis - सेल डेथ):</strong> जब शुरुआती हाथ-पैर बनते हैं, तो उंगलियां आपस में झिल्ली से जुड़ी होती हैं। इसके बाद तय प्रोग्राम के तहत बीच की कोशिकाएं खुद नष्ट हो जाती हैं और पांचों उंगलियां स्वतंत्र हो जाती हैं।</li>
-    </ul>
-
-    <h3 class="text-lg font-bold text-red-400">2.विकलांगता और जन्मजात शारीरिक भिन्नताओं के कारण</h3>
-       <p>यदि कोई बच्चा किसी शारीरिक भिन्नता या विकलांगता के साथ पैदा होता है, तो इसके पीछे कई जैविक और पर्यावरणीय कारण हो सकते हैं:</p>
-    <ul>
-        <li><strong>आनुवंशिक और क्रोमोसोमल कारण:</strong> डीएनए में स्वतः म्यूटेशन या क्रोमसोम की असंतुलता (जैसे 21वें क्रोमसोम की अतिरिक्त प्रति के कारण 'डाउन सिंड्रोम')।</li>
-        <li><strong>गर्भावस्था में पोषण की कमी:</strong> फॉलिक एसिड की भारी कमी से तंत्रिका तंत्र (Brain & Spinal Cord) के विकास में बाधा आना।</li>
-        <li><strong>संक्रमण और हानिकारक कारक:</strong> गर्भावस्था के दौरान रुबेला जैसे वायरल संक्रमण, शराब या हानिकारक दवाओं का सेवन, और एक्स-रे जैसी रेडिएशन का प्रभाव।</li>
-    </ul>
-
-    <h3 class="text-lg font-bold text-red-400">3. लड़का या लड़की और त्वचा का रंग कौन तय करता है?</h3>
-    <p>बच्चे का लिंग और रूप-रंग तय होने के पीछे भी सटीक जैविक नियम काम करते हैं:</p>
-    <ul>
-        <li><strong>लिंग निर्धारण:</strong> यह पूरी तरह **पिता के क्रोमोसोम** पर निर्भर करता है। महिलाओं में 'XX' और पुरुषों में 'XY' क्रोमोसोम होते हैं। पिता से 'X' मिलने पर लड़की और 'Y' मिलने पर लड़का पैदा होता है।</li>
-        <li><strong>त्वचा का रंग (Melanin):</strong> त्वचा और बालों का रंग 'मेलानिन' पिगमेंट और माता-पिता के 20 से ज्यादा अलग-अलग जीन्स के मिले-जुले प्रभाव (Polygenic Inheritance) से तय होता है। यही कारण है कि गोरे माता-पिता के यहाँ सांवला या सांवले माता-पिता के यहाँ गोरा बच्चा भी हो सकता है।</li>
-    </ul>
-
-    <h3 class="text-lg font-bold text-red-400">4. पूर्वजों के जीन्स और 'जैविक पुनर्जन्म' (Biological Reincarnation)</h3>
-    <p>जीन्स की यह श्रृंखला सदियों पुरानी है। हमारे परदादा-परदादी या उससे भी पुराने पूर्वजों के कई डीएनए कोड (जीन्स) हमारी कोशिकाओं में छिपे (Recessive Traits) रहते हैं। जब सही कॉम्बिनेशन बैठता है, तो सदियों पुराने वे छिपे हुए जीन्स अचानक एक्टिव हो जाते हैं—जिससे बच्चा अपने किसी दूर के पूर्वज की तरह दिखता है। विज्ञान की दृष्टि से देखा जाए तो, <strong>डीएनए और जीन्स के रूप में हमारे पूर्वजों की शारीरिक और जैविक विरासत (Biological Legacy) हमारे भीतर जीवित रहती है,</strong> जिसे एक तरह से जैविक पुनर्जन्म भी कहा जा सकता है!</p>
-
-    <h3>निष्कर्ष</h3>
-    <p>प्रकृति का यह पूरा आनुवंशिक तंत्र इस बात का प्रमाण है कि हर मानव शरीर का निर्माण किसी बेहद सटीक और अद्भुत सॉफ्टवेयर (DNA) के तहत होता है, जिसमें विज्ञान और पीढ़ियों का इतिहास दोनों समाहित हैं।</p>
-</div>
- <hr class="border-slate-700 my-10">
-
-<div class="water-rules-complete-section space-y-4">
-    <h1 class="text-3xl md:text-4xl font-extrabold text-red-400 mb-4 border-b border-slate-700 pb-4">
-        💧 जल स्वास्थ्य रहस्य: सही समय पर पानी पीने के नियम और वैज्ञानिक तथ्य</h1>
-        <h2 class="text-xl font-bold text-white mb-2">पानी पीने के सही नियम: भोजन के दौरान और सोने से पहले क्या है आयुर्वेद और विज्ञान का सच?</h2>
-    
-    <p>स्वास्थ्य और खान-पान को लेकर अक्सर यह सवाल सबसे ज्यादा उलझन में डालता है कि—<strong>"पानी कब, कैसे और कितना पीना चाहिए?"</strong> हमारी दिनचर्या में पानी पीने के दो सबसे अहम समय होते हैं—एक भोजन के दौरान और दूसरा रात को सोते समय। आइए पारंपरिक आयुर्वेद और आधुनिक चिकित्सा विज्ञान (Modern Science) दोनों के दृष्टिकोण से इसे विस्तार से समझते हैं।</p>
-
-    <h3 class="text-lg font-bold text-red-400 pt-2">1. खाना खाने से पहले, दौरान या बाद में पानी पीने के नियम</h3>
-    <p>आयुर्वेद के ग्रंथों (जैसे अष्टांग हृदयम्) के अनुसार भोजन पचाने के लिए <strong>'जठराग्नि'</strong> सक्रिय होती है, जबकि आधुनिक विज्ञान इसे पाचन और वजन नियंत्रण से जोड़कर देखता है:</p>
-    <ul class="list-disc list-inside space-y-2 pl-2">
-        <li><strong>खाने से 30-45 मिनट पहले:</strong> भोजन से पहले पानी पीना सबसे फायदेमंद माना गया है। वर्जिनिया टेक यूनिवर्सिटी (Davy et al. Study, 2010/2015) के शोध के अनुसार, खाने से 30 मिनट पहले पानी पीने से पेट थोड़ा भर जाता है (Gastric Distension), जिससे ओवरईटिंग से बचाव होता है और वजन नियंत्रित रहता है।</li>
-        <li><strong>भोजन के दौरान:</strong> खाना खाते समय बीच-बीच में सिर्फ एक या दो घूंट (गुनगुना या सामान्य) पानी लेना उचित है ताकि भोजन आसानी से गले से उतर सके। कभी भी भरपेट पानी भोजन के बीच में न पिएं।</li>
-        <li><strong>खाने के तुरंत बाद:</strong> आयुर्वेद के अनुसार इसके तुरंत बाद पानी पीने से पाचक रस पतले हो जाते हैं और पेट में गैस, एसिडिटी व 'आम' (विषाक्त तत्व) बनने लगते हैं। नियम यह है कि भोजन के कम से कम 30 से 45 मिनट बाद ही पानी पिएं। हालांकि आधुनिक गैस्ट्रोएंटरोलॉजी मानती है कि थोड़ा पानी पीने से पाचन पूरी तरह खराब नहीं होता, लेकिन अत्यधिक पानी से पाचन धीमा हो सकता है।</li>
-    </ul>
-
-    <h3 class="text-lg font-bold text-red-400 pt-2">2. रात को सोने से पहले पानी क्यों नहीं पीना चाहिए?</h3>
-    <p>दिनभर हाइड्रेटेड रहना जरूरी है, लेकिन रात को सोते वक्त अत्यधिक पानी पीना सेहत पर असर डाल सकता है:</p>
-    <ul class="list-disc list-inside space-y-2 pl-2">
-        <li><strong>नींद की गुणवत्ता पर असर (Nocturia):</strong> आधुनिक विज्ञान के अनुसार, सोने से तुरंत पहले पानी पीने से ब्लैडर में यूरिन भर जाता है, जिससे रात में बार-बार नींद खुलती है (नूरिटिया)। इससे सर्काडियन रिदम और स्लीप साइकिल डिस्टर्ब होती है, जिससे सुबह थकान महसूस होती है।</li>
-        <li><strong>आयुर्वेद का दृष्टिकोण (कफ दोष):</strong> रात का समय शरीर में 'कफ दोष' का प्रभाव होता है। सोते वक्त ज्यादा पानी पीने से शरीर में भारीपन, जकड़न या सुबह गले में कफ जमने की समस्या हो सकती है, क्योंकि रात में पाचन और चयापचय धीमा होता है।</li>
-    </ul>
-
-    <h3 class="text-lg font-bold text-red-400 pt-2">निष्कर्ष</h3>
-    <p>सही स्वास्थ्य के लिए जरूरी है कि आप <strong>भोजन से 30 मिनट पहले पानी पिएं</strong>, खाने के तुरंत बाद पानी पीने से बचें, और <strong>रात को सोने से 1 से 2 घंटे पहले पानी बंद कर दें</strong> (या बहुत प्यास होने पर केवल एक-दो घूंट लें)। इससे पाचन और नींद दोनों बेहतरीन बने रहेंगे।</p>
-</div> 
- 
-        <!-- Footer Back Button -->
-        <div class="pt-6 border-t border-slate-700 text-center">
-            <a href="body-facts.html" class="bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-8 rounded-xl transition duration-200 inline-block shadow-lg">
-                मुख्य पृष्ठ पर लौटें
+        <!-- Footer Back Button - होम पेज पर लौटने का बटन -->
+        <div class="mt-10 text-center">
+            <a href="index.html" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold py-3 px-8 rounded-xl transition duration-200 inline-block shadow-lg">
+                <i class="fa-solid fa-house mr-2"></i> होम पेज पर लौटें
             </a>
         </div>
+    </main>
 
-    </div>
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 text-center py-4 text-slate-400 text-sm mt-8">
+        <p>&copy; 2026 World Knowledge Hub. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
