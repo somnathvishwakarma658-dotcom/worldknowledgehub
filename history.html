@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="hi" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -15,6 +15,7 @@
     <meta name="description" content="प्राचीन भारत और विज्ञान: शून्य की खोज, महर्षि सुश्रुत की सर्जरी, कैलाश मंदिर, और प्राचीन एयरोस्पेस के रहस्य जानिए World Knowledge Hub पर।">
     <meta name="keywords" content="World Knowledge Hub, Ancient India Science, शून्य की खोज, महर्षि सुश्रुत, कैलाश मंदिर, Som Vishwakarma">
     <meta name="author" content="Som Vishwakarma">
+    <meta name="robots" content="index, follow">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -60,7 +61,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16 sm:h-20">
                 
-                <!-- BRAND LOGO (WKH Logo) -->
+                <!-- BRAND LOGO (WKH Logo & Name - क्लिक करने पर होम पेज पर जाएँगे) -->
                 <a href="index.html" class="flex items-center space-x-3 cursor-pointer py-1 group">
                     <img src="wkh-logo.png" alt="World Knowledge Hub Logo" class="h-12 w-12 sm:h-14 sm:w-14 rounded-full object-cover shadow-md border-2 border-amber-500 group-hover:scale-105 transition-transform duration-200">
                     <div class="flex flex-col text-left">
@@ -69,27 +70,15 @@
                     </div>
                 </a>
 
-                <!-- Desktop Menu -->
-                <nav class="hidden md:flex items-center space-x-6 lg:space-x-8">
-                    <a href="index.html" class="font-bold text-slate-700 hover:text-primary transition-colors py-2">Home</a>
-                    <a href="history.html" class="font-bold text-amber-700 hover:text-amber-800 transition-colors py-2 border-b-2 border-amber-600">🏛️ इतिहास</a>
-                    <a href="ai-article.html" class="font-bold text-slate-700 hover:text-indigo-600 transition-colors py-2">Science</a>
-                </nav>
-
-                <!-- Mobile Hamburger Button -->
-                <div class="md:hidden flex items-center">
-                    <button id="menuBtn" onclick="toggleMobileMenu()" class="text-slate-700 hover:text-primary focus:outline-none p-2">
-                        <i class="fa-solid fa-bars text-xl"></i>
-                    </button>
+                <!-- होम पेज पर लौटने का सीधा बटन (बिना किसी मेनू के) -->
+                <div>
+                    <a href="index.html" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs sm:text-sm shadow-md transition flex items-center space-x-2">
+                        <i class="fa-solid fa-house"></i>
+                        <span>होम पेज</span>
+                    </a>
                 </div>
-            </div>
-        </div>
 
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-2 text-slate-800">
-            <a href="index.html" class="block font-bold hover:bg-slate-100 px-3 py-2 rounded-md">🏠 Home</a>
-            <a href="history.html" class="block font-bold hover:bg-slate-100 px-3 py-2 rounded-md">🏛️ इतिहास और रहस्य</a>
-            <a href="ai-article.html" class="block font-bold hover:bg-slate-100 px-3 py-2 rounded-md">⚛️ Science (विज्ञान)</a>
+            </div>
         </div>
     </header>
 
@@ -121,7 +110,7 @@
             </div>
 
             <!-- Karl Wunderlich Section inserted cleanly -->
-            <div class="bg-slate-900/90 p-5 sm:p-6 rounded-2xl border border-slate-700 my-6 shadow-inner">
+            <div class="bg-slate-900/90 p-5 sm:p-6 rounded-2xl border border-slate-700 my-6 shadow-inner text-left">
                 <div class="flex items-center gap-3 mb-3 border-b border-slate-800 pb-3">
                     <span class="text-3xl">🌡️</span>
                     <h2 class="text-xl sm:text-2xl font-black text-amber-400 font-['Mukta']">
@@ -152,7 +141,7 @@
             </div>
 
             <!-- Intro Paragraph -->
-            <div class="space-y-6 text-slate-200 text-sm sm:text-base leading-relaxed">
+            <div class="space-y-6 text-slate-200 text-sm sm:text-base leading-relaxed text-left">
                 <p>
                     आज की आधुनिक दुनिया यह मानती है कि विज्ञान (Science) और तकनीक (Technology) का असली विकास पिछले कुछ सौ वर्षों में हुआ है। हमारे पास आज सुपरकंप्यूटर, कृत्रिम बुद्धिमत्ता (AI), और अंतरिक्षयान हैं। लेकिन, जब हम अपने प्राचीन इतिहास, वेदों, पुराणों और प्राचीन वास्तुकला की गहराई में उतरते हैं, तो एक ऐसा सच सामने आता है जो अच्छे-अच्छे आधुनिक वैज्ञानिकों को भी चकित कर देता है।
                 </p>
@@ -234,12 +223,5 @@
         <p>&copy; 2026 World Knowledge Hub. Created by <strong>Som Vishwakarma</strong>. All rights reserved.</p>
     </footer>
 
-    <!-- JS for Mobile Toggle Menu -->
-    <script>
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        }
-    </script>
 </body>
 </html>
