@@ -3,32 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - World Politics & Tour Science</title>
+    <title>हमारे बारे में (About Us) - World Knowledge Hub</title>
+    
+    <!-- Favicon (ब्राउज़र टैब के लिए लोगो) -->
+    <link rel="icon" type="image/png" href="wkh-logo.png">
+    
+    <!-- Google Search Console Canonical Tag -->
+    <link rel="canonical" href="https://worldknowledgehub.vercel.app/about.html" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; background-color: #f9f9f9; color: #333; }
-        h1 { color: #2c3e50; }
-        h2 { color: #34495e; margin-top: 20px; }
-        p { margin-bottom: 15px; }
+        body { background-color: #081422; font-family: 'Poppins', 'Mukta', sans-serif; }
     </style>
 </head>
-<body>
+<body class="text-white antialiased flex flex-col min-h-screen">
 
-    <h1>About Us</h1>
-    <p><strong>Welcome to World Politics & Tour Science!</strong></p>
+    <!-- Navbar - WKH लोगो और होम पेज पर वापस जाने का लिंक -->
+    <header class="bg-slate-900 border-b border-slate-800 p-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3 cursor-pointer group">
+                <img src="wkh-logo.png" alt="World Knowledge Hub Logo" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full object-cover shadow-md border-2 border-amber-500 group-hover:scale-105 transition-transform duration-200">
+                <span class="text-amber-400 font-bold text-base sm:text-lg hover:text-amber-300 transition">
+                    <i class="fa-solid fa-arrow-left mr-1"></i> होम पेज पर वापस जाएँ
+                </span>
+            </a>
+            <span class="text-sky-400 font-extrabold text-sm sm:text-base">ℹ️ हमारे बारे में (About Us)</span>
+        </div>
+    </header>
 
-    <p>हमारा उद्देश्य दुनिया भर की राजनीति (World Politics), विज्ञान के अनछुए रहस्यों (Science), और खूबसूरत पर्यटन स्थलों (Tour & Travel) की सटीक और रोचक जानकारी आप तक पहुँचाना है।</p>
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-12 flex-grow">
+        <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 md:p-10 shadow-2xl space-y-6">
+            
+            <h1 class="text-3xl md:text-4xl font-black text-amber-400 border-b border-slate-700 pb-4 text-center">
+                About World Knowledge Hub (WKH)
+            </h1>
 
-    <h2>हम क्या दिखाते हैं?</h2>
-    <ul>
-        <li><strong>World Politics:</strong> वैश्विक राजनीति और देश-दुनिया की बड़ी हलचल।</li>
-        <li><strong>Tour & Travel:</strong> ऐतिहासिक और खूबसूरत जगहों (जैसे ऋषिकेश और अन्य टूर) के सफर के अनुभव और गाइड।</li>
-        <li><strong>Science & Technology:</strong> विज्ञान से जुड़े रोचक तथ्य और नई खोजें।</li>
-    </ul>
+            <p class="text-slate-300 text-base md:text-lg leading-relaxed">
+                <strong>World Knowledge Hub (WKH)</strong> में आपका स्वागत है! हमारा यह मंच मानव शरीर के रहस्यों, चिकित्सा विज्ञान, जीव-जंतुओं के रोचक तथ्यों, इतिहास, तकनीक और दुनिया भर की महत्वपूर्ण जानकारियों को आप तक बेहद सरल और सटीक हिंदी में पहुँचाने के लिए समर्पित है।
+            </p>
 
-    <h2>हमसे जुड़े रहें</h2>
-    <p>यदि आपके पास कोई सुझाव, सवाल या फीडबैक है, तो आप बेझिझक हमसे संपर्क कर सकते हैं।</p>
+            <h2 class="text-2xl font-bold text-sky-400 mt-6 border-b border-slate-700 pb-2">
+                हम अपनी वेबसाइट पर क्या प्रदान करते हैं?
+            </h2>
+            
+            <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                हमारी वेबसाइट पर आपको विभिन्न श्रेणियों के अंतर्गत प्रामाणिक और विस्तृत लेख मिलेंगे, जिनमें मुख्य रूप से शामिल हैं:
+            </p>
 
-    <p><a href="index.html">← Back to Home</a></p>
+            <ul class="list-disc list-inside text-slate-300 text-sm md:text-base space-y-2 pl-2">
+                <li><strong>मानव स्वास्थ्य व शरीर विज्ञान:</strong> रक्त संरचना, मेडिकल लैब टेस्ट गाइड (CBC, LFT, KFT) और मानव रोग व स्वास्थ्य स्थितियाँ।</li>
+                <li><strong>जीव-जंतु जगत:</strong> पशु-पक्षियों के शरीर की जाँच, पशु रोग, और वन्यजीवों के अद्भुत व रोचक तथ्य।</li>
+                <li><strong>इतिहास व संस्कृति:</strong> भारत की आज़ादी से जुड़े महान इतिहास, युद्ध, कांड और प्राचीन रहस्य।</li>
+                <li><strong>विज्ञान व तकनीक:</strong> आधुनिक टेक्नोलॉजी, पास्ट डिस्कवरीज और भविष्य की वैज्ञानिक रिसर्च।</li>
+                <li><strong>सैन्य शक्ति व पर्यटन:</strong> दुनिया के घातक हथियार, सैन्य ताकत और प्रसिद्ध पर्यटन स्थल।</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold text-emerald-400 mt-6 border-b border-slate-700 pb-2">
+                हमसे जुड़े रहें (Contact & Feedback)
+            </h2>
+            
+            <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                हम इस प्लेटफॉर्म को लगातार बेहतर बनाने के लिए प्रयासरत हैं। यदि आपके पास कोई सुझाव, सवाल या प्रतिक्रिया है, तो आप हमारे सुझाव फॉर्म या संपर्क पेज के माध्यम से हमसे जुड़ सकते हैं।
+            </p>
+
+            <!-- Back to Home Button -->
+            <div class="pt-6 text-center">
+                <a href="index.html" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold py-3 px-8 rounded-xl transition duration-200 inline-block shadow-lg">
+                    <i class="fa-solid fa-house mr-2"></i> होम पेज पर लौटें
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 text-center py-4 text-slate-400 text-xs mt-8">
+        <p>&copy; 2026 World Knowledge Hub. Created by <strong>Som Vishwakarma</strong>. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
