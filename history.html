@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>प्राचीन भारत और विज्ञान: रहस्य और सच - World Politics & Tour Science</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://worldpoliticstourscience.vercel.app/Gemini_Generated_Image_ftnbdffnbdfftnb.png">
+    <title>प्राचीन भारत और विज्ञान: रहस्य और सच - World Knowledge Hub</title>
+    
+    <!-- Favicon (ब्राउज़र टैब के लिए लोगो) -->
+    <link rel="icon" type="image/png" href="wkh-logo.png">
+    
+    <!-- Google Search Console Canonical Tag -->
+    <link rel="canonical" href="https://worldknowledgehub.vercel.app/ancient-science.html" />
+
+    <!-- Google SEO Meta Tags -->
+    <meta name="description" content="प्राचीन भारत और विज्ञान: शून्य की खोज, महर्षि सुश्रुत की सर्जरी, कैलाश मंदिर, और प्राचीन एयरोस्पेस के रहस्य जानिए World Knowledge Hub पर।">
+    <meta name="keywords" content="World Knowledge Hub, Ancient India Science, शून्य की खोज, महर्षि सुश्रुत, कैलाश मंदिर, Som Vishwakarma">
+    <meta name="author" content="Som Vishwakarma">
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
@@ -48,54 +58,38 @@
     <!-- ================= NAVBAR ================= -->
     <header class="sticky top-0 z-50 glass shadow-md border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20 sm:h-24">
+            <div class="flex justify-between items-center h-16 sm:h-20">
                 
-                <!-- BRAND LOGO -->
-                <a href="index.html" class="flex items-center cursor-pointer py-2">
-                    <div class="flex items-center space-x-3">
-                        <svg class="h-14 sm:h-16 w-auto drop-shadow-sm" viewBox="0 0 700 380" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="bgRingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#0b2341"/>
-                                    <stop offset="50%" stop-color="#183b68"/>
-                                    <stop offset="100%" stop-color="#081528"/>
-                                </linearGradient>
-                                <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#f2d06b"/>
-                                    <stop offset="50%" stop-color="#c59b27"/>
-                                    <stop offset="100%" stop-color="#8a6710"/>
-                                </linearGradient>
-                            </defs>
-                            <circle cx="350" cy="145" r="132" fill="url(#bgRingGrad)" stroke="url(#goldGrad)" stroke-width="3"/>
-                            <text x="350" y="300" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="34" font-weight="900" fill="#0D253F" letter-spacing="3">WORLD POLITICS</text>
-                            <text x="350" y="340" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="30" font-weight="800" fill="#C59B27" letter-spacing="4">TOUR SCIENCE</text>
-                        </svg>
+                <!-- BRAND LOGO (WKH Logo) -->
+                <a href="index.html" class="flex items-center space-x-3 cursor-pointer py-1 group">
+                    <img src="wkh-logo.png" alt="World Knowledge Hub Logo" class="h-12 w-12 sm:h-14 sm:w-14 rounded-full object-cover shadow-md border-2 border-amber-500 group-hover:scale-105 transition-transform duration-200">
+                    <div class="flex flex-col text-left">
+                        <span class="font-extrabold text-sm sm:text-lg text-[#0D253F] tracking-wide leading-none">WORLD KNOWLEDGE</span>
+                        <span class="font-black text-xs sm:text-sm text-[#C59B27] tracking-widest mt-0.5">HUB</span>
                     </div>
                 </a>
 
                 <!-- Desktop Menu -->
-                <nav class="hidden md:flex items-center space-x-6">
+                <nav class="hidden md:flex items-center space-x-6 lg:space-x-8">
                     <a href="index.html" class="font-bold text-slate-700 hover:text-primary transition-colors py-2">Home</a>
-                    <a href="history.html" class="font-bold text-amber-600 border-b-2 border-amber-500 py-2">🏛️ इतिहास</a>
+                    <a href="history.html" class="font-bold text-amber-700 hover:text-amber-800 transition-colors py-2 border-b-2 border-amber-600">🏛️ इतिहास</a>
                     <a href="ai-article.html" class="font-bold text-slate-700 hover:text-indigo-600 transition-colors py-2">Science</a>
-                    <a href="latest-news.html" class="font-bold text-red-600 hover:text-red-700 transition-colors py-2">⚡ खबरें फटाफट</a>
                 </nav>
 
                 <!-- Mobile Hamburger Button -->
                 <div class="md:hidden flex items-center">
                     <button id="menuBtn" onclick="toggleMobileMenu()" class="text-slate-700 hover:text-primary focus:outline-none p-2">
-                        <i class="fa-solid fa-bars text-2xl"></i>
+                        <i class="fa-solid fa-bars text-xl"></i>
                     </button>
                 </div>
             </div>
         </div>
 
         <!-- Mobile Menu Dropdown -->
-        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-2">
-            <a href="index.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">Home</a>
-            <a href="history.html" class="block font-bold text-amber-600 hover:bg-slate-50 px-3 py-2 rounded-md">🏛️ इतिहास और रहस्य</a>
-            <a href="ai-article.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">Science (विज्ञान)</a>
-            <a href="latest-news.html" class="block font-bold text-red-600 hover:bg-slate-50 px-3 py-2 rounded-md">⚡ खबरें फटाफट</a>
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-2 text-slate-800">
+            <a href="index.html" class="block font-bold hover:bg-slate-100 px-3 py-2 rounded-md">🏠 Home</a>
+            <a href="history.html" class="block font-bold hover:bg-slate-100 px-3 py-2 rounded-md">🏛️ इतिहास और रहस्य</a>
+            <a href="ai-article.html" class="block font-bold hover:bg-slate-100 px-3 py-2 rounded-md">⚛️ Science (विज्ञान)</a>
         </div>
     </header>
 
@@ -110,72 +104,50 @@
         </div>
 
         <!-- Article Header -->
-        <article class="bg-slate-800/80 border border-slate-700 rounded-3xl p-6 sm:p-10 shadow-2xl">
-            <div class="mb-6 text-center sm:text-left">
+        <article class="bg-slate-800/90 border border-slate-700 rounded-3xl p-6 sm:p-10 shadow-2xl space-y-6">
+            
+            <div class="mb-4 text-center sm:text-left border-b border-slate-700 pb-4">
                 <span class="bg-amber-500/20 text-amber-300 border border-amber-500/40 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider inline-block mb-3">
                     🏛️ प्राचीन इतिहास एवं विज्ञान
                 </span>
-<!-- ================= कार्ल राइनहोल्ड अगस्त वुंडरलीच (Clean Code without Double Layer) ================= -->
-<div class="my-6 max-w-3xl mx-auto text-left">
-    
-    <!-- शीर्षक -->
-    <div class="flex items-center gap-3 mb-4 border-b border-slate-700 pb-3">
-        <span class="text-4xl">🌡️</span>
-        <h2 class="text-2xl sm:text-3xl font-black text-amber-400 font-['Mukta']">
-            कार्ल राइनहोल्ड अगस्त वुंडरलीच: शरीर के तापमान (98.6°F) की खोज करने वाले महान चिकित्सक!
-        </h2>
-    </div>
 
-    <!-- मुख्य विवरण -->
-    <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-        <strong>कार्ल राइनहोल्ड अगस्त वुंडरलीच (Karl Reinhold August Wunderlich)</strong> 19वीं सदी के प्रसिद्ध जर्मन चिकित्सक और प्रोफेसर थे। उन्हें आधुनिक चिकित्सा विज्ञान में <strong>क्लिनिकल थर्मोमीटरी (Clinical Thermometry - थर्मोमीटर से शरीर का तापमान मापने की पद्धति)</strong> का जनक माना जाता है। उन्होंने ही दुनिया को बताया कि बुखार कोई बीमारी नहीं, बल्कि शरीर में इन्फेक्शन का लक्षण है।
-    </p>
-
-    <!-- मुख्य बिंदु (Grid Layout) -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-        
-        <!-- बिंदु 1 -->
-        <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
-            <h3 class="text-lg font-bold text-sky-400 mb-1">🌡️ 1. सामान्य तापमान की खोज (37°C / 98.6°F)</h3>
-            <p class="text-slate-300 text-xs leading-relaxed">
-                लगभग 25,000 मरीजों के लाखों बार तापमान का डेटा विश्लेषण करने के बाद उन्होंने यह निष्कर्ष निकाला कि एक स्वस्थ मानव शरीर का औसत तापमान <strong>37°C (98.6°F)</strong> होता है।
-            </p>
-        </div>
-
-        <!-- बिंदु 2 -->
-        <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
-            <h3 class="text-lg font-bold text-sky-400 mb-1">📊 2. फीवर पैटर्न और थर्मल चार्ट (Fever Charts)</h3>
-            <p class="text-slate-300 text-xs leading-relaxed">
-                उन्होंने चार्ट (Graph) पर तापमान दर्ज करने की शुरुआत की और दिखाया कि टाइफाइड या निमोनिया जैसी अलग-अलग बीमारियों में बुखार चढ़ने-उतरने का एक खास पैटर्न होता है।
-            </p>
-        </div>
-
-        <!-- बिंदु 3 -->
-        <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
-            <h3 class="text-lg font-bold text-sky-400 mb-1">💡 3. बुखार: बीमारी नहीं, एक लक्षण!</h3>
-            <p class="text-slate-300 text-xs leading-relaxed">
-                वुंडरलीच से पहले बुखार को खुद में एक बीमारी माना जाता था। उन्होंने पहली बार सिद्ध किया कि बुखार शरीर के प्रतिरक्षा तंत्र (Immune System) का एक सुरक्षात्मक संकेत (Symptom) है।
-            </p>
-        </div>
-
-        <!-- बिंदु 4 -->
-        <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
-            <h3 class="text-lg font-bold text-sky-400 mb-1">📚 4. आधुनिक चिकित्सा की नींव</h3>
-            <p class="text-slate-300 text-xs leading-relaxed">
-                1868 में प्रकाशित उनकी किताब <em>"Das Verhalten der Eigenwärme in Krankheiten"</em> ने चिकित्सा के क्षेत्र में पुरानी मान्यताओं की जगह वैज्ञानिक डेटा और सटीक माप की नींव रखी।
-            </p>
-        </div>
-
-    </div>
-</div>
-
-
-        <h1 class="text-2xl sm:text-4xl font-extrabold text-white leading-tight font-['Mukta'] mb-4">
+                <h1 class="text-2xl sm:text-4xl font-extrabold text-white leading-tight font-['Mukta'] mb-4">
                     प्राचीन भारत और विज्ञान: क्या हमारे पूर्वज आज के वैज्ञानिकों से भी आगे थे?
                 </h1>
-                <div class="flex items-center text-xs sm:text-sm text-slate-400 space-x-4 border-b border-slate-700 pb-4">
+                <div class="flex items-center text-xs sm:text-sm text-slate-400 space-x-4">
                     <span><i class="fa-regular fa-user text-amber-400 mr-1"></i> सोम विश्वकर्मा</span>
                     <span><i class="fa-regular fa-clock text-amber-400 mr-1"></i> 6 मिनट पढ़ने का समय</span>
+                </div>
+            </div>
+
+            <!-- Karl Wunderlich Section inserted cleanly -->
+            <div class="bg-slate-900/90 p-5 sm:p-6 rounded-2xl border border-slate-700 my-6 shadow-inner">
+                <div class="flex items-center gap-3 mb-3 border-b border-slate-800 pb-3">
+                    <span class="text-3xl">🌡️</span>
+                    <h2 class="text-xl sm:text-2xl font-black text-amber-400 font-['Mukta']">
+                        कार्ल राइनहोल्ड अगस्त वुंडरलीच: शरीर के तापमान (98.6°F) की खोज करने वाले महान चिकित्सक!
+                    </h2>
+                </div>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
+                    <strong>कार्ल राइनहोल्ड अगस्त वुंडरलीच (Karl Reinhold August Wunderlich)</strong> 19वीं सदी के प्रसिद्ध जर्मन चिकित्सक और प्रोफेसर थे। उन्हें आधुनिक चिकित्सा विज्ञान में <strong>क्लिनिकल थर्मोमीटरी (Clinical Thermometry - थर्मोमीटर से शरीर का तापमान मापने की पद्धति)</strong> का जनक माना जाता है। उन्होंने ही दुनिया को बताया कि बुखार कोई बीमारी नहीं, बल्कि शरीर में इन्फेक्शन का लक्षण है।
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs sm:text-sm">
+                    <div class="bg-slate-800/80 p-3.5 rounded-xl border border-slate-700">
+                        <h3 class="font-bold text-sky-400 mb-1">🌡️ 1. सामान्य तापमान (37°C / 98.6°F)</h3>
+                        <p class="text-slate-300">25,000 मरीजों के डेटा विश्लेषण के बाद औसत तापमान की सटीक खोज की।</p>
+                    </div>
+                    <div class="bg-slate-800/80 p-3.5 rounded-xl border border-slate-700">
+                        <h3 class="font-bold text-sky-400 mb-1">📊 2. फीवर पैटर्न चार्ट</h3>
+                        <p class="text-slate-300">टाइफाइड और निमोनिया जैसी बीमारियों में बुखार के पैटर्न को ग्राफ पर दर्शाया।</p>
+                    </div>
+                    <div class="bg-slate-800/80 p-3.5 rounded-xl border border-slate-700">
+                        <h3 class="font-bold text-sky-400 mb-1">💡 3. बुखार: बीमारी नहीं, लक्षण</h3>
+                        <p class="text-slate-300">सिद्ध किया कि बुखार इम्यून सिस्टम का एक सुरक्षात्मक संकेत है।</p>
+                    </div>
+                    <div class="bg-slate-800/80 p-3.5 rounded-xl border border-slate-700">
+                        <h3 class="font-bold text-sky-400 mb-1">📚 4. आधुनिक चिकित्सा की नींव</h3>
+                        <p class="text-slate-300">1868 की उनकी पुस्तक ने चिकित्सा में वैज्ञानिक माप की नींव रखी।</p>
+                    </div>
                 </div>
             </div>
 
@@ -259,7 +231,7 @@
 
     <!-- Footer -->
     <footer class="bg-slate-900 border-t border-slate-800 py-6 text-center text-slate-400 text-sm">
-        <p>&copy; 2026 World Politics & Tour Science. Created by <strong>Som Vishwakarma</strong>. All rights reserved.</p>
+        <p>&copy; 2026 World Knowledge Hub. Created by <strong>Som Vishwakarma</strong>. All rights reserved.</p>
     </footer>
 
     <!-- JS for Mobile Toggle Menu -->
