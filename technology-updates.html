@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>आधुनिक तकनीक, अंतरिक्ष एवं सैन्य विज्ञान - World Knowledge Hub</title>
+    
+    <!-- Favicon (ब्राउज़र टैब के लिए लोगो) -->
+    <link rel="icon" type="image/png" href="wkh-logo.png">
+    
+    <!-- Google Search Console Canonical Tag -->
+    <link rel="canonical" href="https://worldknowledgehub.vercel.app/technology-updates.html" />
+
+    <!-- Google SEO Meta Tags -->
+    <meta name="description" content="आधुनिक तकनीक, अंतरिक्ष अनुसंधान, सुपरकंप्यूटर, और AI आधारित सैन्य हथियारों व रक्षा तकनीकी की संपूर्ण जानकारी पढ़ें World Knowledge Hub पर। - Som Vishwakarma">
+    <meta name="keywords" content="World Knowledge Hub Technology, AI and Military Tech, सुपरकंप्यूटर, अंतरिक्ष विज्ञान, Som Vishwakarma">
+    <meta name="author" content="Som Vishwakarma">
+    <meta name="robots" content="index, follow">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D253F',
+                        secondary: '#008080',
+                        gold: '#C59B27',
+                        science: '#4F46E5',
+                        darkBg: '#081422',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'Mukta', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #081422; font-family: 'Poppins', 'Mukta', sans-serif; }
+        .glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="text-white antialiased flex flex-col min-h-screen bg-slate-900">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="sticky top-0 z-50 glass shadow-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 sm:h-20">
+                
+                <!-- BRAND LOGO (WKH Logo & Name - क्लिक करने पर होम पेज पर जाएँगे) -->
+                <a href="index.html" class="flex items-center space-x-3 cursor-pointer py-1 group">
+                    <img src="wkh-logo.png" alt="World Knowledge Hub Logo" class="h-12 w-12 sm:h-14 sm:w-14 rounded-full object-cover shadow-md border-2 border-amber-500 group-hover:scale-105 transition-transform duration-200">
+                    <div class="flex flex-col text-left">
+                        <span class="font-extrabold text-sm sm:text-lg text-[#0D253F] tracking-wide leading-none">WORLD KNOWLEDGE</span>
+                        <span class="font-black text-xs sm:text-sm text-[#C59B27] tracking-widest mt-0.5">HUB</span>
+                    </div>
+                </a>
+
+                <!-- होम पेज पर लौटने का सीधा बटन -->
+                <div>
+                    <a href="index.html" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs sm:text-sm shadow-md transition flex items-center space-x-2">
+                        <i class="fa-solid fa-house"></i>
+                        <span>होम पेज</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 w-full flex-grow text-left">
+        
+        <!-- Back Button -->
+        <div class="mb-6">
+            <a href="index.html" class="inline-flex items-center text-sm font-semibold text-amber-400 hover:text-amber-300 transition">
+                <i class="fa-solid fa-arrow-left mr-2"></i> मुख्य पेज (Home) पर वापस जाएँ
+            </a>
+        </div>
+
+        <!-- Page Header -->
+        <div class="text-center mb-10 pb-6 border-b border-slate-800">
+            <span class="bg-sky-950 text-sky-400 border border-sky-500/30 px-4 py-1.5 rounded-full font-bold text-xs uppercase tracking-widest inline-block mb-3">
+                🔬 तकनीक एवं अंतरिक्ष अनुसंधान
+            </span>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-sky-400 mb-3 font-['Mukta']">
+                आधुनिक तकनीक, अंतरिक्ष विज्ञान और सैन्य नवाचार
+            </h1>
+            <p class="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto">
+                ब्रह्मांड के अनछुए रहस्यों, अंतरिक्ष मिशनों, सुपरकंप्यूटर और आधुनिक रक्षा प्रणालियों की विस्तृत जानकारी।
+            </p>
+        </div>
+
+        <div class="space-y-6">
+            
+            <!-- Tech Card 1: Supercomputer -->
+            <div class="bg-slate-800/90 p-6 sm:p-8 rounded-3xl border border-sky-500/30 shadow-xl">
+                <div class="flex items-center space-x-3 mb-4">
+                    <div class="w-3.5 h-3.5 rounded-full bg-sky-500 shadow-md"></div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-white font-['Mukta']">परम-रुद्र: भारत का शक्तिशाली स्वदेशी सुपरकम्प्यूटर</h2>
+                </div>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    भारत ने C-DAC के माध्यम से क्वांटम-एन्हांस्ड तकनीक पर आधारित 'परम-रुद्र' सुपरकम्प्यूटर राष्ट्र को समर्पित किया है। यह अंतरिक्ष विज्ञान, मौसम की सटीक भविष्यवाणी और जटिल वैज्ञानिक गणनाओं को पल भर में हल करने में सक्षम है।
+                </p>
+            </div>
+
+            <!-- Space Mission Card -->
+            <div class="bg-slate-800/90 p-6 sm:p-8 rounded-3xl border border-indigo-500/40 shadow-xl">
+                <div class="flex items-center space-x-3 mb-4">
+                    <div class="w-3.5 h-3.5 rounded-full bg-indigo-500 shadow-md"></div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-white font-['Mukta']">ब्रह्मांड की नई खोजें और अंतरिक्ष यात्रा</h2>
+                </div>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    वैज्ञानिक लगातार अंतरिक्ष में जीवन की संभावनाओं, ब्लैक होल के रहस्यों और नए ग्रहों की खोज कर रहे हैं। जेम्स वेब टेलीस्कोप और चंद्रयान जैसे अभियानों ने ब्रह्मांड के प्रति हमारी समझ को पूरी तरह बदल दिया है।
+                </p>
+            </div>
+
+            <!-- Artificial Intelligence Card -->
+            <div class="bg-slate-800/90 p-6 sm:p-8 rounded-3xl border border-purple-500/40 shadow-xl">
+                <div class="flex items-center space-x-3 mb-4">
+                    <div class="w-3.5 h-3.5 rounded-full bg-purple-500 shadow-md"></div>
+                    <h2 class="text-xl sm:text-2xl font-extrabold text-white font-['Mukta']">AI और भविष्य की तकनीक</h2>
+                </div>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    कृत्रिम बुद्धिमत्ता (AI) आज चिकित्सा, अंतरिक्ष अनुसंधान और दैनिक जीवन का एक अहम हिस्सा बन चुकी है। यह तकनीक डेटा विश्लेषण को तेज करने और जटिल समस्याओं के समाधान में क्रांतिकारी बदलाव ला रही है।
+                </p>
+            </div>
+
+            <!-- New Added Chapter: Weapons & AI Military Tech -->
+            <div class="bg-slate-800/90 p-6 sm:p-8 rounded-3xl border border-red-500/40 shadow-xl">
+                <div class="flex items-center space-x-3 mb-4">
+                    <div class="w-3.5 h-3.5 rounded-full bg-red-500 shadow-md"></div>
+                    <h2 class="text-xl sm:text-2xl font-extrabold text-white font-['Mukta']">विशेष चैप्टर: एआई और आधुनिक सैन्य तकनीक (AI in Military & Weapons)</h2>
+                </div>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-3">
+                    आधुनिक युद्धक प्रणालियों में तकनीक का सबसे खतरनाक और उन्नत रूप रक्षा क्षेत्र में देखने को मिल रहा है। आज के समय में दुनिया के प्रमुख देश स्वार्म ड्रोन (Swarm Drones), हाइपरसोनिक मिसाइल गाइडेंस सिस्टम और ऑटोनॉमस वेपन्स (स्वचालित हथियार) विकसित करने में लगे हैं।
+                </p>
+                <ul class="list-disc pl-5 space-y-2 text-slate-300 text-sm sm:text-base">
+                    <li><strong>स्मार्ट मिसाइलें:</strong> एआई और सेंसर तकनीक के कारण अब मिसाइलें चलते हुए लक्ष्य (Moving Target) को भी सेकंडों में नेस्तनाबूद कर सकती हैं।</li>
+                    <li><strong>मानवरहित युद्धक ड्रोन:</strong> युद्ध के मैदान में सैनिकों के जोखिम को कम करने के लिए रिमोट और एआई से चलने वाले ड्रोन मुख्य भूमिका निभा रहे हैं।</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Bottom Home Return Button -->
+        <div class="mt-12 text-center">
+            <a href="index.html" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold py-3 px-8 rounded-xl transition duration-200 inline-block shadow-lg">
+                <i class="fa-solid fa-house mr-2"></i> होम पेज पर लौटें
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800 text-center py-6 text-slate-400 text-sm mt-12">
+        <p>&copy; 2026 World Knowledge Hub. Created by <strong>Som Vishwakarma</strong>. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
