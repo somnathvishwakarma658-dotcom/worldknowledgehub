@@ -1,0 +1,1522 @@
+ <!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Search Console Verification Tag -->
+    <meta name="google-site-verification" content="r7PadJGvr_GH-tfAHhP6RMmF1eJe9qgeTVU3emG0BZo" />
+
+    <!-- Canonical Tag (SEO के लिए इस पेज की मुख्य पहचान) -->
+    <link rel="canonical" href="https://worldknowledgehub.vercel.app/animal-diseases.html" />
+
+    <title>जानवरों के रोग और स्वास्थ्य स्थितियाँ (Animal Diseases) - World Knowledge Hub</title>
+    
+    <!-- Google SEO & Search Optimization Tags -->
+    <meta name="title" content="जानवरों के रोग और स्वास्थ्य स्थितियाँ (Animal Diseases) - World Knowledge Hub">
+    <meta name="description" content="World Knowledge Hub पर पढ़ें पालतू जानवरों और कुत्तों में होने वाली सभी छोटी-बड़ी बीमारियाँ (पार्वोवायरस, रेबीज, डिस्टेंपर, स्किन इन्फेक्शन), उनके कारण, दुष्प्रभाव और रोकथाम के उपाय।">
+    <meta name="keywords" content="Animal Diseases, Dog Diseases in Hindi, Parvovirus, Rabies, Canine Distemper, जानवरों की बीमारियाँ, कुत्तों की बीमारी, World Knowledge Hub, Som Vishwakarma">
+    <meta name="author" content="Som Vishwakarma">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon (WKH Logo) -->
+    <link rel="icon" type="image/png" href="wkh-logo.png">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D253F',
+                        secondary: '#008080',
+                        gold: '#C59B27',
+                        saffron: '#f97316', 
+                        darkBg: '#081422',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'Mukta', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', 'Mukta', sans-serif;
+            background-color: #0D253F;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="text-slate-100 antialiased flex flex-col min-h-screen bg-slate-900">
+
+    <!-- ================= NAVBAR WITH WKH LOGO ================= -->
+    <header class="sticky top-0 z-50 glass shadow-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 sm:h-20">
+                
+                <!-- BRAND LOGO (WKH) -->
+                <a href="index.html" class="flex items-center space-x-3 cursor-pointer py-1 group">
+                    <img src="wkh-logo.png" alt="World Knowledge Hub Logo" class="h-12 w-12 sm:h-14 sm:w-14 rounded-full object-cover shadow-md border-2 border-amber-500 group-hover:scale-105 transition-transform duration-200">
+                    <div class="flex flex-col text-left">
+                        <span class="font-extrabold text-sm sm:text-lg text-[#0D253F] tracking-wide leading-none">WORLD KNOWLEDGE</span>
+                        <span class="font-black text-xs sm:text-sm text-[#C59B27] tracking-widest mt-0.5">HUB</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center space-x-6 lg:space-x-8">
+                    <a href="index.html" class="font-bold text-slate-700 hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-gold">Home</a>
+                    <a href="tourism.html" class="font-bold text-slate-700 hover:text-secondary transition-colors py-2 border-b-2 border-transparent hover:border-gold">Tours</a>
+                    <a href="science-research-future.html" class="font-bold text-slate-700 hover:text-indigo-600 transition-colors py-2 border-b-2 border-transparent hover:border-gold">Science</a>
+                    <a href="history.html" class="font-bold text-amber-700 hover:text-amber-800 transition-colors py-2 border-b-2 border-transparent hover:border-amber-600">🏛️ इतिहास</a>
+                </nav>
+
+                <!-- Mobile Hamburger Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menuBtn" onclick="toggleMobileMenu(event)" class="text-slate-700 hover:text-primary focus:outline-none p-2 rounded-lg">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-1.5 absolute w-full left-0 shadow-2xl text-slate-800 max-h-[80vh] overflow-y-auto">
+            <a href="index.html" class="block font-bold text-slate-700 hover:bg-slate-100 px-3 py-2 rounded-md">🏠 Home (होम पेज)</a>
+            <div class="border-t border-slate-200 my-1"></div>
+            <a href="blood-transfusion.html" class="block font-bold text-slate-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">🧪 1. मानव शरीर की सभी जाँच</a>
+            <a href="human-diseases.html" class="block font-bold text-slate-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">🦠 2. मानव रोग और स्वास्थ्य स्थितियाँ</a>
+            <a href="animal-health-guide.html" class="block font-bold text-slate-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">🩺 3. जानवर शरीर की सभी जाँच</a>
+            <a href="animal-diseases.html" class="block font-bold text-amber-700 bg-amber-50 px-3 py-2 rounded-md text-sm">🐄 4. जानवर रोग और स्वास्थ्य स्थितियाँ</a>
+            <a href="animal-facts.html" class="block font-bold text-slate-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">🐾 5. जीव जंतुओं के अद्भुत तथ्य</a>
+            <a href="indian-freedom-history.html" class="block font-bold text-slate-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">⚔️ 6. भारत की आजादी से जुड़े युद्ध और कांड</a>
+            <a href="technology-updates.html" class="block font-bold text-slate-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">💻 7. तकनीक / टेक्नोलॉजी</a>
+            <a href="science-research-future.html" class="block font-bold text-slate-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">🔬 8. रिसर्च (भूतकाल और भविष्य)</a>
+            <a href="history.html" class="block font-bold text-amber-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">🏛️ 9. इतिहास और प्राचीन रहस्य</a>
+            <a href="global-military-arsenal.html" class="block font-bold text-rose-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">🚀 10. विश्व की सैन्य शक्ति व हथियार</a>
+            <a href="tourism.html" class="block font-bold text-teal-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">🌐 11. पर्यटन व दर्शनीय स्थल</a>
+        </div>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="flex-grow px-4 py-8">
+        <div class="max-w-4xl mx-auto space-y-6">
+            
+            <!-- Back to Home Button & Page Header -->
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <a href="index.html" class="inline-flex items-center space-x-2 text-sm font-bold text-amber-400 hover:text-amber-300 bg-slate-800/80 border border-slate-700 px-4 py-2 rounded-xl transition">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span>होम पेज पर वापस जाएं</span>
+                </a>
+                <span class="text-xs font-semibold text-slate-400">श्रेणी: पशु स्वास्थ्य एवं रोग विज्ञान</span>
+            </div>
+
+            <!-- Page Title Banner -->
+            <div class="bg-gradient-to-r from-slate-800 via-slate-800/95 to-amber-950/40 border border-amber-500/30 rounded-2xl p-6 md:p-8 shadow-xl text-center">
+                <div class="inline-block text-4xl mb-3">🐄🐕</div>
+                <h1 class="text-2xl sm:text-4xl font-extrabold text-amber-400 tracking-tight font-['Mukta'] mb-2">
+                    जानवर रोग और स्वास्थ्य स्थितियाँ (Animal Diseases)
+                </h1>
+                <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto">
+                    पालतू और बेजुबान जानवरों में होने वाली प्रमुख बीमारियों, उनके लक्षणों, दुष्प्रभावों और समय रहते बचाव के संपूर्ण उपायों की विस्तृत जानकारी।
+                </p>
+            </div>
+
+            <!-- ================= DOG DISEASES DETAILED ARTICLE ================= -->
+            <article class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 md:p-8 shadow-2xl text-left space-y-6">
+                
+                <!-- आर्टिकल बैज और हेडिंग -->
+                <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-700 pb-4">
+                    <span class="bg-amber-500/20 text-amber-300 border border-amber-500/40 text-xs font-bold px-3 py-1 rounded-full">
+                        🐾 एनिमल हेल्थ गाइड और बीमारियाँ
+                    </span>
+                    <span class="text-slate-400 text-xs font-medium">
+                        📚 विशेषज्ञ स्वास्थ्य मार्गदर्शिका
+                    </span>
+                </div>
+
+                <h2 class="text-2xl md:text-3xl font-extrabold text-white leading-snug font-['Mukta']">
+                    कुत्तों में होने वाली प्रमुख छोटी-बड़ी बीमारियाँ: कारण, दुष्प्रभाव, रोकथाम और सावधानियाँ
+                </h2>
+
+                <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                    इंसानों की तरह ही पालतू और आवारा कुत्तों (Dogs) को भी कई तरह की छोटी-बड़ी बीमारियाँ जकड़ लेती हैं। इनमें से कुछ बीमारियाँ सामान्य होती हैं जो आसानी से ठीक हो जाती हैं, जबकि कुछ संक्रामक और वायरल बीमारियाँ इतनी खतरनाक होती हैं कि समय पर इलाज न मिलने पर कुत्ते की जान भी जा सकती है। आइए कुत्तों में होने वाली मुख्य बीमारियों, उनके फैलने के कारणों और बचाव के तरीकों को विस्तार से जानते हैं।
+                </p>
+
+                <!-- 1. पार्वोवायरस और डिस्टेंपर -->
+                <div class="bg-slate-900/70 border-l-4 border-rose-500 p-4 md:p-5 rounded-r-xl space-y-2">
+                    <h3 class="text-lg font-bold text-rose-400">1. खतरनाक वायरल बीमारियाँ (पार्वोवायरस और डिस्टेंपर)</h3>
+                    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                        <strong>कैसे होती हैं:</strong> पार्वोवायरस (Parvovirus) और केनाइन डिस्टेंपर (Canine Distemper) कुत्तों में फैलने वाले सबसे घातक वायरस हैं। यह संक्रमित कुत्तों के मल-मूत्र, लार या दूषित वातावरण के संपर्क में आने से स्वस्थ कुत्तों (विशेषकर पिल्लों) में तेजी से फैलते हैं।
+                    </p>
+                    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                        <strong>दुष्प्रभाव और दिक्कतें:</strong> पार्वोवायरस से कुत्ते की आंतें पूरी तरह खराब हो जाती हैं, जिससे खूनी उल्टी-दस्त, तेज कमजोरी और डिहाइड्रेशन होता है। वहीं, डिस्टेंपर श्वसन तंत्र और नर्वस सिस्टम पर हमला करता है, जिससे कुत्ते को दौरे (Fits) आने लगते हैं और लकवा भी मार सकता है।
+                    </p>
+                </div>
+
+                <!-- 2. रेबीज -->
+                <div class="bg-slate-900/70 border-l-4 border-red-600 p-4 md:p-5 rounded-r-xl space-y-2">
+                    <h3 class="text-lg font-bold text-red-500">2. रेबीज (Rabies) - जानलेवा लाइलाज बीमारी</h3>
+                    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                        <strong>कैसे होती है:</strong> यह लाइलाज वायरस संक्रमित जानवर (जैसे रेबीज से पीड़ित कुत्ते या जंगली जानवर) के काटने या खरोंचने से उसके लार के जरिए खून में प्रवेश करता है।
+                    </p>
+                    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                        <strong>दुष्प्रभाव और दिक्कतें:</strong> इससे कुत्ते का मानसिक संतुलन पूरी तरह बिगड़ जाता है, वह पानी से डरने लगता है (Hydrophobia), आक्रामक हो जाता है और कुछ ही दिनों में उसकी मौत हो जाती है। यह इंसानों के लिए भी बेहद खतरनाक है।
+                    </p>
+                </div>
+
+                <!-- 3. त्वचा और परजीवी रोग -->
+                <div class="bg-slate-900/70 border-l-4 border-amber-500 p-4 md:p-5 rounded-r-xl space-y-2">
+                    <h3 class="text-lg font-bold text-amber-400">3. त्वचा के संक्रमण और बाहरी परजीवी (Skin & Ticks)</h3>
+                    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                        <strong>कैसे होती हैं:</strong> गंदे माहौल, नमी, या पिस्सू (Fleas) और किलनी (Ticks) के काटने से कुत्तों में स्कैबीज (Mange), फंगल इन्फेक्शन और टिक फीवर जैसी समस्याएं होती हैं।
+                    </p>
+                    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                        <strong>दुष्प्रभाव और दिक्कतें:</strong> कुत्ते की त्वचा पर लाल चकत्ते पड़ जाते हैं, बाल झड़ने लगते हैं, और वह लगातार खुजली से परेशान रहता है। टिक फीवर की वजह से खून की भारी कमी (Anemia) हो जाती है।
+                    </p>
+                </div>
+
+                <!-- 4. पाचन और आंतरिक अंगों की बीमारियाँ -->
+                <div class="bg-slate-900/70 border-l-4 border-sky-500 p-4 md:p-5 rounded-r-xl space-y-2">
+                    <h3 class="text-lg font-bold text-sky-400">4. पाचन संबंधी समस्याएं और पेट के कीड़े (Worms & Bloat)</h3>
+                    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                        <strong>कैसे होती हैं:</strong> दूषित पानी, सड़ा-गला भोजन या गंदा मांस खाने से पेट में राउंडवर्म, हुकवर्म जैसे कीड़े पनप जाते हैं। इसके अलावा ज्यादा खाना खाने या तेजी से गैस बनने पर 'ब्लोट' (Bloat) जैसी इमरजेंसी होती है।
+                    </p>
+                    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                        <strong>दुष्प्रभाव और दिक्कतें:</strong> पिल्लों का पेट फूलना, खाना न पचना, वजन घटना और ब्लोट की स्थिति में कुछ ही घंटों में कुत्ते की जान जाने का खतरा रहता है।
+                    </p>
+                </div>
+
+                <!-- 5. आंतरिक अंग और उम्र से जुड़ी समस्याएं -->
+                <div class="bg-slate-900/70 border-l-4 border-purple-500 p-4 md:p-5 rounded-r-xl space-y-2">
+                    <h3 class="text-lg font-bold text-purple-400">5. किडनी, लीवर, हृदय रोग और गठिया (Organ & Age-Related Issues)</h3>
+                    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                        <strong>कैसे होती हैं:</strong> उम्र बढ़ने, अधिक नमक या तला-भुना खाना देने, या लेप्टोस्पायरोसिस जैसे बैक्टीरियल संक्रमण के कारण कुत्तों के आंतरिक अंग कमजोर होने लगते हैं।
+                    </p>
+                    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                        <strong>दुष्प्रभाव और दिक्कतें:</strong> बुजुर्ग कुत्तों में जोड़ों का दर्द (Arthritis), चलने-फिरने में असमर्थता, बार-बार पेशाब आना, सांस फूलना और आंखों की रोशनी कम होना जैसी दिक्कतें सामने आती हैं।
+                    </p>
+                </div>
+
+                <!-- रोकथाम और उपाय -->
+                <div class="bg-emerald-950/40 border border-emerald-500/30 p-5 rounded-xl space-y-3">
+                    <h3 class="text-lg font-bold text-emerald-300">🛡️ बचाव और रोकथाम के उपाय (Prevention)</h3>
+                    <ul class="list-disc list-inside text-slate-300 text-sm md:text-base space-y-2">
+                        <li><strong>समय पर टीकाकरण (Vaccination):</strong> पिल्लों को समय पर एंटी-रेबीज और DHPPi जैसी जरूरी वैक्सीन जरूर लगवाएं।</li>
+                        <li><strong>डीवार्मिंग (Deworming):</strong> पेट के कीड़ों से बचाने के लिए पशु चिकित्सक की सलाह से हर 3 महीने पर डीवार्मिंग सिरप या टैबलेट दें।</li>
+                        <li><strong>स्वच्छता:</strong> कुत्ते के रहने की जगह और उसके बर्तनों को हमेशा साफ रखें। टिक और पिस्सू से बचाने के लिए एंटी-टिक शैम्पू या स्पॉट-ऑन ड्रॉप्स का इस्तेमाल करें।</li>
+                        <li><strong>संतुलित आहार:</strong> घर का ताजा और पौष्टिक खाना दें; चॉकलेट, अंगूर, प्याज, ज्यादा मीठा या मसालेदार भोजन बिल्कुल न खिलाएं।</li>
+                        <li><strong>नियमित जांच:</strong> यदि कुत्ता सुस्त दिखे, खाना छोड़ दे या उल्टी-दस्त करे, तो तुरंत पशु चिकित्सक (Veterinarian) से संपर्क करें।</li>
+                    </ul>
+                </div>
+
+            </article>
+
+          <!-- ================= ELEPHANT DISEASES DETAILED ARTICLE ================= -->
+<article class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 md:p-8 shadow-2xl max-w-4xl mx-auto my-8 text-left space-y-6">
+    
+    <!-- आर्टिकल बैज और हेडिंग -->
+    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-700 pb-4">
+        <span class="bg-amber-500/20 text-amber-300 border border-amber-500/40 text-xs font-bold px-3 py-1 rounded-full">
+            🐘 वन्यजीव एवं गज स्वास्थ्य मार्गदर्शिका
+        </span>
+        <span class="text-slate-400 text-xs font-medium">
+            📚 विशेषज्ञ पशु चिकित्सा रिसर्च
+        </span>
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-extrabold text-amber-400 leading-snug font-['Mukta']">
+        हाथियों में होने वाली प्रमुख छोटी-बड़ी बीमारियाँ: लक्षण, दुष्प्रभाव, रोकथाम और सावधानियाँ
+    </h2>
+
+    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+        विशालकाय और बुद्धिमान जीव होने के बावजूद हाथी (Elephants) कई तरह की गंभीर और घातक बीमारियों के शिकार हो जाते हैं। चाहे वे जंगल के खुले माहौल में रहें या इंसानों की देखरेख में कैप्टिव (Paltoo/Camp)环境中, उनके शरीर का विशाल आकार और संवेदनशील पाचन तंत्र उन्हें कई विशेष बीमारियों के प्रति संवेदनशील बनाता है। आइए हाथियों की प्रमुख बीमारियों और उनके प्रभावों को विस्तार से जानते हैं।
+    </p>
+
+    <!-- 1. एलीफेंट एंडोथेलियोट्रॉपिक हर्पीसवायरस (EEHV) -->
+    <div class="bg-slate-900/70 border-l-4 border-rose-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-rose-400">1. एलीफेंट एंडोथेलियोट्रॉपिक हर्पीसवायरस (EEHV) - सबसे घातक</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह एशियाई और अफ्रीकी हाथियों (विशेषकर छोटे बच्चों या शावकों) में होने वाला एक बेहद खतरनाक और तेजी से जान लेने वाला वायरल संक्रमण है। 
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> इसमें हाथी का सुस्त पड़ना, खाना छोड़ना, मुंह और जीभ पर नीले चकत्ते पड़ना और शरीर के अंदरूनी अंगों से खून बहना शुरू हो जाता है। यह बीमारी इतनी तीव्र होती है कि समय पर इलाज न मिलने पर शावक की कुछ ही घंटों में मौत हो सकती है।
+        </p>
+    </div>
+
+    <!-- 2. एंथ्रेक्स और ट्यूबरकुलोसिस (TB) -->
+    <div class="bg-slate-900/70 border-l-4 border-amber-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-amber-400">2. तपेदिक (Tuberculosis - TB) और एंथ्रेक्स (Anthrax)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> टीबी एक बैटीरियल संक्रमण है जो अक्सर इंसानों के संपर्क में रहने वाले हाथियों में फैलता है। वहीं एंथ्रेक्स दूषित मिट्टी या चारे के जरिए फैलता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> टीबी से हाथी के फेफड़े खराब होते हैं, उसे लगातार सूखी खांसी, सांस लेने में तकलीफ और भारी वजन घटने की समस्या होती है। एंथ्रेक्स से अचानक तेज बुखार और खून के रिसाव के कारण पशु की मृत्यु हो जाती है।
+        </p>
+    </div>
+
+    <!-- 3. फुट रॉट और त्वचा के संक्रमण -->
+    <div class="bg-slate-900/70 border-l-4 border-sky-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-sky-400">3. पैरों के संक्रमण और फुट रॉट (Foot Rot & Skin Infections)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> हाथियों के भारी-भरकम शरीर का पूरा भार उनके पैरों और पंजों पर होता है। लंबे समय तक कीचड़, नमी या गंदे कंक्रीट पर खड़े रहने से पैरों के तलवों में फंगस और बैक्टीरिया घुस जाते हैं।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> पैर के तलवों में मवाद पड़ना, सूजन आना और तेज दर्द होना। इसके कारण हाथी ठीक से चल नहीं पाता, वह खड़ा रहना बंद कर देता है जिससे उसके आंतरिक अंगों पर दबाव पड़ने से जान का खतरा बन जाता है।
+        </p>
+    </div>
+
+    <!-- 4. पेट और पाचन संबंधी बीमारियाँ (Colic / Impaction) -->
+    <div class="bg-slate-900/70 border-l-4 border-purple-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-purple-400">4. पेट का दर्द, अपच और इम्पेक्शन (Colic & Impaction)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> हाथी दिनभर खाते हैं, लेकिन सूखा चारा, प्लास्टिक कचरा या सड़ा-गला भोजन खाने से उनके जटिल पाचन तंत्र (Digestive system) में रुकावट आ जाती है जिसे 'इम्पेक्शन' कहा जाता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> हाथी बेचैन हो जाता है, अपनी सूंड को पेट की तरफ बार-बार ले जाता है, गोबर करना बंद कर देता है और दर्द से कराहता है। पेट में गैस या रुकावट बढ़ने से यह स्थिति जानलेवा साबित होती है।
+        </p>
+    </div>
+
+    <!-- 5. मस्टह (Musth) की अवस्था और मानसिक तनाव -->
+    <div class="bg-slate-900/70 border-l-4 border-emerald-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-emerald-300">5. मस्टह (Musth) और मानसिक स्वास्थ्य समस्याएँ</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी स्थिति है:</strong> यह वयस्क नर हाथियों में होने वाला एक हार्मोनल बदलाव है जिसमें टेस्टोस्टेरोन का स्तर सामान्य से कई गुना बढ़ जाता है। इसके अलावा अकेलेपन या कैद के कारण हाथी डिप्रेशन और एनॉर्मल बिहेवियर (Stereotypic behavior) के शिकार हो जाते हैं।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> कान के पास की ग्रंथि (Temporal gland) से लगातार स्त्राव होना, अत्यधिक आक्रामक हो जाना, और खुद को या दूसरों को नुकसान पहुँचाना।
+        </p>
+    </div>
+
+    <!-- रोकथाम और उपाय -->
+    <div class="bg-emerald-950/40 border border-emerald-500/30 p-5 rounded-xl space-y-3">
+        <h3 class="text-lg font-bold text-emerald-200">🛡️ हाथियों की देखभाल, बचाव और रोकथाम के उपाय</h3>
+        <ul class="list-disc list-inside text-slate-300 text-sm md:text-base space-y-2">
+            <li><strong>नियमित स्वास्थ्य परीक्षण (Veterinary Care):</strong> हाथियों के खून, लार और मल की नियमित जाँच होनी चाहिए ताकि किसी भी वायरस या बैक्टीरिया का समय रहते पता चल सके।</li>
+            <li><strong>पैरों की सफाई और खुर की ट्रिमिंग:</strong> पैरों को रोजाना साफ रखना, एंटीसेप्टिक घोल से धोना और तलवों को सूखने व सुरक्षित रखना बेहद जरूरी है।</li>
+            <li><strong>शुद्ध आहार और पानी:</strong> हाथियों को प्लास्टिक मुक्त, ताजा और पौष्टिक चारा तथा साफ पानी उपलब्ध कराएं।</li>
+            <li><strong>सुरक्षित वातावरण और प्रबंधन:</strong> हाथियों को उनके प्राकृतिक आवास जैसी सुविधा दें, उनपर अनावश्यक काम का दबाव न डालें और मस्टह काल के दौरान उनकी विशेष सुरक्षा करें।</li>
+        </ul>
+    </div>
+
+</article>
+
+   <!-- ================= COMPLETE GOAT DISEASES DETAILED ARTICLE ================= -->
+<article class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 md:p-8 shadow-2xl max-w-4xl mx-auto my-8 text-left space-y-6">
+    
+    <!-- आर्टिकल बैज और हेडिंग -->
+    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-700 pb-4">
+        <span class="bg-amber-500/20 text-amber-300 border border-amber-500/40 text-xs font-bold px-3 py-1 rounded-full">
+            🐐 बकरी स्वास्थ्य एवं संपूर्ण रोग मार्गदर्शिका
+        </span>
+        <span class="text-slate-400 text-xs font-medium">
+            📚 पशु पालन एवं चिकित्सा अनुसंधान
+        </span>
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-extrabold text-amber-400 leading-snug font-['Mukta']">
+        बकरियों में होने वाली सभी छोटी-बड़ी बीमारियाँ: कारण, लक्षण, दुष्प्रभाव, रोकथाम और सावधानियाँ
+    </h2>
+
+    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+        'गरीब की गाय' कही जाने वाली बकरी (Goat) ग्रामीण अर्थव्यवस्था और पशुपालन का एक अहम स्तंभ है। हालांकि ये कम संसाधनों में भी पल जाती हैं, लेकिन उचित देखभाल, साफ-सफाई या मौसम बदलाव के अभाव में इन्हें कई गंभीर संक्रामक, वायरल, बैक्टीरियल और शारीरिक अंगों से जुड़ी बीमारियाँ जकड़ लेती हैं। आइए बकरियों के सभी छोटे-बड़े रोगों और उनके बचाव के उपायों को विस्तार से जानते हैं।
+    </p>
+
+    <!-- 1. PPR / गोट प्लेग -->
+    <div class="bg-slate-900/70 border-l-4 border-rose-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-rose-400">1. पीआरडी / गोट प्लेग (PPR - Pestis Des Petits Ruminants)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह बकरियों में फैलने वाला सबसे घातक और अत्यधिक संक्रामक वायरल संक्रमण है, जो संपर्क में आने से पूरे झुंड में तेजी से फैलता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> तेज बुखार, आँख और नाक से पानी या गाढ़ा कीचड़ निकलना, मुँह के अंदर छाले होना, दस्त लगना और सांस लेने में भारी तकलीफ होना। इससे बकरी बेहद कमजोर हो जाती है और समय पर इलाज न मिलने पर मौत हो सकती है।
+        </p>
+    </div>
+
+    <!-- 2. एन्ट्रोटॉक्सिमिया (ET Disease) -->
+    <div class="bg-slate-900/70 border-l-4 border-amber-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-amber-400">2. एन्ट्रोटॉक्सिमिया (Enterotoxemia / ईटी रोग)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह क्लोस्ट्रीडियम बैक्टीरिया के कारण होने वाली खतरनाक बीमारी है, जो अक्सर अचानक भारी मात्रा में हरा या फफूंदयुक्त चारा खाने से फैलती है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> अचानक तेज पेट दर्द, शरीर में अकड़न, बेहोशी और कुछ ही घंटों में बकरियों की मौत हो जाना। यह बीमारी इतनी तीव्र होती है कि संभलने का मौका बेहद कम मिलता है।
+        </p>
+    </div>
+
+    <!-- 3. थनैला रोग (Mastitis) -->
+    <div class="bg-slate-900/70 border-l-4 border-sky-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-sky-400">3. थनैला रोग (Mastitis)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> बाड़े में गंदगी या नमी के कारण थन में बैक्टीरिया के संक्रमण से यह समस्या पैदा होती है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> थन सूज जाना, दूध का फटना या उसमें खून व मवाद आना, और छूने पर बकरी का दर्द से छटपटाना। इससे दूध उत्पादन पूरी तरह बंद हो जाता है और थन खराब हो सकता है।
+        </p>
+    </div>
+
+    <!-- 4. खुरपका और मुखपका रोग (FMD) -->
+    <div class="bg-slate-900/70 border-l-4 border-purple-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-purple-400">4. खुरपका और मुखपका रोग (Foot and Mouth Disease - FMD)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह भी एक अत्यधिक संक्रामक वायरल बीमारी है जो दूषित चारे, पानी या हवा के जरिए फैलती है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> खुरों के बीच और मुँह में छाले होना, अत्यधिक लार गिरना, लंगड़ापन और दर्द के कारण ठीक से चारा न खा पाना। इससे बकरी का वजन तेजी से घटता है।
+        </p>
+    </div>
+
+    <!-- 5. त्वचा रोग (Skin Diseases) -->
+    <div class="bg-slate-900/70 border-l-4 border-orange-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-orange-400">5. त्वचा रोग: खाज-खुजली, दाद और जूं-किलनी (Mange, Ringworm & Lice)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> बाड़े में गंदगी, नमी, फंगस और बाहरी परजीवियों (जैसे माइट्स, जूं और किलनी) के कारण बकरियों में 'मैन्ज' (खुजली) और दाद (Ringworm) की समस्या होती है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> बकरी के शरीर के बाल झड़ने लगते हैं, त्वचा पर पपड़ी और घाव बन जाते हैं, और वह लगातार दीवार या खूंटे से शरीर रगड़ती है। खून चूसने वाले परजीवियों से बकरी में भारी खून की कमी (Anemia) हो जाती है।
+        </p>
+    </div>
+
+    <!-- 6. मुँह की बीमारियाँ (Mouth Diseases - Orf) -->
+    <div class="bg-slate-900/70 border-l-4 border-pink-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-pink-400">6. मुँह के छाले और पपड़ी रोग (Orf / Sore Mouth)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह एक संक्रामक वायरल रोग है जो कांटेदार झाड़ियाँ चरने से मुँह में लगी खरोंचों के जरिए या संक्रमित बकरी के संपर्क में आने से फैलता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> बकरी के होंठों, मसूड़ों और मुँह के चारों ओर मोटे छाले और पपड़ीदार घाव बन जाते हैं। दर्द के कारण बकरी चारा नहीं खा पाती और छोटे मेमने माँ का दूध नहीं पी पाते, जिससे वे कमजोर होकर मर भी सकते हैं।
+        </p>
+    </div>
+
+    <!-- 7. आँख की बीमारियाँ (Eye Diseases - Pink Eye) -->
+    <div class="bg-slate-900/70 border-l-4 border-cyan-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-cyan-400">7. आँख आना या गुलाबी आँख रोग (Pink Eye / Conjunctivitis)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> धूल-मिट्टी, तेज हवा, मक्खियों और बैक्टीरियल संक्रमण के कारण बकरियों की आँखों में यह बीमारी होती है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> आँखें लाल हो जाती हैं, लगातार पानी और पीला मवाद बहता है, और आँखों पर सफेदी छाने लगती है। समय पर इलाज न होने पर बकरी हमेशा के लिए अंधी हो सकती है।
+        </p>
+    </div>
+
+    <!-- 8. नाक और श्वसन की बीमारियाँ (Nose & Respiratory Issues) -->
+    <div class="bg-slate-900/70 border-l-4 border-indigo-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-indigo-400">8. नाक बहना, निमोनिया और नाक के कीड़े (Nasal Bots & Pneumonia)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> ठंड लगने या बारिश में भीगने से निमोनिया होता है। इसके अलावा 'नोज बॉट फ्लाई' (मक्खी) बकरी के नाक के पास अंडे देती है, जिसके लार्वा नाक के अंदर चले जाते हैं।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> नाक से गाढ़ा स्राव या खून आना, बार-बार छींकना, सिर झटकना और सांस लेने में घरघराहट या सीटी जैसी आवाज आना।
+        </p>
+    </div>
+
+    <!-- 9. कान के संक्रमण (Ear Infections & Ear Mites) -->
+    <div class="bg-slate-900/70 border-l-4 border-yellow-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-yellow-400">9. कान के कीड़े और संक्रमण (Ear Mites & Otitis)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> खासतौर पर लंबे और लटकते हुए कान वाली नस्लों (जैसे जमुनापारी, बीटल) में नमी, गंदगी और सूक्ष्म परजीवियों (Ear Mites) के कारण कान में संक्रमण हो जाता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> कान के अंदर काला मैल या मवाद जमा होना, तेज बदबू आना, बकरी का बार-बार कान खुजाना और दर्द की वजह से सिर को एक तरफ झुकाकर रखना।
+        </p>
+    </div>
+
+    <!-- रोकथाम और उपाय -->
+    <div class="bg-emerald-950/40 border border-emerald-500/30 p-5 rounded-xl space-y-3">
+        <h3 class="text-lg font-bold text-emerald-300">🛡️ बचाव और रोकथाम के उपाय (Prevention)</h3>
+        <ul class="list-disc list-inside text-slate-300 text-sm md:text-base space-y-2">
+            <li><strong>समय पर टीकाकरण (Vaccination):</strong> पशु चिकित्सक की सलाह से पीपीआर (PPR), ईटी (ET), और एफएमडी (FMD) के टीके समय पर लगवाएं।</li>
+            <li><strong>कृमिनाशक दवा (Deworming):</strong> पेट और आंतरिक कीड़ों से बचाने के लिए हर 3 महीने पर डॉक्टर के निर्देशानुसार डीवार्मिंग सिरप दें।</li>
+            <li><strong>साफ-सुथरा आवास:</strong> बकरी बाड़े में नमी, कीचड़ और गंदगी बिल्कुल न होने दें। फर्श को सूखा, धूपदार और हवादार रखें ताकि खुरों और त्वचा के रोग न फैलें।</li>
+            <li><strong>शुद्ध आहार और पानी:</strong> सड़ा-गला चारा, फफूंद लगा दाना या गंदा पानी कभी न दें। हमेशा ताजा चारा और खनिज मिश्रण (Mineral Mixture) का उपयोग करें।</li>
+            <li><strong>तत्काल अलगाव:</strong> यदि झुंड में कोई भी बकरी सुस्त दिखे या आँख, नाक, मुँह या त्वचा पर संक्रमण नजर आए, तो उसे तुरंत स्वस्थ बकरियों से अलग कर दें।</li>
+        </ul>
+    </div>
+
+</article>
+      
+   <!-- ================= COMPLETE BUFFALO DISEASES DETAILED ARTICLE ================= -->
+<article class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 md:p-8 shadow-2xl max-w-4xl mx-auto my-8 text-left space-y-6">
+    
+    <!-- आर्टिकल बैज और हेडिंग -->
+    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-700 pb-4">
+        <span class="bg-amber-500/20 text-amber-300 border border-amber-500/40 text-xs font-bold px-3 py-1 rounded-full">
+            🐃 भैंस स्वास्थ्य एवं संपूर्ण रोग मार्गदर्शिका
+        </span>
+        <span class="text-slate-400 text-xs font-medium">
+            📚 पशु पालन एवं डेयरी विज्ञान
+        </span>
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-extrabold text-amber-400 leading-snug font-['Mukta']">
+        भैंसों में होने वाली सभी छोटी-बड़ी बीमारियाँ: कारण, लक्षण, दुष्प्रभाव, रोकथाम और सावधानियाँ
+    </h2>
+
+    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+        भारतीय डेयरी उद्योग और ग्रामीण अर्थव्यवस्था की रीढ़ मानी जाने वाली भैंस (Buffalo) एक मजबूत पशु है, लेकिन मौसम में बदलाव, खराब प्रबंधन या संक्रामक बैक्टीरिया और वायरस के कारण यह भी कई गंभीर और जानलेवा बीमारियों की चपेट में आ जाती है। भैंसों की चमड़ी मोटी होने के कारण उन्हें गर्मी अधिक लगती है, जिससे वे कई विशेष रोगों के प्रति संवेदनशील होती हैं। आइए भैंसों में होने वाले सभी प्रमुख रोगों और उनके बचाव के उपायों को विस्तार से जानते हैं।
+    </p>
+
+    <!-- 1. गलघोंटू (Haemorrhagic Septicaemia - HS) -->
+    <div class="bg-slate-900/70 border-l-4 border-rose-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-rose-400">1. गलघोंटू रोग (Haemorrhagic Septicaemia - एचएस)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह भैंसों में होने वाला एक अत्यंत घातक और तीव्र बैक्टीरियल संक्रमण है, जो खासकर बरसात के मौसम में या जलभराव वाले क्षेत्रों में तेजी से फैलता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> अचानक तेज बुखार आना, गले में सूजन (जिसके कारण सांस लेने में घरघराहट की आवाज आती है और गला घुटने जैसा महसूस होता है), अत्यधिक लार टपकना और कुछ ही घंटों के भीतर पशु की मृत्यु हो जाना।
+        </p>
+    </div>
+
+    <!-- 2. खुरपका और मुखपका रोग (FMD) -->
+    <div class="bg-slate-900/70 border-l-4 border-purple-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-purple-400">2. खुरपका और मुखपका रोग (Foot and Mouth Disease - FMD)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह एक अत्यधिक संक्रामक वायरल बीमारी है जो दूषित चारे, पानी या हवा के जरिए स्वस्थ पशुओं में फैलती है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> पैरों के खुरों के बीच और मुँह के अंदर छाले पड़ना, लगातार लार गिरना, तेज लंगड़ापन और मुँह के छालों के दर्द के कारण भैंस का चारा खाना पूरी तरह बंद कर देना। इससे दूध उत्पादन में भारी गिरावट आती है और पशु बेहद कमजोर हो जाता है।
+        </p>
+    </div>
+
+    <!-- 3. थनैला रोग (Mastitis) -->
+    <div class="bg-slate-900/70 border-l-4 border-sky-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-sky-400">3. थनैला रोग (Mastitis)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> बाड़े में गंदगी, कीचड़ या दूध निकालने के बाद थन के छिद्र खुले रहने पर बैक्टीरिया के प्रवेश से यह संक्रमण होता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> थन सूज जाना, कड़ा होना, दूध का फटना या उसमें खून व मवाद आना, और छूने पर भैंस का दर्द से पैर मारना। इस बीमारी से प्रभावित थन हमेशा के लिए खराब हो सकता है और दूध पूरी तरह बंद हो जाता है।
+        </p>
+    </div>
+
+    <!-- 4. लंगड़ा बुखार (Black Quarter - BQ) -->
+    <div class="bg-slate-900/70 border-l-4 border-amber-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-amber-400">4. लंगड़ा बुखार या ब्लैक क्वार्टर (Black Quarter - BQ)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह मिट्टी में पाए जाने वाले जीवाणुओं के कारण खासकर युवा भैंसों (कटड़ों/बछड़ों) में होने वाला खतरनाक बैक्टीरियल रोग है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> पिछले पैरों की मांसपेशियों में तेज सूजन, दबाने पर चर्र-चर्र की आवाज आना, तेज बुखार और अत्यधिक लंगड़ापन। समय पर इलाज न मिलने पर पशु की जान जा सकती है।
+        </p>
+    </div>
+
+    <!-- 5. दुग्ध ज्वर (Milk Fever / Hypocalcaemia) -->
+    <div class="bg-slate-900/70 border-l-4 border-orange-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-orange-400">5. दुग्ध ज्वर (Milk Fever - कैल्सियम की कमी)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह उच्च दुग्ध उत्पादन वाली भैंसों में बच्चा देने के तुरंत बाद शरीर में कैल्शियम की भारी कमी के कारण होती है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> भैंस का सुस्त होना, अपने ही शरीर पर नियंत्रण खो बैठना, गर्दन को पीछे मोड़कर जमीन पर बैठ जाना और शरीर का तापमान गिर जाना। यह एक इमरजेंसी स्थिति है, समय पर ग्लूकोज व कैल्शियम न चढ़ने पर पशु की मृत्यु हो सकती है।
+        </p>
+    </div>
+
+    <!-- 6. पेट और पाचन संबंधी रोग (Bloat & Worms) -->
+    <div class="bg-slate-900/70 border-l-4 border-teal-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-teal-400">6. आफरा (Bloat) और पेट के आंतरिक कीड़े</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> ज्यादा मात्रा में सड़ा-गला चारा, अत्यधिक फूला हुआ हरा चारा खाने से पेट में गैस बन जाती है जिसे आफरा कहते हैं। वहीं आंतरिक परजीवी (राउंडवर्म/फ्लूक) पेट को कमजोर करते हैं।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> बाईं तरफ का पेट गुब्बारे की तरह फूल जाना, सांस लेने में परेशानी, बेचैनी और अफारा का इलाज तुरंत न होने पर फेफड़ों पर दबाव पड़ने से दम घुट जाता है।
+        </p>
+    </div>
+
+    <!-- रोकथाम और उपाय -->
+    <div class="bg-emerald-950/40 border border-emerald-500/30 p-5 rounded-xl space-y-3">
+        <h3 class="text-lg font-bold text-emerald-300">🛡️ भैंसों के स्वास्थ्य रक्षा और बचाव के उपाय</h3>
+        <ul class="list-disc list-inside text-slate-300 text-sm md:text-base space-y-2">
+            <li><strong>समय पर टीकाकरण (Vaccination):</strong> हर साल मानसून से पहले गलघोंटू (HS), BQ और FMD के टीके पशु चिकित्सक से जरूर लगवाएं।</li>
+            <li><strong>नियमित डीवार्मिंग (Deworming):</strong> पेट के कीड़ों को खत्म करने के लिए हर 3 से 4 महीने के अंतराल पर डॉक्टर की सलाह से कृमिनाशक दवा दें।</li>
+            <li><strong>बाड़े की स्वच्छता:</strong> बाड़े में जलभराव, कीचड़ और नमी न होने दें। फर्श को सूखा और साफ रखें ताकि थनैला और खुर के रोग न फैलें।</li>
+            <li><strong>संतुलित पोषण:</strong> भैंस को साफ पानी, ताजा चारा, दाने का सही मिश्रण और खनिज लवण (Mineral Mixture) नियमित रूप से खिलाएं।</li>
+            <li><strong>तात्कालिक चिकित्सा:</strong> पशु में सुस्ती, दूध कम होने या किसी भी संक्रमण के लक्षण दिखते ही तुरंत नजदीकी पशु चिकित्सक से संपर्क करें।</li>
+        </ul>
+    </div>
+
+</article>
+  
+    <!-- ================= COMPLETE CAT DISEASES DETAILED ARTICLE ================= -->
+<article class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 md:p-8 shadow-2xl max-w-4xl mx-auto my-8 text-left space-y-6">
+    
+    <!-- आर्टिकल बैज और हेडिंग -->
+    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-700 pb-4">
+        <span class="bg-amber-500/20 text-amber-300 border border-amber-500/40 text-xs font-bold px-3 py-1 rounded-full">
+            🐈 बिल्ली स्वास्थ्य एवं संपूर्ण रोग मार्गदर्शिका
+        </span>
+        <span class="text-slate-400 text-xs font-medium">
+            📚 पशु चिकित्सा एवं पेट केयर
+        </span>
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-extrabold text-amber-400 leading-snug font-['Mukta']">
+        बिल्लियों में होने वाली सभी छोटी-बड़ी बीमारियाँ: कारण, लक्षण, दुष्प्रभाव, रोकथाम और सावधानियाँ
+    </h2>
+
+    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+        अपने नटखट और स्नेही स्वभाव के कारण बिल्लिया (Cats) आज घरों में सबसे लोकप्रिय पालतू पशुओं में शामिल हैं। हालांकि वे बहुत साफ-सुथरी होती हैं, फिर भी वायरस, बैक्टीरिया, आंतरिक व बाहरी परजीवियों और गलत खान-पान के कारण वे कई गंभीर बीमारियों की चपेट में आ जाती हैं। आइए बिल्लियों में होने वाले सभी प्रमुख रोगों और उनके बचाव के उपायों को विस्तार से जानते हैं।
+    </p>
+
+    <!-- 1. फेलीन पैनल्युकोपेनिया (Feline Panleukopenia - FPV) -->
+    <div class="bg-slate-900/70 border-l-4 border-rose-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-rose-400">1. फेलीन पैनल्युकोपेनिया या कैट प्लेग (FPV)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह बिल्लियों में होने वाला सबसे खतरनाक और अत्यधिक संक्रामक वायरल रोग है, जिसे 'कैट प्लेग' भी कहा जाता है। यह मुख्य रूप से पिल्लों (Kittens) की जान लेता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> तेज बुखार, गंभीर उल्टी-दस्त (खूनी दस्त), अत्यधिक सुस्ती, खाना-पानी छोड़ना और शरीर में श्वेत रक्त कोशिकाओं (WBC) की भारी गिरावट। इससे बिल्ली की प्रतिरोधक क्षमता पूरी तरह खत्म हो जाती है और समय पर इलाज न मिलने पर मौत हो सकती है।
+        </p>
+    </div>
+
+    <!-- 2. फेलीन अपर रेस्पिरेटरी इन्फेक्शन (URI / Cat Flu) -->
+    <div class="bg-slate-900/70 border-l-4 border-amber-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-amber-400">2. कैट फ्लू और श्वसन संक्रमण (Feline URI)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह हर्पीसवायरस और कैलिसीवायरस के कारण होने वाला श्वसन तंत्र का संक्रमण है, जो संक्रमित बिल्लियों के संपर्क में आने से फैलता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> लगातार छींक आना, नाक और आँखों से पानी या गाढ़ा पीला मवाद बहना, आँखों में छाले पड़ना, गले में खराश और सांस लेने में दिक्कत। इससे बिल्ली सूंघने की शक्ति खो देती है जिससे वह खाना खाना बंद कर देती है।
+        </p>
+    </div>
+
+    <!-- 3. रेबीज (Rabies) -->
+    <div class="bg-slate-900/70 border-l-4 border-red-600 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-red-500">3. रेबीज (Rabies) - घातक लाइलाज बीमारी</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह लाइलाज वायरस किसी संक्रमित जंगली जानवर या आवारा कुत्ते के काटने या खरोंचने से बिल्ली के शरीर में फैलता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> बिल्ली का व्यवहार अचानक बहुत आक्रामक हो जाना, बिना बात के काटना, अत्यधिक लार टपकना, लकवा मारना और कुछ ही दिनों में मृत्यु हो जाना। यह इंसानों के लिए भी बेहद खतरनाक है।
+        </p>
+    </div>
+
+    <!-- 4. त्वचा के रोग और रिंगवर्म (Skin & Ringworm) -->
+    <div class="bg-slate-900/70 border-l-4 border-orange-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-orange-400">4. दाद और फंगल इन्फेक्शन (Ringworm & Fleas)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> नमी, गंदगी या पिस्सू (Fleas) के काटने से बिल्लियों में फंगल इन्फेक्शन और गंभीर खुजली (Mange) की समस्या हो जाती है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> शरीर पर गोल चकत्ते पड़ना, बाल झड़ना, त्वचा का लाल होना और बिल्ली का लगातार खुद को खुजाना व काटना। यह संक्रमण इंसानों (विशेषकर बच्चों) में भी फैल सकता है।
+        </p>
+    </div>
+
+    <!-- 5. यूरिनरी ट्रैक्ट इन्फेक्शन (UTI & FLUTD) -->
+    <div class="bg-slate-900/70 border-l-4 border-sky-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-sky-400">5. मूत्र मार्ग का संक्रमण और स्टोन (UTI / FLUTD)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> कम पानी पीने, ड्राई फूड का अत्यधिक सेवन करने या ब्लैडर में स्टोन (पथरी) बनने के कारण बिल्लियों (विशेषकर नर बिल्लियों) में यह आम समस्या होती है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> बार-बार लिट्टर बॉक्स जाना लेकिन पेशाब न निकलना या बूंद-बूंद निकलना, पेशाब में खून आना और दर्द के कारण म्याऊँ-म्याऊँ करके चिल्लाना। यह किडनी फेलियर का कारण बन सकता है।
+        </p>
+    </div>
+
+    <!-- 6. पेट के कीड़े और पाचन रोग (Worms & Hairballs) -->
+    <div class="bg-slate-900/70 border-l-4 border-purple-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-purple-400">6. हेयरबॉल और पेट के कीड़े (Hairballs & Intestinal Worms)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> बिल्ली खुद को चाटकर साफ करती है जिससे पेट में बाल जमा हो जाते हैं (Hairballs)। इसके अलावा दूषित भोजन से राउंडवर्म और टेपवर्म हो जाते हैं।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> बार-बार उल्टी करना (जिसमें बालों का गुच्छा निकले), पेट फूलना, वजन घटना और सुस्त रहना।
+        </p>
+    </div>
+
+    <!-- रोकथाम और उपाय -->
+    <div class="bg-emerald-950/40 border border-emerald-500/30 p-5 rounded-xl space-y-3">
+        <h3 class="text-lg font-bold text-emerald-300">🛡️ बिल्ली के स्वास्थ्य रक्षा और बचाव के उपाय</h3>
+        <ul class="list-disc list-inside text-slate-300 text-sm md:text-base space-y-2">
+            <li><strong>समय पर टीकाकरण (Vaccination):</strong> बिल्ली को FPV, कैट फ्लू और एंटी-रेबीज की आवश्यक वैक्सीन समय पर जरूर लगवाएं।</li>
+            <li><strong>नियमित डीवार्मिंग (Deworming):</strong> पेट के कीड़ों से बचाव के लिए पशु चिकित्सक की सलाह से हर 3 महीने पर डीवार्मिंग करवाएं।</li>
+            <li><strong>शुद्ध पानी और खान-पान:</strong> यूटीआई और स्टोन से बचाने के लिए बिल्ली को पर्याप्त मात्रा में ताजा पानी और गीला भोजन (Wet Food) दें।</li>
+            <li><strong>ग्रूमिंग और साफ-सफाई:</strong> बालों के गुच्छों (Hairballs) को रोकने के लिए बिल्ली के बालों को नियमित रूप से ब्रश करें और उसका लिट्टर बॉक्स साफ रखें।</li>
+            <li><strong>पशु चिकित्सक की सलाह:</strong> बिल्ली के सुस्त होने, खाना छोड़ने या पेशाब करने में तकलीफ दिखने पर तुरंत डॉक्टर से संपर्क करें।</li>
+        </ul>
+    </div>
+
+</article>
+   
+     <!-- ================= COMPLETE RABBIT DISEASES DETAILED ARTICLE ================= -->
+<article class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 md:p-8 shadow-2xl max-w-4xl mx-auto my-8 text-left space-y-6">
+    
+    <!-- आर्टिकल बैज और हेडिंग -->
+    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-700 pb-4">
+        <span class="bg-amber-500/20 text-amber-300 border border-amber-500/40 text-xs font-bold px-3 py-1 rounded-full">
+            🐇 खरगोश स्वास्थ्य एवं संपूर्ण रोग मार्गदर्शिका
+        </span>
+        <span class="text-slate-400 text-xs font-medium">
+            📚 पेट केयर एवं पशु चिकित्सा
+        </span>
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-extrabold text-amber-400 leading-snug font-['Mukta']">
+        खरगोशों में होने वाली सभी छोटी-बड़ी बीमारियाँ: आँख, कान, नाक, मुँह, त्वचा और गंभीर रोग, लक्षण व रोकथाम
+    </h2>
+
+    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+        बेहद प्यारे और संवेदनशील पालतू जानवर माने जाने वाले खरगोश (Rabbits) बहुत जल्दी तनाव और बीमारियों की चपेट में आ जाते हैं। खरगोश अपनी बीमारी को छुपाने की कोशिश करते हैं, इसलिए जब तक लक्षण गंभीर होते हैं तब तक स्थिति बिगड़ चुकी होती है। इनके शरीर के नाजुक अंगों (आँख, कान, नाक, मुँह, त्वचा) और संक्रामक रोगों की पूरी जानकारी नीचे दी गई है।
+    </p>
+
+    <!-- 1. वायरल हेमरेजिक डिजीज (RHDV) -->
+    <div class="bg-slate-900/70 border-l-4 border-rose-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-rose-400">1. रैबिट हेमरेजिक डिजीज वायरस (RHDV) - अत्यधिक घातक</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह खरगोशों में होने वाला सबसे खतरनाक और तेजी से फैलने वाला वायरल संक्रमण है, जो अंगों में अंदरूनी रक्तस्राव (Bleeding) का कारण बनता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> अचानक तेज बुखार, सुस्ती, सांस लेने में अत्यधिक तकलीफ, नाक से खून आना और कुछ ही घंटों के भीतर खरगोश की अचानक मौत हो जाना।
+        </p>
+    </div>
+
+    <!-- 2. मुँह और दाँतों के रोग (Dental Malocclusion) -->
+    <div class="bg-slate-900/70 border-l-4 border-pink-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-pink-400">2. मुँह और दाँतों की समस्या (Dental Malocclusion & Overgrowth)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> खरगोश के दांत लगातार बढ़ते रहते हैं। यदि फाइबर या घास (Hay) कम दी जाए, तो दांत आपस में सही से घिसते नहीं हैं और हद से ज्यादा बढ़ जाते हैं।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> बढ़े हुए दांतों या नुकीले सिरों का मसूड़ों और जीभ में चुभना। इसके कारण खरगोश को खाने में तेज दर्द होता है, लार टपकती है, वजन तेजी से घटता है और वह भुखमरी का शिकार हो जाता है।
+        </p>
+    </div>
+
+    <!-- 3. कान के संक्रमण और माइट्स (Ear Mites & Canker) -->
+    <div class="bg-slate-900/70 border-l-4 border-yellow-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-yellow-400">3. कान के माइट्स और संक्रमण (Ear Mites / Psoroptes cuniculi)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह सूक्ष्म परजीवियों (Mites) के कारण होने वाला संक्रमण है जो खरगोश के कानों के अंदर पपड़ी और घाव बना देता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> कान के अंदर भूरी या मवाद जैसी पपड़ी जमना, तेज खुजली होना, खरगोश का बार-बार कान खुजाना और सिर को एक तरफ झुकाकर रखना। गंभीर होने पर संतुलन बिगड़ जाता है।
+        </p>
+    </div>
+
+    <!-- 4. आँख की बीमारियाँ (Eye Infections & Weepy Eye) -->
+    <div class="bg-slate-900/70 border-l-4 border-cyan-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-cyan-400">4. आँख आना, ब्लॉक टियर डक्ट और कंजंक्टिवाइटिस</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> दाँतों की जड़ें बढ़ने से आँख की नली (Tear Duct) ब्लॉक हो जाती है या धूल-मिट्टी व बैक्टीरिया से आँखों में संक्रमण होता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> आँखों से लगातार पानी या गाढ़ा कीचड़ बहना, पलकों के आसपास बाल झड़ना और आँख लाल होना। इससे आँखों की रोशनी प्रभावित हो सकती है।
+        </p>
+    </div>
+
+    <!-- 5. नाक और श्वसन संक्रमण (Respiratory / Snuffles) -->
+    <div class="bg-slate-900/70 border-l-4 border-indigo-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-indigo-400">5. नकाबंदी और स्नफल्स (Snuffles / Respiratory Infection)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह मुख्य रूप से 'पाश्चरेला' (Pasteurella) बैक्टीरिया के कारण होने वाला श्वसन संक्रमण है जो नमी या गंदे बाड़े से फैलता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> नाक से लगातार सफेद या पीला स्राव निकलना, बार-बार छींकना और आगे के पंजों से नाक पोंछना (जिससे पंजों के बाल गीले और गंदे हो जाते हैं)। इससे निमोनिया का खतरा बढ़ जाता है।
+        </p>
+    </div>
+
+    <!-- 6. त्वचा रोग और फंगस (Skin Infections & Mites) -->
+    <div class="bg-slate-900/70 border-l-4 border-orange-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-orange-400">6. त्वचा रोग, दाद और फ्लेस (Ringworm & Fur Mites)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> नमी, गंदगी और फंगस के कारण खरगोश की त्वचा पर पपड़ीदार चकत्ते और बाल झड़ने की समस्या होती है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> त्वचा पर पपड़ी पड़ना, गर्दन या पीठ के बाल उड़ना और तीव्र खुजली होना। खरगोश बेचैन रहता है और तनाव में आ जाता है।
+        </p>
+    </div>
+
+    <!-- 7. पाचन तंत्र की समस्या (GI Stasis) -->
+    <div class="bg-slate-900/70 border-l-4 border-purple-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-purple-400">7. जीआई स्टैसिस (GI Stasis - पेट की गति रुकना)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> फाइबरयुक्त भोजन (घास/हे) की कमी या अत्यधिक तनाव के कारण खरगोश की आंतों की स्वाभाविक गति रुक जाती है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> खाना-पेशाब बंद करना, सुस्त बैठना, पेट में गैस बनना और दर्द से कराहना। यह खरगोशों के लिए जानलेवा मेडिकल इमरजेंसी है।
+        </p>
+    </div>
+
+    <!-- रोकथाम और उपाय -->
+    <div class="bg-emerald-950/40 border border-emerald-500/30 p-5 rounded-xl space-y-3">
+        <h3 class="text-lg font-bold text-emerald-300">🛡️ खरगोश के स्वास्थ्य रक्षा और बचाव के उपाय</h3>
+        <ul class="list-disc list-inside text-slate-300 text-sm md:text-base space-y-2">
+            <li><strong>उचित आहार (Timothy Hay):</strong> खरगोश के दांतों और पाचन को स्वस्थ रखने के लिए हमेशा भरपूर मात्रा में सूखी घास (Hay) और ताजा पानी दें।</li>
+            <li><strong>टीकाकरण:</strong> RHDV जैसी घातक बीमारियों से बचाने के लिए पशु चिकित्सक से समय पर वैक्सीन लगवाएं।</li>
+            <li><strong>नियमित सफाई:</strong> खरगोश के पिंजरे, लिट्टर बॉक्स और उसके कानों-आँखों की साप्ताहिक सफाई करें।</li>
+            <li><strong>तनाव से बचाव:</strong> खरगोशों को अचानक होने वाले शोर और नमी से बचाएं।</li>
+            <li><strong>पशु चिकित्सक की सलाह:</strong> सुस्त होने या खाना छोड़ने पर तुरंत एक्सोटिक एनिमल/पशु चिकित्सक से संपर्क करें।</li>
+        </ul>
+    </div>
+
+</article>
+
+    <!-- ================= COMPLETE MONKEY DISEASES DETAILED ARTICLE ================= -->
+<article class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 md:p-8 shadow-2xl max-w-4xl mx-auto my-8 text-left space-y-6">
+    
+    <!-- आर्टिकल बैज और हेडिंग -->
+    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-700 pb-4">
+        <span class="bg-amber-500/20 text-amber-300 border border-amber-500/40 text-xs font-bold px-3 py-1 rounded-full">
+            🐒 वानर स्वास्थ्य एवं संपूर्ण रोग मार्गदर्शिका
+        </span>
+        <span class="text-slate-400 text-xs font-medium">
+            📚 वन्यजीव चिकित्सा एवं प्राइमेट रिसर्च
+        </span>
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-extrabold text-amber-400 leading-snug font-['Mukta']">
+        बंदरों में होने वाली सभी छोटी-बड़ी बीमारियाँ: सेंस ऑर्गन (आँख, कान, नाक, मुँह, त्वचा) व गंभीर रोग, लक्षण और रोकथाम
+    </h2>
+
+    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+        इंसानों के सबसे करीबी पूर्वज माने जाने वाले बंदर (Monkeys/Primates) शारीरिक संरचना में काफी हद तक मनुष्यों से मेल खाते हैं। यही कारण है कि कई मानवीय और वन्यजीव बीमारियाँ बंदरों में भी तेजी से फैलती हैं। शहरी कचरे, दूषित पानी और आपसी झगड़ों के कारण बंदरों को कई संक्रामक रोगों के साथ-साथ उनके सेंस ऑर्गन (आँख, कान, नाक, मुँह और त्वचा) से जुड़ी गंभीर बीमारियाँ हो जाती हैं। आइए इन सभी रोगों को विस्तार से जानते हैं।
+    </p>
+
+    <!-- 1. रेबीज (Rabies) -->
+    <div class="bg-slate-900/70 border-l-4 border-red-600 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-red-500">1. रेबीज (Rabies) - सबसे घातक और लाइलाज रोग</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसे होता है:</strong> रेबीज से संक्रमित कुत्ते या किसी अन्य जंगली जानवर के काटने से यह वायरस बंदर के शरीर में प्रवेश करता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> बंदर का अत्यधिक आक्रामक और पागल जैसा व्यवहार करना, मुँह से लगातार झाग या लार गिरना, लकवा मारना और कुछ ही दिनों में मृत्यु हो जाना। यह इंसानों के लिए भी जानलेवा है।
+        </p>
+    </div>
+
+    <!-- 2. हर्पीस बी वायरस (Herpes B Virus) और मंकीपॉक्स -->
+    <div class="bg-slate-900/70 border-l-4 border-rose-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-rose-400">2. हर्पीस बी वायरस (Herpes B) और मंकीपॉक्स (Mpox)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसे होता है:</strong> यह विशेष रूप से मकाक (लाल मुँह वाले बंदरों) में पाया जाने वाला वायरल संक्रमण है जो आपसी संपर्क, खरोंच या लार से फैलता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> तेज बुखार, शरीर पर फफोले व दाने निकलना, और कमजोरी। बंदरों में इसके लक्षण हल्के हो सकते हैं, लेकिन यदि यह इंसानों में फैल जाए तो मस्तिष्क में गंभीर सूजन (Encephalitis) पैदा कर जान ले सकता है।
+        </p>
+    </div>
+
+    <!-- 3. मुँह की बीमारियाँ (Mouth & Dental Diseases) -->
+    <div class="bg-slate-900/70 border-l-4 border-pink-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-pink-400">3. मुँह के छाले, मसूड़ों की सड़न और दाँतों के रोग (Stomatitis & Dental Abscess)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसे होता है:</strong> शहरी इलाकों में बंदरों द्वारा फेंका हुआ मीठा, तला-भुना और सड़ा-गला भोजन खाने या हर्पीस वायरस के कारण मुँह व दाँतों में संक्रमण होता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> होठों और जीभ पर गहरे छाले पड़ना, मसूड़ों से खून और मवाद आना, दाँत टूट जाना और मुँह से तेज बदबू आना। दर्द के कारण बंदर खाना-पीना छोड़ देता है और कुपोषण का शिकार हो जाता है।
+        </p>
+    </div>
+
+    <!-- 4. आँख की बीमारियाँ (Eye Diseases) -->
+    <div class="bg-slate-900/70 border-l-4 border-cyan-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-cyan-400">4. आँख आना, मोतियाबिंद और कॉर्नियल अल्सर (Conjunctivitis & Eye Trauma)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसे होता है:</strong> आपसी लड़ाई में नाखून लगने, धूल-धुएं, बैक्टीरियल संक्रमण या विटामिन-A की कमी से बंदरों की आँखों में रोग होते हैं।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> आँखें लाल होकर सूज जाना, आँखों से पीला मवाद या पानी बहना और पुतली पर सफेदी छा जाना। इससे बंदर की दृष्टि कमजोर हो जाती है, जिससे पेड़ से गिरने या सड़क दुर्घटना का खतरा बढ़ जाता है।
+        </p>
+    </div>
+
+    <!-- 5. कान के रोग (Ear Infections & Mites) -->
+    <div class="bg-slate-900/70 border-l-4 border-yellow-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-yellow-400">5. कान का संक्रमण, मवाद और परजीवी (Otitis & Ear Mites)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसे होता है:</strong> बारिश में भीगने, कान में पानी जाने, लड़ाई के घाव या सूक्ष्म कीड़ों (Mites) के कारण कान के अंदरूनी हिस्से में संक्रमण फैलता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> कान से बदबूदार मवाद बहना, बंदर का बार-बार कान में उंगली डालना या सिर झटकना। गंभीर होने पर बंदर का शारीरिक संतुलन (Balance) बिगड़ जाता है और वह ठीक से छलांग नहीं लगा पाता।
+        </p>
+    </div>
+
+    <!-- 6. नाक और श्वसन की बीमारियाँ (Nose & Respiratory Diseases - TB & Pneumonia) -->
+    <div class="bg-slate-900/70 border-l-4 border-indigo-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-indigo-400">6. नाक बहना, निमोनिया और तपेदिक (Pneumonia & Tuberculosis - TB)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसे होता है:</strong> बंदर इंसानों से होने वाली टीबी (TB) के प्रति बहुत संवेदनशील होते हैं। इसके अलावा ठंड लगने से निमोनिया और साइनस संक्रमण होता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> नाक से गाढ़ा स्राव या खून आना, लगातार सूखी खांसी, सांस फूलना, सीने में घरघराहट और शरीर का कंकाल जैसा पतला हो जाना।
+        </p>
+    </div>
+
+    <!-- 7. त्वचा के रोग (Skin Diseases - Mange & Ringworm) -->
+    <div class="bg-slate-900/70 border-l-4 border-orange-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-orange-400">7. त्वचा रोग: खाज-खुजली, दाद और जूं (Scabies, Ringworm & Lice)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसे होता है:</strong> गंदगी, नमी, फंगस और बाहरी परजीवियों (माइट्स व जूं) के कारण बंदरों में 'सार्कोप्टिक मैन्ज' (खुजली) और दाद की बीमारी होती है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> पूरे शरीर के बाल झड़ जाना (गंजापन), त्वचा पर मोटी पपड़ी और खून रिसने वाले घाव बनना। बंदर हर समय खुजली से बेचैन और चिड़चिड़ा रहता है।
+        </p>
+    </div>
+
+    <!-- 8. पेट और पाचन तंत्र के रोग (Gastrointestinal & Worms) -->
+    <div class="bg-slate-900/70 border-l-4 border-purple-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-purple-400">8. पेचिश, दस्त और पेट के कीड़े (Shigellosis & Intestinal Worms)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसे होता है:</strong> नालों का गंदा पानी पीने और कचरे से सड़ा हुआ भोजन खाने के कारण शिगेला (Shigella) बैक्टीरिया और पेट के कीड़े आंतों को संक्रमित कर देते हैं।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> तेज खूनी दस्त, उल्टी, पेट में मरोड़ और शरीर में पानी की भारी कमी (Dehydration), जिससे छोटे बंदरों की जल्दी मौत हो जाती है।
+        </p>
+    </div>
+
+    <!-- रोकथाम और उपाय -->
+    <div class="bg-emerald-950/40 border border-emerald-500/30 p-5 rounded-xl space-y-3">
+        <h3 class="text-lg font-bold text-emerald-300">🛡️ बंदरों के स्वास्थ्य रक्षा और रोगों की रोकथाम के उपाय</h3>
+        <ul class="list-disc list-inside text-slate-300 text-sm md:text-base space-y-2">
+            <li><strong>कचरा प्रबंधन और स्वच्छ आहार:</strong> बंदरों को तला-भुना, मीठा या सड़ा हुआ बासी खाना न दें; खुले कूड़ेदानों को ढककर रखें ताकि वे संक्रमित भोजन न खाएं।</li>
+            <li><strong>टीकाकरण एवं वन्यजीव रेस्क्यू:</strong> यदि किसी क्षेत्र में बंदरों में रेबीज, खुजली या गंभीर घाव दिखें, तो तुरंत वन विभाग (Forest Department) या पशु चिकित्सा टीम को सूचित करें।</li>
+            <li><strong>सुरक्षित दूरी बनाए रखें:</strong> बीमार या आक्रामक बंदरों के पास न जाएं और न ही उन्हें छूने की कोशिश करें, क्योंकि हर्पीस बी, रेबीज और टीबी जैसे रोग इंसानों में फैल सकते हैं।</li>
+            <li><strong>पर्यावरण संरक्षण:</strong> बंदरों के प्राकृतिक आवास (जंगलों और पेड़ों) को बचाएं ताकि उन्हें शुद्ध फल, पत्ते और साफ पानी मिल सके।</li>
+        </ul>
+    </div>
+
+</article>
+
+     <!-- ================= COMPLETE HORSE DISEASES DETAILED ARTICLE ================= -->
+<article class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 md:p-8 shadow-2xl max-w-4xl mx-auto my-8 text-left space-y-6">
+    
+    <!-- आर्टिकल बैज और हेडिंग -->
+    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-700 pb-4">
+        <span class="bg-amber-500/20 text-amber-300 border border-amber-500/40 text-xs font-bold px-3 py-1 rounded-full">
+            🐎 अश्व स्वास्थ्य एवं संपूर्ण रोग मार्गदर्शिका
+        </span>
+        <span class="text-slate-400 text-xs font-medium">
+            📚 पशु चिकित्सा एवं इक्वाइन साइंस
+        </span>
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-extrabold text-amber-400 leading-snug font-['Mukta']">
+        घोड़ों में होने वाली सभी छोटी-बड़ी बीमारियाँ: सेंस ऑर्गन (आँख, कान, नाक, मुँह, त्वचा) व गंभीर रोग, लक्षण और रोकथाम
+    </h2>
+
+    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+        अपनी ताकत, रफ्तार और वफादारी के लिए जाने जाने वाले घोड़े (Horses) बेहद संवेदनशील और नाज़ुक पाचन तंत्र वाले जानवर होते हैं। उचित प्रबंधन, साफ-सफाई और सही पोषण के अभाव में घोड़े कई घातक संक्रामक रोगों के साथ-साथ अपने संवेदनशील अंगों (आँख, कान, नाक, मुँह और त्वचा) से जुड़ी समस्याओं का शिकार हो जाते हैं। आइए घोड़ों के सभी प्रमुख रोगों और उनके बचाव के उपायों को विस्तार से जानते हैं।
+    </p>
+
+    <!-- 1. ग्लैंडर्स (Glanders) -->
+    <div class="bg-slate-900/70 border-l-4 border-red-600 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-red-500">1. ग्लैंडर्स (Glanders) - अत्यंत घातक और संक्रामक रोग</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह 'बर्कहोल्डेरिया मैलेई' (Burkholderia mallei) बैक्टीरिया के कारण होने वाला बेहद खतरनाक और लाइलाज बैक्टीरियल रोग है, जो दूषित पानी और चारे से फैलता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> फेफड़ों और श्वसन तंत्र का खराब होना, नाक से चिपचिपा पीला-खून मिला स्राव निकलना, और शरीर पर छाले पड़ना। यह बीमारी इंसानों में भी फैल सकती है और जानलेवा है, इसलिए संक्रमित घोड़े को अलग करना अनिवार्य होता है।
+        </p>
+    </div>
+
+    <!-- 2. अश्व इन्फ्लुएंजा और स्ट्रैंगल्स (Equine Influenza & Strangles) -->
+    <div class="bg-slate-900/70 border-l-4 border-rose-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-rose-400">2. अश्व फ्लू और स्ट्रैंगल्स (Equine Influenza & Strangles)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> स्ट्रैंगल्स (Strangles) गले का एक गंभीर बैक्टीरियल संक्रमण है, जबकि इन्फ्लुएंजा एक तेजी से फैलने वाला श्वसन वायरस है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> गले की ग्रंथियों में भारी सूजन और मवाद भरना (जिससे सांस लेने और निगलने में तेज दर्द होता है), लगातार सूखी खांसी, तेज बुखार और कमजोरी। इससे घोड़ा चारा खाना बंद कर देता है।
+        </p>
+    </div>
+
+    <!-- 3. शूल या पेट दर्द (Colic) -->
+    <div class="bg-slate-900/70 border-l-4 border-amber-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-amber-400">3. कोलिक या पेट दर्द (Equine Colic) - आपातकालीन स्थिति</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> घोड़ों का पाचन तंत्र बहुत संवेदनशील होता है। सड़ा हुआ चारा खाने, अचानक आहार बदलने या पेट में गैस फंसने से 'कोलिक' होता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> घोड़ा बेचैन होकर बार-बार जमीन पर पैर पटकता है, पेट की तरफ देखता है, लेटता-उठता है और पसीना छूटने लगता है। समय पर इलाज न मिलने पर आंतें फटने से कुछ ही घंटों में घोड़े की मौत हो सकती है।
+        </p>
+    </div>
+
+    <!-- 4. आँख की बीमारियाँ (Eye Diseases - Recurrent Uveitis / Moon Blindness) -->
+    <div class="bg-slate-900/70 border-l-4 border-cyan-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-cyan-400">4. आवर्तक यूवाइटिस या मून ब्लाइंडनेस (Equine Recurrent Uveitis - ERU)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह घोड़ों की आँखों में होने वाली एक गंभीर और पुरानी सूजन संबंधी बीमारी है, जो बैक्टीरिया, चोट या आनुवंशिक कारणों से होती है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> आँख से लगातार पानी बहना, पुतली का सिकुड़ना, रोशनी से डर लगना और आँख में धुंधलापन छा जाना। बार-बार होने वाले इस संक्रमण से घोड़ा धीरे-धीरे पूरी तरह अंधा (Blind) हो सकता है।
+        </p>
+    </div>
+
+    <!-- 5. कान और सिर के संक्रमण (Ear Infections & Tick Infestation) -->
+    <div class="bg-slate-900/70 border-l-4 border-yellow-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-yellow-400">5. कान के कीड़े, टिक और नर्वस संक्रमण (Ear Ticks & Otitis)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> खुले मैदान में चरने वाले घोड़ों के कानों में किलनी (Ticks), माइट्स या मक्खियों के लार्वा प्रवेश कर जाते हैं जिससे गंभीर आंतरिक संक्रमण होता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> कान के अंदर पपड़ी जमना, मवाद आना, घोड़ा बार-बार अपना सिर झटकता है और कान छूने पर आक्रामक हो जाता है। कान के नसों पर दबाव पड़ने से उसका संतुलन बिगड़ सकता है।
+        </p>
+    </div>
+
+    <!-- 6. नाक और श्वसन मार्ग के रोग (Nasal Polyps & Heaves) -->
+    <div class="bg-slate-900/70 border-l-4 border-indigo-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-indigo-400">6. नाक की बीमारियाँ, पॉलीप्स और हीव्स (Equine Asthma / Heaves)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> धूल, फफूंदयुक्त सूखी घास (Hay) या परागकणों के लगातार साँस के जरिए फेफड़ों में जाने से 'हीव्स' (अस्थमा) और नाक में ट्यूमर जैसी गांठें (Polyps) हो जाती हैं।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> नाक से लगातार स्राव, सांस छोड़ते समय पेट की मांसपेशियों का जोर लगाना (Broken Wind), और फेफड़ों की क्षमता कम होना। इससे घोड़ा दौड़ने में असमर्थ हो जाता है।
+        </p>
+    </div>
+
+    <!-- 7. मुँह और दाँतों के रोग (Dental Hooks & Sharp Edges) -->
+    <div class="bg-slate-900/70 border-l-4 border-pink-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-pink-400">7. दाँतों के नुकीले किनारे और मुँह के छाले (Dental Hooks & Ulcers)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> घोड़ों के जबड़े की बनावट के कारण दाँतों के किनारे प्राकृतिक रूप से नुकीले (Hooks) हो जाते हैं, जो गाल और जीभ को अंदर से काटते हैं।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> चबाते समय चारा गिराना (Dropping feed), मुँह से लार टपकना, लगाम (Bit) लेने से मना करना और मुँह के अंदर गहरे छाले बनना। इससे घोड़े का वजन और ऊर्जा स्तर तेजी से गिरता है।
+        </p>
+    </div>
+
+    <!-- 8. त्वचा रोग (Skin Diseases - Rain Rot & Sweet Itch) -->
+    <div class="bg-slate-900/70 border-l-4 border-orange-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-orange-400">8. त्वचा रोग: रैन रॉट, दाद और मक्खी की एलर्जी (Rain Rot & Sweet Itch)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> लगातार बारिश में भीगने से होने वाला बैक्टीरियल संक्रमण ('रैन रॉट') और मक्खियों के काटने से होने वाली तीव्र त्वचा एलर्जी ('स्वीट इच') घोड़ों में आम हैं।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> पीठ और गर्दन पर पपड़ीदार बाल झड़ना, त्वचा पर मवाद भरे फोड़े होना और तीव्र खुजली के कारण घोड़े का लगातार खुद को दीवारों से रगड़ना।
+        </p>
+    </div>
+
+    <!-- रोकथाम और उपाय -->
+    <div class="bg-emerald-950/40 border border-emerald-500/30 p-5 rounded-xl space-y-3">
+        <h3 class="text-lg font-bold text-emerald-300">🛡️ घोड़ों के स्वास्थ्य रक्षा और रोगों की रोकथाम के उपाय</h3>
+        <ul class="list-disc list-inside text-slate-300 text-sm md:text-base space-y-2">
+            <li><strong>नियमित टीकाकरण और डीवार्मिंग:</strong> टिटनेस, इन्फ्लुएंजा और ग्लैंडर्स के टीके समय पर लगवाएं; पेट के कीड़ों के लिए हर 3-4 महीने पर कृमिनाशक दें।</li>
+            <li><strong>दंत परीक्षण (Dental Floating):</strong> साल में कम से कम एक बार पशु चिकित्सक से घोड़ों के दाँतों के नुकीले किनारों की घिसाई (Floating) करवाएं।</li>
+            <li><strong>शुद्ध आहार और प्रबंधन:</strong> सड़ा हुआ चारा, धूलयुक्त भूसा या फफूंद लगा दाना कभी न दें। घोड़े को हमेशा ताजा और साफ पानी पिलाएं।</li>
+            <li><strong>आँख और कान की साफ-सफाई:</strong> घोड़ों की आँखों और कानों को नियमित रूप से गुनगुने पानी से साफ करें और मक्खियों-टिक्स से बचाव के लिए स्प्रे का इस्तेमाल करें।</li>
+            <li><strong>तत्काल चिकित्सा:</strong> कोलिक (पेट दर्द) या सुस्ती के शुरुआती लक्षण दिखते ही तुरंत इक्वाइन/पशु चिकित्सक से संपर्क करें।</li>
+        </ul>
+    </div>
+
+</article>
+
+    <!-- ================= COMPLETE LION DISEASES DETAILED ARTICLE ================= -->
+<article class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 md:p-8 shadow-2xl max-w-4xl mx-auto my-8 text-left space-y-6">
+    
+    <!-- आर्टिकल बैज और हेडिंग -->
+    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-700 pb-4">
+        <span class="bg-amber-500/20 text-amber-300 border border-amber-500/40 text-xs font-bold px-3 py-1 rounded-full">
+            🦁 वन्यजीव एवं सिंह स्वास्थ्य मार्गदर्शिका
+        </span>
+        <span class="text-slate-400 text-xs font-medium">
+            📚 वन्यजीव चिकित्सा एवं संरक्षण अनुसंधान
+        </span>
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-extrabold text-amber-400 leading-snug font-['Mukta']">
+        शेरों में होने वाली सभी छोटी-बड़ी बीमारियाँ: सेंस ऑर्गन (आँख, कान, नाक, मुँह, त्वचा) व गंभीर रोग, लक्षण और रोकथाम
+    </h2>
+
+    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+        जंगल के राजा कहे जाने वाले शेरों (Lions) को अपनी ताकत और आक्रामक स्वभाव के कारण सर्वोच्च शिकारी माना जाता है, लेकिन प्रकृति के ये शक्तिशाली जीव भी कई गंभीर वायरल, बैक्टीरियल और परजीवी रोगों के शिकार हो जाते हैं। जलवायु परिवर्तन, आवास सिकुड़ने, आपसी संघर्ष और संक्रामक बीमारियों के कारण शेरों को अपने संवेदनशील अंगों (आँख, कान, नाक, मुँह और त्वचा) से जुड़ी गंभीर समस्याओं का सामना करना पड़ता है। आइए शेरों के सभी प्रमुख रोगों और उनके बचाव के उपायों को विस्तार से जानते हैं।
+    </p>
+
+    <!-- 1. कैनाइन डिस्टेंपर वायरस (CDV) -->
+    <div class="bg-slate-900/70 border-l-4 border-rose-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-rose-400">1. केनाइन डिस्टेंपर वायरस (CDV) - शेरों के लिए सबसे घातक</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह एक अत्यंत खतरनाक वायरल संक्रमण है जो मुख्य रूप से पालतू कुत्तों से जंगली जानवरों (शेरों और तेंदुओं) में फैलता है। गिर के जंगलों में इसने कई बार शेरों की जान खतरे में डाली है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> तेज बुखार, न्यूरोलॉजिकल समस्याएं (दौरे पड़ना), शरीर में कंपन, निमोनिया और प्रतिरोधक क्षमता का पूरी तरह नष्ट होना। इससे शेरों की बड़ी संख्या में मौत हो सकती है।
+        </p>
+    </div>
+
+    <!-- 2. बोवाइन ट्यूबरकुलोसिस (Bovine TB) -->
+    <div class="bg-slate-900/70 border-l-4 border-amber-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-amber-400">2. बोवाइन ट्यूबरकुलोसिस (Bovine Tuberculosis - TB)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह एक क्रॉनिक बैक्टीरियल संक्रमण है जो शेरों द्वारा संक्रमित शिकार (जैसे मवेशियों) को खाने से उनके शरीर में फैलता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> फेफड़ों में गंभीर क्षति, लगातार सूखी खांसी, सांस लेने में तेज घरघराहट, वजन में भारी गिरावट और धीरे-धीरे शारीरिक कमजोरी के कारण शेर का शिकार करने में असमर्थ हो जाना।
+        </p>
+    </div>
+
+    <!-- 3. मुँह और दाँतों की समस्या (Dental Fractures & Stomatitis) -->
+    <div class="bg-slate-900/70 border-l-4 border-pink-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-pink-400">3. मुँह के छाले, मसूड़ों की सूजन और टूटे दाँत (Dental Disease)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> शिकार के दौरान संघर्ष में जबड़े पर चोट लगने, कैल्सियम की कमी या कैलिकिवर्ल संक्रमण के कारण शेरों के मुँह और दाँतों में गंभीर रोग होते हैं।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> कैनिन (नुकीले) दाँत टूटना या उनमें सड़न होना, मसूड़ों से लगातार खून और मवाद बहना, और मुँह के अंदर गहरे छाले पड़ना। तेज दर्द के कारण शेर बड़े शिकार नहीं कर पाता और भुखमरी का शिकार हो जाता है।
+        </p>
+    </div>
+
+    <!-- 4. आँख की बीमारियाँ (Eye Diseases - Cataract & Trauma) -->
+    <div class="bg-slate-900/70 border-l-4 border-cyan-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-cyan-400">4. मोतियाबिंद, कॉर्नियल अल्सर और आँख का संक्रमण (Cataract & Eye Trauma)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> बढ़ती उम्र, आपसी क्षेत्रीय लड़ाइयों में पंजों से आँख पर चोट लगने या वायरल संक्रमण के कारण शेरों की आँखों की रोशनी प्रभावित होती है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> पुतली पर दूधिया सफेदी छा जाना (मोतियाबिंद), आँख लाल होना और लगातार मवाद बहना। दृष्टि कमजोर होने से शेर रात के समय शिकार करने में पूरी तरह असफल हो जाता है।
+        </p>
+    </div>
+
+    <!-- 5. कान के संक्रमण और टिक इन्फेस्टेशन (Ear Mites & Ticks) -->
+    <div class="bg-slate-900/70 border-l-4 border-yellow-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-yellow-400">5. कान का संक्रमण और बाहरी परजीवी (Tick Infestation & Otitis)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> जंगलों में झाड़ियों के बीच रहने के कारण शेरों के कानों और नाजुक त्वचा पर किलनी (Ticks) और माइट्स चिपक जाते हैं, जिससे गंभीर बैक्टीरियल संक्रमण फैलता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> कान के अंदरूनी हिस्से में पपड़ी जमना, मवाद आना, शेर का बार-बार सिर हिलाना और कान खुजाना। संक्रमण नसों तक पहुँचने पर उसका संतुलन बिगड़ सकता है।
+        </p>
+    </div>
+
+    <!-- 6. नाक और श्वसन मार्ग के रोग (Respiratory Infections) -->
+    <div class="bg-slate-900/70 border-l-4 border-indigo-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-indigo-400">6. नाक बहना, साइनस और श्वसन संक्रमण (Sinusitis & Pneumonia)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> अत्यधिक ठंड, बारिश में भीगने या कैनाइन डिस्टेंपर के शुरुआती चरण में शेरों को गंभीर श्वसन संक्रमण जकड़ लेता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> नाक से लगातार गाढ़ा पीला या खूनी स्राव निकलना, बार-बार छींकना, तेज घरघराहट और दौड़ते समय सांस फूलना।
+        </p>
+    </div>
+
+    <!-- 7. त्वचा रोग (Skin Diseases - Mange & Tick Fever) -->
+    <div class="bg-slate-900/70 border-l-4 border-orange-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-orange-400">7. त्वचा रोग: मैन्ज (खुजली) और टिक जनित बुखार (Mange & Tick-Borne Fever)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> 'सार्कोप्टिक मैन्ज' माइट्स के कारण शेरों की त्वचा पर भयानक खुजली और संक्रामक त्वचा रोग होता है, जो बड़े पैमाने पर उनके बाल उड़ा देता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> शरीर के बाल झड़ जाना, त्वचा पर मोटी पपड़ी और दरारें पड़ना, जिससे खून रिसने लगता है। लगातार खुजली और टिक फीवर के कारण शेर अत्यधिक तनाव और कमजोरी का शिकार हो जाता है।
+        </p>
+    </div>
+
+    <!-- 8. बेबिसिओसिस और टिक जनित रक्त रोग (Babesiosis) -->
+    <div class="bg-slate-900/70 border-l-4 border-purple-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-purple-400">8. बेबिसिओसिस (Babesiosis - रक्त परजीवी रोग)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह किलनी (Ticks) के काटने से शेरों के खून में प्रवेश करने वाला एक सूक्ष्म परजीवी है जो लाल रक्त कोशिकाओं (RBC) को नष्ट करता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> तेज बुखार, पीलिया (आँखों और मसूड़ों का पीला पड़ना), गहरे रंग का पेशाब आना और शरीर में खून की गंभीर कमी (Anemia)। समय पर इलाज न मिलने पर यह जानलेवा हो सकता है।
+        </p>
+    </div>
+
+    <!-- रोकथाम और उपाय -->
+    <div class="bg-emerald-950/40 border border-emerald-500/30 p-5 rounded-xl space-y-3">
+        <h3 class="text-lg font-bold text-emerald-300">🛡️ शेरों के स्वास्थ्य संरक्षण और रोगों की रोकथाम के उपाय</h3>
+        <ul class="list-disc list-inside text-slate-300 text-sm md:text-base space-y-2">
+            <li><strong>वन्यजीव स्वास्थ्य निगरानी (Wildlife Monitoring):</strong> राष्ट्रीय उद्यानों और अभ्यारण्यों में शेरों की गतिविधियों और स्वास्थ्य पर वन्यजीव विशेषज्ञों द्वारा निरंतर नजर रखी जानी चाहिए।</li>
+            <li><strong>बफर जोन में टीकाकरण:</strong> शेरों के आसपास रहने वाले पालतू कुत्तों को कैनाइन डिस्टेंपर (CDV) के टीके अनिवार्य रूप से समय पर लगवाए जाएं ताकि वायरस जंगल में न फैले।</li>
+            <li><strong>प्राकृतिक आवास और जल संरक्षण:</strong> शेरों के प्राकृतिक रहवास और पानी के स्रोतों को स्वच्छ रखा जाए ताकि वे दूषित पानी और बीमारियों से बचे रहें।</li>
+            <li><strong>आपातकालीन रेस्क्यू टीम:</strong> किसी भी शेर में सुस्ती, घाव, आँख-कान के संक्रमण या बीमारी के लक्षण दिखने पर तुरंत वन विभाग (Forest Department) की वेटरनरी टीम द्वारा उसका इलाज किया जाना चाहिए।</li>
+        </ul>
+    </div>
+
+</article>
+
+     <!-- ================= COMPLETE HIPPOPOTAMUS DISEASES DETAILED ARTICLE ================= -->
+<article class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 md:p-8 shadow-2xl max-w-4xl mx-auto my-8 text-left space-y-6">
+    
+    <!-- आर्टिकल बैज और हेडिंग -->
+    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-700 pb-4">
+        <span class="bg-amber-500/20 text-amber-300 border border-amber-500/40 text-xs font-bold px-3 py-1 rounded-full">
+            🦛 दरियाई घोड़ा स्वास्थ्य एवं संपूर्ण रोग मार्गदर्शिका
+        </span>
+        <span class="text-slate-400 text-xs font-medium">
+            📚 वन्यजीव चिकित्सा एवं जलचर अनुसंधान
+        </span>
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-extrabold text-amber-400 leading-snug font-['Mukta']">
+        दरियाई घोड़ों (Hippopotamus) में होने वाली सभी छोटी-बड़ी बीमारियाँ: सेंस ऑर्गन (आँख, कान, नाक, मुँह, त्वचा) व गंभीर रोग, लक्षण और रोकथाम
+    </h2>
+
+    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+        धरती के सबसे भारी और शक्तिशाली अर्ध-जलीय जीवों में से एक दरियाई घोड़ा (Hippopotamus) अपना अधिकांश समय नदियों और झीलों में बिताता है। बाहर से बेहद मजबूत दिखने वाले इन जीवों की त्वचा और सेंस ऑर्गन (आँख, कान, नाक, मुँह) पानी की गुणवत्ता, तेज धूप, आपसी क्षेत्रीय लड़ाइयों और संक्रामक जीवाणुओं के प्रति काफी संवेदनशील होते हैं। आइए दरियाई घोड़ों में होने वाली सभी छोटी-बड़ी बीमारियों और उनके बचाव के तरीकों को विस्तार से जानते हैं।
+    </p>
+
+    <!-- 1. एंथ्रेक्स (Anthrax) -->
+    <div class="bg-slate-900/70 border-l-4 border-red-600 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-red-500">1. एंथ्रेक्स (Anthrax) - सबसे घातक और संक्रामक रोग</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह 'बैसिलस एंथ्रेसीस' (Bacillus anthracis) जीवाणु के कारण होने वाला बेहद जानलेवा संक्रामक रोग है, जो सूखे मौसम में दूषित मिट्टी, घास और उथले पानी के स्रोतों के जरिए तेजी से फैलता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> अचानक तेज बुखार, सुस्ती, सांस लेने में भारी तकलीफ और मृत्यु के बाद नाक, मुँह व गुदा से गहरे काले रंग का खून बहना। यह बीमारी जंगल में एक साथ सैकड़ों दरियाई घोड़ों की जान ले सकती है।
+        </p>
+    </div>
+
+    <!-- 2. त्वचा रोग और सनबर्न (Skin Diseases, Sunburn & Cracks) -->
+    <div class="bg-slate-900/70 border-l-4 border-orange-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-orange-400">2. त्वचा रोग: सनबर्न, त्वचा का फटना और फंगल संक्रमण (Skin Infections)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> दरियाई घोड़े की त्वचा पर पसीने की ग्रंथियां नहीं होतीं, बल्कि यह 'ब्लड स्वेट' (लाल रंग का तैलीय स्राव) छोड़ती है जो इसे धूप और बैक्टीरिया से बचाता है। पानी की कमी होने या लंबे समय तक तेज धूप में रहने से त्वचा सूखने लगती है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> त्वचा पर गहरी दरारें पड़ना, गंभीर सनबर्न, घावों में बैक्टीरिया व फंगस का संक्रमण होना और मवाद भरना। इससे दरियाई घोड़ा बेहद बेचैन रहता है और सेकेंडरी इन्फेक्शन से जान का खतरा बढ़ जाता है।
+        </p>
+    </div>
+
+    <!-- 3. मुँह और विशाल दाँतों के रोग (Mouth & Dental Abscess) -->
+    <div class="bg-slate-900/70 border-l-4 border-pink-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-pink-400">3. मुँह के घाव, मसूड़ों की सूजन और दाँतों की सड़न (Dental Abscess & Malocclusion)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> दरियाई घोड़ों के विशाल कैनाइन दाँत (Tusks) लगातार बढ़ते रहते हैं। आपसी लड़ाइयों में दाँत टूटने या गलत तरीके से बढ़ने (Malocclusion) के कारण मसूड़ों और जबड़े में गंभीर संक्रमण होता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> जबड़े में भारी सूजन, मुँह से बदबूदार मवाद और खून आना, तथा चबाने में असमर्थता। दर्द के कारण दरियाई घोड़ा रात में घास चरना बंद कर देता है और कुपोषण का शिकार हो जाता है।
+        </p>
+    </div>
+
+    <!-- 4. आँख की बीमारियाँ (Eye Diseases - Corneal Ulcer & Trauma) -->
+    <div class="bg-slate-900/70 border-l-4 border-cyan-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-cyan-400">4. आँख आना, कॉर्नियल अल्सर और चोट (Conjunctivitis & Eye Trauma)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> गंदे या रसायनयुक्त पानी में तैरने, आपसी संघर्ष में चोट लगने या परागकणों के कारण दरियाई घोड़ों की उभरी हुई आँखों में संक्रमण हो जाता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> आँखों से लगातार पानी और पीला कीचड़ बहना, पलकों में सूजन आना और कॉर्निया पर सफेदी छा जाना। इससे दृष्टि कमजोर हो जाती है और अंधापन आ सकता है।
+        </p>
+    </div>
+
+    <!-- 5. कान के संक्रमण (Ear Infections & Parasites) -->
+    <div class="bg-slate-900/70 border-l-4 border-yellow-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-yellow-400">5. कान का संक्रमण और बाहरी परजीवी (Otitis & Ear Mites)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> हर समय पानी और कीचड़ में रहने के कारण छोटे कानों के अंदर गंदा पानी और सूक्ष्म परजीवी (Mites/Ticks) प्रवेश कर जाते हैं, जिससे अंदरूनी संक्रमण फैलता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> कान के अंदर मवाद जमा होना, तेज बदबू आना, दरियाई घोड़े का बार-बार सिर झटकना और पानी में गोता लगाने में असहजता महसूस करना।
+        </p>
+    </div>
+
+    <!-- 6. नाक और श्वसन मार्ग के रोग (Respiratory Infections & Pneumonia) -->
+    <div class="bg-slate-900/70 border-l-4 border-indigo-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-indigo-400">6. नाक बहना, साइनस और निमोनिया (Pneumonia & Respiratory Issues)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> अत्यधिक ठंड, दूषित पानी के फेफड़ों में जाने या पाश्चरेला (Pasteurella) जैसे जीवाणुओं के कारण श्वसन तंत्र संक्रमित हो जाता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> नथुनों से गाढ़ा स्राव या खून निकलना, सांस लेते समय तेज घरघराहट, सुस्ती और पानी के अंदर लंबे समय तक सांस रोक पाने में असमर्थता।
+        </p>
+    </div>
+
+    <!-- 7. पेट के कीड़े और पाचन रोग (Internal Parasites & Liver Flukes) -->
+    <div class="bg-slate-900/70 border-l-4 border-purple-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-purple-400">7. लिवर फ्लूक और पेट के परजीवी (Liver Flukes & Gastrointestinal Worms)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> नदी किनारे की गीली घास चरने और तालाब का पानी पीने से घोंघों (Snails) के माध्यम से लिवर फ्लूक और आंतों के कीड़े शरीर में पहुँच जाते हैं।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> लिवर को गंभीर क्षति पहुँचना, दस्त लगना, खून की कमी (Anemia) और शरीर का तेजी से दुबला होना।
+        </p>
+    </div>
+
+    <!-- रोकथाम और उपाय -->
+    <div class="bg-emerald-950/40 border border-emerald-500/30 p-5 rounded-xl space-y-3">
+        <h3 class="text-lg font-bold text-emerald-300">🛡️ दरियाई घोड़ों के स्वास्थ्य रक्षा और रोगों की रोकथाम के उपाय</h3>
+        <ul class="list-disc list-inside text-slate-300 text-sm md:text-base space-y-2">
+            <li><strong>स्वच्छ और पर्याप्त जल स्रोत:</strong> चिड़ियाघरों और अभ्यारण्यों में दरियाई घोड़ों के तालाब का पानी नियमित रूप से बदला और फिल्टर किया जाना चाहिए ताकि त्वचा, आँख और कान के संक्रमण न हों।</li>
+            <li><strong>छाया और नमी की व्यवस्था:</strong> तेज धूप और सनबर्न से बचाने के लिए पानी के साथ-साथ छायादार स्थान (Shade) की उचित व्यवस्था होनी चाहिए।</li>
+            <li><strong>नियमित डीवार्मिंग और जांच:</strong> कैप्टिव दरियाई घोड़ों के मल की नियमित जांच करवानी चाहिए और पशु चिकित्सक की सलाह से कृमिनाशक दवाएं देनी चाहिए।</li>
+            <li><strong>एंथ्रेक्स निगरानी (Outbreak Control):</strong> जंगली क्षेत्रों में सूखे के मौसम में जल स्रोतों की निगरानी रखनी चाहिए और किसी भी संदिग्ध मृत्यु पर तुरंत शव का वैज्ञानिक निस्तारण करना चाहिए ताकि संक्रमण न फैले।</li>
+        </ul>
+    </div>
+
+</article>
+
+      <!-- ================= COMPLETE PIG DISEASES DETAILED ARTICLE ================= -->
+<article class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 md:p-8 shadow-2xl max-w-4xl mx-auto my-8 text-left space-y-6">
+    
+    <!-- आर्टिकल बैज और हेडिंग -->
+    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-700 pb-4">
+        <span class="bg-amber-500/20 text-amber-300 border border-amber-500/40 text-xs font-bold px-3 py-1 rounded-full">
+            🐖 सूअर स्वास्थ्य एवं संपूर्ण स्वाइन रोग मार्गदर्शिका
+        </span>
+        <span class="text-slate-400 text-xs font-medium">
+            📚 पशु चिकित्सा एवं स्वाइन फार्मिंग
+        </span>
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-extrabold text-amber-400 leading-snug font-['Mukta']">
+        सुअरों में होने वाली सभी छोटी-बड़ी बीमारियाँ: सेंस ऑर्गन (आँख, कान, नाक, मुँह, त्वचा) व गंभीर रोग, लक्षण और रोकथाम
+    </h2>
+
+    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+        सुअर पालन (Swine Farming) तेजी से उभरता हुआ व्यवसाय है, लेकिन सूअर कई खतरनाक वायरल और बैक्टीरियल संक्रामक रोगों के प्रति अत्यधिक संवेदनशील होते हैं। गंदे बाड़े, कीचड़ और अनुचित खान-पान के कारण इन्हें कई गंभीर बीमारियाँ जकड़ लेती हैं, जो इनके संवेदनशील अंगों (आँख, कान, नाक, मुँह और त्वचा) को भी बुरी तरह प्रभावित करती हैं। आइए सुअरों के सभी प्रमुख रोगों और उनके बचाव के उपायों को विस्तार से जानते हैं।
+    </p>
+
+    <!-- 1. अफ्रीकन स्वाइन फीवर (ASF) -->
+    <div class="bg-slate-900/70 border-l-4 border-red-600 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-red-500">1. अफ्रीकन स्वाइन फीवर (ASF) - अत्यंत घातक वायरल रोग</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह घरेलू और जंगली सुअरों में होने वाला एक अत्यधिक संक्रामक और लाइलाज वायरल संक्रमण है, जिससे फार्म के सभी सूअरों की मृत्यु दर लगभग 100% तक हो सकती है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> अचानक तेज बुखार, शरीर पर नीले-बैंगनी चकत्ते पड़ना, खून की उल्टी या खूनी दस्त, और अत्यधिक सुस्ती। इसके फैलने से पशुपालकों को भारी आर्थिक नुकसान उठाना पड़ता है।
+        </p>
+    </div>
+
+    <!-- 2. स्वाइन फ्लू (Swine Influenza) -->
+    <div class="bg-slate-900/70 border-l-4 border-rose-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-rose-400">2. स्वाइन इन्फ्लुएंजा (Swine Flu / श्वसन संक्रमण)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह इन्फ्लुएंजा वायरस के कारण होने वाला श्वसन तंत्र का संक्रमण है, जो हवा और सूअरों के आपसी संपर्क से तेजी से फैलता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> लगातार खांसना, छींकना, नाक से पानी बहना, सांस लेने में तेज घरघराहट और वजन का तेजी से घटना। यह बीमारी इंसानों में भी फैल सकती है।
+        </p>
+    </div>
+
+    <!-- 3. शास्त्रीय स्वाइन बुखार (Classical Swine Fever - CSF) -->
+    <div class="bg-slate-900/70 border-l-4 border-amber-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-amber-400">3. क्लासिकल स्वाइन फीवर (CSF - हॉग कोलिक)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह भी एक गंभीर वायरल बीमारी है जो सुअरों के आंतरिक अंगों और प्रतिरक्षा तंत्र पर हमला करती है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> तेज बुखार, आँखों के आसपास कीचड़ जमना, पिछले पैरों का कमजोर होना (लंगड़ापन), और त्वचा पर लाल धब्बे पड़ना। समय पर टीका न लगने पर सुअर की मौत तय है।
+        </p>
+    </div>
+
+    <!-- 4. मुँह और खुर की बीमारियाँ (Foot and Mouth Disease / Vesicular Disease) -->
+    <div class="bg-slate-900/70 border-l-4 border-pink-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-pink-400">4. मुँह और खुर के छाले (Swine Vesicular & FMD Disease)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> दूषित चारे या पानी के सेवन से सूअरों के खुरों और मुँह के अंदर छाले पड़ने लगते हैं।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>lक्षण और दुष्प्रभाव:</strong> सूंड़, होंठ, जीभ और खुरों के बीच छाले होना, अत्यधिक लार टपकना और तेज दर्द के कारण सुअर का चलना व चारा खाना बंद कर देना।
+        </p>
+    </div>
+
+    <!-- 5. त्वचा रोग: मैन्ज और स्वाइन पॉक्स (Mange & Swine Pox) -->
+    <div class="bg-slate-900/70 border-l-4 border-orange-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-orange-400">5. त्वचा रोग: खाज-खुजली (Sarcoptic Mange) और स्वाइन पॉक्स</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> बाड़े में नमी, गंदगी और परजीवियों (माइट्स) के कारण सूअरों की मोटी त्वचा पर गंभीर खुजली और फोड़े-फुंसी (पॉक्स) हो जाते हैं।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> त्वचा पर पपड़ीदार घाव बनना, बाल झड़ना और सूअर का लगातार दीवारों से शरीर रगड़ना। इससे विकास रुक जाता है और मांस की गुणवत्ता खराब होती है।
+        </p>
+    </div>
+
+    <!-- 6. आँख के संक्रमण (Eye Infections / Conjunctivitis) -->
+    <div class="bg-slate-900/70 border-l-4 border-cyan-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-cyan-400">6. आँख आना और कंजंक्टिवाइटिस (Conjunctivitis & Eye Discharge)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> बाड़े में अमोनिया गैस की अधिकता (गंदे मूत्र के कारण), धूल, मक्खियों और बैक्टीरियल संक्रमण से आँखें खराब हो जाती हैं।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> आँखें लाल होना, लगातार पीला कीचड़ बहना और पलकों का आपस में चिपक जाना। इससे सुअर की देखने की क्षमता प्रभावित होती है।
+        </p>
+    </div>
+
+    <!-- 7. कान के संक्रमण और नेक्रोसिस (Ear Necrosis & Mites) -->
+    <div class="bg-slate-900/70 border-l-4 border-yellow-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-yellow-400">7. कान का संक्रमण और नेक्रोसिस (Ear Necrosis & Mites)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> ठंड, नमी या सूअरों द्वारा आपस में कान काटने (Ear Biting) की आदत के कारण कानों में गंभीर बैक्टीरियल संक्रमण और घाव हो जाते हैं।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> कान के किनारों का काला पड़कर सड़ना (Necrosis), मवाद आना और तेज दर्द के कारण सुअर का सुस्त रहना।
+        </p>
+    </div>
+
+    <!-- 8. पेट के कीड़े और आंतों के रोग (Internal Parasites / Worms) -->
+    <div class="bg-slate-900/70 border-l-4 border-purple-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-purple-400">8. पेट के राउंडवर्म और खूनी दस्त (Ascariasis & Dysentery)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> दूषित जमीन या गंदगी खाने से पेट में गोलकृमी (Roundworms) और स्वाइन डाइसेंटरी पैदा करने वाले बैक्टीरिया फैल जाते हैं।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> पेट फूलना, खूनी दस्त या कब्ज होना, और सुअर का खूब खाने पर भी दुबला होते जाना।
+        </p>
+    </div>
+
+    <!-- रोकथाम और उपाय -->
+    <div class="bg-emerald-950/40 border border-emerald-500/30 p-5 rounded-xl space-y-3">
+        <h3 class="text-lg font-bold text-emerald-300">🛡️ सुअरों के स्वास्थ्य रक्षा और रोगों की रोकथाम के उपाय</h3>
+        <ul class="list-disc list-inside text-slate-300 text-sm md:text-base space-y-2">
+            <li><strong>कठोर जैव सुरक्षा (Biosecurity):</strong> फार्म के प्रवेश द्वार पर सैनिटाइजेशन की व्यवस्था रखें और बाहरी लोगों व वाहनों का प्रवेश वर्जित करें।</li>
+            <li><strong>समय पर टीकाकरण:</strong> अफ्रीकन स्वाइन फीवर (जहाँ अनुमत हो) और क्लासिकल स्वाइन फीवर (CSF) के टीके पशु चिकित्सक से समय पर लगवाएं।</li>
+            <li><strong>बाड़े की साफ-सफाई और वेंटिलेशन:</strong> बाड़े में अमोनिया गैस न बने इसके लिए नियमित सफाई करें और सूखा, हवादार फर्श रखें।</li>
+            <li><strong>नियमित डीवार्मिंग और स्प्रे:</strong> पेट के कीड़ों के लिए समय-समय पर कृमिनाशक दें और त्वचा के परजीवियों (माइट्स) के लिए एंटी-माइट स्प्रे का छिड़काव करें।</li>
+            <li><strong>तत्कालिक अलगाव:</strong> किसी भी सुअर में बुखार, सुस्ती या त्वचा-आँख के संक्रमण के लक्षण दिखते ही उसे तुरंत आइसोलेट करें।</li>
+        </ul>
+    </div>
+
+</article>
+
+    <!-- ================= COMPLETE CROCODILE DISEASES DETAILED ARTICLE ================= -->
+<article class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 md:p-8 shadow-2xl max-w-4xl mx-auto my-8 text-left space-y-6">
+    
+    <!-- आर्टिकल बैज और हेडिंग -->
+    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-700 pb-4">
+        <span class="bg-amber-500/20 text-amber-300 border border-amber-500/40 text-xs font-bold px-3 py-1 rounded-full">
+            🐊 सरीसृप एवं मगरमच्छ स्वास्थ्य मार्गदर्शिका
+        </span>
+        <span class="text-slate-400 text-xs font-medium">
+            📚 वन्यजीव चिकित्सा एवं हर्पेटोलॉजी
+        </span>
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-extrabold text-amber-400 leading-snug font-['Mukta']">
+        मगरमच्छों में होने वाली सभी छोटी-बड़ी बीमारियाँ: सेंस ऑर्गन (आँख, कान, नाक, मुँह, त्वचा) व गंभीर रोग, लक्षण और रोकथाम
+    </h2>
+
+    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+        करोड़ूपूर्व काल से पृथ्वी पर मौजूद मगरमच्छ (Crocodiles) भले ही धरती के सबसे मजबूत और सहनशील सरीसृप माने जाते हों, लेकिन कैप्टिविटी (चिड़ियाघरों/फार्म्स) या प्रदूषित जलीय आवासों में रहने पर ये भी कई खतरनाक संक्रामक और पर्यावरणीय रोगों के शिकार हो जाते हैं। पानी की गुणवत्ता में गिरावट, तापमान असंतुलन और आपसी संघर्ष के कारण इन्हें अपने संवेदनशील अंगों (आँख, कान, नाक, मुँह और त्वचा) से जुड़ी गंभीर बीमारियाँ जकड़ लेती हैं। आइए मगरमच्छों के सभी प्रमुख रोगों और उनके बचाव के उपायों को विस्तार से जानते हैं।
+    </p>
+
+    <!-- 1. वेस्ट नील वायरस और पोक्सवायरस -->
+    <div class="bg-slate-900/70 border-l-4 border-rose-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-rose-400">1. वेस्ट नील वायरस और क्रोकोडाइल पॉक्स (Viral Infections)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> यह मच्छरों या संक्रमित जलीय जीवों के जरिए फैलने वाला वायरल संक्रमण है, जो मुख्य रूप से छोटे मगरमच्छों (Hatchlings) की प्रतिरक्षा प्रणाली पर हमला करता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> शरीर पर मस्से जैसे फफोले पड़ना (पॉक्स), सुस्ती, तैरने में असमर्थता (संतुलन बिगड़ना) और तंत्रिका तंत्र के प्रभावित होने से पक्षाघात (Paralysis) होना। इससे फार्म में बड़ी संख्या में बच्चों की मौत हो जाती है।
+        </p>
+    </div>
+
+    <!-- 2. त्वचा रोग: ब्राउन स्पॉट और फंगल इन्fection -->
+    <div class="bg-slate-900/70 border-l-4 border-orange-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-orange-400">2. त्वचा रोग: ब्राउन स्पॉट डिजीज और फंगल संक्रमण (Skin Necrosis)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> गंदे, दूषित या अम्लीय पानी में लंबे समय तक रहने के कारण मगरमच्छ की कठोर त्वचा (Scales) पर बैक्टीरिया और फंगस हमला कर देते हैं, जिसे 'ब्राउन स्पॉट डिजीज' कहा जाता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> त्वचा पर भूरे या काले धब्बे बनना, पपड़ी उतरना, छालों से मवाद रिसना और त्वचा का अंदर तक सड़ना। इससे मगरमच्छ की वाटरप्रूफ क्षमता नष्ट हो जाती है और गंभीर संक्रमण खून में फैल सकता है।
+        </p>
+    </div>
+
+    <!-- 3. मुँह और जबड़े के रोग (Mouth Rot & Jaw Abscess) -->
+    <div class="bg-slate-900/70 border-l-4 border-pink-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-pink-400">3. मुँह की सड़न और जबड़े का फोड़ा (Infectious Stomatitis / Mouth Rot)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> शिकार को पकड़ते समय या आपसी लड़ाई में मसूड़ों में खरोंच आने पर जब गंदा पानी और बैक्टीरिया जमा हो जाते हैं, तो 'माउथ रोट' (मुँह की सड़न) की गंभीर समस्या पैदा होती है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> मसूड़ों और दाँतों के पास पीला-सफेद पनीर जैसा मवाद जमना, जबड़े का पूरी तरह बंद न हो पाना और मुँह से बदबू आना। दर्द के कारण मगरमच्छ शिकार खाना बंद कर देता है, जिससे वह भुखमरी का शिकार हो जाता है।
+        </p>
+    </div>
+
+    <!-- 4. आँख की बीमारियाँ (Eye Diseases - Blindness & Corneal Ulcer) -->
+    <div class="bg-slate-900/70 border-l-4 border-cyan-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-cyan-400">4. आँख आना, कॉर्नियल अल्सर और अंधापन (Eye Infections & Blindness)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> पानी में क्लोरीन की अधिकता, रासायनिक प्रदूषण, बैक्टीरिया या आपसी संघर्ष में पंजों की चोट के कारण मगरमच्छ की पलकों और पारदर्शी झिल्ली (Nictitating Membrane) में संक्रमण होता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> आँखों पर दूधिया परत या सूजन आना, लगातार पानी बहना और आँखें बंद रखना। दृष्टिबाधित होने के कारण मगरमच्छ पानी के अंदर शिकार खोजने और नेविगेट करने में असमर्थ हो जाता है।
+        </p>
+    </div>
+
+    <!-- 5. कान के संक्रमण और ओटिटिस (Ear Infections & Otitis) -->
+    <div class="bg-slate-900/70 border-l-4 border-yellow-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-yellow-400">5. कान का संक्रमण और आंतरिक मवाद (Otitis Media & Ear Flaps)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> मगरमच्छों के कान के बाहर एक सुरक्षात्मक फ्लैप होता है जो पानी में बंद रहता है। गंदे पानी या जीवाणुयुक्त कीचड़ के अंदर जाने से कान के भीतरी हिस्से में गंभीर संक्रमण हो जाता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> कान के क्षेत्र में सूजन, मवाद भरना, सिर को एक तरफ टेढ़ा रखना और संतुलन बिगड़ने के कारण पानी में गोल-गोल घूमना।
+        </p>
+    </div>
+
+    <!-- 6. नाक और श्वसन मार्ग के रोग (Respiratory Infections & Pneumonia) -->
+    <div class="bg-slate-900/70 border-l-4 border-indigo-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-indigo-400">6. निमोनिया और श्वसन तंत्र का संक्रमण (Pneumonia & Respiratory Distress)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> बाड़े में पानी और हवा का तापमान सही न होने (अत्यधिक ठंड) के कारण फेफड़ों में पानी या कफ जम जाता है, जिससे निमोनिया होता है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> नथुनों से बुलबुले निकलना, सांस लेते समय घरघराहट की आवाज आना और शरीर का हल्का होकर पानी में तैरने में असमर्थ होना (मगरमच्छ अक्सर डूबने लगते हैं)।
+        </p>
+    </div>
+
+    <!-- 7. मेटाबॉलिक बोन डिजीज (MBD / पोषण संबंधी रोग) -->
+    <div class="bg-slate-900/70 border-l-4 border-purple-500 p-4 md:p-5 rounded-r-xl space-y-2">
+        <h3 class="text-lg font-bold text-purple-400">7. मेटाबॉलिक बोन डिजीज (MBD - कैल्शियम और विटामिन D3 की कमी)</h3>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>कैसी बीमारी है:</strong> कैप्टिविटी में सही धूप (UV Light) और संतुलित आहार (साबुत मछली या हड्डี युक्त मांस) न मिलने के कारण हड्डियों में कैल्शियम की भारी कमी हो जाती है।
+        </p>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <strong>लक्षण और दुष्प्रभाव:</strong> जबड़े का नरम होना (Rubber Jaw), पैरों और रीढ़ की हड्डी का मुड़ जाना, और चलने-फिरने में पूरी तरह असमर्थ हो जाना।
+        </p>
+    </div>
+
+    <!-- रोकथाम और उपाय -->
+    <div class="bg-emerald-950/40 border border-emerald-500/30 p-5 rounded-xl space-y-3">
+        <h3 class="text-lg font-bold text-emerald-300">🛡️ मगरमच्छों के स्वास्थ्य रक्षा और रोगों की रोकथाम के उपाय</h3>
+        <ul class="list-disc list-inside text-slate-300 text-sm md:text-base space-y-2">
+            <li><strong>जल गुणवत्ता प्रबंधन (Water Quality):</strong> फार्म्स और बाड़ों में पानी को नियमित रूप से फिल्टर और स्वच्छ रखें ताकि बैक्टीरिया, फंगस और त्वचा के रोग न फैलें।</li>
+            <li><strong>तापमान और धूप की व्यवस्था (Basking Area):</strong> मगरमच्छों को ठंड से बचाने और विटामिन D3 के संश्लेषण के लिए बाड़े में उचित धूप और हीटिंग लैंप की व्यवस्था करें।</li>
+            <li><strong>संतुलित एवं ताज़ा आहार:</strong> उन्हें हमेशा विटामिन और कैल्शियम युक्त ताज़ा आहार दें, और सड़े हुए मांस से दूर रखें।</li>
+            <li><strong>नियमित स्वास्थ्य परीक्षण:</strong> किसी भी मगरमच्छ में सुस्ती, मुँह खोलने में असमर्थता या त्वचा पर धब्बे दिखने पर तुरंत वन्यजीव पशु चिकित्सक (Wildlife Vet) से संपर्क करें।</li>
+        </ul>
+    </div>
+
+</article>
+
+           <!-- Related Link to Animal Health Test Guide -->
+            <div class="bg-slate-800/80 border border-emerald-500/30 rounded-xl p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="text-center sm:text-left">
+                    <h4 class="font-bold text-white text-base">🩺 जानवरों की मेडिकल जाँच के बारे में जानना चाहते हैं?</h4>
+                    <p class="text-xs text-slate-300 mt-1">जानवर के शरीर के ब्लड टेस्ट, लक्षण और स्वास्थ्य जांच की पूरी गाइड पढ़ें।</p>
+                </div>
+                <a href="animal-health-guide.html" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-5 py-2.5 rounded-lg shadow transition flex-shrink-0">
+                    जाँच गाइड देखें →
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-5 text-center text-slate-400 text-xs mt-8">
+        <p>&copy; 2026 World Knowledge Hub. Created by <strong>Som Vishwakarma</strong>. All rights reserved.</p>
+
+        <div class="mt-3 space-x-3">
+            <a href="index.html" class="text-sky-400 hover:underline">Home</a> | 
+            <a href="about.html" class="text-sky-400 hover:underline">About Us</a> | 
+            <a href="privacy.html" class="text-sky-400 hover:underline">Privacy Policy</a> | 
+            <a href="contact.html" class="text-sky-400 hover:underline">Contact Us</a>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script>
+        function toggleMobileMenu(event) {
+            if (event) event.stopPropagation();
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('mobileMenu');
+            const menuBtn = document.getElementById('menuBtn');
+            if (menu && !menu.classList.contains('hidden')) {
+                if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
+                    menu.classList.add('hidden');
+                }
+            }
+        });
+    </script>
+</body>
+</html> 
