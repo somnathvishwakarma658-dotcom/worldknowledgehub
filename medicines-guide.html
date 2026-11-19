@@ -1,0 +1,363 @@
+ <!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Search Console Verification Tag -->
+    <meta name="google-site-verification" content="r7PadJGvr_GH-tfAHhP6RMmF1eJe9qgeTVU3emG0BZo" />
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://worldknowledgehub.vercel.app/" />
+
+    <title>World Knowledge Hub - ज्ञान, विज्ञान और अद्भुत रहस्य</title>
+    
+    <!-- Google SEO & Search Optimization Tags -->
+    <meta name="title" content="World Knowledge Hub - ज्ञान, विज्ञान और अद्भुत रहस्य">
+    <meta name="description" content="World Knowledge Hub पर पढ़ें मानव शरीर के रहस्य, रक्त संचार, जीव-जंतुओं के अद्भुत तथ्य, विज्ञान और तकनीक की ताजा खोजें।">
+    <meta name="keywords" content="World Knowledge Hub, worldknowledgehub, Som Vishwakarma, मानव शरीर, रक्त संचार, जीव जंतु तथ्य, विज्ञान, तकनीक">
+    <meta name="author" content="Som Vishwakarma">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="wkh-logo.png">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D253F',
+                        secondary: '#008080',
+                        gold: '#C59B27',
+                        saffron: '#f97316', 
+                        darkBg: '#081422',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'Mukta', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', 'Mukta', sans-serif;
+            background-color: #0D253F;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .animate-marquee {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 25s linear infinite;
+        }
+    </style>
+</head>
+<body class="text-slate-100 antialiased flex flex-col min-h-screen bg-slate-900">
+
+    <!-- ================= FESTIVAL BANNER ================= -->
+    <div class="max-w-4xl mx-auto my-4 px-4 w-full">
+        <div class="p-1 rounded-2xl bg-gradient-to-r from-amber-500 via-rose-500 via-purple-500 to-indigo-500 shadow-md">
+            <div class="bg-slate-900 rounded-[14px] p-4 md:p-6 text-center relative overflow-hidden">
+                <div class="text-xl md:text-3xl mb-1 tracking-widest animate-pulse">🪔 ✨ 🌅 ✨ 🪔</div>
+                <h2 class="text-xl md:text-3xl font-black bg-gradient-to-r from-amber-300 via-orange-400 to-yellow-200 bg-clip-text text-transparent mb-1">
+                    शुभ दीपावली एवं महापर्व छठ की हार्दिक शुभकामनाएं!
+                </h2>
+                <p class="text-xs md:text-base font-bold text-rose-400 tracking-wide">
+                    ✨ रोशनी, खुशियों और आस्था के इस महासंगम में आपका स्वागत है ✨
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="sticky top-0 z-50 glass shadow-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 sm:h-20">
+                
+                <!-- BRAND LOGO -->
+                <a href="index.html" class="flex items-center space-x-3 cursor-pointer py-1 group">
+                    <img src="wkh-logo.png" alt="World Knowledge Hub Logo" class="h-12 w-12 sm:h-14 sm:w-14 rounded-full object-cover shadow-md border-2 border-amber-500 group-hover:scale-105 transition-transform duration-200">
+                    <div class="flex flex-col text-left">
+                        <span class="font-extrabold text-sm sm:text-lg text-[#0D253F] tracking-wide leading-none">WORLD KNOWLEDGE</span>
+                        <span class="font-black text-xs sm:text-sm text-[#C59B27] tracking-widest mt-0.5">HUB</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center space-x-6 lg:space-x-8">
+                    <a href="index.html" class="font-bold text-slate-700 hover:text-primary transition-colors py-2 border-b-2 border-gold">Home</a>
+                    <a href="tourism.html" class="font-bold text-slate-700 hover:text-secondary transition-colors py-2 border-b-2 border-transparent hover:border-gold">Tours</a>
+                    <a href="ai-article.html" class="font-bold text-slate-700 hover:text-indigo-600 transition-colors py-2 border-b-2 border-transparent hover:border-gold">Science</a>
+                    <a href="history.html" class="font-bold text-amber-700 hover:text-amber-800 transition-colors py-2 border-b-2 border-transparent hover:border-amber-600">🏛️ इतिहास</a>
+                </nav>
+
+                <!-- Mobile Hamburger Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menuBtn" onclick="toggleMobileMenu(event)" class="text-slate-700 hover:text-primary focus:outline-none p-2 rounded-lg">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-1.5 absolute w-full left-0 shadow-2xl text-slate-800 max-h-[80vh] overflow-y-auto">
+            <a href="index.html" class="block font-bold text-primary bg-slate-100 px-3 py-2 rounded-md">🏠 Home (होम पेज)</a>
+            <div class="border-t border-slate-200 my-1"></div>
+            <a href="blood-transfusion.html" class="block font-bold text-slate-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">🧪 1. मानव शरीर की सभी जाँच</a>
+            <a href="human-diseases.html" class="block font-bold text-slate-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">🦠 2. मानव रोग और स्वास्थ्य स्थितियाँ</a>
+            <a href="animal-health-guide.html" class="block font-bold text-slate-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">🩺 3. जानवर शरीर की सभी जाँच</a>
+            <a href="animal-diseases.html" class="block font-bold text-slate-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">🐄 4. जानवर रोग और स्वास्थ्य स्थितियाँ</a>
+            <a href="animal-facts.html" class="block font-bold text-slate-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">🐾 5. जीव जंतुओं के अद्भुत तथ्य</a>
+            <a href="indian-freedom-history.html" class="block font-bold text-slate-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">⚔️ 6. भारत की आजादी से जुड़े युद्ध और कांड</a>
+            <a href="technology-updates.html" class="block font-bold text-slate-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">💻 7. तकनीक / टेक्नोलॉजी</a>
+            <a href="science-research-future.html" class="block font-bold text-slate-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">🔬 8. रिसर्च (भूतकाल और भविष्य)</a>
+            <a href="global-military-arsenal.html" class="block font-bold text-rose-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">🚀 9. विश्व की सैन्य शक्ति व हथियार</a>
+            <a href="tourism.html" class="block font-bold text-teal-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">🌐 10. पर्यटन व दर्शनीय स्थल</a>
+            <a href="snakes-mysteries.html" class="block font-bold text-teal-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">🐍 11. सांपों के अद्भुत रहस्य और रोचक तथ्य</a>     
+            <a href="medicines-guide.html" class="block font-bold text-teal-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">💊 12. मानव दवाइयाँ, साल्ट और साइड इफेक्ट्स</a>     
+            <a href="history.html" class="block font-bold text-amber-700 hover:bg-slate-100 px-3 py-2 rounded-md text-sm">🏛️ 13. इतिहास और प्राचीन रहस्य</a>
+            </div>
+      </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="flex-grow flex flex-col items-center justify-center px-4 py-6 text-center">
+        <div class="max-w-4xl mx-auto space-y-6 w-full">
+            
+            <!-- ⚡ LIVE TICKER BAR ⚡ -->
+            <div class="bg-slate-800/90 border border-sky-500/30 rounded-xl px-4 py-2 flex items-center space-x-3 shadow-lg overflow-hidden">
+                <span class="bg-red-600 text-white text-xs font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider animate-pulse flex-shrink-0">
+                    ⚡अद्भुत तथ्य और ज्ञान
+                </span>
+                <div class="overflow-hidden whitespace-nowrap w-full text-left">
+                    <p class="text-xs sm:text-sm text-slate-300 inline-block animate-marquee">
+                        🚀 World Knowledge Hub में आपका स्वागत है! विज्ञान, मानव शरीर, जीव-जंतुओं के अद्भुत तथ्य और प्राचीन इतिहास से जुड़े रोचक लेख पढ़ने के लिए नीचे दिए गए कार्ड्स पर क्लिक करें।
+                    </p>
+                </div>
+            </div>
+
+            <!-- Hero Heading -->
+            <div class="space-y-3">
+                <h1 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight font-['Mukta']">
+                    मानव शरीर, चिकित्सा विज्ञान और अद्भुत रहस्यों का सफर
+                </h1>
+                <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto">
+                    🚀 World Knowledge Hub में आपका स्वागत है! विज्ञान, मानव शरीर, जीव-जंतुओं के अद्भुत तथ्य और प्राचीन इतिहास से जुड़े रोचक लेख पढ़ें।       
+                </p>
+            </div>
+
+            <!-- LIVE POPULATION CLOCK -->
+            <div class="bg-slate-800/90 border-2 border-sky-500/50 rounded-2xl p-5 shadow-2xl text-center">
+                <div class="flex items-center justify-center space-x-2 mb-2">
+                    <i class="fa-solid fa-users text-sky-400 text-xl"></i>
+                    <h2 class="text-lg sm:text-xl font-bold text-sky-400">🇮🇳 भारत की लाइव जनसंख्या घड़ी (Live Population)</h2>
+                </div>
+                <div class="text-2xl sm:text-4xl font-extrabold text-emerald-400 my-2 tracking-wide" id="home-live-pop">
+                    गणना हो रही है...
+                </div>
+                <p class="text-xs sm:text-sm text-slate-400">
+                    सेकंड-दर-सेकंड वृद्धि दर के आधार पर लाइव अनुमानित आंकड़ा। 
+                    <a href="top10-population.html" class="text-sky-400 underline font-bold ml-1 hover:text-sky-300">दुनिया के टॉप 10 देशों की सूची देखें →</a>
+                </p>
+            </div>
+
+            <!-- ================= ALL TOPIC BUTTONS GRID ================= -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+
+                <!-- 1. मानव शरीर की सभी जाँच -->
+                <a href="blood-transfusion.html" class="bg-slate-800/90 border border-slate-700 hover:border-teal-400 p-4 rounded-xl shadow-lg transition transform hover:-translate-y-1 flex items-center space-x-4">
+                    <div class="text-2xl bg-teal-500/20 p-3 rounded-lg text-teal-300 flex-shrink-0">🧪</div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">1. मानव शरीर की सभी जाँच</h3>
+                        <p class="text-xs text-slate-300">Medical Lab Test Guide, CBC, LFT, KFT & Blood Groups.</p>
+                    </div>
+                </a>
+
+                <!-- 2. मानव रोग और स्वास्थ्य स्थितियाँ -->
+                <a href="human-diseases.html" class="bg-slate-800/90 border border-slate-700 hover:border-yellow-400 p-4 rounded-xl shadow-lg transition transform hover:-translate-y-1 flex items-center space-x-4">
+                    <div class="text-2xl bg-yellow-500/20 p-3 rounded-lg text-yellow-300 flex-shrink-0">🦠</div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">2. मानव रोग और स्वास्थ्य स्थितियाँ</h3>
+                        <p class="text-xs text-slate-300">Human Diseases & Health Conditions (संक्रामक व असंक्रामक रोग).</p>
+                    </div>
+                </a>
+
+                <!-- 3. जानवर शरीर की सभी जाँच -->
+                <a href="animal-health-guide.html" class="bg-slate-800/90 border border-slate-700 hover:border-emerald-400 p-4 rounded-xl shadow-lg transition transform hover:-translate-y-1 flex items-center space-x-4">
+                    <div class="text-2xl bg-emerald-500/20 p-3 rounded-lg text-emerald-300 flex-shrink-0">🩺</div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">3. जानवर शरीर की सभी जाँच</h3>
+                        <p class="text-xs text-slate-300">Animal Body Health & Test Guide.</p>
+                    </div>
+                </a>
+
+                <!-- 4. जानवर रोग और स्वास्थ्य स्थितियाँ -->
+                <a href="animal-diseases.html" class="bg-slate-800/90 border border-slate-700 hover:border-amber-400 p-4 rounded-xl shadow-lg transition transform hover:-translate-y-1 flex items-center space-x-4">
+                    <div class="text-2xl bg-amber-500/20 p-3 rounded-lg text-amber-300 flex-shrink-0">🐄</div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">4. जानवर रोग और स्वास्थ्य स्थितियाँ</h3>
+                        <p class="text-xs text-slate-300">Animal Diseases and Health Conditions.</p>
+                    </div>
+                </a>
+
+                <!-- 5. जीव जंतुओं के अद्भुत तथ्य -->
+                <a href="animal-facts.html" class="bg-slate-800/90 border border-slate-700 hover:border-orange-400 p-4 rounded-xl shadow-lg transition transform hover:-translate-y-1 flex items-center space-x-4">
+                    <div class="text-2xl bg-orange-500/20 p-3 rounded-lg text-orange-300 flex-shrink-0">🐾</div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">5. जीव जंतुओं के अद्भुत तथ्य</h3>
+                        <p class="text-xs text-slate-300">Amazing Animal Facts & Wildlife Secrets.</p>
+                    </div>
+                </a>
+
+                <!-- 6. भारत की आजादी से जुड़े युद्ध और कांड -->
+                <a href="indian-freedom-history.html" class="bg-slate-800/90 border border-slate-700 hover:border-rose-400 p-4 rounded-xl shadow-lg transition transform hover:-translate-y-1 flex items-center space-x-4">
+                    <div class="text-2xl bg-rose-500/20 p-3 rounded-lg text-rose-300 flex-shrink-0">⚔️</div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">6. भारत की आजादी से जुड़े युद्ध और कांड</h3>
+                        <p class="text-xs text-slate-300">Indian Freedom Struggle, Wars & Historical Incidents.</p>
+                    </div>
+                </a>
+
+                <!-- 7. तकनीक / टेक्नोलॉजी -->
+                <a href="technology-updates.html" class="bg-slate-800/90 border border-slate-700 hover:border-sky-400 p-4 rounded-xl shadow-lg transition transform hover:-translate-y-1 flex items-center space-x-4">
+                    <div class="text-2xl bg-sky-500/20 p-3 rounded-lg text-sky-300 flex-shrink-0">💻</div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">7. तकनीक / टेक्नोलॉजी</h3>
+                        <p class="text-xs text-slate-300">Technology and Future Tech Updates.</p>
+                    </div>
+                </a>
+
+                <!-- 8. रिसर्च जो हो चुकी है, और भविष्य में होंगी -->
+                <a href="science-research-future.html" class="bg-slate-800/90 border border-slate-700 hover:border-indigo-400 p-4 rounded-xl shadow-lg transition transform hover:-translate-y-1 flex items-center space-x-4">
+                    <div class="text-2xl bg-indigo-500/20 p-3 rounded-lg text-indigo-300 flex-shrink-0">🔬</div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">8. रिसर्च जो हो चुकी है और भविष्य में होंगी</h3>
+                        <p class="text-xs text-slate-300">Past Discoveries & Future Scientific Researches.</p>
+                    </div>
+                </a>
+
+                <!-- 9. विश्व की सैन्य शक्ति व हथियार -->
+                <a href="global-military-arsenal.html" class="bg-slate-800/90 border border-slate-700 hover:border-red-500 p-4 rounded-xl shadow-lg transition transform hover:-translate-y-1 flex items-center space-x-4">
+                    <div class="text-2xl bg-red-500/20 p-3 rounded-lg text-red-400 flex-shrink-0">🚀</div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">9. विश्व की सैन्य शक्ति व हथियार</h3>
+                        <p class="text-xs text-slate-300">Global Military Arsenal, Missiles & Defense Power.</p>
+                    </div>
+                </a>
+
+                <!-- 10. पर्यटन व दर्शनीय स्थल -->
+                <a href="tourism.html" class="bg-slate-800/90 border border-slate-700 hover:border-cyan-400 p-4 rounded-xl shadow-lg transition transform hover:-translate-y-1 flex items-center space-x-4">
+                    <div class="text-2xl bg-cyan-500/20 p-3 rounded-lg text-cyan-300 flex-shrink-0">🌐</div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">10. पर्यटन व दर्शनीय स्थल (Tours)</h3>
+                        <p class="text-xs text-slate-300">Famous Tourist Places, Wonders & Travel Guides.</p>
+                    </div>
+                </a>
+
+                <!-- 11. सांपों के अद्भुत रहस्य और रोचक तथ्य -->
+                <a href="snakes-mysteries.html" class="bg-slate-800/90 border border-slate-700 hover:border-emerald-500 p-4 rounded-xl shadow-lg transition transform hover:-translate-y-1 flex items-center space-x-4">
+                    <div class="text-2xl bg-emerald-500/20 p-3 rounded-lg text-emerald-300 flex-shrink-0">🐍</div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">11. सांपों के अद्भुत रहस्य और रोचक तथ्य</h3>
+                        <p class="text-xs text-slate-300">Amazing Facts and Mysteries About Snakes & Wildlife.</p>
+                    </div>
+                </a>
+
+                <!-- 12. 💊 मानव दवाइयाँ, साल्ट और साइड इफेक्ट्स -->
+                <a href="medicines-guide.html" class="bg-slate-800/90 border border-slate-700 hover:border-cyan-400 p-4 rounded-xl shadow-lg transition transform hover:-translate-y-1 flex items-center space-x-4">
+                    <div class="text-2xl bg-cyan-500/20 p-3 rounded-lg text-cyan-300 flex-shrink-0">💊</div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">12. दवा, साल्ट और साइड इफेक्ट्स</h3>
+                        <p class="text-xs text-slate-300">Medicines, Salt & Side Effects Guide.</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- 13. इतिहास और प्राचीन रहस्य (Full Width Banner Button) -->
+            <div class="w-full pt-2">
+                <a href="history.html" class="w-full bg-gradient-to-r from-amber-700 via-amber-600 to-yellow-600 hover:from-amber-600 hover:to-yellow-500 text-slate-900 font-extrabold py-4 px-6 rounded-xl shadow-xl flex items-center justify-center space-x-3 text-base transition border border-amber-400/40">
+                    <i class="fa-solid fa-landmark text-xl"></i>
+                    <span>13. इतिहास और प्राचीन रहस्य (Ancient History and Mysteries)</span>
+                </a>
+            </div>
+
+            <!-- Feedback Section -->
+            <div class="text-center my-6 p-6 bg-slate-800/80 rounded-xl shadow-lg border border-slate-700 max-w-xl mx-auto w-full">
+                <h3 class="text-xl font-bold text-white mb-2">💡 हमें अपनी राय दें</h3>
+                <p class="text-slate-300 text-sm mb-4">हमारी वेबसाइट को और बेहतर बनाने के लिए अपने मूल्यवान सुझाव हमारे साथ साझा करें।</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfEa4vQNR2mJgA4UQomTqdMQfAuGq0rrOtjM7jdVGhBp1-oTA/viewform?usp=dialog" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg shadow transition">
+                    📝 सुझाव फॉर्म खोलें
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-4 text-center text-slate-400 text-xs">
+        <p>&copy; 2026 World Knowledge Hub. Created by <strong>Som Vishwakarma</strong>. All rights reserved.</p>
+
+        <div style="margin: 15px 0; text-align: center;">
+            <a href="about.html" style="margin: 0 10px; text-decoration: none; color: #38bdf8;">About Us</a> | 
+            <a href="privacy.html" style="margin: 0 10px; text-decoration: none; color: #38bdf8;">Privacy Policy</a> | 
+            <a href="contact.html" style="margin: 0 10px; text-decoration: none; color: #38bdf8;">Contact Us</a>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script>
+        function toggleMobileMenu(event) {
+            if (event) event.stopPropagation();
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('mobileMenu');
+            const menuBtn = document.getElementById('menuBtn');
+            if (menu && !menu.classList.contains('hidden')) {
+                if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
+                    menu.classList.add('hidden');
+                }
+            }
+        });
+
+        function runHomePopulationClock() {
+            let basePopulation = 1429700205; 
+            let growthRatePerSecond = 0.52; 
+            
+            let now = new Date();
+            let startOfYear = new Date(now.getFullYear(), 0, 1);
+            let secondsElapsed = (now - startOfYear) / 1000;
+            
+            let currentPopulation = Math.floor(basePopulation + (secondsElapsed * growthRatePerSecond));
+            
+            const popElement = document.getElementById("home-live-pop");
+            if(popElement) {
+                popElement.innerText = currentPopulation.toLocaleString('en-IN');
+            }
+        }
+
+        setInterval(runHomePopulationClock, 1000);
+        runHomePopulationClock();
+    </script>
+</body>
+</html>
